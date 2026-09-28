@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "1": {
+      "image_tries": 1,
+      "video_tries": 1,
+      "image": "/home/user/tiktok-auto/comptines/output/montgolfiere_vers_medine/scenes/scene_1_start.png",
+      "image_problems": [],
+      "image_ok": true
+    },
+    "2": {
+      "image_tries": 2,
+      "video_tries": 0,
+      "image": "/home/user/tiktok-auto/comptines/output/montgolfiere_vers_medine/scenes/scene_2_start.png",
+      "image_problems": [
+        "scene_2_start.png: femme sans hijab"
+      ],
+      "image_ok": false
+    },
+    "3": {
+      "image_tries": 1,
+      "video_tries": 0,
+      "image": "/home/user/tiktok-auto/comptines/output/montgolfiere_vers_medine/scenes/scene_3_start.png",
+      "image_problems": [],
+      "image_ok": true
+    }
+  },
+  "review": {
+    "copied_5grams": [],
+    "llm": {
+      "coherence": 10,
+      "attrait_enfants": 8,
+      "simplicite": 8,
+      "justesse_islamique": 10,
+      "valeur_educative": 9,
+      "problemes": [],
+      "suggestions": [
+        "Ajouter une ligne d'adieu ('Au revoir, à bientôt !') à la fin de la scène 9 pour boucler la boucle de l'histoire.",
+        "Vérifier que les temps 'présent' sont cohérents dans les paroles pour un chant répétitif."
+      ]
+    },
+    "ok": true
+  }
+}

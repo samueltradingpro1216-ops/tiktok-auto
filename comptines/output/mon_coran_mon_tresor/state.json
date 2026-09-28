@@ -1,0 +1,45 @@
+{
+  "scenes": {
+    "1": {
+      "image_tries": 1,
+      "video_tries": 0,
+      "image": "/home/user/tiktok-auto/comptines/output/mon_coran_mon_tresor/scenes/scene_1_start.png",
+      "image_problems": [],
+      "image_ok": true
+    },
+    "2": {
+      "image_tries": 1,
+      "video_tries": 1,
+      "image": "/home/user/tiktok-auto/comptines/output/mon_coran_mon_tresor/scenes/scene_2_start.png",
+      "image_problems": [],
+      "image_ok": true
+    },
+    "3": {
+      "image_tries": 1,
+      "video_tries": 1,
+      "image": "/home/user/tiktok-auto/comptines/output/mon_coran_mon_tresor/scenes/scene_3_start.png",
+      "image_problems": [],
+      "image_ok": true
+    }
+  },
+  "review": {
+    "copied_5grams": [],
+    "llm": {
+      "coherence": 9,
+      "attrait_enfants": 8,
+      "simplicite": 7,
+      "justesse_islamique": 10,
+      "valeur_educative": 9,
+      "problemes": [
+        "La scène 4 est pédagogiquement incohérente : une enfant de 2 à 6 ans ne reconnaît pas l'alphabet arabe (Alif, Ba, Ta) si tôt, et cela contredit le rythme simple de la comptine.",
+        "Le refrain revient 3 fois sans variation, ce qui peut devenir répétitif pour des tout-petits s'il n'y a pas de changement visuel ou musical marqué entre les scènes 3, 6 et 9."
+      ],
+      "suggestions": [
+        "Remplacer la scène 4 par une action plus appropriée à l'âge, comme regarder les illustrations du livre ou sentir son parfum, plutôt que de lire les lettres arabes.",
+        "Ajouter des onomatopées ou des bruits drôles (comme le fennec qui fait 'titi' ou les papillons) pour augmenter l'attrait ludique et le rythme.",
+        "Simplifier les phrases du refrain pour qu'elles soient plus courtes et faciles à réclamer en chœur."
+      ]
+    },
+    "ok": true
+  }
+}
