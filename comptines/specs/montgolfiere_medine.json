@@ -1,0 +1,250 @@
+{
+  "slug": "montgolfiere_vers_medine",
+  "title": "En montgolfière vers Médine",
+  "inspiration": {
+    "title": "Plane to Madinah Zoom Zoom (Deen Kids TV)",
+    "url": "https://www.youtube.com/watch?v=rXqcXhbAemU",
+    "views": 26086447,
+    "why": "26 M de vues en anglais, versions françaises sous 160 k vues. On garde l'idée (un voyage vers Médine où l'on apprend les formules du quotidien) mais on change de véhicule (montgolfière), d'histoire, de personnages et de paroles.",
+    "reference_lyrics": "The plane to Madinah goes zoom zoom zoom, zoom zoom zoom, zoom zoom zoom. The plane to Madinah goes zoom zoom zoom all through the clouds. The kids on the plane say Bismillah. Little Zoya says MashaAllah. The kids say Allahu Akbar."
+  },
+  "style": "Pixar-style 3D animation, bright joyful colors, soft sunlight, magical children's adventure cartoon, wide 16:9 framing, no text overlay.",
+  "music": "Bouncy, cheerful Islamic nursery-rhyme song for kids, sung in French, catchy sing-along melody, upbeat daf drum, ukulele and hand claps.",
+  "reference_image": "Wide shot of a sunny green garden in the morning with a big colorful hot air balloon (turquoise, yellow and lilac stripes with little golden crescent patterns) and a wicker basket. A young father, a mother and their little daughter stand in front of it smiling, a small fennec fox sits in front of them.",
+  "characters": {
+    "Amina": {
+      "type": "children",
+      "look": "4-year-old girl, caramel skin, big brown eyes, very curly black hair with a knotted yellow headband, yellow dress with little lilac moons and stars, white sneakers."
+    },
+    "Papa": {
+      "type": "adult_men",
+      "look": "young father, short black beard, white kufi cap, long light-blue thobe, joyful smile."
+    },
+    "Maman": {
+      "type": "adult_women",
+      "look": "gentle young mother ALWAYS wearing a light beige hijab fully covering her hair and neck, long lilac dress with puffy sleeves."
+    },
+    "Fennec": {
+      "type": "animals",
+      "look": "small cream fennec fox with big ears and a turquoise scarf."
+    }
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "chapter": "Une montgolfière !",
+      "cast": [
+        "Amina",
+        "Papa"
+      ],
+      "image": "Sunny morning garden. A big colorful hot air balloon with turquoise, yellow and lilac stripes and little golden crescents stands behind them. Amina jumps with excitement pointing at the balloon, Papa kneels beside her smiling.",
+      "action": "Amina jumps with joy pointing at the balloon, Papa laughs and opens his arms.",
+      "lyrics": [
+        {
+          "singer": "Amina, excited, with a sweet little-girl voice,",
+          "text": "Papa, regarde ! Une montgolfière !"
+        },
+        {
+          "singer": "Papa, with a warm joyful father voice,",
+          "text": "On part pour Médine, inch'Allah !"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "chapter": "Bismillah, on décolle",
+      "cast": [
+        "Amina",
+        "Papa",
+        "Maman",
+        "Fennec"
+      ],
+      "image": "Amina, Papa, Maman in her beige hijab and the fennec stand inside the wicker basket of the colorful hot air balloon, just lifting off the grass, everyone raising their hands happily.",
+      "action": "The balloon slowly lifts off the ground, the family waves, grass and flowers sway below.",
+      "lyrics": [
+        {
+          "singer": "Amina, Papa and Maman together, cheerfully,",
+          "text": "On monte dedans : Bismillah !"
+        },
+        {
+          "singer": "Amina, Papa and Maman",
+          "text": "Et hop, on s'envole déjà !"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "chapter": "Refrain : monte, monte, ma montgolfière",
+      "cast": [
+        "Amina",
+        "Papa",
+        "Maman",
+        "Fennec"
+      ],
+      "image": "Wide aerial shot: the colorful hot air balloon floats over a green village with small white houses, the family and the fennec wave from the basket, blue sky.",
+      "action": "The balloon rises above the village, the family sways and waves in rhythm.",
+      "lyrics": [
+        {
+          "singer": "Amina, cheerfully, with a sweet little-girl voice,",
+          "text": "Monte, monte, ma montgolfière, jusqu'à Médine dans les airs !"
+        },
+        {
+          "singer": "Amina",
+          "text": "Bismillah, on vole, on est heureux !"
+        }
+      ],
+      "thumbnail": true,
+      "thumbnail_time": 3
+    },
+    {
+      "id": 4,
+      "chapter": "SubhanAllah, les montagnes",
+      "cast": [
+        "Amina",
+        "Fennec"
+      ],
+      "image": "Close shot inside the balloon basket: Amina leans over the edge with wide amazed eyes, pointing at huge majestic mountains with snowy peaks and clouds, the fennec's ears pop up beside her.",
+      "action": "Amina gasps in wonder and points at the mountains, clouds drift by.",
+      "lyrics": [
+        {
+          "singer": "Amina, amazed, with a sweet little-girl voice,",
+          "text": "Regarde les montagnes, si grandes, si belles !"
+        },
+        {
+          "singer": "Amina",
+          "text": "SubhanAllah ! SubhanAllah !"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "chapter": "Allahu Akbar, les oiseaux",
+      "cast": [
+        "Amina",
+        "Papa"
+      ],
+      "max_counts": {
+        "animals": 30
+      },
+      "image": "Amina and Papa in the balloon basket high in the sky, a flock of white birds flies right beside the balloon, Amina reaches out her hand toward them, Papa smiles.",
+      "action": "White birds fly alongside the balloon, Amina laughs and waves at them, Papa points at the sky.",
+      "lyrics": [
+        {
+          "singer": "Amina and Papa together, joyfully,",
+          "text": "Les oiseaux volent avec nous !"
+        },
+        {
+          "singer": "Amina and Papa",
+          "text": "Allahu Akbar ! Allahu Akbar !"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "chapter": "MashaAllah, l'arc-en-ciel",
+      "cast": [
+        "Amina",
+        "Maman"
+      ],
+      "image": "Amina and Maman in her beige hijab in the balloon basket, a huge bright rainbow arches across the sky in front of them among fluffy pink clouds, both smiling with wonder.",
+      "action": "Amina hugs Maman and they both admire the rainbow, sparkles in the air.",
+      "lyrics": [
+        {
+          "singer": "Amina and Maman together, joyfully,",
+          "text": "Un arc-en-ciel, que c'est beau !"
+        },
+        {
+          "singer": "Amina and Maman",
+          "text": "MashaAllah ! MashaAllah !"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "chapter": "Refrain au-dessus du désert",
+      "cast": [
+        "Amina",
+        "Papa",
+        "Maman",
+        "Fennec"
+      ],
+      "image": "Wide shot: the colorful hot air balloon floats above golden sand dunes and green palm trees in warm afternoon light, the family and the fennec wave from the basket.",
+      "action": "The balloon glides over the dunes, the family sways happily and claps in rhythm.",
+      "lyrics": [
+        {
+          "singer": "Amina, Papa and Maman together, cheerfully,",
+          "text": "Monte, monte, ma montgolfière, jusqu'à Médine dans les airs !"
+        },
+        {
+          "singer": "Amina, Papa and Maman",
+          "text": "Bismillah, on vole, on est heureux !"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "chapter": "Alhamdulillah, on arrive",
+      "cast": [
+        "Amina",
+        "Papa",
+        "Maman"
+      ],
+      "image": "Sunset, the hot air balloon has landed softly near a palm grove, in the distance a big white mosque with a green dome and tall minarets glows in the golden light. Amina, Papa and Maman in her beige hijab stand next to the basket, hands raised in gratitude. No other people.",
+      "action": "The family raises their hands with gratitude, then Amina hugs her parents, the green dome glows in the distance.",
+      "lyrics": [
+        {
+          "singer": "Amina, Papa and Maman together, tenderly,",
+          "text": "On arrive tout en douceur,"
+        },
+        {
+          "singer": "Amina, Papa and Maman",
+          "text": "Alhamdulillah ! Alhamdulillah !"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "chapter": "Salam, Médine, ville du Prophète ﷺ",
+      "cast": [
+        "Amina",
+        "Papa",
+        "Maman"
+      ],
+      "max_counts": {
+        "animals": 30
+      },
+      "image": "Early morning, a wide calm white marble courtyard with big white umbrella-shaped canopies and a green dome in the background, white pigeons on the ground. Amina walks holding hands with Papa and Maman in her beige hijab, seen from behind at three-quarter angle. No other people.",
+      "action": "The family walks peacefully across the courtyard, pigeons fly up softly, Amina turns and smiles at the camera.",
+      "lyrics": [
+        {
+          "singer": "Amina, Papa and Maman together, softly,",
+          "text": "Salam, Médine, ville du Prophète,"
+        },
+        {
+          "singer": "Amina, Papa and Maman",
+          "text": "que la paix soit sur lui !"
+        }
+      ]
+    }
+  ],
+  "youtube": {
+    "title": "En montgolfière vers Médine 🎈 Comptine islamique pour enfants | Bismillah, SubhanAllah, MashaAllah",
+    "thumbnail_text": "VERS MÉDINE",
+    "thumbnail_subtext": "Comptine pour enfants",
+    "hook": "🎈 Amina part en montgolfière avec Papa, Maman et son petit fennec, direction Médine, la ville du Prophète ﷺ !\nPendant le voyage, elle apprend les belles paroles du quotidien : Bismillah au départ, SubhanAllah devant les montagnes, Allahu Akbar avec les oiseaux, MashaAllah devant l'arc-en-ciel et Alhamdulillah à l'arrivée.\n\n✨ Ce que votre enfant va apprendre :\n• Quand dire Bismillah, SubhanAllah, Allahu Akbar, MashaAllah et Alhamdulillah\n• Admirer la création d'Allah\n• Médine, la ville lumineuse du Prophète ﷺ",
+    "footer": "🔔 Abonne-toi pour d'autres comptines islamiques avec Amina et son petit fennec !\n\n#Medine #ComptineEnfant #ChansonIslamique #EnfantsMusulmans #Bismillah",
+    "tags": [
+      "comptine islamique",
+      "médine enfant",
+      "chanson islamique enfant",
+      "bismillah",
+      "subhanallah",
+      "mashallah",
+      "alhamdulillah",
+      "allahu akbar",
+      "enfants musulmans",
+      "dessin animé islamique",
+      "nasheed enfant"
+    ]
+  }
+}
