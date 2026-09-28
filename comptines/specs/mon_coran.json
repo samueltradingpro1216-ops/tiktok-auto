@@ -12,94 +12,215 @@
   "music": "Gentle and warm Islamic nursery-rhyme song for kids, sung in French, tender catchy melody, soft daf drum, light bells and hand claps.",
   "reference_image": "Wide shot of a cozy Muslim family living room with mint green walls, oriental arches, green plants, a crescent moon lamp and floor cushions. A kind grandfather sits on a cushion holding a closed book with a golden cover wrapped in green cloth, his little granddaughter stands next to him, her mother stands smiling behind them, a small fennec fox sits on the rug.",
   "characters": {
-    "Amina": {"type": "children", "look": "4-year-old girl, caramel skin, big brown eyes, very curly black hair with a knotted yellow headband, pale yellow pajamas with little lilac moons and stars."},
-    "Papi": {"type": "adult_men", "look": "kind grandfather, short neat white beard, round glasses, white kufi cap, long beige thobe, warm smile."},
-    "Maman": {"type": "adult_women", "look": "gentle young mother ALWAYS wearing a light beige hijab fully covering her hair and neck, long lilac dress with puffy sleeves."},
-    "Fennec": {"type": "animals", "look": "small cream fennec fox with big ears and a turquoise scarf."}
+    "Amina": {
+      "type": "children",
+      "look": "4-year-old girl, caramel skin, big brown eyes, very curly black hair with a knotted yellow headband, pale yellow pajamas with little lilac moons and stars."
+    },
+    "Papi": {
+      "type": "adult_men",
+      "look": "kind grandfather, short neat white beard, round glasses, white kufi cap, long beige thobe, warm smile."
+    },
+    "Maman": {
+      "type": "adult_women",
+      "look": "gentle young mother ALWAYS wearing a light beige hijab fully covering her hair and neck, long lilac dress with puffy sleeves."
+    },
+    "Fennec": {
+      "type": "animals",
+      "look": "small cream fennec fox with big ears and a turquoise scarf."
+    }
   },
   "scenes": [
     {
-      "id": 1, "chapter": "Papi, c'est quoi ce livre ?", "cast": ["Amina", "Papi"],
+      "id": 1,
+      "chapter": "Papi, c'est quoi ce livre ?",
+      "cast": [
+        "Amina",
+        "Papi"
+      ],
       "image": "Cozy living room. Papi sits on a floor cushion holding a closed book with a golden cover wrapped in green cloth, Amina stands next to him, curious, pointing at the book.",
       "action": "Amina points at the golden book with wide curious eyes, Papi smiles tenderly and lifts the book gently. Slow camera push-in.",
       "lyrics": [
-        {"singer": "Amina, with a sweet little-girl voice,", "text": "Papi, c'est quoi ce beau livre tout doré ?"},
-        {"singer": "Papi, with a warm gentle grandfather voice,", "text": "C'est le Coran, ma chérie, la parole d'Allah !"}
+        {
+          "singer": "Amina, with a sweet little-girl voice,",
+          "text": "Papi, c'est quoi ce beau livre tout doré ?"
+        },
+        {
+          "singer": "Papi, with a warm gentle grandfather voice,",
+          "text": "C'est le Coran, ma chérie, la parole d'Allah !"
+        }
       ],
-      "thumbnail": false
+      "thumbnail": false,
+      "allow_text": true
     },
     {
-      "id": 2, "chapter": "Les ablutions", "cast": ["Amina", "Fennec"],
+      "id": 2,
+      "chapter": "Les ablutions",
+      "cast": [
+        "Amina",
+        "Fennec"
+      ],
       "image": "Pastel bathroom. Amina stands on a small wooden stool at the sink, water running, washing her hands, the fennec watches from the side.",
       "action": "Amina washes her hands, then her face with sparkling water, smiling, the fennec tilts its head.",
       "lyrics": [
-        {"singer": "Amina, with a sweet little-girl voice,", "text": "Avant de le toucher, je fais mes ablutions,"},
-        {"singer": "Amina", "text": "les mains, le visage, avec attention !"}
+        {
+          "singer": "Amina, with a sweet little-girl voice,",
+          "text": "Avant de le toucher, je fais mes ablutions,"
+        },
+        {
+          "singer": "Amina",
+          "text": "les mains, le visage, avec attention !"
+        }
       ]
     },
     {
-      "id": 3, "chapter": "Refrain : mon Coran, mon trésor", "cast": ["Amina", "Papi"], "allow_text": true,
+      "id": 3,
+      "chapter": "Refrain : mon Coran, mon trésor",
+      "cast": [
+        "Amina",
+        "Papi"
+      ],
+      "allow_text": true,
       "image": "Amina and Papi sit side by side on floor cushions, an open book rests on a small carved wooden stand in front of them, soft golden light from the window.",
       "action": "Amina claps softly and sways joyfully next to Papi, who smiles and nods to the rhythm.",
       "lyrics": [
-        {"singer": "Amina and Papi together, cheerfully,", "text": "Mon Coran, mon trésor, je le lis encore et encore !"},
-        {"singer": "Amina and Papi", "text": "Mon Coran, mon ami, avec toi je grandis !"}
+        {
+          "singer": "Amina and Papi together, cheerfully,",
+          "text": "Mon Coran, mon trésor, je le lis encore et encore !"
+        },
+        {
+          "singer": "Amina and Papi",
+          "text": "Mon Coran, mon ami, avec toi je grandis !"
+        }
       ]
     },
     {
-      "id": 4, "chapter": "Lettre après lettre", "cast": ["Amina", "Papi"], "allow_text": true,
+      "id": 4,
+      "chapter": "Lettre après lettre",
+      "cast": [
+        "Amina",
+        "Papi"
+      ],
+      "allow_text": true,
       "image": "Close shot: Papi points with his finger at a page of the open book on the wooden stand, Amina leans forward and follows with her little finger, focused and happy.",
       "action": "Papi guides Amina's finger along the page, Amina nods proudly.",
       "lyrics": [
-        {"singer": "Amina, with a sweet little-girl voice,", "text": "Alif, Ba, Ta, lettre après lettre,"},
-        {"singer": "Amina", "text": "Papi m'apprend à les reconnaître !"}
+        {
+          "singer": "Amina, with a sweet little-girl voice,",
+          "text": "Alif, Ba, Ta, lettre après lettre,"
+        },
+        {
+          "singer": "Amina",
+          "text": "Papi m'apprend à les reconnaître !"
+        }
       ]
     },
     {
-      "id": 5, "chapter": "Je lis doucement", "cast": ["Amina"], "allow_text": true,
+      "id": 5,
+      "chapter": "Je lis doucement",
+      "cast": [
+        "Amina"
+      ],
+      "allow_text": true,
       "image": "Amina sits alone on a cozy window seat with cushions, reading an open book on her lap, a sunbeam lights her face, plants around.",
       "action": "Amina reads quietly, then looks up with a peaceful smile, the sunbeam glows.",
       "lyrics": [
-        {"singer": "Amina, softly, with a sweet little-girl voice,", "text": "Je lis tout doucement, sans me presser,"},
-        {"singer": "Amina", "text": "et mon cœur se remplit de paix !"}
+        {
+          "singer": "Amina, softly, with a sweet little-girl voice,",
+          "text": "Je lis tout doucement, sans me presser,"
+        },
+        {
+          "singer": "Amina",
+          "text": "et mon cœur se remplit de paix !"
+        }
       ]
     },
     {
-      "id": 6, "chapter": "Refrain au jardin", "cast": ["Amina", "Fennec"], "max_counts": {"animals": 6},
+      "id": 6,
+      "chapter": "Refrain au jardin",
+      "cast": [
+        "Amina",
+        "Fennec"
+      ],
+      "max_counts": {
+        "animals": 6
+      },
       "image": "Bright flowery garden with butterflies. Amina holds a closed book with a golden cover respectfully against her chest, smiling, one fennec hops beside her.",
       "action": "Amina walks happily among the flowers holding the book against her chest, the fennec hops around her, butterflies flutter.",
       "lyrics": [
-        {"singer": "Amina, cheerfully, with a sweet little-girl voice,", "text": "Mon Coran, mon trésor, je le lis encore et encore !"},
-        {"singer": "Amina", "text": "Mon Coran, mon ami, avec toi je grandis !"}
+        {
+          "singer": "Amina, cheerfully, with a sweet little-girl voice,",
+          "text": "Mon Coran, mon trésor, je le lis encore et encore !"
+        },
+        {
+          "singer": "Amina",
+          "text": "Mon Coran, mon ami, avec toi je grandis !"
+        }
       ],
-      "thumbnail": true, "thumbnail_time": 3
+      "thumbnail": true,
+      "thumbnail_time": 3
     },
     {
-      "id": 7, "chapter": "Je raconte à mon fennec", "cast": ["Amina", "Fennec"],
+      "id": 7,
+      "chapter": "Je raconte à mon fennec",
+      "cast": [
+        "Amina",
+        "Fennec"
+      ],
       "image": "Amina's pastel bedroom. Amina sits on the rug facing her fennec, telling it a story with expressive hands, the fennec listens with big ears up.",
       "action": "Amina tells the fennec what she learned, making gentle gestures, the fennec wags its tail.",
       "lyrics": [
-        {"singer": "Amina, with a sweet little-girl voice,", "text": "À mon petit fennec, je raconte à mon tour,"},
-        {"singer": "Amina", "text": "ce que Papi m'a appris avec amour !"}
+        {
+          "singer": "Amina, with a sweet little-girl voice,",
+          "text": "À mon petit fennec, je raconte à mon tour,"
+        },
+        {
+          "singer": "Amina",
+          "text": "ce que Papi m'a appris avec amour !"
+        }
       ]
     },
     {
-      "id": 8, "chapter": "On le range avec respect", "cast": ["Amina", "Maman"],
+      "id": 8,
+      "chapter": "On le range avec respect",
+      "cast": [
+        "Amina",
+        "Maman"
+      ],
       "image": "Evening in the living room. Amina stands on her tiptoes placing a book wrapped in green cloth on a high wooden shelf, Maman in her beige hijab helps her and smiles proudly.",
       "action": "Amina places the wrapped book on the high shelf with care, Maman gently holds her and smiles.",
       "lyrics": [
-        {"singer": "Amina, with a sweet little-girl voice,", "text": "Je le range tout en haut, avec respect,"},
-        {"singer": "Amina", "text": "mon Coran bien au chaud, enveloppé !"}
-      ]
+        {
+          "singer": "Amina, with a sweet little-girl voice,",
+          "text": "Je le range tout en haut, avec respect,"
+        },
+        {
+          "singer": "Amina",
+          "text": "mon Coran bien au chaud, enveloppé !"
+        }
+      ],
+      "allow_text": true
     },
     {
-      "id": 9, "chapter": "Refrain du soir", "cast": ["Amina", "Maman", "Papi"],
+      "id": 9,
+      "chapter": "Refrain du soir",
+      "cast": [
+        "Amina",
+        "Maman",
+        "Papi"
+      ],
       "image": "Night, Amina's bedroom with a starry sky and a golden crescent moon through the window. Amina sits in bed, Maman in her beige hijab and Papi sit on each side of the bed, all smiling.",
       "action": "Soft lullaby mood, all three sway gently, Amina yawns and smiles, stars twinkle. Slow camera pull back to the window.",
       "lyrics": [
-        {"singer": "Amina, Maman and Papi together, softly like a lullaby,", "text": "Mon Coran, mon trésor, je le lis encore et encore !"},
-        {"singer": "Amina, Maman and Papi", "text": "Mon Coran, mon ami, avec toi je grandis !"}
-      ]
+        {
+          "singer": "Amina, Maman and Papi together, softly like a lullaby,",
+          "text": "Mon Coran, mon trésor, je le lis encore et encore !"
+        },
+        {
+          "singer": "Amina, Maman and Papi",
+          "text": "Mon Coran, mon ami, avec toi je grandis !"
+        }
+      ],
+      "allow_text": true
     }
   ],
   "youtube": {
@@ -108,6 +229,17 @@
     "thumbnail_subtext": "Comptine pour enfants",
     "hook": "📖 Amina découvre un beau livre doré chez Papi : le Coran, la parole d'Allah !\nAvec Papi, elle apprend à faire ses ablutions, à reconnaître les lettres Alif, Ba, Ta, à lire tout doucement et à ranger son Coran avec respect.\n\n✨ Ce que votre enfant va apprendre :\n• Aimer le Coran et le lire chaque jour\n• Faire ses ablutions avant de le toucher\n• Le respect du Coran (on le range en hauteur, enveloppé)\n• Les premières lettres : Alif, Ba, Ta",
     "footer": "🔔 Abonne-toi pour d'autres comptines islamiques avec Amina et son petit fennec !\n\n#Coran #ComptineEnfant #ChansonIslamique #EnfantsMusulmans #Islam",
-    "tags": ["coran enfant", "comptine islamique", "chanson islamique enfant", "mon coran", "apprendre le coran", "enfants musulmans", "dessin animé islamique", "alif ba ta", "ablutions enfant", "nasheed enfant"]
+    "tags": [
+      "coran enfant",
+      "comptine islamique",
+      "chanson islamique enfant",
+      "mon coran",
+      "apprendre le coran",
+      "enfants musulmans",
+      "dessin animé islamique",
+      "alif ba ta",
+      "ablutions enfant",
+      "nasheed enfant"
+    ]
   }
 }
