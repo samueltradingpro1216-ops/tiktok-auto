@@ -99,13 +99,16 @@ def wait_task_file(dir_name, filename, timeout=3600):
     state = os.path.join(WORKDIR, dir_name, "task_state.json")
     start = time.time()
     while time.time() - start < timeout:
-        if os.path.exists(path):
-            return path
+        status = None
         if os.path.exists(state):
             with open(state, encoding="utf-8") as f:
                 s = json.load(f)
-            if s.get("status") == "failed":
+            status = s.get("status")
+            if status == "failed":
                 raise RuntimeError(f"{dir_name}: {s.get('error_message') or s.get('error') or 'failed'}")
+        # le fichier apparait avant la fin du telechargement : on attend que la tache soit terminee
+        if os.path.exists(path) and status == "completed":
+            return path
         time.sleep(15)
     raise TimeoutError(dir_name)
 
