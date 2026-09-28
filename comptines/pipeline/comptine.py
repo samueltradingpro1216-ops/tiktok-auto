@@ -251,12 +251,21 @@ class Comptine:
         if st.get("image_ok"):
             return st["image"]
         while st["image_tries"] < MAX_IMAGE_TRIES:
-            st["image_tries"] += 1
-            r = curl_json(["-X", "POST", f"{SERVER}/api/image/generate", "-F", "size=1344x768",
-                           "-F", f"reference_image=@{ref}", "-F", f"negative_prompt={NEGATIVE}",
-                           "-F", f"prompt={self.image_prompt(scene)}"])
+            if not st.get("pending_image"):
+                st["image_tries"] += 1
+                # l'image de reference contient tous les personnages : si l'essai precedent en avait
+                # en trop, on genere sans elle (descriptions detaillees seulement)
+                too_many = any("max" in p for p in st.get("image_problems", []))
+                args = ["-F", f"reference_image=@{ref}"] if not too_many else []
+                r = curl_json(["-X", "POST", f"{SERVER}/api/image/generate", "-F", "size=1344x768", *args,
+                               "-F", f"negative_prompt={NEGATIVE}", "-F", f"prompt={self.image_prompt(scene)}"])
+                st["pending_image"] = r["dir_name"]
+                self.save()
             img = os.path.join(self.out, "scenes", f"scene_{scene['id']}_start.png")
-            run(["cp", wait_task_file(r["dir_name"], "final_image.png"), img])
+            try:
+                run(["cp", wait_task_file(st["pending_image"], "final_image.png"), img])
+            finally:
+                st.pop("pending_image", None)
             problems = self.judge_frames([img], scene)
             st.update(image=img, image_problems=problems, image_ok=not problems)
             self.save()
@@ -273,15 +282,21 @@ class Comptine:
         if st.get("video_ok"):
             return
         while st["video_tries"] < MAX_VIDEO_TRIES:
-            img = self.make_image(scene, ref)
-            st["video_tries"] += 1
-            r = curl_json(["-X", "POST", f"{SERVER}/api/tasks/simple", "-F", "mode=i2v", "-F", "duration=10",
-                           "-F", "video_width=1280", "-F", "video_height=720",
-                           "-F", f"seed={random.randint(1, 2**31 - 1)}",
-                           "-F", f"reference_image=@{img}", "-F", f"negative_prompt={NEGATIVE}",
-                           "-F", f"prompt={self.video_prompt(scene)}"])
+            if not st.get("pending_video"):
+                img = self.make_image(scene, ref)
+                st["video_tries"] += 1
+                r = curl_json(["-X", "POST", f"{SERVER}/api/tasks/simple", "-F", "mode=i2v", "-F", "duration=10",
+                               "-F", "video_width=1280", "-F", "video_height=720",
+                               "-F", f"seed={random.randint(1, 2**31 - 1)}",
+                               "-F", f"reference_image=@{img}", "-F", f"negative_prompt={NEGATIVE}",
+                               "-F", f"prompt={self.video_prompt(scene)}"])
+                st["pending_video"] = r["dir_name"]  # reprise possible si le pipeline est relance
+                self.save()
             clip = os.path.join(self.out, "scenes", f"scene_{scene['id']}.mp4")
-            run(["cp", wait_task_file(r["dir_name"], "final_video.mp4"), clip])
+            try:
+                run(["cp", wait_task_file(st["pending_video"], "final_video.mp4"), clip])
+            finally:
+                st.pop("pending_video", None)
             report = self.validate_clip(scene, clip)
             st.update(video=clip, validation=report, video_ok=report["ok"])
             self.save()
@@ -292,6 +307,7 @@ class Comptine:
             if any("adult" in p or "children" in p or "animals" in p or "hijab" in p for p in report["problems"]):
                 st["image_ok"] = False  # probleme de personnages : nouvelle image de depart
                 st["image_tries"] = 0
+                st["image_problems"] = [p for p in report["problems"] if "max" in p]
         log(f"scene {scene['id']} : echec apres {MAX_VIDEO_TRIES} essais, garde la derniere version")
 
     def validate_clip(self, scene, clip):
