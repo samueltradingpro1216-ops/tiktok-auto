@@ -1,0 +1,305 @@
+{
+  "scenes": {
+    "1": {
+      "image_tries": 1,
+      "video_tries": 3,
+      "image": "/home/user/tiktok-auto/comptines/output/mon_coran_mon_tresor/scenes/scene_1_start.png",
+      "image_problems": [],
+      "image_ok": true,
+      "video": "/home/user/tiktok-auto/comptines/output/mon_coran_mon_tresor/scenes/scene_1.mp4",
+      "validation": {
+        "ok": true,
+        "problems": [],
+        "similarity": 1.0,
+        "heard": "Papi, c'est quoi ce beau livre tout doré ? C'est le Coran, ma chérie, la parole d'Allah",
+        "mean_volume_db": -22.7,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 5.0,
+            "text": "Papi, c'est quoi ce beau livre tout doré ?"
+          },
+          {
+            "start": 5.0,
+            "end": 10.0,
+            "text": "C'est le Coran, ma chérie, la parole d'Allah"
+          }
+        ]
+      },
+      "video_ok": true
+    },
+    "2": {
+      "image_tries": 1,
+      "video_tries": 1,
+      "image": "/home/user/tiktok-auto/comptines/output/mon_coran_mon_tresor/scenes/scene_2_start.png",
+      "image_problems": [],
+      "image_ok": true,
+      "video": "/home/user/tiktok-auto/comptines/output/mon_coran_mon_tresor/scenes/scene_2.mp4",
+      "validation": {
+        "ok": true,
+        "problems": [],
+        "similarity": 1.0,
+        "heard": "Avant de le toucher, je fais mes ablutions Les mains, le visage, avec attention",
+        "mean_volume_db": -25.4,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 10.0,
+            "text": "Avant de le toucher, je fais mes ablutions Les mains, le visage, avec attention"
+          }
+        ]
+      },
+      "video_ok": true
+    },
+    "3": {
+      "image_tries": 1,
+      "video_tries": 2,
+      "image": "/home/user/tiktok-auto/comptines/output/mon_coran_mon_tresor/scenes/scene_3_start.png",
+      "image_problems": [],
+      "image_ok": true,
+      "video": "/home/user/tiktok-auto/comptines/output/mon_coran_mon_tresor/scenes/scene_3.mp4",
+      "validation": {
+        "ok": true,
+        "problems": [],
+        "similarity": 1.0,
+        "heard": "Mon Coran, mon trésor, je le lis encore et encore Mon Coran, mon ami, avec toi je grandis",
+        "mean_volume_db": -19.6,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 5.0,
+            "text": "Mon Coran, mon trésor, je le lis encore et encore"
+          },
+          {
+            "start": 5.0,
+            "end": 10.0,
+            "text": "Mon Coran, mon ami, avec toi je grandis"
+          }
+        ]
+      },
+      "video_ok": true
+    },
+    "4": {
+      "image_tries": 1,
+      "video_tries": 1,
+      "image": "/home/user/tiktok-auto/comptines/output/mon_coran_mon_tresor/scenes/scene_4_start.png",
+      "image_problems": [],
+      "image_ok": true,
+      "video": "/home/user/tiktok-auto/comptines/output/mon_coran_mon_tresor/scenes/scene_4.mp4",
+      "validation": {
+        "ok": true,
+        "problems": [],
+        "similarity": 0.99,
+        "heard": "Alif, Bata, lettre après lettre Papi m'apprend à les reconnaître",
+        "mean_volume_db": -21.8,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 4.8,
+            "text": "Alif, Bata, lettre après lettre"
+          },
+          {
+            "start": 4.8,
+            "end": 8.8,
+            "text": "Papi m'apprend à les reconnaître"
+          }
+        ]
+      },
+      "video_ok": true
+    },
+    "5": {
+      "image_tries": 1,
+      "video_tries": 1,
+      "image": "/home/user/tiktok-auto/comptines/output/mon_coran_mon_tresor/scenes/scene_5_start.png",
+      "image_problems": [],
+      "image_ok": true,
+      "video_ok": true,
+      "video": "/home/user/tiktok-auto/comptines/output/mon_coran_mon_tresor/scenes/scene_5.mp4",
+      "validation": {
+        "ok": true,
+        "problems": [],
+        "similarity": 1.0,
+        "heard": "Je lis tout doucement sans me presser et mon cœur se remplit de paix",
+        "mean_volume_db": -20.8,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 10.0,
+            "text": "Je lis tout doucement sans me presser et mon cœur se remplit de paix"
+          }
+        ]
+      }
+    },
+    "6": {
+      "image_tries": 2,
+      "video_tries": 1,
+      "image": "/home/user/tiktok-auto/comptines/output/mon_coran_mon_tresor/scenes/scene_6_start.png",
+      "image_problems": [],
+      "image_ok": true,
+      "video_ok": true,
+      "video": "/home/user/tiktok-auto/comptines/output/mon_coran_mon_tresor/scenes/scene_6.mp4",
+      "validation": {
+        "ok": true,
+        "problems": [],
+        "similarity": 0.98,
+        "heard": "Mon Coran, mon trésor, je le lise encore et t'encore Mon Coran, mon ami, avec toi je grandis",
+        "mean_volume_db": -20.7,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 4.9,
+            "text": "Mon Coran, mon trésor, je le lise encore et t'encore"
+          },
+          {
+            "start": 4.9,
+            "end": 9.9,
+            "text": "Mon Coran, mon ami, avec toi je grandis"
+          }
+        ]
+      }
+    },
+    "7": {
+      "image_tries": 1,
+      "video_tries": 1,
+      "image": "/home/user/tiktok-auto/comptines/output/mon_coran_mon_tresor/scenes/scene_7_start.png",
+      "image_problems": [],
+      "image_ok": true,
+      "video": "/home/user/tiktok-auto/comptines/output/mon_coran_mon_tresor/scenes/scene_7.mp4",
+      "validation": {
+        "ok": true,
+        "problems": [],
+        "similarity": 0.93,
+        "heard": "À mon petit phénèque, je raconte à mon tour Ce que papy m'a appris avec amour",
+        "mean_volume_db": -27.7,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 4.5,
+            "text": "À mon petit phénèque, je raconte à mon tour"
+          },
+          {
+            "start": 4.5,
+            "end": 9.5,
+            "text": "Ce que papy m'a appris avec amour"
+          }
+        ]
+      },
+      "video_ok": true
+    },
+    "8": {
+      "image_tries": 3,
+      "video_tries": 1,
+      "image": "/home/user/tiktok-auto/comptines/output/mon_coran_mon_tresor/scenes/scene_8_start.png",
+      "image_problems": [],
+      "image_ok": true,
+      "video": "/home/user/tiktok-auto/comptines/output/mon_coran_mon_tresor/scenes/scene_8.mp4",
+      "validation": {
+        "ok": true,
+        "problems": [],
+        "similarity": 0.99,
+        "heard": "Je le range tout en haut avec respect Mon courant bien au chaud enveloppé",
+        "mean_volume_db": -22.9,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 4.7,
+            "text": "Je le range tout en haut avec respect"
+          },
+          {
+            "start": 4.7,
+            "end": 10.0,
+            "text": "Mon courant bien au chaud enveloppé"
+          }
+        ]
+      },
+      "video_ok": true
+    },
+    "9": {
+      "image_tries": 1,
+      "video_tries": 1,
+      "image": "/home/user/tiktok-auto/comptines/output/mon_coran_mon_tresor/scenes/scene_9_start.png",
+      "image_problems": [],
+      "image_ok": true,
+      "video": "/home/user/tiktok-auto/comptines/output/mon_coran_mon_tresor/scenes/scene_9.mp4",
+      "validation": {
+        "ok": true,
+        "problems": [],
+        "similarity": 0.98,
+        "heard": "Mon corin, mon trésor, je le lis encore et encore Mon corin, mon ami, avec toi je grandis",
+        "mean_volume_db": -22.4,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 4.46,
+            "text": "Mon corin, mon trésor, je le lis encore et encore"
+          },
+          {
+            "start": 4.46,
+            "end": 10.04,
+            "text": "Mon corin, mon ami, avec toi je grandis"
+          }
+        ]
+      },
+      "video_ok": true
+    }
+  },
+  "review": {
+    "copied_5grams": [],
+    "llm": {
+      "coherence": 9,
+      "attrait_enfants": 8,
+      "simplicite": 7,
+      "justesse_islamique": 10,
+      "valeur_educative": 9,
+      "problemes": [
+        "La scène 4 est pédagogiquement incohérente : une enfant de 2 à 6 ans ne reconnaît pas l'alphabet arabe (Alif, Ba, Ta) si tôt, et cela contredit le rythme simple de la comptine.",
+        "Le refrain revient 3 fois sans variation, ce qui peut devenir répétitif pour des tout-petits s'il n'y a pas de changement visuel ou musical marqué entre les scènes 3, 6 et 9."
+      ],
+      "suggestions": [
+        "Remplacer la scène 4 par une action plus appropriée à l'âge, comme regarder les illustrations du livre ou sentir son parfum, plutôt que de lire les lettres arabes.",
+        "Ajouter des onomatopées ou des bruits drôles (comme le fennec qui fait 'titi' ou les papillons) pour augmenter l'attrait ludique et le rythme.",
+        "Simplifier les phrases du refrain pour qu'elles soient plus courtes et faciles à réclamer en chœur."
+      ]
+    },
+    "ok": true
+  },
+  "chapters": [
+    [
+      0.0,
+      "Papi, c'est quoi ce livre ?"
+    ],
+    [
+      10.041667,
+      "Les ablutions"
+    ],
+    [
+      20.083334,
+      "Refrain : mon Coran, mon trésor"
+    ],
+    [
+      30.125001,
+      "Lettre après lettre"
+    ],
+    [
+      40.166668,
+      "Je lis doucement"
+    ],
+    [
+      50.208335000000005,
+      "Refrain au jardin"
+    ],
+    [
+      60.25000200000001,
+      "Je raconte à mon fennec"
+    ],
+    [
+      70.29166900000001,
+      "On le range avec respect"
+    ],
+    [
+      80.33333600000002,
+      "Refrain du soir"
+    ]
+  ],
+  "final": "/home/user/tiktok-auto/comptines/output/mon_coran_mon_tresor/mon_coran_mon_tresor_youtube.mp4"
+}
