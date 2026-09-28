@@ -270,9 +270,11 @@ class Comptine:
                 # l'image de reference contient tous les personnages : si l'essai precedent en avait
                 # en trop, on genere sans elle (descriptions detaillees seulement)
                 too_many = any("max" in p for p in st.get("image_problems", []))
-                args = ["-F", f"reference_image=@{ref}"] if not too_many else []
+                # (Agnes refuse negative_prompt sans image de reference)
+                args = (["-F", f"reference_image=@{ref}", "-F", f"negative_prompt={NEGATIVE}"]
+                        if not too_many else [])
                 r = submit(["-X", "POST", f"{SERVER}/api/image/generate", "-F", "size=1344x768", *args,
-                               "-F", f"negative_prompt={NEGATIVE}", "-F", f"prompt={self.image_prompt(scene)}"])
+                            "-F", f"prompt={self.image_prompt(scene)}"])
                 st["pending_image"] = r["dir_name"]
                 self.save()
             img = os.path.join(self.out, "scenes", f"scene_{scene['id']}_start.png")
