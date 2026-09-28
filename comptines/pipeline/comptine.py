@@ -69,6 +69,20 @@ def curl_json(args):
     return json.loads(run(["curl", "-s", "-m", "300", *args]))
 
 
+def submit(args, tries=6):
+    """Soumet une tache au serveur Agnes ; reessaie si la reponse n'a pas de dir_name (limite, erreur)."""
+    for i in range(tries):
+        try:
+            r = curl_json(args)
+        except Exception as e:  # reponse vide ou non JSON
+            r = {"error": str(e)}
+        if "dir_name" in r:
+            return r
+        log(f"soumission refusee ({str(r)[:200]}), nouvel essai dans {30 * (i + 1)} s")
+        time.sleep(30 * (i + 1))
+    raise RuntimeError(f"soumission impossible : {r}")
+
+
 def normalize(text):
     text = unicodedata.normalize("NFD", text.lower())
     text = "".join(c for c in text if unicodedata.category(c) != "Mn")
@@ -211,7 +225,7 @@ class Comptine:
         ref = os.path.join(self.out, "reference.png")
         if os.path.exists(ref):
             return ref
-        r = curl_json(["-X", "POST", f"{SERVER}/api/image/generate", "-F", "size=1344x768",
+        r = submit(["-X", "POST", f"{SERVER}/api/image/generate", "-F", "size=1344x768",
                        "-F", f"prompt={self.spec['style']} {self.spec['reference_image']} "
                              f"{self.cast_text(list(self.spec['characters']))}"])
         run(["cp", wait_task_file(r["dir_name"], "final_image.png"), ref])
@@ -257,7 +271,7 @@ class Comptine:
                 # en trop, on genere sans elle (descriptions detaillees seulement)
                 too_many = any("max" in p for p in st.get("image_problems", []))
                 args = ["-F", f"reference_image=@{ref}"] if not too_many else []
-                r = curl_json(["-X", "POST", f"{SERVER}/api/image/generate", "-F", "size=1344x768", *args,
+                r = submit(["-X", "POST", f"{SERVER}/api/image/generate", "-F", "size=1344x768", *args,
                                "-F", f"negative_prompt={NEGATIVE}", "-F", f"prompt={self.image_prompt(scene)}"])
                 st["pending_image"] = r["dir_name"]
                 self.save()
@@ -285,7 +299,7 @@ class Comptine:
             if not st.get("pending_video"):
                 img = self.make_image(scene, ref)
                 st["video_tries"] += 1
-                r = curl_json(["-X", "POST", f"{SERVER}/api/tasks/simple", "-F", "mode=i2v", "-F", "duration=10",
+                r = submit(["-X", "POST", f"{SERVER}/api/tasks/simple", "-F", "mode=i2v", "-F", "duration=10",
                                "-F", "video_width=1280", "-F", "video_height=720",
                                "-F", f"seed={random.randint(1, 2**31 - 1)}",
                                "-F", f"reference_image=@{img}", "-F", f"negative_prompt={NEGATIVE}",
@@ -334,7 +348,16 @@ class Comptine:
     def step_scenes(self):
         ref = self.step_reference()
         with cf.ThreadPoolExecutor(max_workers=int(os.environ.get("SCENE_WORKERS", "3"))) as ex:
-            list(ex.map(lambda s: self.make_video(s, ref), self.spec["scenes"]))
+            list(ex.map(lambda s: self.safe_make_video(s, ref), self.spec["scenes"]))
+        missing = [s["id"] for s in self.spec["scenes"] if not self.scene_state(s["id"]).get("video")]
+        if missing:
+            raise SystemExit(f"scenes sans video : {missing} (relance le pipeline pour reprendre)")
+
+    def safe_make_video(self, scene, ref):
+        try:
+            self.make_video(scene, ref)
+        except Exception as e:  # une scene en erreur n'arrete pas les autres
+            log(f"scene {scene['id']} : erreur {e!r}")
 
     # ── 6. montage ──
     def step_assemble(self):
