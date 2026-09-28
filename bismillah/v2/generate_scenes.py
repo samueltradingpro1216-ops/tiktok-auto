@@ -54,11 +54,11 @@ SCENES = [
      "action": "Amina puts her hands together, smiles at her mother and sings with a sweet little-girl voice: "
                "\"Quand je mange à midi, je dis merci... mais avant tout, Bismillah !\" Then she picks a date "
                "with her right hand. Her mother, in her beige hijab, strokes her head."},
-    {"image": "Bright flowery garden under a blue sky with butterflies. Amina dances in the center, her mother "
-              "in beige hijab stands next to her clapping her hands, one single fennec jumps beside them.",
-     "action": "Amina sings the chorus joyfully with a sweet little-girl voice while dancing, her mother in "
-               "beige hijab sings along: \"Bismillah, Bismillah, Bismillah au nom d'Allah ! Bismillah, "
-               "Bismillah, au nom d'Allah !\" Only one fennec."},
+    {"image": "Bright flowery garden under a blue sky with butterflies. Only two characters: Amina dancing "
+              "alone in the center with her arms open, and one single fennec jumping beside her. No adults.",
+     "action": "Amina sings the chorus joyfully with a sweet little-girl voice while dancing and spinning: "
+               "\"Bismillah, Bismillah, Bismillah au nom d'Allah ! Bismillah, Bismillah, au nom d'Allah !\" "
+               "Only Amina and one fennec, no other people."},
     {"image": "Cozy playroom: Amina sits on a colorful rug with a glass of water, an open picture book, "
               "crayons and a ball, the fennec playing with the ball.",
      "action": "Amina drinks some water, opens a picture book, draws with a crayon, then rolls the ball to the "
