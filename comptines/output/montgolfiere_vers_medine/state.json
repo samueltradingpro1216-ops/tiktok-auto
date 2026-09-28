@@ -1,0 +1,313 @@
+{
+  "scenes": {
+    "1": {
+      "image_tries": 1,
+      "video_tries": 1,
+      "image": "/home/user/tiktok-auto/comptines/output/montgolfiere_vers_medine/scenes/scene_1_start.png",
+      "image_problems": [],
+      "image_ok": true,
+      "video": "/home/user/tiktok-auto/comptines/output/montgolfiere_vers_medine/scenes/scene_1.mp4",
+      "validation": {
+        "ok": true,
+        "problems": [],
+        "similarity": 0.91,
+        "heard": "Papa, regarde! Une mongole fière! On part pour Médine, un chalet-là!",
+        "mean_volume_db": -22.7,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 3.62,
+            "text": "Papa, regarde! Une mongole fière!"
+          },
+          {
+            "start": 3.62,
+            "end": 6.62,
+            "text": "On part pour Médine, un chalet-là!"
+          }
+        ]
+      },
+      "video_ok": true
+    },
+    "2": {
+      "image_tries": 2,
+      "video_tries": 1,
+      "image": "/home/user/tiktok-auto/comptines/output/montgolfiere_vers_medine/scenes/scene_2_start.png",
+      "image_problems": [],
+      "image_ok": true,
+      "video": "/home/user/tiktok-auto/comptines/output/montgolfiere_vers_medine/scenes/scene_2.mp4",
+      "validation": {
+        "ok": true,
+        "problems": [],
+        "similarity": 1.0,
+        "heard": "On monte dedans, bismillah Et hop, on s'envole déjà",
+        "mean_volume_db": -21.7,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 5.0,
+            "text": "On monte dedans, bismillah"
+          },
+          {
+            "start": 5.0,
+            "end": 10.0,
+            "text": "Et hop, on s'envole déjà"
+          }
+        ]
+      },
+      "video_ok": true
+    },
+    "3": {
+      "image_tries": 1,
+      "video_tries": 3,
+      "image": "/home/user/tiktok-auto/comptines/output/montgolfiere_vers_medine/scenes/scene_3_start.png",
+      "image_problems": [],
+      "image_ok": true,
+      "video_ok": false,
+      "video": "/home/user/tiktok-auto/comptines/output/montgolfiere_vers_medine/scenes/scene_3.mp4",
+      "validation": {
+        "ok": false,
+        "problems": [
+          "scene_3_1.5.jpg: texte visible"
+        ],
+        "similarity": 0.95,
+        "heard": "Monte, monte, maman gole-fière Jusqu'à Médine dans les airs Bismillah, on vole, on est heureux",
+        "mean_volume_db": -21.7,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 2.44,
+            "text": "Monte, monte, maman gole-fière"
+          },
+          {
+            "start": 2.44,
+            "end": 5.04,
+            "text": "Jusqu'à Médine dans les airs"
+          },
+          {
+            "start": 5.04,
+            "end": 10.04,
+            "text": "Bismillah, on vole, on est heureux"
+          }
+        ]
+      }
+    },
+    "4": {
+      "image_tries": 1,
+      "video_tries": 1,
+      "image": "/home/user/tiktok-auto/comptines/output/montgolfiere_vers_medine/scenes/scene_4_start.png",
+      "image_problems": [],
+      "image_ok": true,
+      "video_ok": true,
+      "video": "/home/user/tiktok-auto/comptines/output/montgolfiere_vers_medine/scenes/scene_4.mp4",
+      "validation": {
+        "ok": true,
+        "problems": [],
+        "similarity": 0.95,
+        "heard": "Regarde les montagnes, si grandes, si belles Subanala, subanala",
+        "mean_volume_db": -22.8,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 5.0,
+            "text": "Regarde les montagnes, si grandes, si belles"
+          },
+          {
+            "start": 5.0,
+            "end": 10.0,
+            "text": "Subanala, subanala"
+          }
+        ]
+      }
+    },
+    "5": {
+      "image_tries": 1,
+      "video_tries": 1,
+      "image": "/home/user/tiktok-auto/comptines/output/montgolfiere_vers_medine/scenes/scene_5_start.png",
+      "image_problems": [],
+      "image_ok": true,
+      "video": "/home/user/tiktok-auto/comptines/output/montgolfiere_vers_medine/scenes/scene_5.mp4",
+      "validation": {
+        "ok": true,
+        "problems": [],
+        "similarity": 0.89,
+        "heard": "Les oiseaux volent avec nous À l'eau akba À l'eau akba",
+        "mean_volume_db": -20.4,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 5.0,
+            "text": "Les oiseaux volent avec nous"
+          },
+          {
+            "start": 5.0,
+            "end": 8.0,
+            "text": "À l'eau akba"
+          },
+          {
+            "start": 8.0,
+            "end": 10.0,
+            "text": "À l'eau akba"
+          }
+        ]
+      },
+      "video_ok": true
+    },
+    "6": {
+      "image_tries": 1,
+      "video_tries": 2,
+      "image": "/home/user/tiktok-auto/comptines/output/montgolfiere_vers_medine/scenes/scene_6_start.png",
+      "image_problems": [],
+      "image_ok": true,
+      "video": "/home/user/tiktok-auto/comptines/output/montgolfiere_vers_medine/scenes/scene_6.mp4",
+      "validation": {
+        "ok": true,
+        "problems": [],
+        "similarity": 0.87,
+        "heard": "Un arc-en-ciel que c'est beau Mâchala, mâchala, là",
+        "mean_volume_db": -20.2,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 3.52,
+            "text": "Un arc-en-ciel que c'est beau"
+          },
+          {
+            "start": 3.52,
+            "end": 8.08,
+            "text": "Mâchala, mâchala, là"
+          }
+        ]
+      },
+      "video_ok": true
+    },
+    "7": {
+      "image_tries": 2,
+      "video_tries": 1,
+      "image": "/home/user/tiktok-auto/comptines/output/montgolfiere_vers_medine/scenes/scene_7_start.png",
+      "image_problems": [],
+      "image_ok": true,
+      "video": "/home/user/tiktok-auto/comptines/output/montgolfiere_vers_medine/scenes/scene_7.mp4",
+      "validation": {
+        "ok": true,
+        "problems": [],
+        "similarity": 0.96,
+        "heard": "Montes, montes, mamons, golfières, Jusqu'à Médine dans les airs Bismillah, on vole, on est heureux",
+        "mean_volume_db": -20.5,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 5.5,
+            "text": "Montes, montes, mamons, golfières, Jusqu'à Médine dans les airs"
+          },
+          {
+            "start": 5.5,
+            "end": 10.0,
+            "text": "Bismillah, on vole, on est heureux"
+          }
+        ]
+      },
+      "video_ok": true
+    },
+    "8": {
+      "image_tries": 1,
+      "video_tries": 2,
+      "image": "/home/user/tiktok-auto/comptines/output/montgolfiere_vers_medine/scenes/scene_8_start.png",
+      "image_problems": [],
+      "image_ok": true,
+      "video": "/home/user/tiktok-auto/comptines/output/montgolfiere_vers_medine/scenes/scene_8.mp4",
+      "validation": {
+        "ok": true,
+        "problems": [],
+        "similarity": 0.92,
+        "heard": "On arrive tout en douceur Alhambalillah Alhambalillah",
+        "mean_volume_db": -21.1,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 10.0,
+            "text": "On arrive tout en douceur Alhambalillah Alhambalillah"
+          }
+        ]
+      },
+      "video_ok": true
+    },
+    "9": {
+      "image_tries": 1,
+      "video_tries": 1,
+      "image": "/home/user/tiktok-auto/comptines/output/montgolfiere_vers_medine/scenes/scene_9_start.png",
+      "image_problems": [],
+      "image_ok": true,
+      "video": "/home/user/tiktok-auto/comptines/output/montgolfiere_vers_medine/scenes/scene_9.mp4",
+      "validation": {
+        "ok": true,
+        "problems": [],
+        "similarity": 0.99,
+        "heard": "Sala Medine, ville du prophète, que la paix soit sur lui.",
+        "mean_volume_db": -21.3,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 10.0,
+            "text": "Sala Medine, ville du prophète, que la paix soit sur lui."
+          }
+        ]
+      },
+      "video_ok": true
+    }
+  },
+  "review": {
+    "copied_5grams": [],
+    "llm": {
+      "coherence": 10,
+      "attrait_enfants": 8,
+      "simplicite": 8,
+      "justesse_islamique": 10,
+      "valeur_educative": 9,
+      "problemes": [],
+      "suggestions": [
+        "Ajouter une ligne d'adieu ('Au revoir, à bientôt !') à la fin de la scène 9 pour boucler la boucle de l'histoire.",
+        "Vérifier que les temps 'présent' sont cohérents dans les paroles pour un chant répétitif."
+      ]
+    },
+    "ok": true
+  },
+  "chapters": [
+    [
+      0.0,
+      "Une montgolfière !"
+    ],
+    [
+      10.041667,
+      "Bismillah, on décolle"
+    ],
+    [
+      20.083334,
+      "Refrain : monte, monte, ma montgolfière"
+    ],
+    [
+      30.125001,
+      "SubhanAllah, les montagnes"
+    ],
+    [
+      40.166668,
+      "Allahu Akbar, les oiseaux"
+    ],
+    [
+      50.208335000000005,
+      "MashaAllah, l'arc-en-ciel"
+    ],
+    [
+      60.25000200000001,
+      "Refrain au-dessus du désert"
+    ],
+    [
+      70.29166900000001,
+      "Alhamdulillah, on arrive"
+    ],
+    [
+      80.33333600000002,
+      "Salam, Médine, ville du Prophète ﷺ"
+    ]
+  ],
+  "final": "/home/user/tiktok-auto/comptines/output/montgolfiere_vers_medine/montgolfiere_vers_medine_youtube.mp4"
+}
