@@ -4,8 +4,14 @@
   "inspiration": {
     "theme": "chanson pour ranger sa chambre",
     "references": [
-      {"title": "RANGER SA CHAMBRE (Sarah Donna)", "views": 27573803},
-      {"title": "La chanson du rangement (Little Baby Bum)", "views": 4395769}
+      {
+        "title": "RANGER SA CHAMBRE (Sarah Donna)",
+        "views": 27573803
+      },
+      {
+        "title": "La chanson du rangement (Little Baby Bum)",
+        "views": 4395769
+      }
     ],
     "why": "Theme tres recherche par les parents, peu de versions animees recentes en francais (la 3e depasse a peine 1 M de vues). Chanson, histoire et personnages originaux."
   },
@@ -16,34 +22,131 @@
   },
   "setting": "the same cozy child's bedroom at night: bed with wooden frame, window with the moon, wall shelves with books, an open wooden toy chest on the right, soft rug.",
   "sections": [
-    {"id": 1, "part": "intro", "lines": ["Chut… il fait tout noir ici !", "Qui se cache sous le lit ?"],
-     "start_frame": "Very dark bedroom, only moonlight. Nino sits up in bed, curious and a little shy, holding his blanket. Lulu is a tiny golden glow near the window. Toys are hidden in the shadows.",
-     "end_frame": "The bedroom is still dark. Lulu flies in front of Nino, glowing brighter, smiling. Nino, sitting on his bed, looks at her with wide amazed eyes.",
-     "motion": "Lulu flies slowly from the window towards Nino, her glow growing brighter; Nino leans forward with wonder."},
-    {"id": 2, "part": "refrain", "lines": ["Range, range, petit Nino,", "chaque jouet dans son dodo !", "Lulu brille, un, deux, trois,", "regarde bien ce qui est là !"],
-     "end_frame": "Nino stands on the rug in the middle of the messy room, dancing with his arms up, Lulu dances in the air above him, golden sparkles around them.",
-     "motion": "Nino jumps out of bed and dances joyfully on the rug with Lulu, who twirls in the air leaving golden sparkles."},
-    {"id": 3, "part": "couplet", "lines": ["Lulu éclaire sous le lit…", "Qu'est-ce qu'on voit ? Le ballon !", "Un, dans le coffre, hop là !"],
-     "end_frame": "Nino, smiling proudly, drops a red ball into the open wooden toy chest, Lulu glows above the chest.",
-     "motion": "Lulu shines her light under the bed, Nino kneels and pulls out a red ball, then runs and drops it into the toy chest."},
-    {"id": 4, "part": "couplet", "lines": ["Lulu éclaire le rideau…", "Qu'est-ce qu'on voit ? Le canard !", "Deux, dans le coffre, hop là !"],
-     "end_frame": "Nino drops a yellow rubber duck into the open wooden toy chest, laughing, Lulu glows above the chest.",
-     "motion": "Lulu lights the curtain, a yellow rubber duck appears at its foot, Nino picks it up with a laugh and puts it in the toy chest."},
-    {"id": 5, "part": "refrain", "lines": ["Range, range, petit Nino,", "chaque jouet dans son dodo !", "Lulu brille, un, deux, trois,", "regarde bien ce qui est là !"],
-     "end_frame": "Nino dances on the rug clapping his hands, Lulu twirls above him, the floor is already less messy.",
-     "motion": "Nino and Lulu dance and clap in rhythm on the rug, golden sparkles float around."},
-    {"id": 6, "part": "couplet", "lines": ["Lulu éclaire le tapis…", "Qu'est-ce qu'on voit ? Les cubes !", "Trois, dans le coffre, hop là !"],
-     "end_frame": "Nino puts an armful of colorful wooden blocks into the open wooden toy chest, Lulu glows above.",
-     "motion": "Lulu lights the rug where colorful blocks are scattered, Nino gathers them in his arms and puts them in the toy chest."},
-    {"id": 7, "part": "couplet", "lines": ["Lulu éclaire l'étagère…", "Qu'est-ce qu'on voit ? Nounours !", "Nounours, lui, vient dans mon lit !"],
-     "end_frame": "Nino stands by his bed hugging a brown teddy bear tenderly, eyes closed with a happy smile, Lulu glows next to him. The wooden toy chest is closed.",
-     "motion": "Lulu lights the shelf, a brown teddy bear appears, Nino takes it down and hugs it tenderly, then closes the toy chest with his foot."},
-    {"id": 8, "part": "refrain", "lines": ["Range, range, petit Nino,", "chaque jouet dans son dodo !", "Lulu brille, un, deux, trois,", "regarde bien ce qui est là !"],
-     "end_frame": "The room is perfectly tidy. Nino sways happily holding his teddy bear, Lulu dances above, warm golden glow fills the room.",
-     "motion": "Nino sways and dances gently with his teddy bear in the tidy room, Lulu twirls happily."},
-    {"id": 9, "part": "outro", "lines": ["Tout est rangé, bravo Nino !", "Bonne nuit Lulu, fais dodo !"],
-     "end_frame": "The tidy bedroom at night, Nino is asleep in his bed hugging his teddy bear, Lulu rests on the window sill glowing softly like a night light, stars twinkle outside.",
-     "motion": "Nino climbs into bed with his teddy bear and falls asleep, Lulu flies to the window sill and dims her glow softly; slow camera pull back."}
+    {
+      "id": 1,
+      "part": "intro",
+      "lines": [
+        "Chut… il fait tout noir ici !",
+        "Qui se cache sous le lit ?"
+      ],
+      "start_frame": "Very dark bedroom, only moonlight. Nino sits up in bed, curious and a little shy, holding his blanket. Lulu is a tiny golden glow near the window. Toys are hidden in the shadows.",
+      "end_frame": "The bedroom is still dark. Lulu flies in front of Nino, glowing brighter, smiling. Nino, sitting on his bed, looks at her with wide amazed eyes.",
+      "motion": "Lulu flies slowly from the window towards Nino, her glow growing brighter; Nino leans forward with wonder.",
+      "floor_toys_after": [
+        "ball",
+        "duck",
+        "blocks"
+      ]
+    },
+    {
+      "id": 2,
+      "part": "refrain",
+      "lines": [
+        "Range, range, petit Nino,",
+        "chaque jouet dans son dodo !",
+        "Lulu brille, un, deux, trois,",
+        "regarde bien ce qui est là !"
+      ],
+      "end_frame": "Nino stands on the rug in the middle of the messy room, dancing with his arms up, Lulu dances in the air above him, golden sparkles around them.",
+      "motion": "Nino jumps out of bed and dances joyfully on the rug with Lulu, who twirls in the air leaving golden sparkles.",
+      "floor_toys_after": [
+        "ball",
+        "duck",
+        "blocks"
+      ]
+    },
+    {
+      "id": 3,
+      "part": "couplet",
+      "lines": [
+        "Lulu éclaire sous le lit…",
+        "Qu'est-ce qu'on voit ? Le ballon !",
+        "Un, dans le coffre, hop là !"
+      ],
+      "end_frame": "Nino, smiling proudly, drops a red ball into the open wooden toy chest, Lulu glows above the chest.",
+      "motion": "Lulu shines her light under the bed, Nino kneels and pulls out a red ball, then runs and drops it into the toy chest.",
+      "floor_toys_after": [
+        "duck",
+        "blocks"
+      ]
+    },
+    {
+      "id": 4,
+      "part": "couplet",
+      "lines": [
+        "Lulu éclaire le rideau…",
+        "Qu'est-ce qu'on voit ? Le canard !",
+        "Deux, dans le coffre, hop là !"
+      ],
+      "end_frame": "Nino drops a yellow rubber duck into the open wooden toy chest, laughing, Lulu glows above the chest.",
+      "motion": "Lulu lights the curtain, a yellow rubber duck appears at its foot, Nino picks it up with a laugh and puts it in the toy chest.",
+      "floor_toys_after": [
+        "blocks"
+      ]
+    },
+    {
+      "id": 5,
+      "part": "refrain",
+      "lines": [
+        "Range, range, petit Nino,",
+        "chaque jouet dans son dodo !",
+        "Lulu brille, un, deux, trois,",
+        "regarde bien ce qui est là !"
+      ],
+      "end_frame": "Nino dances on the rug clapping his hands, Lulu twirls above him, the floor is already less messy.",
+      "motion": "Nino and Lulu dance and clap in rhythm on the rug, golden sparkles float around.",
+      "floor_toys_after": [
+        "blocks"
+      ]
+    },
+    {
+      "id": 6,
+      "part": "couplet",
+      "lines": [
+        "Lulu éclaire le tapis…",
+        "Qu'est-ce qu'on voit ? Les cubes !",
+        "Trois, dans le coffre, hop là !"
+      ],
+      "end_frame": "Nino puts an armful of colorful wooden blocks into the open wooden toy chest, Lulu glows above.",
+      "motion": "Lulu lights the rug where colorful blocks are scattered, Nino gathers them in his arms and puts them in the toy chest.",
+      "floor_toys_after": []
+    },
+    {
+      "id": 7,
+      "part": "couplet",
+      "lines": [
+        "Lulu éclaire l'étagère…",
+        "Qu'est-ce qu'on voit ? Nounours !",
+        "Nounours, lui, vient dans mon lit !"
+      ],
+      "end_frame": "Nino stands by his bed hugging a brown teddy bear tenderly, eyes closed with a happy smile, Lulu glows next to him. The wooden toy chest is closed.",
+      "motion": "Lulu lights the shelf, a brown teddy bear appears, Nino takes it down and hugs it tenderly, then closes the toy chest with his foot.",
+      "floor_toys_after": []
+    },
+    {
+      "id": 8,
+      "part": "refrain",
+      "lines": [
+        "Range, range, petit Nino,",
+        "chaque jouet dans son dodo !",
+        "Lulu brille, un, deux, trois,",
+        "regarde bien ce qui est là !"
+      ],
+      "end_frame": "The room is perfectly tidy. Nino sways happily holding his teddy bear, Lulu dances above, warm golden glow fills the room.",
+      "motion": "Nino sways and dances gently with his teddy bear in the tidy room, Lulu twirls happily.",
+      "floor_toys_after": []
+    },
+    {
+      "id": 9,
+      "part": "outro",
+      "lines": [
+        "Tout est rangé, bravo Nino !",
+        "Bonne nuit Lulu, fais dodo !"
+      ],
+      "end_frame": "The perfectly tidy bedroom at night, the floor is completely clear, the wooden toy chest is closed. Nino is asleep in his bed hugging his brown teddy bear. Lulu is NOT in the bed: she sits alone on the window sill, glowing softly like a night light. Stars twinkle outside.",
+      "motion": "Nino climbs into bed with his teddy bear and falls asleep, Lulu flies to the window sill and dims her glow softly; slow camera pull back.",
+      "floor_toys_after": []
+    }
   ],
   "youtube": {
     "title": "La chanson du rangement 🧸 Range ta chambre avec Lulu la Luciole | Comptine pour enfants",
@@ -51,6 +154,17 @@
     "thumbnail_subtext": "Avec Lulu la Luciole",
     "hook": "✨ Chut… il fait tout noir dans la chambre de Nino ! Qui se cache sous le lit ?\nLulu la Luciole allume sa petite lumière et, un, deux, trois, chaque jouet retrouve sa place : le ballon, le canard, les cubes… et Nounours ?\n\nUne comptine originale pour apprendre à ranger en chantant, compter jusqu'à trois et se préparer pour dormir. Chante et range avec Nino et Lulu !",
     "footer": "🔔 Abonne-toi pour retrouver Lulu la Luciole chaque semaine !\n\n#comptine #chansonpourenfants #ranger #lululaluciole",
-    "tags": ["comptine", "chanson pour enfants", "chanson du rangement", "ranger sa chambre", "comptine bébé", "chanson rangement enfant", "lulu la luciole", "compter jusqu'à 3", "comptine pour dormir", "dessin animé enfant"]
+    "tags": [
+      "comptine",
+      "chanson pour enfants",
+      "chanson du rangement",
+      "ranger sa chambre",
+      "comptine bébé",
+      "chanson rangement enfant",
+      "lulu la luciole",
+      "compter jusqu'à 3",
+      "comptine pour dormir",
+      "dessin animé enfant"
+    ]
   }
 }

@@ -28,6 +28,7 @@ from comptine import (FONT, FONT_FILE, SERVER, chat_api, log, normalize, parse_j
 WHISPER_PYTHON = os.environ.get("WHISPER_PYTHON", sys.executable)
 DURATIONS = [5, 10, 15, 18, 20]  # durees possibles d'Agnes Video 2.0
 MAX_TRIES = 3
+MAX_KEYFRAME_TRIES = 5
 NEG = "text, letters, watermark, extra characters, duplicated character, adult, deformed face, extra fingers"
 
 
@@ -105,10 +106,11 @@ class Episode:
         return out
 
     # ── juge visuel ──
-    def judge(self, frames, max_boys=1):
+    def judge(self, frames, max_boys=1, toys=None):
         q = ('Look at this frame of a children\'s cartoon. Count only characters with a face (ignore sparkles, '
              'glowing dots and small lights). Return JSON: {"boys": int, "firefly_characters_with_a_face": int, '
-             '"adults": int, "deformed": bool}')
+             '"adults": int, "deformed": bool, "toy_chests": int, "red_ball_on_floor": bool, '
+             '"yellow_duck_on_floor": bool, "blocks_on_floor": bool}')
         api, problems = chat_api(), []
         for fr in frames:
             try:
@@ -125,23 +127,41 @@ class Episode:
                 problems.append(f"{os.path.basename(fr)}: adulte present")
             if v.get("deformed"):
                 problems.append(f"{os.path.basename(fr)}: deformation")
+            if int(v.get("toy_chests", 1)) > 1:
+                problems.append(f"{os.path.basename(fr)}: {v['toy_chests']} coffres")
+            if toys is not None:
+                for t, k in (("ball", "red_ball_on_floor"), ("duck", "yellow_duck_on_floor"),
+                             ("blocks", "blocks_on_floor")):
+                    if bool(v.get(k)) != (t in toys):
+                        problems.append(f"{os.path.basename(fr)}: {k}={v.get(k)} (attendu {t in toys})")
         return problems
 
     # ── keyframes ──
-    def make_keyframe(self, key, description):
+    TOYS = {"ball": "a red ball", "duck": "a yellow rubber duck", "blocks": "colorful wooden blocks"}
+
+    def floor_text(self, toys):
+        if not toys:
+            return "The floor is completely clear: no toys on the floor at all."
+        return ("On the floor there are only: " + ", ".join(self.TOYS[t] for t in toys) +
+                ". Nothing else on the floor.")
+
+    def make_keyframe(self, key, description, toys=None):
         st = self.state.setdefault("keyframes", {}).setdefault(key, {"tries": 0})
         path = os.path.join(self.dir, "keyframes", f"{key}.png")
         if st.get("ok") and os.path.exists(path):
             return path
         ref = os.path.join(self.dir, "reference.png")
-        while st["tries"] < MAX_TRIES:
+        while st["tries"] < MAX_KEYFRAME_TRIES:
             st["tries"] += 1
+            missing = [self.TOYS[t] + " on the floor" for t in self.TOYS if toys is not None and t not in toys]
             r = submit(["-X", "POST", f"{SERVER}/api/image/generate", "-F", "size=1344x768",
-                        "-F", f"reference_image=@{ref}", "-F", f"negative_prompt={NEG}",
-                        "-F", f"prompt={self.ep['style']} {description} Setting: {self.ep['setting']} "
-                              f"Characters (each appears only once): {self.chars()}"])
+                        "-F", f"reference_image=@{ref}",
+                        "-F", f"negative_prompt={', '.join([NEG, 'two toy chests'] + missing)}",
+                        "-F", f"prompt={self.ep['style']} {description} "
+                              f"{self.floor_text(toys) if toys is not None else ''} Only one toy chest. "
+                              f"Setting: {self.ep['setting']} Characters (each appears only once): {self.chars()}"])
             run(["cp", wait_task_file(r["dir_name"], "final_image.png"), path])
-            problems = self.judge([path])
+            problems = self.judge([path], toys=toys)
             st.update(ok=not problems, problems=problems)
             self.save()
             log(f"image {key} essai {st['tries']} : {problems or 'OK'}")
@@ -150,8 +170,8 @@ class Episode:
         return path
 
     def step_keyframes(self):
-        jobs = [("s1_start", self.ep["sections"][0]["start_frame"])]
-        jobs += [(f"s{s['id']}_end", s["end_frame"]) for s in self.ep["sections"]]
+        jobs = [("s1_start", self.ep["sections"][0]["start_frame"], ["ball", "duck", "blocks"])]
+        jobs += [(f"s{s['id']}_end", s["end_frame"], s.get("floor_toys_after")) for s in self.ep["sections"]]
         with cf.ThreadPoolExecutor(max_workers=3) as ex:
             list(ex.map(lambda j: self.make_keyframe(*j), jobs))
 
@@ -182,7 +202,7 @@ class Episode:
                     run(["ffmpeg", "-v", "error", "-y", "-ss", str(gen_dur * t), "-i", raw, "-frames:v", "1",
                          "-vf", "scale=640:-1", fr])
                     frames.append(fr)
-                problems = self.judge(frames)
+                problems = self.judge(frames[:2]) + self.judge(frames[2:], toys=sec.get("floor_toys_after"))
                 st.update(ok=not problems, problems=problems, raw=raw, gen_duration=gen_dur)
                 self.save()
                 log(f"plan {sid} ({length:.1f} s, genere en {gen_dur} s) essai {st['tries']} : {problems or 'OK'}")
