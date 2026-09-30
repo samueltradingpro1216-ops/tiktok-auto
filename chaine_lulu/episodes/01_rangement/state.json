@@ -1,0 +1,360 @@
+{
+  "keyframes": {
+    "s1_start": {
+      "tries": 1,
+      "ok": true,
+      "problems": []
+    },
+    "s1_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": []
+    },
+    "s2_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": []
+    },
+    "s3_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": []
+    },
+    "s4_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": []
+    },
+    "s5_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": []
+    },
+    "s6_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": []
+    },
+    "s7_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": []
+    },
+    "s8_end": {
+      "tries": 5,
+      "ok": true,
+      "problems": [
+        "coffre ouvert (accepte a la revue visuelle)"
+      ]
+    },
+    "s9_end": {
+      "tries": 5,
+      "ok": true,
+      "problems": [
+        "coffre ouvert (accepte a la revue visuelle)"
+      ]
+    }
+  },
+  "song": {
+    "file": "/home/user/tiktok-auto/chaine_lulu/episodes/01_rangement/chanson/prise_3.wav",
+    "similarity": 0.24,
+    "duration": 112.0,
+    "lines": [
+      {
+        "text": "Chut… il fait tout noir ici !",
+        "start": 0.26,
+        "end": 2.94,
+        "match": 1.0
+      },
+      {
+        "text": "Qui se cache sous le lit ?",
+        "start": 3.84,
+        "end": 6.3,
+        "match": 1.0
+      },
+      {
+        "text": "Range, range, petit Nino,",
+        "start": 8.54,
+        "end": 10.14,
+        "match": 0.9
+      },
+      {
+        "text": "chaque jouet dans son dodo !",
+        "start": 10.14,
+        "end": 12.26,
+        "match": 0.68
+      },
+      {
+        "text": "Lulu brille, un, deux, trois,",
+        "start": 13.1,
+        "end": 15.44,
+        "match": 0.84
+      },
+      {
+        "text": "regarde bien ce qui est là !",
+        "start": 15.44,
+        "end": 18.16,
+        "match": 0.93
+      },
+      {
+        "text": "Lulu éclaire sous le lit…",
+        "start": 21.46,
+        "end": 23.26,
+        "match": 0.94
+      },
+      {
+        "text": "Qu'est-ce qu'on voit ? Le ballon !",
+        "start": 23.5,
+        "end": 26.3,
+        "match": 0.95
+      },
+      {
+        "text": "Un, dans le coffre, hop là !",
+        "start": 27.05,
+        "end": 29.82,
+        "match": 0.76
+      },
+      {
+        "text": "Lulu éclaire le rideau…",
+        "start": 31.14,
+        "end": 33.8,
+        "match": 0.93
+      },
+      {
+        "text": "Qu'est-ce qu'on voit ? Le canard !",
+        "start": 33.8,
+        "end": 36.46,
+        "match": 1.0
+      },
+      {
+        "text": "Deux, dans le coffre, hop là !",
+        "start": 36.46,
+        "end": 40.32,
+        "match": 0.72
+      },
+      {
+        "text": "Range, range, petit Nino,",
+        "start": 42.34,
+        "end": 44.02,
+        "match": 0.9
+      },
+      {
+        "text": "chaque jouet dans son dodo !",
+        "start": 44.02,
+        "end": 46.16,
+        "match": 0.68
+      },
+      {
+        "text": "Lulu brille, un, deux, trois,",
+        "start": 46.9,
+        "end": 49.38,
+        "match": 0.84
+      },
+      {
+        "text": "regarde bien ce qui est là !",
+        "start": 49.38,
+        "end": 52.04,
+        "match": 0.93
+      },
+      {
+        "text": "Lulu éclaire le tapis…",
+        "start": 55.16,
+        "end": 57.22,
+        "match": 0.93
+      },
+      {
+        "text": "Qu'est-ce qu'on voit ? Les cubes !",
+        "start": 57.22,
+        "end": 59.6,
+        "match": 1.0
+      },
+      {
+        "text": "Trois, dans le coffre, hop là !",
+        "start": 60.66,
+        "end": 63.72,
+        "match": 0.78
+      },
+      {
+        "text": "Lulu éclaire l'étagère…",
+        "start": 65.02,
+        "end": 67.66,
+        "match": 0.77
+      },
+      {
+        "text": "Qu'est-ce qu'on voit ? Nounours !",
+        "start": 67.66,
+        "end": 70.28,
+        "match": 0.95
+      },
+      {
+        "text": "Nounours, lui, vient dans mon lit !",
+        "start": 70.9,
+        "end": 74.38,
+        "match": 0.95
+      },
+      {
+        "text": "Range, range, petit Nino,",
+        "start": 75.62,
+        "end": 77.32,
+        "match": 0.9
+      },
+      {
+        "text": "chaque jouet dans son dodo !",
+        "start": 77.32,
+        "end": 79.4,
+        "match": 0.68
+      },
+      {
+        "text": "Lulu brille, un, deux, trois,",
+        "start": 80.1,
+        "end": 82.6,
+        "match": 0.84
+      },
+      {
+        "text": "regarde bien ce qui est là !",
+        "start": 82.6,
+        "end": 85.26,
+        "match": 0.93
+      },
+      {
+        "text": "Tout est rangé, bravo Nino !",
+        "start": 87.86,
+        "end": 92.04,
+        "match": 1.0
+      },
+      {
+        "text": "Bonne nuit Lulu, fais dodo !",
+        "start": 93.46,
+        "end": 97.0,
+        "match": 0.92
+      },
+      {
+        "text": "Tout est rangé, bravo Nino !",
+        "start": 98.1,
+        "end": 102.54,
+        "match": 1.0
+      },
+      {
+        "text": "Bonne nuit Lulu, fais dodo !",
+        "start": 103.1,
+        "end": 107.42,
+        "match": 0.92
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 8.54
+    },
+    {
+      "id": 2,
+      "start": 8.54,
+      "end": 21.46
+    },
+    {
+      "id": 3,
+      "start": 21.46,
+      "end": 31.14
+    },
+    {
+      "id": 4,
+      "start": 31.14,
+      "end": 42.34
+    },
+    {
+      "id": 5,
+      "start": 42.34,
+      "end": 55.16
+    },
+    {
+      "id": 6,
+      "start": 55.16,
+      "end": 65.02
+    },
+    {
+      "id": 7,
+      "start": 65.02,
+      "end": 75.62
+    },
+    {
+      "id": 8,
+      "start": 75.62,
+      "end": 87.86
+    },
+    {
+      "id": 9,
+      "start": 87.86,
+      "end": 112.0
+    }
+  ],
+  "clips": {
+    "1": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/01_rangement/clips/s1_raw.mp4",
+      "gen_duration": 10
+    },
+    "2": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/01_rangement/clips/s2_raw.mp4",
+      "gen_duration": 15
+    },
+    "3": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/01_rangement/clips/s3_raw.mp4",
+      "gen_duration": 10
+    },
+    "4": {
+      "tries": 2,
+      "ok": true,
+      "problems": [],
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/01_rangement/clips/s4_raw.mp4",
+      "gen_duration": 10
+    },
+    "5": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/01_rangement/clips/s5_raw.mp4",
+      "gen_duration": 15
+    },
+    "6": {
+      "tries": 2,
+      "ok": true,
+      "problems": [],
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/01_rangement/clips/s6_raw.mp4",
+      "gen_duration": 10
+    },
+    "7": {
+      "tries": 2,
+      "ok": true,
+      "problems": [],
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/01_rangement/clips/s7_raw.mp4",
+      "gen_duration": 10
+    },
+    "8": {
+      "tries": 3,
+      "ok": false,
+      "problems": [
+        "s8_30.jpg: 2 coffres"
+      ],
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/01_rangement/clips/s8_raw.mp4",
+      "gen_duration": 10
+    },
+    "9": {
+      "tries": 2,
+      "ok": true,
+      "problems": [],
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/01_rangement/clips/s9_raw.mp4",
+      "gen_duration": 20
+    }
+  },
+  "final": "/home/user/tiktok-auto/chaine_lulu/episodes/01_rangement/01_rangement_youtube.mp4"
+}
