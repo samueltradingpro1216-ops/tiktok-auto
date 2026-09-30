@@ -114,7 +114,7 @@ class Episode:
              'glowing dots and small lights). Return JSON: {"boys": int, "firefly_characters_with_a_face": int, '
              '"adults": int, "deformed": bool, "toy_chests": int, "red_ball_on_floor": bool, '
              '"yellow_duck_on_floor": bool, "blocks_on_floor": bool, "teddy_bears": int, "toy_chest_open": bool, '
-             '"small_creatures_other_than_the_boy_and_the_firefly": int}')
+             '"living_creatures_other_than_the_boy_and_the_firefly_ignoring_toys_like_rubber_duck_teddy_bear_ball": int}')
         api, problems = chat_api(), []
         for fr in frames:
             try:
@@ -133,7 +133,7 @@ class Episode:
                 problems.append(f"{os.path.basename(fr)}: deformation")
             if int(v.get("toy_chests", 1)) > 1:
                 problems.append(f"{os.path.basename(fr)}: {v['toy_chests']} coffres")
-            if int(v.get("small_creatures_other_than_the_boy_and_the_firefly", 0)) > 0:
+            if int(v.get("living_creatures_other_than_the_boy_and_the_firefly_ignoring_toys_like_rubber_duck_teddy_bear_ball", 0)) > 0:
                 problems.append(f"{os.path.basename(fr)}: creature en trop")
             if sec and sec.get("teddy_bears") and int(v.get("teddy_bears", 1)) > sec["teddy_bears"]:
                 problems.append(f"{os.path.basename(fr)}: {v['teddy_bears']} nounours")
