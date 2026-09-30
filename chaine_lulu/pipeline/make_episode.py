@@ -152,6 +152,13 @@ class Episode:
         return ("On the floor there are only: " + ", ".join(self.TOYS[t] for t in toys) +
                 ". Nothing else on the floor.")
 
+    def make_keyframe_path(self, key):
+        path = os.path.join(self.dir, "keyframes", f"{key}.png")
+        while not (self.state.get("keyframes", {}).get(key, {}).get("ok") and os.path.exists(path)):
+            import time
+            time.sleep(10)  # attend que l'image de reference soit validee
+        return path
+
     def make_keyframe(self, key, description, toys=None, sec=None):
         st = self.state.setdefault("keyframes", {}).setdefault(key, {"tries": 0})
         path = os.path.join(self.dir, "keyframes", f"{key}.png")
@@ -162,6 +169,8 @@ class Episode:
         clean = os.path.join(self.dir, "reference_clean.png")
         all_toys = toys is not None and set(toys) == set(self.TOYS)
         ref = os.path.join(self.dir, "reference.png") if all_toys or not os.path.exists(clean) else clean
+        if sec and sec.get("ref_from"):  # on part d'une image clé deja validee (l'etat de la chambre suit)
+            ref = self.make_keyframe_path(sec["ref_from"])
         while st["tries"] < MAX_KEYFRAME_TRIES:
             st["tries"] += 1
             missing = [self.TOYS[t] + " on the floor" for t in self.TOYS if toys is not None and t not in toys]

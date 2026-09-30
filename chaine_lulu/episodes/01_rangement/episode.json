@@ -138,7 +138,8 @@
       "motion": "Nino sways and dances gently with his teddy bear in the tidy room, Lulu twirls happily.",
       "floor_toys_after": [],
       "chest_closed": true,
-      "teddy_bears": 1
+      "teddy_bears": 1,
+      "ref_from": "s7_end"
     },
     {
       "id": 9,
@@ -151,7 +152,8 @@
       "motion": "Nino climbs into bed with his teddy bear and falls asleep, Lulu flies to the window sill and dims her glow softly; slow camera pull back.",
       "floor_toys_after": [],
       "chest_closed": true,
-      "teddy_bears": 1
+      "teddy_bears": 1,
+      "ref_from": "s7_end"
     }
   ],
   "youtube": {
