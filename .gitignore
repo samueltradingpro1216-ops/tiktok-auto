@@ -1,3 +1,8 @@
 comptines/output/*/tmp/
 __pycache__/
 comptines/output/
+chaine_lulu/episodes/*/chanson/
+chaine_lulu/episodes/*/keyframes/
+chaine_lulu/episodes/*/clips/
+chaine_lulu/episodes/*/frames/
+chaine_lulu/episodes/*/state.json
