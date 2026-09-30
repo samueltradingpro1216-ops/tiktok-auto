@@ -150,7 +150,11 @@ class Episode:
         path = os.path.join(self.dir, "keyframes", f"{key}.png")
         if st.get("ok") and os.path.exists(path):
             return path
-        ref = os.path.join(self.dir, "reference.png")
+        # reference d'origine (tous les jouets par terre) ou chambre rangee (on ajoute les jouets restants
+        # par le texte : un generateur ajoute plus facilement un objet qu'il n'en retire un)
+        clean = os.path.join(self.dir, "reference_clean.png")
+        all_toys = toys is not None and set(toys) == set(self.TOYS)
+        ref = os.path.join(self.dir, "reference.png") if all_toys or not os.path.exists(clean) else clean
         while st["tries"] < MAX_KEYFRAME_TRIES:
             st["tries"] += 1
             missing = [self.TOYS[t] + " on the floor" for t in self.TOYS if toys is not None and t not in toys]
