@@ -119,7 +119,7 @@
         "Qu'est-ce qu'on voit ? Nounours !",
         "Nounours, lui, vient dans mon lit !"
       ],
-      "end_frame": "Nino stands by his bed hugging a brown teddy bear tenderly, eyes closed with a happy smile, Lulu glows next to him. The wooden toy chest is closed.",
+      "end_frame": "Nino stands by his bed hugging a brown teddy bear tenderly, eyes closed with a happy smile, Lulu glows next to him. The wooden toy chest is closed. The wall shelf now holds only books: there is no teddy bear on the shelf anymore (Nino has the only teddy bear).",
       "motion": "Lulu lights the shelf, a brown teddy bear appears, Nino takes it down and hugs it tenderly, then closes the wooden toy chest on the right with his foot.",
       "floor_toys_after": []
     },
@@ -132,7 +132,7 @@
         "Lulu brille, un, deux, trois,",
         "regarde bien ce qui est là !"
       ],
-      "end_frame": "The room is perfectly tidy. Nino sways happily holding his teddy bear, Lulu dances above, warm golden glow fills the room.",
+      "end_frame": "The room is perfectly tidy. Nino sways happily holding his teddy bear, Lulu dances above, warm golden glow fills the room. The wall shelf now holds only books: there is no teddy bear on the shelf anymore (Nino has the only teddy bear).",
       "motion": "Nino sways and dances gently with his teddy bear in the tidy room, Lulu twirls happily.",
       "floor_toys_after": []
     },
@@ -143,7 +143,7 @@
         "Tout est rangé, bravo Nino !",
         "Bonne nuit Lulu, fais dodo !"
       ],
-      "end_frame": "The perfectly tidy bedroom at night, the floor is completely clear, the wooden toy chest is closed. Nino is asleep in his bed hugging his brown teddy bear. Lulu is NOT in the bed: she sits alone on the window sill, glowing softly like a night light. Stars twinkle outside.",
+      "end_frame": "The perfectly tidy bedroom at night, the floor is completely clear, the wooden toy chest is closed. Nino is lying down in his bed under the blanket, head on the pillow, eyes closed, fast asleep, hugging his brown teddy bear. Lulu is NOT in the bed: she sits alone on the window sill, glowing softly like a night light. Stars twinkle outside. The wall shelf now holds only books: there is no teddy bear on the shelf anymore (Nino has the only teddy bear).",
       "motion": "Nino climbs into bed with his teddy bear and falls asleep, Lulu flies to the window sill and dims her glow softly; slow camera pull back.",
       "floor_toys_after": []
     }
