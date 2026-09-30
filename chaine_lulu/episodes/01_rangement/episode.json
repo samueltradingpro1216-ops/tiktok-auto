@@ -63,8 +63,8 @@
         "Qu'est-ce qu'on voit ? Le ballon !",
         "Un, dans le coffre, hop là !"
       ],
-      "end_frame": "Nino, smiling proudly, drops a red ball into the open wooden toy chest, Lulu glows above the chest.",
-      "motion": "Lulu shines her light under the bed, Nino kneels and pulls out a red ball, then runs and drops it into the toy chest.",
+      "end_frame": "Nino, smiling proudly, drops a red ball into the room's only toy chest (the wooden chest on the right side of the room, now open), Lulu glows above the chest.",
+      "motion": "Lulu shines her light under the bed, Nino kneels and pulls out a red ball, then runs and drops it into the wooden toy chest on the right.",
       "floor_toys_after": [
         "duck",
         "blocks"
@@ -78,8 +78,8 @@
         "Qu'est-ce qu'on voit ? Le canard !",
         "Deux, dans le coffre, hop là !"
       ],
-      "end_frame": "Nino drops a yellow rubber duck into the open wooden toy chest, laughing, Lulu glows above the chest.",
-      "motion": "Lulu lights the curtain, a yellow rubber duck appears at its foot, Nino picks it up with a laugh and puts it in the toy chest.",
+      "end_frame": "Nino drops a yellow rubber duck into the room's only toy chest (the wooden chest on the right side of the room, now open), laughing, Lulu glows above the chest.",
+      "motion": "Lulu lights the curtain, a yellow rubber duck appears at its foot, Nino picks it up with a laugh and puts it in the wooden toy chest on the right.",
       "floor_toys_after": [
         "blocks"
       ]
@@ -107,8 +107,8 @@
         "Qu'est-ce qu'on voit ? Les cubes !",
         "Trois, dans le coffre, hop là !"
       ],
-      "end_frame": "Nino puts an armful of colorful wooden blocks into the open wooden toy chest, Lulu glows above.",
-      "motion": "Lulu lights the rug where colorful blocks are scattered, Nino gathers them in his arms and puts them in the toy chest.",
+      "end_frame": "Nino puts an armful of colorful wooden blocks into the room's only toy chest (the wooden chest on the right side of the room, now open), Lulu glows above.",
+      "motion": "Lulu lights the rug where colorful blocks are scattered, Nino gathers them in his arms and puts them in the wooden toy chest on the right.",
       "floor_toys_after": []
     },
     {
@@ -120,7 +120,7 @@
         "Nounours, lui, vient dans mon lit !"
       ],
       "end_frame": "Nino stands by his bed hugging a brown teddy bear tenderly, eyes closed with a happy smile, Lulu glows next to him. The wooden toy chest is closed.",
-      "motion": "Lulu lights the shelf, a brown teddy bear appears, Nino takes it down and hugs it tenderly, then closes the toy chest with his foot.",
+      "motion": "Lulu lights the shelf, a brown teddy bear appears, Nino takes it down and hugs it tenderly, then closes the wooden toy chest on the right with his foot.",
       "floor_toys_after": []
     },
     {
