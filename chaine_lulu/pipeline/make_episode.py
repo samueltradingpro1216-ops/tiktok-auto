@@ -57,18 +57,21 @@ class Episode:
         if self.state.get("song"):
             return
         takes = sorted(f for f in os.listdir(os.path.join(self.dir, "chanson")) if f.startswith("prise_"))
-        expected = " ".join(l for s in self.ep["sections"] for l in s["lines"])
+        all_lines = [l for s in self.ep["sections"] for l in s["lines"]]
         best = None
         for t in takes:
+            if not t.endswith(".wav") or ".padded" in t:
+                continue
             path = os.path.join(self.dir, "chanson", t)
             tr = json.loads(run([WHISPER_PYTHON, os.path.join(HERE, "transcribe_words.py"), path]))
-            sim = similarity(expected, tr["text"])
-            log(f"prise {t} : paroles reconnues a {sim:.0%}")
+            dur = float(run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path]))
+            lines = self.align(all_lines, tr["words"], dur)
+            # critere : chaque ligne doit etre retrouvee et bien prononcee (moyenne des correspondances)
+            sim = sum(max(0, l["match"]) for l in lines) / len(lines)
+            log(f"prise {t} : lignes reconnues a {sim:.0%} (plus faible : {min(l['match'] for l in lines):.2f})")
             if not best or sim > best[1]:
-                best = (path, sim, tr)
-        path, sim, tr = best
-        dur = float(run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path]))
-        lines = self.align([l for s in self.ep["sections"] for l in s["lines"]], tr["words"], dur)
+                best = (path, sim, lines, dur)
+        path, sim, lines, dur = best
         self.state["song"] = {"file": path, "similarity": round(sim, 2), "duration": dur, "lines": lines}
         # sections : du debut de leur 1re ligne au debut de la section suivante
         starts, i = [], 0
