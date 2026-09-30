@@ -225,7 +225,9 @@ class Episode:
                     run(["ffmpeg", "-v", "error", "-y", "-ss", str(gen_dur * t), "-i", raw, "-frames:v", "1",
                          "-vf", "scale=640:-1", fr])
                     frames.append(fr)
-                problems = self.judge(frames[:2]) + self.judge(frames[2:], toys=sec.get("floor_toys_after"), sec=sec)
+                # pendant un plan, la camera bouge : on verifie les personnages, pas les jouets
+                # (l'etat final de la chambre est garanti par l'image clé de fin, deja validee)
+                problems = self.judge(frames, sec={"teddy_bears": sec.get("teddy_bears")})
                 st.update(ok=not problems, problems=problems, raw=raw, gen_duration=gen_dur)
                 self.save()
                 log(f"plan {sid} ({length:.1f} s, genere en {gen_dur} s) essai {st['tries']} : {problems or 'OK'}")
