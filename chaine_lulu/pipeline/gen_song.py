@@ -64,6 +64,8 @@ def stage_dit(a, codes_path):
     codes = json.load(open(codes_path))["codes"] if codes_path else [""] * a.takes
     os.makedirs(a.out, exist_ok=True)
     for i, c in enumerate(codes):
+        if os.path.exists(os.path.join(a.out, f"prise_{i + 1}.wav")):
+            continue  # prise deja rendue (reprise apres interruption)
         params = GenerationParams(caption=a.caption, lyrics=lyrics, vocal_language="fr", bpm=a.bpm,
                                   keyscale=a.key, timesignature="4", duration=a.duration, thinking=False,
                                   audio_codes=c, use_cot_caption=False, use_cot_language=False,

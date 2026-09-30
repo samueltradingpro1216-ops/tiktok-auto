@@ -106,11 +106,12 @@ class Episode:
         return out
 
     # ── juge visuel ──
-    def judge(self, frames, max_boys=1, toys=None):
+    def judge(self, frames, max_boys=1, toys=None, sec=None):
         q = ('Look at this frame of a children\'s cartoon. Count only characters with a face (ignore sparkles, '
              'glowing dots and small lights). Return JSON: {"boys": int, "firefly_characters_with_a_face": int, '
              '"adults": int, "deformed": bool, "toy_chests": int, "red_ball_on_floor": bool, '
-             '"yellow_duck_on_floor": bool, "blocks_on_floor": bool}')
+             '"yellow_duck_on_floor": bool, "blocks_on_floor": bool, "teddy_bears": int, "toy_chest_open": bool, '
+             '"small_creatures_other_than_the_boy_and_the_firefly": int}')
         api, problems = chat_api(), []
         for fr in frames:
             try:
@@ -129,6 +130,12 @@ class Episode:
                 problems.append(f"{os.path.basename(fr)}: deformation")
             if int(v.get("toy_chests", 1)) > 1:
                 problems.append(f"{os.path.basename(fr)}: {v['toy_chests']} coffres")
+            if int(v.get("small_creatures_other_than_the_boy_and_the_firefly", 0)) > 0:
+                problems.append(f"{os.path.basename(fr)}: creature en trop")
+            if sec and sec.get("teddy_bears") and int(v.get("teddy_bears", 1)) > sec["teddy_bears"]:
+                problems.append(f"{os.path.basename(fr)}: {v['teddy_bears']} nounours")
+            if sec and sec.get("chest_closed") and v.get("toy_chest_open"):
+                problems.append(f"{os.path.basename(fr)}: coffre ouvert")
             if toys is not None:
                 for t, k in (("ball", "red_ball_on_floor"), ("duck", "yellow_duck_on_floor"),
                              ("blocks", "blocks_on_floor")):
@@ -145,7 +152,7 @@ class Episode:
         return ("On the floor there are only: " + ", ".join(self.TOYS[t] for t in toys) +
                 ". Nothing else on the floor.")
 
-    def make_keyframe(self, key, description, toys=None):
+    def make_keyframe(self, key, description, toys=None, sec=None):
         st = self.state.setdefault("keyframes", {}).setdefault(key, {"tries": 0})
         path = os.path.join(self.dir, "keyframes", f"{key}.png")
         if st.get("ok") and os.path.exists(path):
@@ -165,7 +172,7 @@ class Episode:
                               f"{self.floor_text(toys) if toys is not None else ''} Only one toy chest. "
                               f"Setting: {self.ep['setting']} Characters (each appears only once): {self.chars()}"])
             run(["cp", wait_task_file(r["dir_name"], "final_image.png"), path])
-            problems = self.judge([path], toys=toys)
+            problems = self.judge([path], toys=toys, sec=sec)
             st.update(ok=not problems, problems=problems)
             self.save()
             log(f"image {key} essai {st['tries']} : {problems or 'OK'}")
@@ -175,7 +182,7 @@ class Episode:
 
     def step_keyframes(self):
         jobs = [("s1_start", self.ep["sections"][0]["start_frame"], ["ball", "duck", "blocks"])]
-        jobs += [(f"s{s['id']}_end", s["end_frame"], s.get("floor_toys_after")) for s in self.ep["sections"]]
+        jobs += [(f"s{s['id']}_end", s["end_frame"], s.get("floor_toys_after"), s) for s in self.ep["sections"]]
         with cf.ThreadPoolExecutor(max_workers=3) as ex:
             list(ex.map(lambda j: self.make_keyframe(*j), jobs))
 
@@ -206,7 +213,7 @@ class Episode:
                     run(["ffmpeg", "-v", "error", "-y", "-ss", str(gen_dur * t), "-i", raw, "-frames:v", "1",
                          "-vf", "scale=640:-1", fr])
                     frames.append(fr)
-                problems = self.judge(frames[:2]) + self.judge(frames[2:], toys=sec.get("floor_toys_after"))
+                problems = self.judge(frames[:2]) + self.judge(frames[2:], toys=sec.get("floor_toys_after"), sec=sec)
                 st.update(ok=not problems, problems=problems, raw=raw, gen_duration=gen_dur)
                 self.save()
                 log(f"plan {sid} ({length:.1f} s, genere en {gen_dur} s) essai {st['tries']} : {problems or 'OK'}")
