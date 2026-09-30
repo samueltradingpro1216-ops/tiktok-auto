@@ -106,8 +106,9 @@ class Episode:
 
     # ── juge visuel ──
     def judge(self, frames, max_boys=1):
-        q = ('Look at this frame of a children\'s cartoon. Return JSON: {"boys": int, "fireflies": int, '
-             '"adults": int, "visible_text_or_letters": bool, "deformed": bool}')
+        q = ('Look at this frame of a children\'s cartoon. Count only characters with a face (ignore sparkles, '
+             'glowing dots and small lights). Return JSON: {"boys": int, "firefly_characters_with_a_face": int, '
+             '"adults": int, "deformed": bool}')
         api, problems = chat_api(), []
         for fr in frames:
             try:
@@ -118,8 +119,8 @@ class Episode:
                 continue
             if int(v.get("boys", 0)) > max_boys:
                 problems.append(f"{os.path.basename(fr)}: {v['boys']} garcons")
-            if int(v.get("fireflies", 0)) > 1:
-                problems.append(f"{os.path.basename(fr)}: {v['fireflies']} lucioles")
+            if int(v.get("firefly_characters_with_a_face", 0)) > 1:
+                problems.append(f"{os.path.basename(fr)}: {v['firefly_characters_with_a_face']} lucioles")
             if int(v.get("adults", 0)) > 0:
                 problems.append(f"{os.path.basename(fr)}: adulte present")
             if v.get("deformed"):
