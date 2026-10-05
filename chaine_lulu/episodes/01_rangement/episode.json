@@ -21,6 +21,13 @@
     "Lulu": "small cute firefly girl with big brown eyes, a pink bow on her head, two antennae with white pompoms, translucent wings and a softly glowing warm yellow belly."
   },
   "setting": "the same cozy child's bedroom at night: bed with wooden frame, window with the moon, wall shelves with books, an open wooden toy chest on the right, soft rug.",
+  "floor_toys": {
+    "ball": "a red ball",
+    "duck": "a yellow rubber duck",
+    "blocks": "colorful wooden blocks"
+  },
+  "rules": "Only one toy chest.",
+  "negative": "two toy chests",
   "sections": [
     {
       "id": 1,
@@ -36,7 +43,8 @@
         "ball",
         "duck",
         "blocks"
-      ]
+      ],
+      "lulu_hidden_ok": true
     },
     {
       "id": 2,

@@ -1,0 +1,174 @@
+{
+  "slug": "02_peur_du_noir",
+  "title": "Lulu et la peur du noir",
+  "inspiration": {
+    "theme": "chanson pour ne plus avoir peur du noir au moment du coucher",
+    "references": [
+      {
+        "title": "Je ne peux pas dormir, Maman ! Chanson sur la peur du noir (Miliki Family, 113 k abonnés)",
+        "views": 26588297,
+        "published": "2025-01-11"
+      },
+      {
+        "title": "J'ai peur des monstres sous mon lit (Little Angel Français)",
+        "views": 20398548
+      },
+      {
+        "title": "Dix dans le lit | J'ai peur dans le noir (Little Angel Français)",
+        "views": 18967253
+      }
+    ],
+    "keywords_fr": {
+      "comptine pour dormir bébé": 37471,
+      "comptine bébé": 38360,
+      "comptines pour enfants": 61692
+    },
+    "why": "Mot-clé « comptine pour dormir bébé » : 37 500 recherches/mois en France (vidIQ, octobre 2026). Une petite chaîne a fait 26,6 M de vues en 9 mois sur la peur du noir : forte demande, peu d'offre récente en français. Lulu est une luciole, une lumière dans le noir : le thème est taillé pour elle. Chanson, histoire et personnages originaux."
+  },
+  "song": {
+    "bpm": 84,
+    "key": "F major",
+    "duration": 118,
+    "caption": "French children's bedtime song, gentle, warm and reassuring, soft young female lead vocal singing clearly in French, soft piano, celesta, glockenspiel, gentle ukulele, light shaker, slow tempo, simple catchy melody, major key, cozy lullaby feeling, preschool song"
+  },
+  "style": "Pixar-style 3D children's cartoon, night-time bedroom lit by moonlight and the warm golden glow of the firefly, cozy and reassuring (never scary), wide 16:9 framing, no text.",
+  "characters": {
+    "Nino": "4-year-old boy with fluffy light-brown hair, big round hazel eyes, rosy cheeks, light blue pajamas with little white stars, barefoot.",
+    "Lulu": "a tiny round fuzzy firefly mascot (an insect, not a human girl, no hair): round head with big brown eyes and rosy cheeks, a small pink bow on top of her head, two thin black antennae with white pompoms, small translucent wings, a chubby round belly glowing warm yellow with light dots, tiny arms and legs."
+  },
+  "setting": "the same cozy child's bedroom at night: wooden bed with a light blue blanket, a window with light white curtains and the moon outside, a small leafy tree branch just outside the window, a wooden coat rack by the door with a yellow raincoat hanging on it, a small armchair with a big round blue cushion, wall shelves with books only, a bedside table, a closed wooden toy chest, a clear floor with a soft rug.",
+  "reference": {
+    "from": "../01_rangement/reference_clean.png",
+    "description": "Nino sits on his bed in the softly lit bedroom, smiling, Lulu hovers next to him glowing softly. Wide shot showing the whole room: the wooden coat rack with the yellow raincoat by the door, the window with white curtains and a leafy branch outside, the small armchair with the big round blue cushion. No teddy bear, no toys on the floor."
+  },
+  "rules": "Only one toy chest. No teddy bear. No toys on the floor.",
+  "negative": "two toy chests, teddy bear, monster, ghost, scary creature, human fairy, girl with wings",
+  "teddy_bears": 0,
+  "sections": [
+    {
+      "id": 1,
+      "part": "intro",
+      "lines": [
+        "Il fait tout noir, tout noir ce soir…",
+        "Lulu, Lulu, viens me voir !"
+      ],
+      "start_frame": "Very dark bedroom lit only by moonlight. Nino lies in his bed with the blanket pulled up to his nose, only his big worried eyes showing. Lulu is a tiny golden glow outside the window.",
+      "end_frame": "The bedroom is still dark. Lulu has flown in through the window and hovers in front of Nino's bed, glowing softly. Nino peeks out from under his blanket and smiles at her.",
+      "motion": "Nino looks around the dark room, a little worried; a tiny golden light appears at the window: Lulu flies in slowly towards his bed, her glow growing; Nino peeks out from his blanket and smiles.",
+      "lulu_hidden_ok": true
+    },
+    {
+      "id": 2,
+      "part": "refrain",
+      "lines": [
+        "Brille, brille, Lulu Luciole,",
+        "ta lumière danse et vole !",
+        "Dans le noir, n'aie pas peur,",
+        "Lulu veille de tout son cœur !"
+      ],
+      "end_frame": "Nino sits up in his bed with his arms open wide, smiling. Lulu twirls in the air in front of him, leaving a trail of golden sparkles; the room is softly lit by her warm glow.",
+      "motion": "Lulu twirls around Nino's bed leaving golden sparkles; Nino sits up, sways from side to side and claps his hands softly to the music."
+    },
+    {
+      "id": 3,
+      "part": "couplet",
+      "lines": [
+        "Sur le mur, des grands bras, oh là là !",
+        "Lulu, Lulu, allume-toi !",
+        "Mais non ! C'est mon manteau, voilà !"
+      ],
+      "end_frame": "By the bedroom door, a wooden coat rack with a yellow raincoat hanging on it is brightly lit by Lulu, who glows right next to it. Nino stands on the rug in front of it, pointing at the yellow raincoat and laughing.",
+      "motion": "A tall dark shadow stretches on the wall near the door; Nino, a little worried, steps back; Lulu flies to it and glows brighter, revealing a simple wooden coat rack with a yellow raincoat; Nino laughs, relieved."
+    },
+    {
+      "id": 4,
+      "part": "couplet",
+      "lines": [
+        "Un fantôme qui vole, oh là là !",
+        "Lulu, Lulu, allume-toi !",
+        "Mais non ! C'est le rideau, voilà !"
+      ],
+      "end_frame": "At the window, the light white curtain floats gently in the breeze from the slightly open window, lit by Lulu who glows next to it. Nino stands by the window holding the edge of the curtain and laughing. The moon shines outside.",
+      "motion": "The white curtain billows softly in the breeze; Nino watches it, surprised; Lulu flies to the window and lights it up: it is only the curtain moving in the wind; Nino touches it and laughs."
+    },
+    {
+      "id": 5,
+      "part": "refrain",
+      "lines": [
+        "Brille, brille, Lulu Luciole,",
+        "ta lumière danse et vole !",
+        "Dans le noir, n'aie pas peur,",
+        "Lulu veille de tout son cœur !"
+      ],
+      "end_frame": "Nino dances on the rug in the middle of the softly lit bedroom with his arms up, Lulu dances in the air above him, golden sparkles float around them.",
+      "motion": "Nino and Lulu dance together on the rug; Nino turns around with his arms up, Lulu twirls above him leaving golden sparkles."
+    },
+    {
+      "id": 6,
+      "part": "couplet",
+      "lines": [
+        "Un gros monstre tout rond, oh là là !",
+        "Lulu, Lulu, allume-toi !",
+        "Mais non ! C'est mon coussin, voilà !"
+      ],
+      "end_frame": "In the corner, a big round plain blue cushion with no face lies on a small armchair, lit by Lulu who glows right above it. Nino hugs the big round blue cushion and laughs.",
+      "motion": "In the dark corner, a big round shape sits on the armchair; Nino tiptoes closer; Lulu flies above the armchair and glows brighter: it is only a big round blue cushion; Nino hugs it and laughs."
+    },
+    {
+      "id": 7,
+      "part": "couplet",
+      "lines": [
+        "Toc, toc, toc, qui est là ? Oh là là !",
+        "Lulu, Lulu, allume-toi !",
+        "Mais non ! C'est une branche, voilà !"
+      ],
+      "end_frame": "At the window, outside the glass, a small leafy tree branch touches the window pane, lit by Lulu who glows against the inside of the glass. Nino stands at the window, waving at the branch and smiling. The moon shines outside.",
+      "motion": "Outside, a small tree branch gently taps the window in the wind; Nino turns towards the sound; Lulu flies to the glass and lights up the branch and its leaves; Nino waves at it and smiles."
+    },
+    {
+      "id": 8,
+      "part": "refrain",
+      "lines": [
+        "Brille, brille, Lulu Luciole,",
+        "ta lumière danse et vole !",
+        "Dans le noir, n'aie pas peur,",
+        "Lulu veille de tout son cœur !"
+      ],
+      "end_frame": "Nino is back in his bed, sitting under his blanket and smiling calmly. Lulu dances in the air above the bed, her warm golden glow fills the room. In the soft light, the coat rack with the yellow raincoat, the white curtain and the armchair with the blue cushion look calm and friendly.",
+      "motion": "Nino walks back to his bed, climbs under his blanket and sways gently to the music while Lulu twirls happily above him."
+    },
+    {
+      "id": 9,
+      "part": "outro",
+      "lines": [
+        "Bonne nuit manteau, bonne nuit rideau,",
+        "bonne nuit coussin, fais dodo…",
+        "Le noir est doux, je n'ai plus peur,",
+        "Lulu veille de tout son cœur."
+      ],
+      "end_frame": "The peaceful bedroom at night. Nino lies in his bed under the blanket, head on the pillow, eyes closed, fast asleep with a gentle smile. Lulu sits on the bedside table next to the bed, glowing softly like a little night light. The coat rack with the yellow raincoat, the white curtain and the armchair with the blue cushion are visible in her soft light. Stars twinkle outside. Exactly one boy and one firefly, no other creature.",
+      "motion": "Nino waves good night to the raincoat, the curtain and the cushion, lies down and falls asleep; Lulu lands on the bedside table and dims her glow softly; slow camera pull back.",
+      "ref_from": "s8_end"
+    }
+  ],
+  "youtube": {
+    "title": "J'ai peur du noir 🌙 Lulu la Luciole allume sa lumière | Comptine pour dormir bébé",
+    "thumbnail_text": "PAS PEUR DU NOIR !",
+    "thumbnail_subtext": "Avec Lulu la Luciole",
+    "thumbnail_keyframe": "s2_end",
+    "hook": "🌙 Il fait tout noir dans la chambre de Nino… Une grande ombre sur le mur ? Un fantôme qui vole ? Un gros monstre tout rond ?\nLulu, Lulu, allume-toi ! Avec sa petite lumière, Lulu la Luciole montre à Nino que dans le noir, il n'y a que sa chambre : son manteau, son rideau, son coussin… et une petite branche à la fenêtre.\n\nUne comptine originale et douce pour apprivoiser la peur du noir et s'endormir sereinement. Chante avec Nino : « Lulu, Lulu, allume-toi ! »",
+    "footer": "🔔 Abonne-toi pour retrouver Lulu la Luciole chaque semaine !\n\n#comptinepourdormir #peurdunoir #comptine #lululaluciole",
+    "tags": [
+      "comptine pour dormir bébé",
+      "peur du noir",
+      "chanson peur du noir",
+      "comptine pour dormir",
+      "comptine bébé",
+      "chanson pour enfants",
+      "berceuse",
+      "chanson du coucher",
+      "lulu la luciole",
+      "dessin animé enfant"
+    ]
+  }
+}
