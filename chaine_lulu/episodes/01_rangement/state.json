@@ -312,11 +312,7 @@
       "gen_duration": 10
     },
     "4": {
-      "tries": 2,
-      "ok": true,
-      "problems": [],
-      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/01_rangement/clips/s4_raw.mp4",
-      "gen_duration": 10
+      "tries": 0
     },
     "5": {
       "tries": 1,
@@ -333,11 +329,7 @@
       "gen_duration": 10
     },
     "7": {
-      "tries": 2,
-      "ok": true,
-      "problems": [],
-      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/01_rangement/clips/s7_raw.mp4",
-      "gen_duration": 10
+      "tries": 0
     },
     "8": {
       "tries": 3,
@@ -356,5 +348,9 @@
       "gen_duration": 20
     }
   },
-  "final": "/home/user/tiktok-auto/chaine_lulu/episodes/01_rangement/01_rangement_youtube.mp4"
+  "final": "/home/user/tiktok-auto/chaine_lulu/episodes/01_rangement/01_rangement_youtube.mp4",
+  "redo": [
+    4,
+    7
+  ]
 }
