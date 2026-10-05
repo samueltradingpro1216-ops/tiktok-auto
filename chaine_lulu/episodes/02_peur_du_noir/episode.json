@@ -29,7 +29,8 @@
     "bpm": 84,
     "key": "F major",
     "duration": 118,
-    "caption": "French children's bedtime song, gentle, warm and reassuring, soft young female lead vocal singing clearly in French, soft piano, celesta, glockenspiel, gentle ukulele, light shaker, slow tempo, simple catchy melody, major key, cozy lullaby feeling, preschool song"
+    "caption": "French children's bedtime song, gentle, warm and reassuring, soft young female lead vocal singing clearly in French, soft piano, celesta, glockenspiel, gentle ukulele, light shaker, slow tempo, simple catchy melody, major key, cozy lullaby feeling, preschool song",
+    "take": "prise_3 + fin refaite (extend_song.py --repaint-from 97.5 --total 126, paroles de l'outro seules) ; ACE-Step saute « Bonne nuit manteau, bonne nuit rideau, bonne nuit coussin, fais dodo » (4 essais sur 4) : ces lignes sont retirees des paroles affichees"
   },
   "style": "Pixar-style 3D children's cartoon, night-time bedroom lit by moonlight and the warm golden glow of the firefly, cozy and reassuring (never scary), wide 16:9 framing, no text.",
   "characters": {
@@ -141,9 +142,8 @@
       "id": 9,
       "part": "outro",
       "lines": [
-        "Bonne nuit manteau, bonne nuit rideau,",
-        "bonne nuit coussin, fais dodo…",
         "Le noir est doux, je n'ai plus peur,",
+        "Lulu veille de tout son cœur,",
         "Lulu veille de tout son cœur."
       ],
       "end_frame": "The peaceful bedroom at night. The only boy in the image is Nino, lying in his bed under the blanket, head on the pillow, eyes closed, fast asleep with a gentle smile; nobody is standing or sitting. Lulu sits on the bedside table next to the bed, glowing softly like a little night light. The coat rack with the yellow raincoat, the white curtain and the empty blue armchair are visible in her soft light. Stars twinkle outside. Exactly one boy (asleep) and one firefly, no other creature.",
