@@ -45,8 +45,10 @@ SUB_STYLE = (f"FontName={FONT},Bold=1,Fontsize=22,PrimaryColour=&H00FFFFFF,Outli
              "BorderStyle=1,Outline=3,Shadow=1,Alignment=2,MarginV=30")
 # le generateur video fusionne parfois deux elements : Nino avec des ailes de luciole, un nounours avec
 # les antennes de Lulu (episode 01, plans 4 et 7). Le juge pose donc la question explicitement.
-HYBRID_BOY = "boy_has_insect_wings_or_antennae"
-HYBRID_TOY = "teddy_bear_toy_or_object_with_insect_wings_or_antennae"
+HYBRID_BOY = "boy_has_insect_wings_or_antennae_growing_from_his_own_body"
+HYBRID_TOY = "teddy_bear_toy_or_object_with_its_own_insect_wings_or_antennae"
+LULU_SEEN = "is_the_firefly_in_the_picture"
+TEDDIES = "plush_teddy_bears_not_counting_the_firefly"
 OTHERS = "living_creatures_other_than_the_boy_and_the_firefly_ignoring_toys_and_shadows"
 
 
@@ -199,14 +201,16 @@ class Episode:
         need_lulu : Lulu doit etre visible ; sur un plan (plusieurs images) on tolere une image sans elle
         (camera qui bouge), au-dela c'est qu'elle a disparu ou fusionne avec un autre element."""
         sec = sec or {}
-        fields = {"boys": "int", "firefly_characters_with_a_face": "int", "adults": "int", "deformed": "bool",
-                  HYBRID_BOY: "bool", HYBRID_TOY: "bool", "toy_chests": "int", "toy_chest_open": "bool",
-                  "teddy_bears": "int", OTHERS: "int"}
+        fields = {"boys": "int", "firefly_characters_with_a_face": "int", LULU_SEEN: "bool", "adults": "int",
+                  "deformed": "bool", HYBRID_BOY: "bool", HYBRID_TOY: "bool", "toy_chests": "int", "toy_chest_open": "bool",
+                  TEDDIES: "int", OTHERS: "int"}
         for desc in self.toys.values():
             fields[floor_key(desc)] = "bool"
         q = ("Look at this frame of a children's cartoon. Count only characters with a face (ignore sparkles, "
-             "glowing dots, small lights and shadows on the walls). Check carefully that the boy has no insect "
-             "wings or antennae and that no toy or object has insect wings or antennae. Return JSON: {" +
+             "glowing dots, small lights and shadows on the walls). The firefly often flies right next to the boy "
+             "or in front of objects: her wings and antennae belong to her, never count them as the boy's or an "
+             "object's. Check carefully that the boy has no insect wings or antennae on his own body and that no "
+             "toy or object has its own insect wings or antennae. Return JSON: {" +
              ", ".join(f'"{k}": {t}' for k, t in fields.items()) + "}")
         teddies = sec.get("teddy_bears")
         if teddies is None:
@@ -224,8 +228,9 @@ class Episode:
                 problems.append(f"{name}: {v['boys']} garcons")
             if int(v.get("firefly_characters_with_a_face", 0)) > 1:
                 problems.append(f"{name}: {v['firefly_characters_with_a_face']} lucioles")
-            if int(v.get("firefly_characters_with_a_face", 1)) == 0:
-                no_lulu.append(name)
+            if v.get(LULU_SEEN) is False or (LULU_SEEN not in v and
+                                               int(v.get("firefly_characters_with_a_face", 1)) == 0):
+                no_lulu.append(name)  # Lulu vue de dos n'a pas de visage : on demande si elle est visible
             if int(v.get("adults", 0)) > 0:
                 problems.append(f"{name}: adulte present")
             if v.get("deformed"):
@@ -238,8 +243,8 @@ class Episode:
                 problems.append(f"{name}: {v['toy_chests']} coffres")
             if int(v.get(OTHERS, 0)) > 0:
                 problems.append(f"{name}: creature en trop")
-            if teddies is not None and int(v.get("teddy_bears", 0)) > teddies:
-                problems.append(f"{name}: {v['teddy_bears']} nounours")
+            if teddies is not None and int(v.get(TEDDIES, 0)) > teddies:
+                problems.append(f"{name}: {v[TEDDIES]} nounours")
             if sec.get("chest_closed") and v.get("toy_chest_open"):
                 problems.append(f"{name}: coffre ouvert")
             if toys is not None:
