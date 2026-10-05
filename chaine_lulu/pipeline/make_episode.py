@@ -481,6 +481,8 @@ class Episode:
              "-vf", f"subtitles={srt}:force_style='{SUB_STYLE}'", "-map", "0:v", "-map", "1:a",
              "-c:v", "libx264", "-crf", "18", "-preset", "medium", "-pix_fmt", "yuv420p", "-c:a", "copy",
              "-movflags", "+faststart", final])
+        for piece in pieces:  # morceaux sans perte : ~1 Go, inutiles une fois la video refaite
+            os.remove(piece)
         self.make_preview(final)
         self.state.setdefault("patches", []).append({"sections": sorted(self.redo),
                                                      "date": time.strftime("%Y-%m-%d %H:%M")})

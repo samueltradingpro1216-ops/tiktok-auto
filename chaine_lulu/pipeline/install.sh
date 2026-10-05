@@ -6,6 +6,13 @@
 #   ~/agnes-video-generator serveur images/videos Agnes (demande la cle AGNES_API_KEY)
 set -e
 
+# ACE-Step sur CPU occupe ~13,7 Go alors que la session est limitee a ~14,3 Go de memoire vive : sans
+# fichier d'echange, le moindre programme lance en parallele fait tuer la generation de la chanson.
+if ! swapon --show | grep -q /root/swapfile; then
+  [ -f /root/swapfile ] || { fallocate -l 6G /root/swapfile && chmod 600 /root/swapfile && mkswap /root/swapfile >/dev/null; }
+  swapon /root/swapfile || echo "swap indisponible : ne rien lancer d'autre pendant la generation d'une chanson"
+fi
+
 [ -d ~/acestep ] || git clone -q --depth 1 https://github.com/ace-step/ACE-Step-1.5 ~/acestep
 if [ ! -x ~/ace-venv/bin/python ]; then
   python3 -m venv ~/ace-venv
