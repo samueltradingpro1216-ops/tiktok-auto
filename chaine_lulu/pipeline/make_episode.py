@@ -110,7 +110,9 @@ class Episode:
             lines = self.align(all_lines, tr["words"], dur)
             # critere : chaque ligne doit etre retrouvee et bien prononcee (moyenne des correspondances)
             sim = self.song_score(lines)
-            log(f"prise {t} : lignes reconnues a {sim:.0%} (plus faible : {min(l['match'] for l in lines):.2f})")
+            missed = [l["text"] for l in lines if not l["sung"]]
+            log(f"prise {t} : lignes reconnues a {sim:.0%} (plus faible : {min(l['match'] for l in lines):.2f})"
+                + (f", non chantees : {missed}" if missed else ""))
             if not best or sim > best[1]:
                 best = (path, sim, lines, dur)
         path, sim, lines, dur = best
@@ -132,26 +134,62 @@ class Episode:
         return sum(max(0, l["match"]) for l in lines) / len(lines)
 
     @staticmethod
-    def align(lines, words, dur):
-        """Cale chaque ligne attendue sur les mots entendus (recherche en avant, meilleure similarite)."""
-        out, ptr = [], 0
+    def align(lines, words, dur, min_match=0.4, max_gap=40):
+        """Cale les lignes attendues sur les mots entendus : alignement global, dans l'ordre.
+
+        Le modele musical saute parfois une ligne : elle est alors marquee non chantee ("sung": false) et
+        placee entre ses voisines, sans decaler les suivantes (une recherche ligne par ligne derapait
+        jusqu'a la fin de la chanson)."""
         heard = [normalize(w["w"]) for w in words]
+        nw = len(words)
+        cands = []  # pour chaque ligne : {debut: (fin, score)} des meilleurs passages entendus
         for line in lines:
-            n = max(1, len(normalize(line).split()))
-            best = (-1, ptr, ptr + n)
-            for s in range(ptr, min(len(words), ptr + 25)):
+            n, c = max(1, len(normalize(line).split())), {}
+            for st in range(nw):
                 for ln in range(max(1, n - 2), n + 3):
-                    e = min(len(words), s + ln)
-                    sc = similarity(line, " ".join(heard[s:e]))
-                    if sc > best[0]:
-                        best = (sc, s, e)
-            sc, s, e = best
-            if sc < 0.3 or s >= len(words):  # ligne non retrouvee : on la place juste apres la precedente
-                start = out[-1]["end"] if out else 0.0
-                out.append({"text": line, "start": start, "end": min(dur, start + 2.5), "match": round(sc, 2)})
+                    e = min(nw, st + ln)
+                    sc = similarity(line, " ".join(heard[st:e]))
+                    if sc >= min_match and sc > c.get(st, (0, 0))[1]:
+                        c[st] = (e, sc)
+            cands.append(c)
+        # programmation dynamique : position dans les mots -> (score, chemin)
+        states = {0: (0.0, ())}
+        for c in cands:
+            nxt = {}
+            for j, (score, path) in states.items():
+                if score > nxt.get(j, (-1,))[0]:
+                    nxt[j] = (score, path + (None,))  # ligne non chantee
+                for st in range(j, min(nw, j + max_gap + 1)):
+                    if st in c:
+                        e, sc = c[st]
+                        gain = score + sc - min_match / 2
+                        if gain > nxt.get(e, (-1,))[0]:
+                            nxt[e] = (gain, path + ((st, e, sc),))
+            states = nxt
+        path = max(states.values(), key=lambda v: v[0])[1]
+        out = []
+        for line, m in zip(lines, path):
+            if m:
+                st, e, sc = m
+                out.append({"text": line, "start": words[st]["start"], "end": words[e - 1]["end"],
+                            "match": round(sc, 2), "sung": True})
+            else:
+                out.append({"text": line, "start": None, "end": None, "match": 0.0, "sung": False})
+        # lignes non chantees : reparties entre la ligne chantee d'avant et celle d'apres
+        i = 0
+        while i < len(out):
+            if out[i]["sung"]:
+                i += 1
                 continue
-            out.append({"text": line, "start": words[s]["start"], "end": words[e - 1]["end"], "match": round(sc, 2)})
-            ptr = e
+            k = i
+            while k < len(out) and not out[k]["sung"]:
+                k += 1
+            a = out[i - 1]["end"] if i else 0.0
+            b = out[k]["start"] if k < len(out) else min(dur, a + 2.5 * (k - i))
+            step = max(0.0, b - a) / (k - i)
+            for m in range(i, k):
+                out[m]["start"], out[m]["end"] = round(a + step * (m - i), 2), round(a + step * (m - i + 1), 2)
+            i = k
         return out
 
     # ── juge visuel ──
@@ -369,6 +407,8 @@ class Episode:
         n = 0
         with open(path, "w", encoding="utf-8") as f:
             for l in self.state["song"]["lines"]:
+                if not l.get("sung", True):
+                    continue
                 for a, b in windows or [(0.0, math.inf)]:
                     s, e = max(l["start"], a), min(l["end"] + 0.3, b)
                     if e - s > 0.02:
