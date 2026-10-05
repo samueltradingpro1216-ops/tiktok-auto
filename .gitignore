@@ -6,3 +6,5 @@ chaine_lulu/episodes/*/keyframes/
 chaine_lulu/episodes/*/clips/
 chaine_lulu/episodes/*/frames/
 chaine_lulu/episodes/*/state.json
+chaine_lulu/episodes/*/.cache/
+chaine_lulu/episodes/*/chanson/*.transcription.json
