@@ -328,5 +328,14 @@
       "start": 96.22,
       "end": 126.0
     }
-  ]
+  ],
+  "clips": {
+    "1": {
+      "tries": 1,
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/02_peur_du_noir/clips/s1_try1.mp4",
+      "problems": [],
+      "gen_duration": 10,
+      "ok": true
+    }
+  }
 }
