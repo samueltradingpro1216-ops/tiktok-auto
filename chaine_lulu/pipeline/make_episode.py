@@ -146,7 +146,7 @@ class Episode:
         for line in lines:
             n, c = max(1, len(normalize(line).split())), {}
             for st in range(nw):
-                for ln in range(max(1, n - 2), n + 3):
+                for ln in range(max(1, n // 2), n + 3):  # whisper perd souvent des mots : passages courts admis
                     e = min(nw, st + ln)
                     sc = similarity(line, " ".join(heard[st:e]))
                     if sc >= min_match and sc > c.get(st, (0, 0))[1]:

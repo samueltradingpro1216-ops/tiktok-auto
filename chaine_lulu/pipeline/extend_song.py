@@ -2,6 +2,7 @@
 """Prolonge la fin d'une chanson ACE-Step (repaint de la fin sur un audio rallonge de silence).
 
 Usage : python extend_song.py chanson.wav paroles.txt sortie.wav --repaint-from 88 --total 112 --bpm 92
+Sert aussi a refaire une fin ratee (paroles sautees) : on repart juste apres le dernier refrain reussi.
 """
 import argparse
 import os
@@ -18,6 +19,7 @@ p.add_argument("src"); p.add_argument("lyrics"); p.add_argument("out")
 p.add_argument("--repaint-from", type=float, required=True)
 p.add_argument("--total", type=float, required=True)
 p.add_argument("--bpm", type=int, default=92)
+p.add_argument("--key", default="C major")
 p.add_argument("--caption", default=CAPTION)
 a = p.parse_args()
 
@@ -36,7 +38,7 @@ print(dit.initialize_service(project_root=ACESTEP_DIR, config_path="acestep-v15-
 params = GenerationParams(task_type="repaint", src_audio=padded, repainting_start=a.repaint_from,
                           repainting_end=-1, chunk_mask_mode="explicit", caption=a.caption,
                           lyrics=open(a.lyrics, encoding="utf-8").read(), vocal_language="fr", bpm=a.bpm,
-                          keyscale="C major", timesignature="4", duration=a.total, thinking=False,
+                          keyscale=a.key, timesignature="4", duration=a.total, thinking=False,
                           use_cot_caption=False, use_cot_language=False, use_cot_metas=False)
 res = generate_music(dit, None, params, GenerationConfig(batch_size=1, audio_format="wav"),
                      save_dir=os.path.dirname(os.path.abspath(a.out)))
