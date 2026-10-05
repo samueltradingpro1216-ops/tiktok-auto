@@ -38,14 +38,16 @@ le meilleur essai.
 ## Épisodes
 | # | Titre | État |
 |---|---|---|
-| 01 | La chanson du rangement | monté (1 min 52), **à réparer avant publication** : plans 4 et 7 (voir plus bas) |
+| 01 | La chanson du rangement | **terminé (1 min 52), à publier** : plans 4 et 7 réparés le 5 octobre |
 | 02 | J'ai peur du noir (Lulu et la peur du noir) | paroles et découpage prêts, chanson en cours ; images et vidéo à faire |
 
-### Épisode 01 : défauts trouvés au visionnage
+### Épisode 01 : défauts trouvés au visionnage (réparés)
 - Plan 4 (0:33 à 0:39) : Lulu disparaît et Nino a une aile de luciole dans le dos.
 - Plan 7 (1:07 à 1:13) : le nounours a les antennes, les ailes et le ventre lumineux de Lulu.
-- L'ancien juge ne posait pas ces questions ; c'est corrigé. Réparation : `--redo 4,7` (environ 2 plans à
-  générer). Les dernières images réelles des anciens plans 4 et 7 ont été vérifiées : elles sont propres.
+- L'ancien juge ne posait pas ces questions ; c'est corrigé (il repère les 4 images fautives et laisse passer
+  les saines). Réparation faite avec `--redo 4,7` : plan 4 du premier coup ; plan 7 après réécriture de son
+  mouvement (« Lulu éclaire l'étagère, un nounours apparaît » faisait pousser des ailes au nounours, 4 essais sur
+  4). Son identique à l'original, raccords identiques. Reste un détail : deux canards visibles un instant (0:36).
 - Le « 24 % » de paroles reconnues de l'ancienne fiche était un chiffre périmé : le vrai score est d'environ 89 %.
 
 ### Épisode 02 : pourquoi la peur du noir
@@ -65,7 +67,7 @@ le meilleur essai.
 - Agnes (images et vidéos) : la clé `AGNES_API_KEY` doit être ajoutée aux variables de l'environnement cloud.
 
 ## Prochaines étapes
-- Ajouter `AGNES_API_KEY` à l'environnement, réparer l'épisode 01 (`--redo 4,7`), puis le publier
+- Publier l'épisode 01 (fiche dans `episodes/01_rangement/youtube.md`)
 - Créer la chaîne YouTube et la lier à vidIQ et Metricool (statistiques, programmation des publications)
 - Épisode 02 : images clés, plans, montage
 - Bannière de chaîne, rythme de publication (2 vidéos / semaine + Shorts extraits des refrains)

@@ -61,13 +61,14 @@ comptine, chanson pour enfants, chanson du rangement, ranger sa chambre, comptin
 - Langue : Français
 
 ## Contrôle qualité
-- Chanson : paroles reconnues à 24%
+- Chanson : paroles reconnues à 89%
 - Plan 1 : 1 essai(s), OK
 - Plan 2 : 1 essai(s), OK
 - Plan 3 : 1 essai(s), OK
-- Plan 4 : 2 essai(s), OK
+- Plan 4 : 1 essai(s), OK
 - Plan 5 : 1 essai(s), OK
 - Plan 6 : 2 essai(s), OK
-- Plan 7 : 2 essai(s), OK
+- Plan 7 : 1 essai(s), OK
 - Plan 8 : 3 essai(s), s8_30.jpg: 2 coffres
 - Plan 9 : 2 essai(s), OK
+- Réparation du 2026-10-05 16:08 : plans 4, 7 refaits
