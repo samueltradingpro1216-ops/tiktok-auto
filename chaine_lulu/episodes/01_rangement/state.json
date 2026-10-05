@@ -312,7 +312,11 @@
       "gen_duration": 10
     },
     "4": {
-      "tries": 0
+      "tries": 1,
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/01_rangement/clips/s4_try1.mp4",
+      "problems": [],
+      "gen_duration": 10,
+      "ok": true
     },
     "5": {
       "tries": 1,
