@@ -1,0 +1,68 @@
+{
+  "reference": {
+    "tries": 1,
+    "problems": []
+  },
+  "keyframes": {
+    "s1_start": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s1_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s2_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s3_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s4_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s5_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s6_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s7_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s8_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s9_end": {
+      "tries": 4,
+      "ok": true,
+      "problems": [],
+      "done": true
+    }
+  }
+}
