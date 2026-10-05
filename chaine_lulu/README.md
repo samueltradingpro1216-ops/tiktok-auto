@@ -39,7 +39,7 @@ le meilleur essai.
 | # | Titre | État |
 |---|---|---|
 | 01 | La chanson du rangement | **terminé (1 min 52), à publier** : plans 4 et 7 réparés le 5 octobre |
-| 02 | J'ai peur du noir (Lulu et la peur du noir) | paroles et découpage prêts, chanson en cours ; images et vidéo à faire |
+| 02 | J'ai peur du noir (Lulu et la peur du noir) | **terminé (2 min 06), à publier** |
 
 ### Épisode 01 : défauts trouvés au visionnage (réparés)
 - Plan 4 (0:33 à 0:39) : Lulu disparaît et Nino a une aile de luciole dans le dos.
@@ -60,6 +60,24 @@ le meilleur essai.
 - Lulu est décrite comme une mascotte insecte (pas une petite fille avec des ailes) : dans l'épisode 01, elle
   ressemblait parfois à une fée humaine.
 
+### Épisode 02 : fabrication
+- Chanson : prise 3 (la seule qui chante « Lulu, Lulu, allume-toi ! » dans les 4 couplets), fin refaite avec
+  `extend_song.py` en ne donnant que les paroles de l'outro (avec toutes les paroles, ACE-Step rechantait le
+  refrain). ACE-Step a sauté « Bonne nuit manteau, bonne nuit rideau, bonne nuit coussin, fais dodo » 4 fois sur
+  4 : ces lignes sont retirées des paroles affichées. 88 % des lignes reconnues, toutes chantées.
+- Images : 9 images clés sur 10 validées du premier coup.
+- Plans : « Nino et Lulu dansent ensemble » transformait Lulu en petite fille (ou ajoutait un 2e garçon) ;
+  insister sur « minuscule » en faisait un point lumineux. Ce qui marche : Lulu « mascotte luciole avec ses grands
+  yeux et son nœud rose » qui tourne autour de Nino à hauteur de son visage. Plan 8 : Lulu n'arrive qu'après
+  quelques secondes (gardé). Son : -13,7 LUFS.
+
+## Leçons pour les prochains épisodes
+- Ne jamais écrire qu'un objet « apparaît » dans la lumière de Lulu (ép. 01 : le nounours prenait ses ailes) :
+  c'est Nino qui prend l'objet, Lulu reste à côté.
+- Ne pas faire « danser ensemble » Nino et Lulu : Lulu tourne autour de lui.
+- Éviter les énumérations dans les paroles (« bonne nuit X, bonne nuit Y… ») : ACE-Step les saute.
+- Ne rien lancer d'autre pendant la génération d'une chanson sans le fichier d'échange (`install.sh` le crée).
+
 ## Connexions
 - vidIQ : connecté (compte orbeo.studio@gmail.com, plan gratuit 150 crédits/mois, 5 par recherche), mais aucune
   chaîne YouTube liée.
@@ -69,5 +87,5 @@ le meilleur essai.
 ## Prochaines étapes
 - Publier l'épisode 01 (fiche dans `episodes/01_rangement/youtube.md`)
 - Créer la chaîne YouTube et la lier à vidIQ et Metricool (statistiques, programmation des publications)
-- Épisode 02 : images clés, plans, montage
+- Publier l'épisode 02 (fiche dans `episodes/02_peur_du_noir/youtube.md`)
 - Bannière de chaîne, rythme de publication (2 vidéos / semaine + Shorts extraits des refrains)

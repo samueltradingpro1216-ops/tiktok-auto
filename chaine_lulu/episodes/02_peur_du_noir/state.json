@@ -1,0 +1,393 @@
+{
+  "reference": {
+    "tries": 1,
+    "problems": []
+  },
+  "keyframes": {
+    "s1_start": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s1_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s2_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s3_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s4_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s5_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s6_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s7_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s8_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s9_end": {
+      "tries": 4,
+      "ok": true,
+      "problems": [],
+      "done": true
+    }
+  },
+  "clips": {
+    "1": {
+      "tries": 1,
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/02_peur_du_noir/clips/s1_try1.mp4",
+      "problems": [],
+      "gen_duration": 10,
+      "ok": true
+    },
+    "2": {
+      "tries": 3,
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/02_peur_du_noir/clips/s2_try3.mp4",
+      "problems": [],
+      "gen_duration": 15,
+      "ok": true
+    },
+    "3": {
+      "tries": 1,
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/02_peur_du_noir/clips/s3_try1.mp4",
+      "problems": [],
+      "gen_duration": 10,
+      "ok": true
+    },
+    "4": {
+      "tries": 2,
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/02_peur_du_noir/clips/s4_try2.mp4",
+      "problems": [],
+      "gen_duration": 10,
+      "ok": true
+    },
+    "5": {
+      "tries": 1,
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/02_peur_du_noir/clips/s5_try1.mp4",
+      "problems": [],
+      "gen_duration": 15,
+      "ok": true
+    },
+    "6": {
+      "tries": 1,
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/02_peur_du_noir/clips/s6_try1.mp4",
+      "problems": [],
+      "gen_duration": 10,
+      "ok": true
+    },
+    "7": {
+      "tries": 2,
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/02_peur_du_noir/clips/s7_try2.mp4",
+      "problems": [],
+      "gen_duration": 10,
+      "ok": true
+    },
+    "8": {
+      "tries": 3,
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/02_peur_du_noir/clips/s8_try3.mp4",
+      "problems": [
+        "Lulu absente : s8_15.jpg, s8_30.jpg"
+      ],
+      "gen_duration": 15,
+      "ok": false
+    },
+    "9": {
+      "tries": 1,
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/02_peur_du_noir/clips/s9_try1.mp4",
+      "problems": [],
+      "gen_duration": 20,
+      "ok": true
+    }
+  },
+  "song": {
+    "file": "/home/user/tiktok-auto/chaine_lulu/episodes/02_peur_du_noir/chanson/prise_3_fin.wav",
+    "similarity": 0.88,
+    "duration": 126.0,
+    "lines": [
+      {
+        "text": "Il fait tout noir, tout noir ce soir…",
+        "start": 0.0,
+        "end": 4.42,
+        "match": 0.92,
+        "sung": true
+      },
+      {
+        "text": "Lulu, Lulu, viens me voir !",
+        "start": 7.0,
+        "end": 9.58,
+        "match": 0.93,
+        "sung": true
+      },
+      {
+        "text": "Brille, brille, Lulu Luciole,",
+        "start": 11.36,
+        "end": 14.48,
+        "match": 0.77,
+        "sung": true
+      },
+      {
+        "text": "ta lumière danse et vole !",
+        "start": 14.48,
+        "end": 17.23,
+        "match": 0.83,
+        "sung": true
+      },
+      {
+        "text": "Dans le noir, n'aie pas peur,",
+        "start": 17.6,
+        "end": 20.04,
+        "match": 0.93,
+        "sung": true
+      },
+      {
+        "text": "Lulu veille de tout son cœur !",
+        "start": 20.04,
+        "end": 22.88,
+        "match": 0.97,
+        "sung": true
+      },
+      {
+        "text": "Sur le mur, des grands bras, oh là là !",
+        "start": 25.24,
+        "end": 27.64,
+        "match": 0.85,
+        "sung": true
+      },
+      {
+        "text": "Lulu, Lulu, allume-toi !",
+        "start": 28.62,
+        "end": 30.52,
+        "match": 0.97,
+        "sung": true
+      },
+      {
+        "text": "Mais non ! C'est mon manteau, voilà !",
+        "start": 30.52,
+        "end": 34.64,
+        "match": 1.0,
+        "sung": true
+      },
+      {
+        "text": "Un fantôme qui vole, oh là là !",
+        "start": 36.56,
+        "end": 38.98,
+        "match": 0.81,
+        "sung": true
+      },
+      {
+        "text": "Lulu, Lulu, allume-toi !",
+        "start": 38.98,
+        "end": 41.76,
+        "match": 0.97,
+        "sung": true
+      },
+      {
+        "text": "Mais non ! C'est le rideau, voilà !",
+        "start": 41.76,
+        "end": 45.96,
+        "match": 1.0,
+        "sung": true
+      },
+      {
+        "text": "Brille, brille, Lulu Luciole,",
+        "start": 48.02,
+        "end": 50.64,
+        "match": 0.77,
+        "sung": true
+      },
+      {
+        "text": "ta lumière danse et vole !",
+        "start": 51.16,
+        "end": 53.94,
+        "match": 0.83,
+        "sung": true
+      },
+      {
+        "text": "Dans le noir, n'aie pas peur,",
+        "start": 54.3,
+        "end": 56.7,
+        "match": 0.93,
+        "sung": true
+      },
+      {
+        "text": "Lulu veille de tout son cœur !",
+        "start": 56.7,
+        "end": 59.58,
+        "match": 0.97,
+        "sung": true
+      },
+      {
+        "text": "Un gros monstre tout rond, oh là là !",
+        "start": 62.29,
+        "end": 66.26,
+        "match": 0.68,
+        "sung": true
+      },
+      {
+        "text": "Lulu, Lulu, allume-toi !",
+        "start": 66.26,
+        "end": 67.2,
+        "match": 0.67,
+        "sung": true
+      },
+      {
+        "text": "Mais non ! C'est mon coussin, voilà !",
+        "start": 67.2,
+        "end": 71.32,
+        "match": 1.0,
+        "sung": true
+      },
+      {
+        "text": "Toc, toc, toc, qui est là ? Oh là là !",
+        "start": 73.54,
+        "end": 75.66,
+        "match": 0.83,
+        "sung": true
+      },
+      {
+        "text": "Lulu, Lulu, allume-toi !",
+        "start": 75.66,
+        "end": 78.54,
+        "match": 0.97,
+        "sung": true
+      },
+      {
+        "text": "Mais non ! C'est une branche, voilà !",
+        "start": 78.54,
+        "end": 82.6,
+        "match": 1.0,
+        "sung": true
+      },
+      {
+        "text": "Brille, brille, Lulu Luciole,",
+        "start": 84.72,
+        "end": 86.88,
+        "match": 0.77,
+        "sung": true
+      },
+      {
+        "text": "ta lumière danse et vole !",
+        "start": 87.9,
+        "end": 91.02,
+        "match": 0.83,
+        "sung": true
+      },
+      {
+        "text": "Dans le noir, n'aie pas peur,",
+        "start": 91.02,
+        "end": 93.44,
+        "match": 0.93,
+        "sung": true
+      },
+      {
+        "text": "Lulu veille de tout son cœur !",
+        "start": 93.44,
+        "end": 96.3,
+        "match": 0.97,
+        "sung": true
+      },
+      {
+        "text": "Le noir est doux, je n'ai plus peur,",
+        "start": 98.78,
+        "end": 101.94,
+        "match": 0.83,
+        "sung": true
+      },
+      {
+        "text": "Lulu veille de tout son cœur,",
+        "start": 101.94,
+        "end": 105.4,
+        "match": 0.75,
+        "sung": true
+      },
+      {
+        "text": "Lulu veille de tout son cœur.",
+        "start": 108.34,
+        "end": 112.58,
+        "match": 0.93,
+        "sung": true
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 11.36
+    },
+    {
+      "id": 2,
+      "start": 11.36,
+      "end": 25.24
+    },
+    {
+      "id": 3,
+      "start": 25.24,
+      "end": 36.56
+    },
+    {
+      "id": 4,
+      "start": 36.56,
+      "end": 48.02
+    },
+    {
+      "id": 5,
+      "start": 48.02,
+      "end": 62.29
+    },
+    {
+      "id": 6,
+      "start": 62.29,
+      "end": 73.54
+    },
+    {
+      "id": 7,
+      "start": 73.54,
+      "end": 84.72
+    },
+    {
+      "id": 8,
+      "start": 84.72,
+      "end": 98.78
+    },
+    {
+      "id": 9,
+      "start": 98.78,
+      "end": 126.0
+    }
+  ],
+  "final": "/home/user/tiktok-auto/chaine_lulu/episodes/02_peur_du_noir/02_peur_du_noir_youtube.mp4"
+}
