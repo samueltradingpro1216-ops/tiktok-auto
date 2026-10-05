@@ -13,7 +13,7 @@ if [ ! -x ~/ace-venv/bin/python ]; then
   ~/ace-venv/bin/pip install -q torch torchaudio --index-url https://download.pytorch.org/whl/cpu
   ~/ace-venv/bin/pip install -q "transformers>=4.51.0,<4.58.0" diffusers scipy soundfile loguru einops accelerate \
     numba vector-quantize-pytorch "torchao>=0.16.0,<0.17.0" toml modelscope diskcache safetensors peft matplotlib \
-    xxhash huggingface_hub faster-whisper
+    xxhash huggingface_hub faster-whisper pytorch_wavelets PyWavelets
   ~/ace-venv/bin/pip install -q -e ~/acestep --no-deps
 fi
 ~/ace-venv/bin/python - <<'PY'

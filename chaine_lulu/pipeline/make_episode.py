@@ -438,7 +438,7 @@ class Episode:
         # paroles incrustees seulement sur les plans refaits (les autres les ont deja)
         srt = self.write_srt(os.path.join(self.dir, "clips", "patch.srt"), windows)
         run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-i", src,
-             "-vf", f"subtitles={srt}:force_style='{SUB_STYLE}'", "-map", "0:v", "-map", "1:a", "-shortest",
+             "-vf", f"subtitles={srt}:force_style='{SUB_STYLE}'", "-map", "0:v", "-map", "1:a",
              "-c:v", "libx264", "-crf", "18", "-preset", "medium", "-pix_fmt", "yuv420p", "-c:a", "copy",
              "-movflags", "+faststart", final])
         self.make_preview(final)
