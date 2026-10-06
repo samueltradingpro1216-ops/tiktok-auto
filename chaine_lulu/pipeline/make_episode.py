@@ -48,6 +48,14 @@ SUB_STYLE = (f"FontName={FONT},Bold=1,Fontsize=22,PrimaryColour=&H00FFFFFF,Outli
 HYBRID_BOY = "boy_has_insect_wings_or_antennae_growing_from_his_own_body"
 HYBRID_TOY = "teddy_bear_toy_or_object_with_its_own_insect_wings_or_antennae"
 LULU_SEEN = "is_the_firefly_in_the_picture"
+# ep. 03 : petites ailes blanches dans le dos de Nino, Lulu a l'autre bout de l'image ; la question generale
+# (HYBRID_BOY) ne les voit pas, une question a part sur le dos les trouve (5 sur 5, aucune fausse alerte sur 10)
+WING_BACK = "a_wing_shape_attached_to_the_boys_back_or_shoulders"
+WING_Q = ("Look at this frame of a children's cartoon. Look closely at the boy's back and shoulders. Sometimes "
+          "a small white or translucent wing sticks out from the boy's back, as if he were a fairy: that is a "
+          "defect, even if the firefly is somewhere else in the picture. The firefly's own wings are attached to "
+          "the firefly's round body, not to the boy. Return JSON: {\"boys\": int, \"" + WING_BACK + "\": bool, "
+          "\"where_is_the_firefly\": str}")
 TEDDIES = "plush_teddy_bears_not_counting_the_firefly"
 OTHERS = "living_creatures_other_than_the_boy_and_the_firefly_ignoring_toys_and_shadows"
 
@@ -239,6 +247,14 @@ class Episode:
                 problems.append(f"{name}: deformation")
             if v.get(HYBRID_BOY):
                 problems.append(f"{name}: Nino a des ailes ou des antennes")
+            elif int(v.get("boys", 0)) >= 1:
+                try:
+                    w = parse_json(api.chat_multimodal("You are a strict quality checker. Answer only JSON.", WING_Q,
+                                                       [fr], max_tokens=200))
+                    if w.get(WING_BACK):
+                        problems.append(f"{name}: aile dans le dos de Nino")
+                except Exception as e:
+                    log(f"juge indisponible ({e})")
             if v.get(HYBRID_TOY):
                 problems.append(f"{name}: un jouet ou un objet a des ailes ou des antennes")
             if int(v.get("toy_chests", 1)) > 1:
