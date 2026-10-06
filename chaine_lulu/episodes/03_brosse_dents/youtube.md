@@ -63,7 +63,7 @@ chanson brosser les dents, brosse tes dents, comptine dents, comptine pour enfan
 
 ## Contrôle qualité
 - Chanson : paroles reconnues à 96%
-- Plan 1 : 1 essai(s), OK
+- Plan 1 : 2 essai(s), OK
 - Plan 2 : 1 essai(s), OK
 - Plan 3 : 2 essai(s), OK
 - Plan 4 : 2 essai(s), OK
@@ -72,3 +72,5 @@ chanson brosser les dents, brosse tes dents, comptine dents, comptine pour enfan
 - Plan 7 : 1 essai(s), OK
 - Plan 8 : 1 essai(s), OK
 - Plan 9 : 1 essai(s), OK
+- Réparation du 2026-10-06 14:01 : plans 1 refaits
+- Réparation du 2026-10-06 14:16 : plans 1 refaits

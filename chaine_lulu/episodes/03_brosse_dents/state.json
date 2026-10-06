@@ -1,0 +1,418 @@
+{
+  "reference": {
+    "tries": 1,
+    "problems": []
+  },
+  "keyframes": {
+    "s1_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s2_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s3_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s4_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s5_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s6_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s7_end": {
+      "tries": 3,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s9_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s8_end": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s9_start": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    },
+    "s1_start": {
+      "tries": 1,
+      "ok": true,
+      "problems": [],
+      "done": true
+    }
+  },
+  "song": {
+    "file": "/home/user/tiktok-auto/chaine_lulu/episodes/03_brosse_dents/chanson/prise_2.wav",
+    "similarity": 0.96,
+    "duration": 112.0,
+    "lines": [
+      {
+        "text": "Le pyjama est mis, c'est bientôt dodo,",
+        "start": 0.0,
+        "end": 3.16,
+        "match": 0.96,
+        "sung": true
+      },
+      {
+        "text": "mais d'abord les dents ! Lulu, au lavabo !",
+        "start": 3.72,
+        "end": 7.42,
+        "match": 0.89,
+        "sung": true
+      },
+      {
+        "text": "Petite brosse, petite brosse,",
+        "start": 8.92,
+        "end": 11.42,
+        "match": 1.0,
+        "sung": true
+      },
+      {
+        "text": "fais briller mes petites dents !",
+        "start": 11.42,
+        "end": 14.12,
+        "match": 0.86,
+        "sung": true
+      },
+      {
+        "text": "Lulu brille, et moi je brosse,",
+        "start": 14.12,
+        "end": 16.48,
+        "match": 1.0,
+        "sung": true
+      },
+      {
+        "text": "je souris en chantant !",
+        "start": 16.48,
+        "end": 18.84,
+        "match": 1.0,
+        "sung": true
+      },
+      {
+        "text": "Lulu éclaire tout en haut…",
+        "start": 18.84,
+        "end": 22.04,
+        "match": 1.0,
+        "sung": true
+      },
+      {
+        "text": "Qu'est-ce qu'on voit ? Un bout de gâteau !",
+        "start": 22.04,
+        "end": 24.6,
+        "match": 1.0,
+        "sung": true
+      },
+      {
+        "text": "Brosse, brosse, et hop, parti !",
+        "start": 24.6,
+        "end": 27.46,
+        "match": 1.0,
+        "sung": true
+      },
+      {
+        "text": "Lulu éclaire tout en bas…",
+        "start": 29.64,
+        "end": 32.12,
+        "match": 1.0,
+        "sung": true
+      },
+      {
+        "text": "Qu'est-ce qu'on voit ? Du chocolat !",
+        "start": 32.12,
+        "end": 34.62,
+        "match": 1.0,
+        "sung": true
+      },
+      {
+        "text": "Brosse, brosse, et hop, parti !",
+        "start": 34.62,
+        "end": 37.6,
+        "match": 1.0,
+        "sung": true
+      },
+      {
+        "text": "Petite brosse, petite brosse,",
+        "start": 39.2,
+        "end": 41.72,
+        "match": 1.0,
+        "sung": true
+      },
+      {
+        "text": "fais briller mes petites dents !",
+        "start": 41.72,
+        "end": 44.44,
+        "match": 0.86,
+        "sung": true
+      },
+      {
+        "text": "Lulu brille, et moi je brosse,",
+        "start": 44.44,
+        "end": 46.8,
+        "match": 1.0,
+        "sung": true
+      },
+      {
+        "text": "je souris en chantant !",
+        "start": 46.8,
+        "end": 49.2,
+        "match": 1.0,
+        "sung": true
+      },
+      {
+        "text": "Lulu éclaire tout au fond…",
+        "start": 49.2,
+        "end": 52.38,
+        "match": 1.0,
+        "sung": true
+      },
+      {
+        "text": "Qu'est-ce qu'on voit ? Un petit bonbon !",
+        "start": 52.38,
+        "end": 54.78,
+        "match": 1.0,
+        "sung": true
+      },
+      {
+        "text": "Brosse, brosse, et hop, parti !",
+        "start": 54.78,
+        "end": 57.86,
+        "match": 1.0,
+        "sung": true
+      },
+      {
+        "text": "Un peu d'eau pour rincer ma bouche,",
+        "start": 59.7,
+        "end": 62.56,
+        "match": 0.86,
+        "sung": true
+      },
+      {
+        "text": "et je crache dans le lavabo !",
+        "start": 62.56,
+        "end": 64.82,
+        "match": 0.94,
+        "sung": true
+      },
+      {
+        "text": "La brosse dans son verre, bravo !",
+        "start": 64.82,
+        "end": 68.12,
+        "match": 1.0,
+        "sung": true
+      },
+      {
+        "text": "Petite brosse, petite brosse,",
+        "start": 69.46,
+        "end": 72.06,
+        "match": 1.0,
+        "sung": true
+      },
+      {
+        "text": "fais briller mes petites dents !",
+        "start": 72.06,
+        "end": 74.82,
+        "match": 0.86,
+        "sung": true
+      },
+      {
+        "text": "Lulu brille, et moi je brosse,",
+        "start": 74.82,
+        "end": 77.08,
+        "match": 1.0,
+        "sung": true
+      },
+      {
+        "text": "je souris en chantant !",
+        "start": 77.08,
+        "end": 79.62,
+        "match": 1.0,
+        "sung": true
+      },
+      {
+        "text": "Mes dents brillent comme Lulu,",
+        "start": 80.72,
+        "end": 82.52,
+        "match": 0.82,
+        "sung": true
+      },
+      {
+        "text": "un bisou, au lit, dodo !",
+        "start": 82.52,
+        "end": 84.82,
+        "match": 0.92,
+        "sung": true
+      },
+      {
+        "text": "Mes dents brillent comme Lulu,",
+        "start": 85.76,
+        "end": 87.6,
+        "match": 0.82,
+        "sung": true
+      },
+      {
+        "text": "bonne nuit, petit Nino !",
+        "start": 87.6,
+        "end": 90.88,
+        "match": 0.95,
+        "sung": true
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 8.92
+    },
+    {
+      "id": 2,
+      "start": 8.92,
+      "end": 18.84
+    },
+    {
+      "id": 3,
+      "start": 18.84,
+      "end": 29.64
+    },
+    {
+      "id": 4,
+      "start": 29.64,
+      "end": 39.2
+    },
+    {
+      "id": 5,
+      "start": 39.2,
+      "end": 49.2
+    },
+    {
+      "id": 6,
+      "start": 49.2,
+      "end": 59.7
+    },
+    {
+      "id": 7,
+      "start": 59.7,
+      "end": 69.46
+    },
+    {
+      "id": 8,
+      "start": 69.46,
+      "end": 80.72
+    },
+    {
+      "id": 9,
+      "start": 80.72,
+      "end": 112.0
+    }
+  ],
+  "clips": {
+    "1": {
+      "tries": 2,
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/03_brosse_dents/clips/s1_try2.mp4",
+      "problems": [],
+      "gen_duration": 10,
+      "ok": true
+    },
+    "2": {
+      "tries": 1,
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/03_brosse_dents/clips/s2_try1.mp4",
+      "problems": [],
+      "gen_duration": 10,
+      "ok": true
+    },
+    "3": {
+      "tries": 2,
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/03_brosse_dents/clips/s3_try2.mp4",
+      "problems": [],
+      "gen_duration": 10,
+      "ok": true
+    },
+    "4": {
+      "tries": 2,
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/03_brosse_dents/clips/s4_try2.mp4",
+      "problems": [],
+      "gen_duration": 10,
+      "ok": true
+    },
+    "5": {
+      "tries": 2,
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/03_brosse_dents/clips/s5_try2.mp4",
+      "problems": [],
+      "gen_duration": 10,
+      "ok": true
+    },
+    "6": {
+      "tries": 2,
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/03_brosse_dents/clips/s6_try2.mp4",
+      "problems": [],
+      "gen_duration": 10,
+      "ok": true
+    },
+    "7": {
+      "tries": 1,
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/03_brosse_dents/clips/s7_try1.mp4",
+      "problems": [],
+      "gen_duration": 10,
+      "ok": true
+    },
+    "8": {
+      "tries": 1,
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/03_brosse_dents/clips/s8_try1.mp4",
+      "problems": [],
+      "gen_duration": 10,
+      "ok": true
+    },
+    "9": {
+      "tries": 1,
+      "raw": "/home/user/tiktok-auto/chaine_lulu/episodes/03_brosse_dents/clips/s9_try1.mp4",
+      "problems": [],
+      "gen_duration": 20,
+      "ok": true
+    }
+  },
+  "final": "/home/user/tiktok-auto/chaine_lulu/episodes/03_brosse_dents/03_brosse_dents_youtube.mp4",
+  "patches": [
+    {
+      "sections": [
+        1
+      ],
+      "date": "2026-10-06 14:01"
+    },
+    {
+      "sections": [
+        1
+      ],
+      "date": "2026-10-06 14:16"
+    }
+  ]
+}
