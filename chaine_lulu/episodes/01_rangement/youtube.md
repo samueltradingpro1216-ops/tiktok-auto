@@ -46,6 +46,8 @@ Bonne nuit Lulu, fais dodo !
 
 🔔 Abonne-toi pour retrouver Lulu la Luciole chaque semaine !
 
+Une création Orbeo Studio.
+
 #comptine #chansonpourenfants #ranger #lululaluciole
 ```
 
