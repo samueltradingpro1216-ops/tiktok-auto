@@ -30,13 +30,13 @@
     "Nino": "4-year-old boy with fluffy light-brown hair, big round hazel eyes, rosy cheeks, light blue pajamas with little white stars, barefoot.",
     "Lulu": "a tiny round fuzzy firefly mascot (an insect, not a human girl, no hair): round head with big brown eyes and rosy cheeks, a small pink bow on top of her head, two thin black antennae with white pompoms, small translucent wings, a chubby round belly glowing warm yellow with light dots, tiny arms and legs."
   },
-  "setting": "the cozy little bathroom of Nino's house at night: a small white sink with a round mirror, a small blue toothbrush in a cup, a tube of toothpaste, a small wooden step stool in front of the sink, soft pale blue tiles, fluffy towels, a little window with the moon, warm soft light.",
+  "setting": "the cozy little bathroom of Nino's house at night: a small white sink with a cute cloud-shaped shelf above it (no mirror), a small blue toothbrush in a cup, a tube of toothpaste, a small wooden step stool in front of the sink, soft pale blue tiles, fluffy towels, a little window with the moon, warm soft light. No bed, no toilet in view.",
   "reference": {
     "from": "../02_peur_du_noir/reference.png",
-    "description": "Nino stands on a small wooden step stool in front of the bathroom sink, smiling at the round mirror, Lulu hovers next to the mirror glowing softly. Wide shot of the cozy little bathroom at night. No teddy bear, no toys."
+    "description": "Nino stands on a small wooden step stool in front of the bathroom sink, smiling, holding his small blue toothbrush; Lulu hovers above the sink glowing softly. Wide shot of the cozy little bathroom at night, no mirror, no bed, no teddy bear, no toys."
   },
   "rules": "Only one toothbrush. No teddy bear. No other people.",
-  "negative": "teddy bear, two toothbrushes, scary, human fairy, girl with wings, second boy, adult",
+  "negative": "teddy bear, two toothbrushes, scary, human fairy, girl with wings, second boy, adult, mirror, reflection, bed in the bathroom, toilet",
   "teddy_bears": 0,
   "sections": [
     {
@@ -46,9 +46,9 @@
         "Le pyjama est mis, c'est bientôt dodo,",
         "mais d'abord les dents ! Lulu, au lavabo !"
       ],
-      "start_frame": "Nino in his light blue star pajamas walks into the cozy little bathroom at night, holding the door frame, smiling. Lulu is a tiny golden glow near the round mirror.",
-      "end_frame": "In the cozy little bathroom, Nino stands on a small wooden step stool in front of the sink, smiling at the round mirror. Lulu hovers next to the mirror, glowing softly.",
-      "motion": "Nino walks into the bathroom and climbs onto the small wooden step stool in front of the sink; Lulu flies to the round mirror and glows brighter.",
+      "start_frame": "Nino in his light blue star pajamas walks into the cozy little bathroom at night, holding the door frame, smiling. Lulu is a tiny golden glow near the sink.",
+      "end_frame": "In the cozy little bathroom, Nino stands on a small wooden step stool in front of the sink, smiling at the sink. Lulu hovers above the sink, glowing softly.",
+      "motion": "Nino walks into the bathroom and climbs onto the small wooden step stool in front of the sink; Lulu flies to the sink and glows brighter.",
       "lulu_hidden_ok": true
     },
     {
@@ -60,7 +60,7 @@
         "Lulu brille, et moi je brosse,",
         "je souris en chantant !"
       ],
-      "end_frame": "Nino stands on the step stool at the sink holding a small blue toothbrush with a little toothpaste on it, smiling widely at the mirror. Lulu circles near the mirror leaving a trail of golden sparkles.",
+      "end_frame": "Nino stands on the step stool at the sink holding a small blue toothbrush with a little toothpaste on it, smiling widely at the sink. Lulu circles above the sink leaving a trail of golden sparkles.",
       "motion": "Nino picks up his small blue toothbrush, puts a little toothpaste on it and sways happily from side to side; Lulu circles around his head at the height of his face, leaving golden sparkles."
     },
     {
@@ -71,7 +71,7 @@
         "Qu'est-ce qu'on voit ? Un bout de gâteau !",
         "Brosse, brosse, et hop, parti !"
       ],
-      "end_frame": "Nino brushes his top teeth with the small blue toothbrush, a little white foam on his lips, looking at the mirror. Lulu glows right next to his face, lighting his smile.",
+      "end_frame": "Nino brushes his top teeth with the small blue toothbrush, a little white foam on his lips, looking at the sink. Lulu glows right next to his face, lighting his smile.",
       "motion": "Nino brushes his top teeth up and down with the small blue toothbrush, a little white foam appears; Lulu hovers close to his face and glows to light his smile."
     },
     {
@@ -82,8 +82,8 @@
         "Qu'est-ce qu'on voit ? Du chocolat !",
         "Brosse, brosse, et hop, parti !"
       ],
-      "end_frame": "Nino brushes his bottom teeth with the small blue toothbrush, a little white foam on his lips, eyes smiling. Lulu twirls next to the mirror, glowing.",
-      "motion": "Nino brushes his bottom teeth with the small blue toothbrush, nodding to the music; Lulu twirls next to the mirror and glows."
+      "end_frame": "Nino brushes his bottom teeth with the small blue toothbrush, a little white foam on his lips, eyes smiling. Lulu twirls above the sink, glowing.",
+      "motion": "Nino brushes his bottom teeth with the small blue toothbrush, nodding to the music; Lulu twirls above the sink and glows."
     },
     {
       "id": 5,
