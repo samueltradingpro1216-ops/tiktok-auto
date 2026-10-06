@@ -11,9 +11,11 @@ Usage : python make_short.py ../episodes/02_peur_du_noir --sections 2-4 --title 
 import argparse
 import json
 import os
+import re
 import subprocess
 
-FONTS = os.environ.get("SHORT_FONTS", os.path.expanduser("~/fonts"))  # LuckiestGuy.ttf, Fredoka.ttf
+# LuckiestGuy.ttf, Fredoka.ttf et Fredoka-Bold.ttf (version fixe pour libass, voir install.sh)
+FONTS = os.environ.get("SHORT_FONTS", os.path.expanduser("~/fonts"))
 
 
 def ass_time(t):
@@ -57,7 +59,9 @@ def main():
             nxt = sung[i + 1]["start"] if i + 1 < len(sung) else t1
             # une seule ligne a l'ecran a la fois (sinon libass les empile vers le bas)
             s, e = max(l["start"], t0) - t0, min(l["end"] + 0.3, nxt, t1) - t0
-            f.write(f"Dialogue: 0,{ass_time(s)},{ass_time(e)},Paroles,{l['text']}\n")
+            # espace insecable avant ? ! : ; (sinon libass peut renvoyer le « ? » seul a la ligne)
+            text = re.sub(r" ([?!:;])", "\u00a0\\1", l["text"])
+            f.write(f"Dialogue: 0,{ass_time(s)},{ass_time(e)},Paroles,{text}\n")
 
     title = a.title.split("|")
     foot = a.footer.split("|")

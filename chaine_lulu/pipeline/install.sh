@@ -37,4 +37,26 @@ if [ ! -x ~/agnes-video-generator/.venv/bin/python ]; then
   python3 -m venv ~/agnes-video-generator/.venv
   ~/agnes-video-generator/.venv/bin/pip install -q -r ~/agnes-video-generator/requirements.txt
 fi
+# polices des Shorts et des miniatures (Google Fonts). libass ne lit pas la Fredoka « variable » (il retombe sur
+# DejaVu) : on en tire une version fixe en gras pour les paroles
+mkdir -p ~/fonts
+[ -f ~/fonts/LuckiestGuy.ttf ] || curl -sSfL -o ~/fonts/LuckiestGuy.ttf \
+  https://raw.githubusercontent.com/google/fonts/main/apache/luckiestguy/LuckiestGuy-Regular.ttf
+[ -f ~/fonts/Fredoka.ttf ] || curl -sSfL -o ~/fonts/Fredoka.ttf \
+  "https://raw.githubusercontent.com/google/fonts/main/ofl/fredoka/Fredoka%5Bwdth%2Cwght%5D.ttf"
+[ -f ~/fonts/Fredoka-Bold.ttf ] || ~/ace-venv/bin/python - <<'PY'
+import os
+from fontTools.ttLib import TTFont
+from fontTools.varLib import instancer
+f = TTFont(os.path.expanduser("~/fonts/Fredoka.ttf"))
+f = instancer.instantiateVariableFont(f, {a.axisTag: 700 if a.axisTag == "wght" else a.defaultValue
+                                          for a in f["fvar"].axes})
+names = {1: "Fredoka", 16: "Fredoka", 2: "Bold", 17: "Bold", 4: "Fredoka Bold", 6: "Fredoka-Bold"}
+for rec in f["name"].names:
+    rec.string = names.get(rec.nameID, rec.string)
+f["OS/2"].usWeightClass = 700
+f["OS/2"].fsSelection = (f["OS/2"].fsSelection & ~0x40) | 0x20
+f["head"].macStyle |= 1
+f.save(os.path.expanduser("~/fonts/Fredoka-Bold.ttf"))
+PY
 echo "Installation terminee."

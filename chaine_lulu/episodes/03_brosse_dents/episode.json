@@ -48,8 +48,7 @@
       ],
       "start_frame": "Nino in his light blue star pajamas walks into the cozy little bathroom at night, holding the door frame, smiling. Lulu is a tiny golden glow near the sink.",
       "end_frame": "In the cozy little bathroom, Nino stands on a small wooden step stool in front of the sink, smiling at the sink. Lulu hovers above the sink, glowing softly.",
-      "motion": "Nino walks into the bathroom and climbs onto the small wooden step stool in front of the sink; Lulu flies to the sink and glows brighter.",
-      "lulu_hidden_ok": true
+      "motion": "Fixed camera: the same wide shot of the blue bathroom from start to end, the camera does not move and the room does not change. Nino walks in through the door, pushes the small wooden step stool to the sink and climbs onto it; Lulu stays above the sink the whole time and glows brighter."
     },
     {
       "id": 2,
