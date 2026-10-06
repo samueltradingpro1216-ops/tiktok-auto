@@ -128,9 +128,8 @@
         "Lulu brille, et moi je brosse,",
         "je souris en chantant !"
       ],
-      "end_frame": "Nino sits in his bed in his cozy bedroom at night, showing a big bright smile with shiny clean teeth, little sparkles on his teeth. Lulu dances in the air in front of him, glowing warmly.",
-      "motion": "Nino walks from the bathroom into his bedroom, climbs into his bed and shows a big bright smile with shiny clean teeth; Lulu twirls happily in front of him.",
-      "ref_image": "../02_peur_du_noir/reference.png"
+      "end_frame": "In the cozy little bathroom, Nino stands on the small wooden step stool at the sink and shows a big bright smile with shiny clean teeth, little sparkles on his teeth. Lulu twirls in front of his face, glowing warmly.",
+      "motion": "Nino puts his toothbrush back in its cup and shows a big bright smile with shiny clean teeth; Lulu twirls happily in front of his face at the height of his face, leaving golden sparkles. They stay in the bathroom."
     },
     {
       "id": 9,
@@ -142,7 +141,7 @@
         "bonne nuit, petit Nino !"
       ],
       "end_frame": "The peaceful bedroom at night. The only boy in the image is Nino, lying in his bed under the blanket, head on the pillow, eyes closed, fast asleep with a gentle smile; nobody is standing or sitting. Lulu sits on the bedside table next to the bed, glowing softly like a little night light. Stars twinkle outside. Exactly one boy (asleep) and one firefly, no other creature.",
-      "motion": "Nino lies down, Lulu gives him a little kiss on the forehead and he falls asleep; Lulu lands on the bedside table and dims her glow softly; slow camera pull back.",
+      "motion": "Nino hops off the step stool and walks with Lulu into his bedroom, climbs into his bed and lies down; Lulu gives him a little kiss on the forehead, he falls asleep, and Lulu lands on the bedside table and dims her glow softly; slow camera pull back.",
       "ref_image": "../02_peur_du_noir/keyframes/s9_end.png"
     }
   ],
