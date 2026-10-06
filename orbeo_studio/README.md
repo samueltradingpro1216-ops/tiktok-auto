@@ -43,8 +43,12 @@ Pour les tout-petits, retrouve nos comptines sur la chaîne Lulu la Luciole !
 ```
 
 ## Règles de publication
-- Déclarer le contenu IA là où le réseau le demande : TikTok (`isAigc`), Instagram (`isAiGenerated`). Sur YouTube, le
-  dessin animé n'entre pas dans la déclaration « contenu modifié ou synthétique » (réservée au contenu réaliste).
+- Déclarer le contenu IA là où le réseau le demande : TikTok (`isAigc`), Instagram (`isAiGenerated`), YouTube
+  (`isAiGeneratedContent` dans Metricool, `youtube_api.py video ID --synthetic oui`). Sur YouTube, un dessin animé seul
+  n'a pas à être déclaré, mais **une musique générée par IA au cœur de la vidéo, si** (« AI generated music » est dans
+  la liste des exemples, support.google.com/youtube/answer/14328491) : toutes les comptines de Lulu sont donc
+  déclarées. YouTube précise que la déclaration ne limite ni l'audience ni la monétisation. Corrigé le 6 octobre pour
+  l'ép. 02 publié et les 5 publications programmées.
 - Les comptines restent sur la chaîne Lulu (vidéos et Shorts des refrains), toujours « conçues pour les enfants ».
 - Signature des descriptions : « Une création Orbeo Studio ».
 

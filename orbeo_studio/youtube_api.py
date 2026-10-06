@@ -19,7 +19,8 @@ Usage :
   python youtube_api.py playlists                                 # playlists de la chaine (ID complets)
   python youtube_api.py playlist-add PLAYLIST_ID VIDEO_ID[,VIDEO_ID]
   python youtube_api.py thumbnail VIDEO_ID image.jpg
-  python youtube_api.py video VIDEO_ID [--title ...] [--description-file f.txt] [--tags "a, b"]
+  python youtube_api.py video VIDEO_ID [--title ...] [--description-file f.txt] [--tags "a, b"] [--synthetic oui]
+    --synthetic oui : declare le contenu modifie ou synthetique (obligatoire pour une musique generee par IA)
 """
 
 import argparse
@@ -193,7 +194,16 @@ def cmd_thumbnail(a):
 
 
 def cmd_video(a):
-    v = call("GET", f"{API}/videos", params={"part": "snippet", "id": a.video_id})["items"][0]
+    v = call("GET", f"{API}/videos", params={"part": "snippet,status", "id": a.video_id})["items"][0]
+    if a.synthetic:
+        # part=status remplace tout le statut : on renvoie les champs modifiables existants
+        st = {k: v["status"][k] for k in ("privacyStatus", "embeddable", "license", "publicStatsViewable",
+                                          "selfDeclaredMadeForKids", "publishAt") if k in v["status"]}
+        st["containsSyntheticMedia"] = a.synthetic == "oui"
+        call("PUT", f"{API}/videos", params={"part": "status"}, json={"id": a.video_id, "status": st})
+        print(f"contenu synthetique declare : {st['containsSyntheticMedia']}")
+        if not (a.title or a.description_file or a.tags):
+            return
     sn = v["snippet"]
     if a.title:
         sn["title"] = a.title
@@ -237,6 +247,7 @@ def main():
     vd.add_argument("--title")
     vd.add_argument("--description-file")
     vd.add_argument("--tags")
+    vd.add_argument("--synthetic", choices=["oui", "non"])
     a = p.parse_args()
     if a.cmd == "login":
         return login()
