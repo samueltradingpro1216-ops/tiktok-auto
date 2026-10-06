@@ -309,6 +309,8 @@ class Episode:
         ref = os.path.join(self.dir, "reference.png") if all_toys or not os.path.exists(clean) else clean
         if sec and sec.get("ref_from"):  # on part d'une image clé deja validee (l'etat de la chambre suit)
             ref = self.wait_keyframe(sec["ref_from"])
+        elif sec and sec.get("ref_image"):  # ou d'une image d'un autre episode (ex. la chambre de Nino)
+            ref = os.path.normpath(os.path.join(self.dir, sec["ref_image"]))
         while st["tries"] < MAX_KEYFRAME_TRIES:
             st["tries"] += 1
             missing = [self.toys[t] + " on the floor" for t in self.toys if toys is not None and t not in toys]

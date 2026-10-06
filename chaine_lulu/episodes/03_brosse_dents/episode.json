@@ -1,0 +1,169 @@
+{
+  "slug": "03_brosse_dents",
+  "title": "La chanson des dents avec Lulu",
+  "inspiration": {
+    "theme": "chanson pour se brosser les dents avant de dormir",
+    "references": [
+      {
+        "title": "Brosse tes Dents Lave Tes Mains Petit Dinosaure (Little Angel Français)",
+        "views": 33594051
+      },
+      {
+        "title": "Les Dents, chez le dentiste avec Bébé Louis (Little Angel Français)",
+        "views": 21151292
+      },
+      {
+        "title": "Cassi Cari - brosse-toi les dents (Hourra Chansons Pour Enfants, 121 k abonnés, nov. 2024)",
+        "views": 17494589
+      }
+    ],
+    "why": "Le brossage des dents est une des routines du soir les plus regardées (33,6 M et 17,5 M de vues, dont une petite chaîne en 2024). Suite logique de la série du soir de Lulu (ranger, peur du noir, dents). Paroles originales, contrôlées : aucune suite de 5 mots reprise des vidéos de référence."
+  },
+  "song": {
+    "bpm": 96,
+    "key": "G major",
+    "duration": 112,
+    "caption": "French children's song, cheerful, bouncy and warm, young female lead vocal singing clearly in French, ukulele, glockenspiel, soft piano, light percussion, hand claps, simple catchy melody, major key, playful bedtime routine song, preschool song"
+  },
+  "style": "Pixar-style 3D children's cartoon, cozy night-time lighting with the warm golden glow of the firefly, reassuring and cheerful, wide 16:9 framing, no text.",
+  "characters": {
+    "Nino": "4-year-old boy with fluffy light-brown hair, big round hazel eyes, rosy cheeks, light blue pajamas with little white stars, barefoot.",
+    "Lulu": "a tiny round fuzzy firefly mascot (an insect, not a human girl, no hair): round head with big brown eyes and rosy cheeks, a small pink bow on top of her head, two thin black antennae with white pompoms, small translucent wings, a chubby round belly glowing warm yellow with light dots, tiny arms and legs."
+  },
+  "setting": "the cozy little bathroom of Nino's house at night: a small white sink with a round mirror, a small blue toothbrush in a cup, a tube of toothpaste, a small wooden step stool in front of the sink, soft pale blue tiles, fluffy towels, a little window with the moon, warm soft light.",
+  "reference": {
+    "from": "../02_peur_du_noir/reference.png",
+    "description": "Nino stands on a small wooden step stool in front of the bathroom sink, smiling at the round mirror, Lulu hovers next to the mirror glowing softly. Wide shot of the cozy little bathroom at night. No teddy bear, no toys."
+  },
+  "rules": "Only one toothbrush. No teddy bear. No other people.",
+  "negative": "teddy bear, two toothbrushes, scary, human fairy, girl with wings, second boy, adult",
+  "teddy_bears": 0,
+  "sections": [
+    {
+      "id": 1,
+      "part": "intro",
+      "lines": [
+        "Le pyjama est mis, c'est bientôt dodo,",
+        "mais d'abord les dents ! Lulu, au lavabo !"
+      ],
+      "start_frame": "Nino in his light blue star pajamas walks into the cozy little bathroom at night, holding the door frame, smiling. Lulu is a tiny golden glow near the round mirror.",
+      "end_frame": "In the cozy little bathroom, Nino stands on a small wooden step stool in front of the sink, smiling at the round mirror. Lulu hovers next to the mirror, glowing softly.",
+      "motion": "Nino walks into the bathroom and climbs onto the small wooden step stool in front of the sink; Lulu flies to the round mirror and glows brighter.",
+      "lulu_hidden_ok": true
+    },
+    {
+      "id": 2,
+      "part": "refrain",
+      "lines": [
+        "Petite brosse, petite brosse,",
+        "fais briller mes petites dents !",
+        "Lulu brille, et moi je brosse,",
+        "je souris en chantant !"
+      ],
+      "end_frame": "Nino stands on the step stool at the sink holding a small blue toothbrush with a little toothpaste on it, smiling widely at the mirror. Lulu circles near the mirror leaving a trail of golden sparkles.",
+      "motion": "Nino picks up his small blue toothbrush, puts a little toothpaste on it and sways happily from side to side; Lulu circles around his head at the height of his face, leaving golden sparkles."
+    },
+    {
+      "id": 3,
+      "part": "couplet",
+      "lines": [
+        "Lulu éclaire tout en haut…",
+        "Qu'est-ce qu'on voit ? Un bout de gâteau !",
+        "Brosse, brosse, et hop, parti !"
+      ],
+      "end_frame": "Nino brushes his top teeth with the small blue toothbrush, a little white foam on his lips, looking at the mirror. Lulu glows right next to his face, lighting his smile.",
+      "motion": "Nino brushes his top teeth up and down with the small blue toothbrush, a little white foam appears; Lulu hovers close to his face and glows to light his smile."
+    },
+    {
+      "id": 4,
+      "part": "couplet",
+      "lines": [
+        "Lulu éclaire tout en bas…",
+        "Qu'est-ce qu'on voit ? Du chocolat !",
+        "Brosse, brosse, et hop, parti !"
+      ],
+      "end_frame": "Nino brushes his bottom teeth with the small blue toothbrush, a little white foam on his lips, eyes smiling. Lulu twirls next to the mirror, glowing.",
+      "motion": "Nino brushes his bottom teeth with the small blue toothbrush, nodding to the music; Lulu twirls next to the mirror and glows."
+    },
+    {
+      "id": 5,
+      "part": "refrain",
+      "lines": [
+        "Petite brosse, petite brosse,",
+        "fais briller mes petites dents !",
+        "Lulu brille, et moi je brosse,",
+        "je souris en chantant !"
+      ],
+      "end_frame": "Nino stands on the step stool holding his small blue toothbrush up like a little microphone, laughing. Lulu flies in a circle around him at the height of his face, golden sparkles around them.",
+      "motion": "Nino sways from side to side and holds his toothbrush up like a little microphone while Lulu flies in a circle around him at the height of his face, leaving golden sparkles. Only one child in the room."
+    },
+    {
+      "id": 6,
+      "part": "couplet",
+      "lines": [
+        "Lulu éclaire tout au fond…",
+        "Qu'est-ce qu'on voit ? Un petit bonbon !",
+        "Brosse, brosse, et hop, parti !"
+      ],
+      "end_frame": "Nino brushes his back teeth, one cheek puffed out, with a funny concentrated face. Lulu glows right next to his cheek.",
+      "motion": "Nino opens his mouth wide and brushes his back teeth with a funny concentrated face, one cheek puffed out; Lulu hovers next to his cheek and glows."
+    },
+    {
+      "id": 7,
+      "part": "couplet",
+      "lines": [
+        "Un peu d'eau pour rincer ma bouche,",
+        "et je crache dans le lavabo !",
+        "La brosse dans son verre, bravo !"
+      ],
+      "end_frame": "Nino holds a small cup of water at the sink, rinsing his mouth, and his small blue toothbrush stands in a cup next to the tap. Lulu glows above the sink, smiling.",
+      "motion": "Nino rinses his mouth with a small cup of water and leans over the sink, then puts his small blue toothbrush back in its cup; Lulu glows above the sink."
+    },
+    {
+      "id": 8,
+      "part": "refrain",
+      "lines": [
+        "Petite brosse, petite brosse,",
+        "fais briller mes petites dents !",
+        "Lulu brille, et moi je brosse,",
+        "je souris en chantant !"
+      ],
+      "end_frame": "Nino sits in his bed in his cozy bedroom at night, showing a big bright smile with shiny clean teeth, little sparkles on his teeth. Lulu dances in the air in front of him, glowing warmly.",
+      "motion": "Nino walks from the bathroom into his bedroom, climbs into his bed and shows a big bright smile with shiny clean teeth; Lulu twirls happily in front of him.",
+      "ref_image": "../02_peur_du_noir/reference.png"
+    },
+    {
+      "id": 9,
+      "part": "outro",
+      "lines": [
+        "Mes dents brillent comme Lulu,",
+        "un bisou, au lit, dodo !",
+        "Mes dents brillent comme Lulu,",
+        "bonne nuit, petit Nino !"
+      ],
+      "end_frame": "The peaceful bedroom at night. The only boy in the image is Nino, lying in his bed under the blanket, head on the pillow, eyes closed, fast asleep with a gentle smile; nobody is standing or sitting. Lulu sits on the bedside table next to the bed, glowing softly like a little night light. Stars twinkle outside. Exactly one boy (asleep) and one firefly, no other creature.",
+      "motion": "Nino lies down, Lulu gives him a little kiss on the forehead and he falls asleep; Lulu lands on the bedside table and dims her glow softly; slow camera pull back.",
+      "ref_image": "../02_peur_du_noir/keyframes/s9_end.png"
+    }
+  ],
+  "youtube": {
+    "title": "La chanson des dents 🦷 Brosse tes dents avec Lulu la Luciole | Comptine pour enfants",
+    "thumbnail_text": "BROSSE TES DENTS !",
+    "thumbnail_subtext": "Avec Lulu la Luciole",
+    "thumbnail_keyframe": "s2_end",
+    "hook": "🦷 Le pyjama est mis, c'est bientôt dodo… mais d'abord, les dents ! Lulu la Luciole allume sa petite lumière au-dessus du lavabo : qu'est-ce qu'on voit tout en haut ? Un bout de gâteau ! Et tout en bas ? Du chocolat ! Brosse, brosse, et hop, parti !\n\nUne comptine originale et joyeuse pour donner envie aux tout-petits de se brosser les dents avant de dormir. Chante avec Nino : « Petite brosse, petite brosse, fais briller mes petites dents ! »",
+    "footer": "🔔 Abonne-toi pour retrouver Lulu la Luciole chaque semaine !\n\nUne création Orbeo Studio.\n\n#brossetesdents #comptine #chansonpourenfants #lululaluciole",
+    "tags": [
+      "chanson brosser les dents",
+      "brosse tes dents",
+      "comptine dents",
+      "comptine pour enfants",
+      "chanson pour enfants",
+      "routine du soir",
+      "comptine bébé",
+      "lulu la luciole",
+      "dessin animé enfant",
+      "hygiène enfant"
+    ]
+  }
+}
