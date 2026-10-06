@@ -40,6 +40,7 @@ le meilleur essai.
 |---|---|---|
 | 01 | La chanson du rangement | terminé (1 min 52), plans 4 et 7 réparés ; **programmé le samedi 10 octobre à 10 h**, Short le lundi 12 à 18 h 30 |
 | 02 | J'ai peur du noir (Lulu et la peur du noir) | **publié le 6 octobre** : https://www.youtube.com/watch?v=Xx02S1SSlD0 ; Short le jeudi 8 à 18 h 30 |
+| 03 | La chanson des dents | chanson (prise 2, 96 %) et 10 images clés validées ; plans en cours ; à programmer le mer. 14 oct. 18 h 30 |
 
 ### Épisode 01 : défauts trouvés au visionnage (réparés)
 - Plan 4 (0:33 à 0:39) : Lulu disparaît et Nino a une aile de luciole dans le dos.
@@ -77,6 +78,10 @@ le meilleur essai.
 - Ne pas faire « danser ensemble » Nino et Lulu : Lulu tourne autour de lui.
 - Éviter les énumérations dans les paroles (« bonne nuit X, bonne nuit Y… ») : ACE-Step les saute.
 - Ne rien lancer d'autre pendant la génération d'une chanson sans le fichier d'échange (`install.sh` le crée).
+- Pas de miroir dans le décor : le reflet double les personnages (ép. 03).
+- Nouveau décor : générer d'abord la pièce vide, puis y ajouter Nino et Lulu (partir d'une autre pièce la recopie,
+  partir de Lulu seule la rend géante et fait disparaître Nino).
+- Le juge vérifie aussi que Nino est bien à l'image.
 
 ## Publication
 - Chaîne : `UCShPnzacZLkyH4nHZmDZkSg` (marque Orbeo Studio, voir `orbeo_studio/README.md`), publiée via Metricool
