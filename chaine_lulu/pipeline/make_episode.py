@@ -393,9 +393,10 @@ class Episode:
                                       f"{self.chars()}"])
                     run(["cp", wait_task_file(r["dir_name"], "final_video.mp4"), attempt])
                     frames = []
+                    raw_dur = duration(attempt)  # le generateur rend parfois moins que demande (17 s pour 20)
                     for t in SAMPLE_POINTS:
                         fr = os.path.join(self.dir, "frames", f"s{sid}_{int(t * 100)}.jpg")
-                        run(["ffmpeg", "-v", "error", "-y", "-ss", str(gen_dur * t), "-i", attempt, "-frames:v",
+                        run(["ffmpeg", "-v", "error", "-y", "-ss", f"{raw_dur * t:.2f}", "-i", attempt, "-frames:v",
                              "1", "-vf", "scale=640:-1", fr])
                         frames.append(fr)
                     # pendant un plan, la camera bouge : on verifie les personnages, pas les jouets

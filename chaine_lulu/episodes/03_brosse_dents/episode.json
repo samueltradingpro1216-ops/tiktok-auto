@@ -140,9 +140,11 @@
         "Mes dents brillent comme Lulu,",
         "bonne nuit, petit Nino !"
       ],
+      "cut": true,
+      "start_frame": "Nino's peaceful bedroom at night. The only boy in the image is Nino, in his light blue star pajamas, sitting on the edge of his bed and smiling, about to lie down; Lulu hovers next to his face, glowing warmly. Stars twinkle outside. Exactly one boy and one firefly, no other creature.",
       "end_frame": "The peaceful bedroom at night. The only boy in the image is Nino, lying in his bed under the blanket, head on the pillow, eyes closed, fast asleep with a gentle smile; nobody is standing or sitting. Lulu sits on the bedside table next to the bed, glowing softly like a little night light. Stars twinkle outside. Exactly one boy (asleep) and one firefly, no other creature.",
-      "motion": "Nino hops off the step stool and walks with Lulu into his bedroom, climbs into his bed and lies down; Lulu gives him a little kiss on the forehead, he falls asleep, and Lulu lands on the bedside table and dims her glow softly; slow camera pull back.",
-      "ref_image": "../02_peur_du_noir/keyframes/s9_end.png"
+      "motion": "Nino lies down in his bed and pulls the blanket up; Lulu gives him a little kiss on the forehead, he closes his eyes and falls asleep with a gentle smile, and Lulu lands on the bedside table and dims her glow softly; slow camera pull back. They stay in the bedroom.",
+      "ref_image": "../02_peur_du_noir/reference.png"
     }
   ],
   "youtube": {
