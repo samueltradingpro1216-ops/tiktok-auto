@@ -16,6 +16,8 @@ Usage :
   python youtube_api.py branding --description-file f.txt --keywords "comptine, ..." --country FR
   python youtube_api.py banner banniere.jpg
   python youtube_api.py playlist "Titre" --description "..." [--videos ID1,ID2]
+  python youtube_api.py playlists                                 # playlists de la chaine (ID complets)
+  python youtube_api.py playlist-add PLAYLIST_ID VIDEO_ID[,VIDEO_ID]
   python youtube_api.py thumbnail VIDEO_ID image.jpg
   python youtube_api.py video VIDEO_ID [--title ...] [--description-file f.txt] [--tags "a, b"]
 """
@@ -164,6 +166,24 @@ def cmd_playlist(a):
     print(f"playlist {p['id']} : https://www.youtube.com/playlist?list={p['id']}")
 
 
+def cmd_playlists(a):
+    for p in call("GET", f"{API}/playlists", params={"part": "snippet,contentDetails", "mine": "true",
+                                                      "maxResults": 50})["items"]:
+        print(f"{p['id']}  {p['contentDetails']['itemCount']:>3} vidéos  {p['snippet']['title']}")
+
+
+def cmd_playlist_add(a):
+    have = {i["contentDetails"]["videoId"] for i in call("GET", f"{API}/playlistItems", params={
+        "part": "contentDetails", "playlistId": a.playlist_id, "maxResults": 50})["items"]}
+    for vid in [v for v in a.video_ids.split(",") if v]:
+        if vid in have:
+            print(f"{vid} déjà dans la playlist")
+            continue
+        call("POST", f"{API}/playlistItems", params={"part": "snippet"}, json={
+            "snippet": {"playlistId": a.playlist_id, "resourceId": {"kind": "youtube#video", "videoId": vid}}})
+        print(f"{vid} ajoutée")
+
+
 def cmd_thumbnail(a):
     with open(a.image, "rb") as f:
         call("POST", f"{UPLOAD}/thumbnails/set", params={"videoId": a.video_id, "uploadType": "media"},
@@ -205,6 +225,10 @@ def main():
     pl.add_argument("title")
     pl.add_argument("--description")
     pl.add_argument("--videos")
+    sub.add_parser("playlists")
+    pa = sub.add_parser("playlist-add")
+    pa.add_argument("playlist_id")
+    pa.add_argument("video_ids")
     th = sub.add_parser("thumbnail")
     th.add_argument("video_id")
     th.add_argument("image")
@@ -216,7 +240,7 @@ def main():
     a = p.parse_args()
     if a.cmd == "login":
         return login()
-    globals()[f"cmd_{a.cmd}"](a)
+    globals()[f"cmd_{a.cmd.replace('-', '_')}"](a)
 
 
 if __name__ == "__main__":
