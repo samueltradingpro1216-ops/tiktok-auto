@@ -215,7 +215,7 @@ class Episode:
         teddies = sec.get("teddy_bears")
         if teddies is None:
             teddies = self.ep.get("teddy_bears")
-        api, problems, no_lulu = chat_api(), [], []
+        api, problems, no_lulu, no_nino = chat_api(), [], [], []
         for fr in frames:
             name = os.path.basename(fr)
             try:
@@ -226,6 +226,8 @@ class Episode:
                 continue
             if int(v.get("boys", 0)) > 1:
                 problems.append(f"{name}: {v['boys']} garcons")
+            if int(v.get("boys", 1)) == 0:
+                no_nino.append(name)
             if int(v.get("firefly_characters_with_a_face", 0)) > 1:
                 problems.append(f"{name}: {v['firefly_characters_with_a_face']} lucioles")
             if v.get(LULU_SEEN) is False or (LULU_SEEN not in v and
@@ -254,6 +256,9 @@ class Episode:
                         problems.append(f"{name}: {k}={v.get(k)} (attendu {t in toys})")
         if need_lulu and len(no_lulu) >= (1 if len(frames) == 1 else 2):
             problems.append(f"Lulu absente : {', '.join(no_lulu)}")
+        # Nino est dans toutes les images (ep. 03 : Lulu geante avait pris sa place sur l'image de reference)
+        if len(no_nino) >= (1 if len(frames) == 1 else 2):
+            problems.append(f"Nino absent : {', '.join(no_nino)}")
         return problems
 
     # ── image de reference ──
