@@ -340,6 +340,9 @@ class Episode:
         if self.redo:
             return  # reparation : les images clés existent deja
         jobs = [("s1_start", self.ep["sections"][0]["start_frame"], list(self.toys) if self.toys else None)]
+        # « cut » : la section commence par une coupe franche, sur sa propre image de debut (changement de piece)
+        jobs += [(f"s{s['id']}_start", s["start_frame"], s.get("floor_toys_after"), s)
+                 for s in self.ep["sections"][1:] if s.get("cut")]
         jobs += [(f"s{s['id']}_end", s["end_frame"], s.get("floor_toys_after"), s) for s in self.ep["sections"]]
         with cf.ThreadPoolExecutor(max_workers=3) as ex:
             list(ex.map(lambda j: self.make_keyframe(*j), jobs))
@@ -371,6 +374,9 @@ class Episode:
             length = timing["end"] - timing["start"]
             gen_dur = min(DURATIONS, key=lambda d: abs(d - length))
             actual_end = os.path.join(self.dir, "keyframes", f"s{sid}_actual_end.png")
+            if sec.get("cut"):
+                # un fondu entre deux pieces fait apparaitre deux Nino : on coupe et on repart de l'image de debut
+                prev_end = os.path.join(self.dir, "keyframes", f"s{sid}_start.png")
             if not self.redo or sid in self.redo:
                 end_img = self.end_target(k, sid)
                 while not st.get("ok") and st["tries"] < MAX_TRIES:
