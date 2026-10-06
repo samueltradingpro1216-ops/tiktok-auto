@@ -38,8 +38,8 @@ le meilleur essai.
 ## Épisodes
 | # | Titre | État |
 |---|---|---|
-| 01 | La chanson du rangement | **terminé (1 min 52), à publier** : plans 4 et 7 réparés le 5 octobre |
-| 02 | J'ai peur du noir (Lulu et la peur du noir) | **terminé (2 min 06), à publier** |
+| 01 | La chanson du rangement | terminé (1 min 52), plans 4 et 7 réparés ; **programmé le samedi 10 octobre à 10 h**, Short le lundi 12 à 18 h 30 |
+| 02 | J'ai peur du noir (Lulu et la peur du noir) | **publié le 6 octobre** : https://www.youtube.com/watch?v=Xx02S1SSlD0 ; Short le jeudi 8 à 18 h 30 |
 
 ### Épisode 01 : défauts trouvés au visionnage (réparés)
 - Plan 4 (0:33 à 0:39) : Lulu disparaît et Nino a une aile de luciole dans le dos.
@@ -78,10 +78,18 @@ le meilleur essai.
 - Éviter les énumérations dans les paroles (« bonne nuit X, bonne nuit Y… ») : ACE-Step les saute.
 - Ne rien lancer d'autre pendant la génération d'une chanson sans le fichier d'échange (`install.sh` le crée).
 
+## Publication
+- Chaîne : `UCShPnzacZLkyH4nHZmDZkSg` (marque Orbeo Studio, voir `orbeo_studio/README.md`), publiée via Metricool
+  (marque `7251650`) ; les vidéos partent d'un lien direct GitHub (dépôt public), Metricool les recopie.
+- Shorts : `pipeline/make_short.py` (1080x1920, paroles en gros), programmés comme Shorts « conçus pour les enfants ».
+- Miniatures : YouTube les refuse tant que la chaîne n'est pas validée par téléphone (YouTube Studio → Paramètres →
+  Chaîne → Éligibilité aux fonctionnalités). Ensuite, vidIQ peut les poser (`vidiq_update_video_thumbnail`).
+- Nom, photo, bannière (`identite/banniere/banniere_youtube.jpg`), description et playlists de la chaîne : à faire
+  dans YouTube Studio (aucun connecteur ne le permet).
+
 ## Connexions
-- vidIQ : connecté (compte orbeo.studio@gmail.com, plan gratuit 150 crédits/mois, 5 par recherche), mais aucune
-  chaîne YouTube liée.
-- Metricool : marque créée, aucun réseau social connecté.
+- vidIQ : connecté et lié à la chaîne (compte orbeo.studio@gmail.com, plan gratuit 150 crédits/mois).
+- Metricool : chaîne YouTube connectée (Instagram et TikTok pas encore).
 - Agnes (images et vidéos) : la clé `AGNES_API_KEY` doit être ajoutée aux variables de l'environnement cloud.
 
 ## Prochaines étapes
