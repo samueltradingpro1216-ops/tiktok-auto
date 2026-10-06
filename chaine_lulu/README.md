@@ -84,8 +84,12 @@ le meilleur essai.
 - Shorts : `pipeline/make_short.py` (1080x1920, paroles en gros), programmés comme Shorts « conçus pour les enfants ».
 - Miniatures : YouTube les refuse tant que la chaîne n'est pas validée par téléphone (YouTube Studio → Paramètres →
   Chaîne → Éligibilité aux fonctionnalités). Ensuite, vidIQ peut les poser (`vidiq_update_video_thumbnail`).
-- Nom, photo, bannière (`identite/banniere/banniere_youtube.jpg`), description et playlists de la chaîne : à faire
-  dans YouTube Studio (aucun connecteur ne le permet).
+- Fait par l'API le 6 octobre (`orbeo_studio/youtube_api.py`) : description, mots-clés, pays, langue, bannière,
+  playlists « Les comptines du soir de Lulu » (`PLC0bDtupuIzE`, avec l'ép. 02) et « Les Shorts de Lulu »
+  (`PLE18-JLtziPs`). À ajouter après publication : ép. 01 et les deux Shorts dans leur playlist.
+- Reste à faire dans YouTube Studio : nom de la chaîne (l'API l'ignore), photo de profil, validation par téléphone
+  (miniatures personnalisées).
+- Les vidéos mises en ligne par l'API d'un projet non audité restent privées : on publie par Metricool.
 
 ## Connexions
 - vidIQ : connecté et lié à la chaîne (compte orbeo.studio@gmail.com, plan gratuit 150 crédits/mois).

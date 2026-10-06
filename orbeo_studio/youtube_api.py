@@ -130,6 +130,8 @@ def cmd_branding(a):
     if a.keywords:
         ch["keywords"] = " ".join(f'"{k.strip()}"' if " " in k.strip() else k.strip()
                                   for k in a.keywords.split(",") if k.strip())
+    if a.title:
+        ch["title"] = a.title
     if a.country:
         ch["country"] = a.country
     if a.language:
@@ -195,6 +197,7 @@ def main():
     b.add_argument("--description-file")
     b.add_argument("--keywords")
     b.add_argument("--country")
+    b.add_argument("--title")
     b.add_argument("--language")
     bn = sub.add_parser("banner")
     bn.add_argument("image")
