@@ -39,6 +39,8 @@ def main():
     final = os.path.join(d, f"{ep['slug']}_youtube.mp4")
     clean = os.path.join(d, "clips", "concat.mp4")
     video = clean if os.path.exists(clean) else final
+    # sans version propre, on coupe la bande du bas ou les paroles sont deja incrustees
+    crop = "" if video == clean else "crop=1920:690:0:0,"
 
     ass = os.path.join(d, "clips", f"short_s{first}-{last}.ass")
     os.makedirs(os.path.dirname(ass), exist_ok=True)
@@ -46,12 +48,15 @@ def main():
         f.write("[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\n\n[V4+ Styles]\n"
                 "Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, Bold, BorderStyle, "
                 "Outline, Shadow, Alignment, MarginL, MarginR, MarginV\n"
-                "Style: Paroles,Fredoka,74,&H00FFFFFF,&H006B3023,&H80000000,-1,1,6,2,8,60,60,1230\n\n"
+                "Style: Paroles,Fredoka,70,&H00FFFFFF,&H006B3023,&H80000000,-1,1,6,2,8,60,60,1230\n\n"
                 "[Events]\nFormat: Layer, Start, End, Style, Text\n")
-        for l in st["song"]["lines"]:
-            if not l.get("sung", True) or l["end"] <= t0 or l["start"] >= t1:
+        sung = [l for l in st["song"]["lines"] if l.get("sung", True)]
+        for i, l in enumerate(sung):
+            if l["end"] <= t0 or l["start"] >= t1:
                 continue
-            s, e = max(l["start"], t0) - t0, min(l["end"] + 0.3, t1) - t0
+            nxt = sung[i + 1]["start"] if i + 1 < len(sung) else t1
+            # une seule ligne a l'ecran a la fois (sinon libass les empile vers le bas)
+            s, e = max(l["start"], t0) - t0, min(l["end"] + 0.3, nxt, t1) - t0
             f.write(f"Dialogue: 0,{ass_time(s)},{ass_time(e)},Paroles,{l['text']}\n")
 
     title = a.title.split("|")
@@ -66,13 +71,13 @@ def main():
         draw.append(f"drawtext=fontfile={lg}:text='{esc(line)}':fontsize=118:fontcolor=#FFD84D:borderw=10:"
                     f"bordercolor=#23306B:x=(w-tw)/2:y={230 + i * 140}")
     draw.append(f"drawtext=fontfile={lg}:text='{esc(foot[0])}':fontsize=76:fontcolor=#FFD84D:borderw=7:"
-                f"bordercolor=#23306B:x=(w-tw)/2:y=1600")
+                f"bordercolor=#23306B:x=(w-tw)/2:y=1680")
     if len(foot) > 1:
         draw.append(f"drawtext=fontfile={fr}:text='{esc(foot[1])}':fontsize=46:fontcolor=white:borderw=5:"
-                    f"bordercolor=#23306B:x=(w-tw)/2:y=1700")
+                    f"bordercolor=#23306B:x=(w-tw)/2:y=1780")
     out = os.path.join(d, f"{ep['slug']}_short.mp4")
-    fc = (f"[0:v]split[b][f];[b]scale=-2:1920,crop=1080:1920,boxblur=28:2,eq=brightness=-0.12[bg];"
-          f"[f]scale=1080:608:flags=lanczos[fg];[bg][fg]overlay=0:556,"
+    fc = (f"[0:v]{crop}split[b][f];[b]scale=-2:1920,crop=1080:1920,boxblur=28:2,eq=brightness=-0.12[bg];"
+          f"[f]scale=1080:-2:flags=lanczos[fg];[bg][fg]overlay=0:556,"
           f"subtitles={ass}:fontsdir={FONTS}," + ",".join(draw) +
           f",fade=t=out:st={dur - 0.6:.2f}:d=0.6[v];"
           f"[1:a]afade=t=out:st={dur - 0.8:.2f}:d=0.8[a]")
