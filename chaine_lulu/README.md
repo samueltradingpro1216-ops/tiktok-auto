@@ -32,15 +32,20 @@ le plan suivant s'enchaîne sans coupure visible).
 
 Juge visuel (image par image) : un seul garçon, une seule luciole, pas d'adulte ni de créature en plus, pas de
 déformation, **pas de fusion** (Nino avec des ailes ou des antennes, jouet ou objet avec des ailes ou des
-antennes), Lulu présente, état de la chambre (jouets, coffre, nounours). 5 images contrôlées par plan ; on garde
-le meilleur essai.
+antennes), Lulu et Nino présents, état de la chambre (jouets, coffre, nounours), plus une question à part sur le
+dos de Nino (petites ailes blanches). 5 images contrôlées par plan, prises sur la durée réelle du plan ; on garde
+le meilleur essai. Le juge rate encore des défauts : toujours regarder la vidéo finale (planche d'images toutes
+les 2 à 3 s) avant de publier.
+
+Changement de pièce : `"cut": true` et un `start_frame` dans la section. Le plan commence alors par une coupe
+franche sur sa propre image de début (un seul plan qui passe d'une pièce à l'autre fait apparaître deux Nino).
 
 ## Épisodes
 | # | Titre | État |
 |---|---|---|
 | 01 | La chanson du rangement | terminé (1 min 52), plans 4 et 7 réparés ; **programmé le samedi 10 octobre à 10 h**, Short le lundi 12 à 18 h 30 |
 | 02 | J'ai peur du noir (Lulu et la peur du noir) | **publié le 6 octobre** : https://www.youtube.com/watch?v=Xx02S1SSlD0 ; Short le jeudi 8 à 18 h 30 |
-| 03 | La chanson des dents | chanson (prise 2, 96 %) et 10 images clés validées ; plans en cours ; à programmer le mer. 14 oct. 18 h 30 |
+| 03 | La chanson des dents | terminé (1 min 52), plans 1 et 9 refaits ; **programmé le mercredi 14 octobre à 18 h 30**, Short le vendredi 16 à 18 h 30 |
 
 ### Épisode 01 : défauts trouvés au visionnage (réparés)
 - Plan 4 (0:33 à 0:39) : Lulu disparaît et Nino a une aile de luciole dans le dos.
@@ -82,6 +87,18 @@ le meilleur essai.
 - Nouveau décor : générer d'abord la pièce vide, puis y ajouter Nino et Lulu (partir d'une autre pièce la recopie,
   partir de Lulu seule la rend géante et fait disparaître Nino).
 - Le juge vérifie aussi que Nino est bien à l'image.
+- Ép. 03, plan 9 : salle de bain → chambre dans un seul plan = deux Nino (3 essais sur 3, dont un accepté par le
+  juge). Réglé par une coupe franche (`cut`) sur une image de début dans la chambre de l'ép. 02.
+- Ép. 03, plan 1 : l'image de début avait deux petites ailes blanches dans le dos de Nino, recopiées sur tout le
+  plan ; le juge ne les voyait pas (0 sur 5). Une question à part sur le dos les trouve (5 sur 5, aucune fausse
+  alerte sur 10 images saines), et elle passe maintenant sur toutes les images.
+- Sans consigne, la caméra peut partir dans une autre pièce (ép. 03 : salle de bain beige avec toilettes) : écrire
+  « caméra fixe, même pièce du début à la fin » quand la pièce ne doit pas changer.
+- Agnes rend parfois un plan plus court que demandé (17 s pour 20) : le juge prend ses images sur la vraie durée.
+- Paroles : chaque ligne restait 0,3 s de trop et s'empilait sur la suivante (ép. 01 et 02, de courts instants) ;
+  corrigé à partir de l'ép. 03.
+- Shorts : libass ne lit pas la police Fredoka « variable » et affichait DejaVu ; `install.sh` crée une Fredoka
+  grasse fixe. Shorts 01 et 02 refaits et remplacés dans Metricool.
 
 ## Publication
 - Chaîne : `UCShPnzacZLkyH4nHZmDZkSg` (marque Orbeo Studio, voir `orbeo_studio/README.md`), publiée via Metricool

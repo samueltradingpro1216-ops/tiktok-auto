@@ -440,12 +440,14 @@ class Episode:
     def write_srt(self, path, windows=None):
         """Paroles en sous-titres ; avec `windows` [(debut, fin)], seulement ce qui tombe dans ces fenetres."""
         n = 0
+        sung = [l for l in self.state["song"]["lines"] if l.get("sung", True)]
         with open(path, "w", encoding="utf-8") as f:
-            for l in self.state["song"]["lines"]:
-                if not l.get("sung", True):
-                    continue
+            for i, l in enumerate(sung):
+                # la ligne reste un peu apres le chant, mais jamais en meme temps que la suivante
+                # (libass empilerait les deux lignes a chaque changement)
+                end = min(l["end"] + 0.3, sung[i + 1]["start"]) if i + 1 < len(sung) else l["end"] + 0.3
                 for a, b in windows or [(0.0, math.inf)]:
-                    s, e = max(l["start"], a), min(l["end"] + 0.3, b)
+                    s, e = max(l["start"], a), min(end, b)
                     if e - s > 0.02:
                         n += 1
                         f.write(f"{n}\n{srt_ts(s)} --> {srt_ts(e)}\n{wrap(l['text'])}\n\n")
