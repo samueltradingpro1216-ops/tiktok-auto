@@ -7,27 +7,27 @@ Le pyjama est mis, c'est bientôt dodo,
 mais d'abord les dents ! Lulu, au lavabo !
 
 3
-00:00:08,920 --> 00:00:11,720
+00:00:08,920 --> 00:00:11,420
 Petite brosse, petite brosse,
 
 4
-00:00:11,420 --> 00:00:14,420
+00:00:11,420 --> 00:00:14,120
 fais briller mes petites dents !
 
 5
-00:00:14,120 --> 00:00:16,780
+00:00:14,120 --> 00:00:16,480
 Lulu brille, et moi je brosse,
 
 6
-00:00:16,480 --> 00:00:19,140
+00:00:16,480 --> 00:00:18,840
 je souris en chantant !
 
 7
-00:00:18,840 --> 00:00:22,340
+00:00:18,840 --> 00:00:22,040
 Lulu éclaire tout en haut…
 
 8
-00:00:22,040 --> 00:00:24,900
+00:00:22,040 --> 00:00:24,600
 Qu'est-ce qu'on voit ? Un bout de gâteau !
 
 9
@@ -35,11 +35,11 @@ Qu'est-ce qu'on voit ? Un bout de gâteau !
 Brosse, brosse, et hop, parti !
 
 10
-00:00:29,640 --> 00:00:32,420
+00:00:29,640 --> 00:00:32,120
 Lulu éclaire tout en bas…
 
 11
-00:00:32,120 --> 00:00:34,920
+00:00:32,120 --> 00:00:34,620
 Qu'est-ce qu'on voit ? Du chocolat !
 
 12
@@ -47,27 +47,27 @@ Qu'est-ce qu'on voit ? Du chocolat !
 Brosse, brosse, et hop, parti !
 
 13
-00:00:39,200 --> 00:00:42,020
+00:00:39,200 --> 00:00:41,720
 Petite brosse, petite brosse,
 
 14
-00:00:41,720 --> 00:00:44,740
+00:00:41,720 --> 00:00:44,440
 fais briller mes petites dents !
 
 15
-00:00:44,440 --> 00:00:47,100
+00:00:44,440 --> 00:00:46,800
 Lulu brille, et moi je brosse,
 
 16
-00:00:46,800 --> 00:00:49,500
+00:00:46,800 --> 00:00:49,200
 je souris en chantant !
 
 17
-00:00:49,200 --> 00:00:52,680
+00:00:49,200 --> 00:00:52,380
 Lulu éclaire tout au fond…
 
 18
-00:00:52,380 --> 00:00:55,080
+00:00:52,380 --> 00:00:54,780
 Qu'est-ce qu'on voit ? Un petit bonbon !
 
 19
@@ -75,11 +75,11 @@ Qu'est-ce qu'on voit ? Un petit bonbon !
 Brosse, brosse, et hop, parti !
 
 20
-00:00:59,700 --> 00:01:02,860
+00:00:59,700 --> 00:01:02,560
 Un peu d'eau pour rincer ma bouche,
 
 21
-00:01:02,560 --> 00:01:05,120
+00:01:02,560 --> 00:01:04,820
 et je crache dans le lavabo !
 
 22
@@ -87,15 +87,15 @@ et je crache dans le lavabo !
 La brosse dans son verre, bravo !
 
 23
-00:01:09,460 --> 00:01:12,360
+00:01:09,460 --> 00:01:12,060
 Petite brosse, petite brosse,
 
 24
-00:01:12,060 --> 00:01:15,120
+00:01:12,060 --> 00:01:14,820
 fais briller mes petites dents !
 
 25
-00:01:14,820 --> 00:01:17,380
+00:01:14,820 --> 00:01:17,080
 Lulu brille, et moi je brosse,
 
 26
@@ -103,7 +103,7 @@ Lulu brille, et moi je brosse,
 je souris en chantant !
 
 27
-00:01:20,720 --> 00:01:22,820
+00:01:20,720 --> 00:01:22,520
 Mes dents brillent comme Lulu,
 
 28
@@ -111,7 +111,7 @@ Mes dents brillent comme Lulu,
 un bisou, au lit, dodo !
 
 29
-00:01:25,760 --> 00:01:27,900
+00:01:25,760 --> 00:01:27,600
 Mes dents brillent comme Lulu,
 
 30
