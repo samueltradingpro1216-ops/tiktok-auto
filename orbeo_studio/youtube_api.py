@@ -5,8 +5,9 @@ Connexion « appareil » (OAuth device flow) : le script affiche un code, on le 
 aucun mot de passe ni secret ne passe par le chat. Portee demandee : https://www.googleapis.com/auth/youtube
 (gestion complete de la chaine ; les statistiques detaillees passent par vidIQ et Metricool).
 
-Variables d'environnement : YOUTUBE_CLIENT_ID, YOUTUBE_CLIENT_SECRET (client OAuth « TV et peripheriques a
-saisie limitee » du projet Google Cloud). Le jeton est garde dans ~/.youtube_token.json (jamais dans le depot).
+Identifiants : YOUTUBE_CLIENT_ID et YOUTUBE_CLIENT_SECRET, ou le fichier JSON du client OAuth « TV et
+peripheriques a saisie limitee » copie dans ~/.youtube_client.json. Le jeton est garde dans ~/.youtube_token.json.
+Ni l'un ni l'autre ne vont dans le depot.
 
 Usage :
   python youtube_api.py login
@@ -33,10 +34,19 @@ API = "https://www.googleapis.com/youtube/v3"
 UPLOAD = "https://www.googleapis.com/upload/youtube/v3"
 
 
+CLIENT_FILE = os.path.expanduser(os.environ.get("YOUTUBE_CLIENT_FILE", "~/.youtube_client.json"))
+
+
 def client():
+    """Identifiants du client OAuth : variables d'environnement, sinon le JSON telecharge depuis Google Cloud
+    (copie privee dans ~/.youtube_client.json, jamais dans le depot)."""
     cid, secret = os.environ.get("YOUTUBE_CLIENT_ID"), os.environ.get("YOUTUBE_CLIENT_SECRET")
+    if (not cid or not secret) and os.path.exists(CLIENT_FILE):
+        c = json.load(open(CLIENT_FILE))
+        c = c.get("installed") or c.get("web") or c
+        cid, secret = c.get("client_id"), c.get("client_secret")
     if not cid or not secret:
-        sys.exit("YOUTUBE_CLIENT_ID et YOUTUBE_CLIENT_SECRET manquent dans les variables d'environnement")
+        sys.exit("identifiants absents : YOUTUBE_CLIENT_ID/YOUTUBE_CLIENT_SECRET ou ~/.youtube_client.json")
     return cid, secret
 
 
