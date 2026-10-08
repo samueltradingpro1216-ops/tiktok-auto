@@ -8,3 +8,19 @@ chaine_lulu/episodes/*/frames/
 chaine_lulu/episodes/*/state.json
 chaine_lulu/episodes/*/.cache/
 chaine_lulu/episodes/*/chanson/*.transcription.json
+# serie fruits : fichiers de travail (seuls le script, les fiches, les decors choisis et la video finale sont gardes)
+orbeo_studio/ligne_shorts/serie_fruits/episodes/*/images/
+orbeo_studio/ligne_shorts/serie_fruits/episodes/*/clips/
+orbeo_studio/ligne_shorts/serie_fruits/episodes/*/controle/
+orbeo_studio/ligne_shorts/serie_fruits/episodes/*/voix/
+orbeo_studio/ligne_shorts/serie_fruits/episodes/*/montage/
+orbeo_studio/ligne_shorts/serie_fruits/episodes/*/musique/*/
+orbeo_studio/ligne_shorts/serie_fruits/episodes/*/decors/*_cand*.png
+orbeo_studio/ligne_shorts/serie_fruits/episodes/*/decors/*_norm.jpg
+orbeo_studio/ligne_shorts/serie_fruits/episodes/*/decors/rejets/
+orbeo_studio/ligne_shorts/serie_fruits/episodes/*/state.json
+orbeo_studio/ligne_shorts/serie_fruits/identite/anciennes/
+orbeo_studio/ligne_shorts/serie_fruits/outils/error_logs/
+orbeo_studio/ligne_shorts/serie_fruits/outils/.cache/
+orbeo_studio/ligne_shorts/serie_fruits/identite/candidats/
+orbeo_studio/ligne_shorts/serie_fruits/**/*_norm.jpg

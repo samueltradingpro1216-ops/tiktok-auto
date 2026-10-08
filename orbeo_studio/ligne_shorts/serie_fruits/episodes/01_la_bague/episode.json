@@ -1,0 +1,478 @@
+{
+ "titre": "La bague, partie 1",
+ "accroche": "IL LA TROMPE AVEC SA MEILLEURE AMIE 💔",
+ "badge": "ÉP. 1",
+ "fin": "PARTIE 2",
+ "legende": "Il la trompait avec sa meilleure amie… et il a payé la bague avec l'argent de sa grand-mère 💔 Partie 2 ? #fruitstory #histoiredefruit #tiktokfrance🇨🇵 #histoire #drama",
+ "style": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame",
+ "tenues": {
+  "cerise_robe": {
+   "de": "cerise",
+   "consigne": "the same woman, same face, same full red lips and glamorous makeup, same deep cherry-red skin, same voluptuous hourglass figure, same long wavy dark-red hair with the cherries and leaf, now wearing a tight red satin evening gown with thin straps and a plunging neckline showing cleavage, hugging her curves, long skirt with a high side slit, red heels, gold earrings; confident model pose, one hand on her hip."
+  },
+  "peche_sweat": {
+   "de": "peche",
+   "consigne": "the same woman, same face, same full pink lips, same peach-pink skin, same voluptuous figure, same long wavy brown hair with the green leaf, same gold hoop earrings, now wearing an oversized black men's hoodie slipping off one shoulder, much too big for her, and tight pink shorts."
+  },
+  "peche_soiree": {
+   "de": "peche",
+   "consigne": "the same woman, same face, same full pink lips and glamorous makeup, same peach-pink skin, same voluptuous hourglass figure, same long wavy brown hair with the green leaf, now wearing a tight white sparkling sequin evening gown with a plunging neckline showing cleavage, gold jewelry, white heels; confident model pose, one hand on her hip."
+  },
+  "citron_costume": {
+   "de": "citron",
+   "consigne": "the same man, same face, same bright lemon-yellow skin, same slicked-back golden hair, same huge muscular bodybuilder build, now wearing a fitted black tuxedo jacket worn open on his bare muscular chest and abs, black tuxedo trousers, a thick gold chain, a gold watch and polished black shoes."
+  }
+ },
+ "persos": {
+  "cerise": "a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing a tight white deep V-neck crop top, a tiny mustard-yellow waitress apron and tight ripped blue jeans",
+  "cerise_robe": "a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf, full glossy red lips, wearing a tight red satin evening gown with a plunging neckline",
+  "citron": "a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black leather jacket on his bare muscular chest with six-pack abs and a thick gold chain",
+  "citron_costume": "a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black tuxedo jacket on his bare muscular chest and a gold chain",
+  "peche": "a glamorous voluptuous young woman with peach-pink skin and rosy cheeks, long glossy wavy brown hair with a green leaf clipped in it, very full glossy pink lips, bold glamorous makeup, big gold hoop earrings, wearing a tight hot-pink satin mini dress with a plunging neckline",
+  "peche_sweat": "a glamorous voluptuous young woman with peach-pink skin and rosy cheeks, long glossy wavy brown hair with a green leaf clipped in it, very full glossy pink lips, big gold hoop earrings, wearing an oversized black men's hoodie slipping off one shoulder",
+  "peche_soiree": "a glamorous voluptuous young woman with peach-pink skin and rosy cheeks, long glossy wavy brown hair with a green leaf clipped in it, very full glossy pink lips, wearing a tight white sparkling sequin gown with a plunging neckline",
+  "kiwi": "a hugely muscular handsome young man with olive-green fuzzy skin, short curly dark-brown hair, bright green eyes, wearing an open green delivery jacket on his bare muscular chest with six-pack abs",
+  "prune": "a small old grandmother with deep purple wrinkled skin, white hair, small round glasses, a knitted hat, a knitted beige shawl and a floral dress"
+ },
+ "voix": {
+  "cerise": "a soft, sweet young woman's voice, slightly husky",
+  "citron": "a deep, smooth, confident young man's voice, arrogant",
+  "peche": "a high-pitched, drawling, mocking young woman's voice",
+  "kiwi": "a warm, friendly young man's voice with a slight Parisian street accent",
+  "prune": "a crackly old woman's voice, warm and mischievous"
+ },
+ "decors": {
+  "appart": {
+   "consigne": "A small cozy modern Paris apartment living room at night: a grey sofa with cushions, a coffee table, a warm floor lamp, string lights, plants, a big window with Paris rooftops and city lights at night. Warm lamp light and cool blue night light from the window.",
+   "son": "ambiance appartement nuit"
+  },
+  "chambre_peche": {
+   "consigne": "A luxurious pink influencer bedroom at night: a big bed with white and pink pillows and a fluffy blanket, a ring light, a wall of mirrors, gold decorations, pink and purple neon glow without any letters.",
+   "son": "chambre calme"
+  },
+  "rue": {
+   "consigne": "A narrow Paris street at night in heavy rain: wet cobblestones reflecting colorful neon lights, a café with a red awning, neon signs shaped like cherries, lemons and hearts with no letters at all, parked scooters, old street lamps, Haussmann buildings, rain falling. Cinematic blue and orange light.",
+   "son": "pluie forte"
+  },
+  "cuisine": {
+   "consigne": "A small warm old-fashioned grandmother's kitchen at night: wooden cupboards, floral wallpaper, copper pans hanging, a pot on an old stove, a round table with a checkered tablecloth and a teapot, a warm yellow ceiling lamp, a window with rain outside.",
+   "son": "cuisine, pluie lointaine"
+  },
+  "fete": {
+   "consigne": "A glamorous party hall at night: crystal chandeliers, gold and white balloons, round tables with white tablecloths and candles, a small stage with a white rose arch and a microphone stand. The guests are fruit people with colorful fruit-colored skin (banana yellow, grape purple, apple green, orange), small, far away and blurred in the background.",
+   "son": "foule de fête",
+   "foule": true
+  },
+  "fete_portes": {
+   "consigne": "The entrance of a glamorous party hall at night seen from inside: tall golden double doors wide open, bright light coming from behind the doors, crystal chandeliers, gold and white balloons, round tables with candles. A few guests seen from behind and blurred at the edges of the frame are fruit people with colorful fruit-colored skin (banana yellow, grape purple, apple green). The doorway itself is empty.",
+   "son": "foule de fête",
+   "foule": true
+  }
+ },
+ "musique": {
+  "tension": {
+   "style": "dark tense trap beat, deep 808 bass, ticking hi-hats, suspense strings, minor key, 90 bpm, dramatic tv drama underscore, instrumental",
+   "duree": 30
+  },
+  "triste": {
+   "style": "sad emotional piano ballad, soft strings, rain mood, slow, minor key, cinematic, instrumental",
+   "duree": 30
+  },
+  "revanche": {
+   "style": "epic rising revenge build-up, pulsing low synth, taiko drums, rising strings, tension building to a climax, cinematic trailer, instrumental",
+   "duree": 20
+  },
+  "fete": {
+   "style": "glamorous upbeat Brazilian funk party beat, catchy, club, festive, 128 bpm, instrumental",
+   "duree": 25
+  }
+ },
+ "plans": [
+  {
+   "id": 1,
+   "decor": "appart",
+   "persos": [
+    "cerise"
+   ],
+   "cadre": "Medium close-up from the waist up, she stands in the living room and holds a smartphone up toward the viewer with one hand, shocked and angry, eyes wet.",
+   "parle": "cerise",
+   "jeu": "She holds up the phone toward the viewer, furious and hurt, and shouts",
+   "replique": "Pourquoi Pêche t'écrit : tu m'as manqué cette nuit ?!",
+   "musique": "tension",
+   "incrust": [
+    {
+     "type": "notif",
+     "de": "Pêche 🍑",
+     "texte": "tu m'as manqué cette nuit 😘"
+    }
+   ],
+   "recadrage": "pm"
+  },
+  {
+   "id": 2,
+   "decor": "appart",
+   "persos": [
+    "citron"
+   ],
+   "cadre": "Medium shot, he sits relaxed on the grey sofa, one arm on the backrest, lazy smirk.",
+   "parle": "citron",
+   "jeu": "He shrugs casually with a lazy smirk and says",
+   "replique": "Calme-toi… C'est rien, c'est pour le boulot.",
+   "recadrage": "pm"
+  },
+  {
+   "id": 3,
+   "decor": "appart",
+   "persos": [
+    "cerise"
+   ],
+   "cadre": "Close-up of her face and shoulders, tears in her eyes, angry.",
+   "parle": "cerise",
+   "jeu": "Tears in her eyes, she snaps back angrily",
+   "replique": "T'as pas de boulot, Citron !",
+   "recadrage": "gp"
+  },
+  {
+   "id": 4,
+   "decor": "appart",
+   "persos": [
+    "citron"
+   ],
+   "cadre": "Medium close-up, he stands and leans forward aggressively, pointing his finger at the viewer, angry.",
+   "parle": "citron",
+   "jeu": "He points his finger angrily and shouts",
+   "replique": "T'as fouillé mon téléphone ? T'es malade !",
+   "recadrage": "pm"
+  },
+  {
+   "id": 5,
+   "decor": "appart",
+   "persos": [
+    "cerise"
+   ],
+   "cadre": "Medium close-up, she holds a smartphone in front of her face as if starting a video call, tears on her cheeks, determined.",
+   "parle": "cerise",
+   "jeu": "She wipes a tear, lifts the phone and says firmly",
+   "replique": "Très bien. J'appelle Pêche.",
+   "recadrage": "pm"
+  },
+  {
+   "id": 6,
+   "decor": "chambre_peche",
+   "persos": [
+    "peche_sweat"
+   ],
+   "cadre": "Selfie-style close-up as seen through a phone front camera: she lies on her bed, holding the phone at arm's length, smug fake smile.",
+   "parle": "peche",
+   "jeu": "She gives a slow fake smile, tilts her head and says in a mocking drawl",
+   "replique": "Ah… Salut ma belle.",
+   "incrust": [
+    {
+     "type": "appel",
+     "nom": "Pêche 🍑"
+    }
+   ],
+   "recadrage": "gp"
+  },
+  {
+   "id": 7,
+   "decor": "appart",
+   "persos": [
+    "cerise"
+   ],
+   "cadre": "Close-up of her face looking at a phone screen just below the frame, shocked, lips trembling.",
+   "parle": "cerise",
+   "jeu": "Shocked, her voice breaking, she whispers",
+   "replique": "Ce sweat… C'est celui de Citron.",
+   "recadrage": "gp"
+  },
+  {
+   "id": 8,
+   "decor": "chambre_peche",
+   "persos": [
+    "peche_sweat"
+   ],
+   "cadre": "Selfie-style close-up: she sits on her bed and raises her left hand toward the viewer to show a big diamond engagement ring on her finger, smug.",
+   "parle": "peche",
+   "jeu": "She shows off the big diamond ring to the camera with a smug smile and says",
+   "replique": "Il t'a pas dit ? Il m'a demandée en mariage.",
+   "incrust": [
+    {
+     "type": "appel",
+     "nom": "Pêche 🍑"
+    }
+   ],
+   "recadrage": "pm"
+  },
+  {
+   "id": 9,
+   "decor": "appart",
+   "persos": [
+    "citron"
+   ],
+   "cadre": "Medium close-up, he stands with his arms crossed over his muscular chest, cold contemptuous look.",
+   "parle": "citron",
+   "jeu": "Arms crossed, with a cold contemptuous look, he says slowly",
+   "replique": "Elle a deux cent mille abonnés. Toi, t'es serveuse.",
+   "sous_titre": "Elle a 200 000 abonnés. Toi, t'es serveuse.",
+   "incrust": [
+    {
+     "type": "chiffre",
+     "texte": "200 000 abonnés",
+     "mot": "abonnés"
+    }
+   ],
+   "recadrage": "pm"
+  },
+  {
+   "id": 10,
+   "decor": "rue",
+   "persos": [
+    "cerise"
+   ],
+   "cadre": "Wide shot, she runs alone down the rainy street at night toward the viewer, crying, rain soaking her hair.",
+   "parle": null,
+   "jeu": "She runs toward the camera in the pouring rain, crying, out of breath",
+   "duree": 2.6,
+   "musique": "triste"
+  },
+  {
+   "id": 11,
+   "decor": "rue",
+   "persos": [
+    "kiwi"
+   ],
+   "cadre": "Medium shot, he sits on a green delivery scooter stopped in the rainy street, wearing his cap, worried, looking at the viewer.",
+   "parle": "kiwi",
+   "jeu": "Worried, he takes off his helmet visor and calls out",
+   "replique": "Cerise ?! Qu'est-ce qu'il t'a fait ?",
+   "recadrage": "pm"
+  },
+  {
+   "id": 12,
+   "decor": "rue",
+   "persos": [
+    "cerise"
+   ],
+   "cadre": "Close-up of her face in the rain at night, crying, wet hair.",
+   "parle": "cerise",
+   "jeu": "Crying in the rain, she turns away and murmurs",
+   "replique": "Laisse-moi, Kiwi…",
+   "recadrage": "gp"
+  },
+  {
+   "id": 13,
+   "decor": "cuisine",
+   "persos": [
+    "prune"
+   ],
+   "cadre": "Medium shot, she stands at the stove pouring tea into a cup, looking at the viewer over her glasses with a wise mischievous look.",
+   "parle": "prune",
+   "jeu": "She pours the tea calmly, looks over her glasses and says with a mischievous smile",
+   "replique": "Un citron, ma chérie… Ça finit toujours pressé.",
+   "musique": "triste",
+   "recadrage": "pm"
+  },
+  {
+   "id": 14,
+   "decor": "cuisine",
+   "persos": [
+    "cerise"
+   ],
+   "cadre": "Medium close-up, she sits at the kitchen table wrapped in a soft blanket, wet hair, holding a cup of tea with both hands, sad.",
+   "parle": "cerise",
+   "jeu": "Sad, holding her cup of tea, she says quietly",
+   "replique": "Il a dit que j'étais rien, Mamie.",
+   "recadrage": "pm"
+  },
+  {
+   "id": 15,
+   "decor": "cuisine",
+   "persos": [
+    "prune"
+   ],
+   "cadre": "Close-up, she takes off her small round glasses, serious and determined.",
+   "parle": "prune",
+   "jeu": "She takes off her glasses, serious, and says firmly",
+   "replique": "Rien ? Alors montre-lui ce que vaut une cerise.",
+   "recadrage": "gp"
+  },
+  {
+   "id": 16,
+   "decor": "cuisine",
+   "persos": [
+    "kiwi"
+   ],
+   "cadre": "Medium shot, he stands in the kitchen doorway holding his phone, shocked.",
+   "parle": "kiwi",
+   "jeu": "Shocked, he looks up from his phone and says",
+   "replique": "Cerise… Regarde ce qu'il vient de poster.",
+   "recadrage": "pm"
+  },
+  {
+   "id": 17,
+   "type": "post",
+   "decor": "cuisine",
+   "duree": 2.6,
+   "post": {
+    "auteur": "citron.officiel",
+    "texte": "Fiançailles samedi 🍋💍🍑 Tout le quartier est invité !",
+    "photo_plan": 8,
+    "tampon": "LA BAGUE : 3 000 €"
+   }
+  },
+  {
+   "id": 18,
+   "decor": "cuisine",
+   "persos": [
+    "cerise"
+   ],
+   "cadre": "Close-up of her face, the realization dawning, eyes wide, horrified.",
+   "parle": "cerise",
+   "jeu": "Horrified, realizing the truth, she says",
+   "replique": "Trois mille euros… C'est l'argent de l'opération de Mamie !",
+   "sous_titre": "3 000 €… C'est l'argent de l'opération de Mamie !",
+   "incrust": [
+    {
+     "type": "chiffre",
+     "texte": "3 000 €",
+     "mot": "euros"
+    }
+   ],
+   "recadrage": "gp"
+  },
+  {
+   "id": 19,
+   "decor": "cuisine",
+   "persos": [
+    "kiwi"
+   ],
+   "cadre": "Medium close-up, he clenches his fist, outraged.",
+   "parle": "kiwi",
+   "jeu": "Outraged, he clenches his fist and says",
+   "replique": "Il a pris tes économies pour lui acheter une bague ?!",
+   "recadrage": "pm"
+  },
+  {
+   "id": 20,
+   "decor": "cuisine",
+   "persos": [
+    "prune"
+   ],
+   "cadre": "Close-up, she puts her glasses back on slowly, calm and determined, a small dangerous smile.",
+   "parle": "prune",
+   "jeu": "Calm and determined, she puts her glasses back on and says",
+   "replique": "Samedi… On ira à cette fête.",
+   "musique": "revanche",
+   "recadrage": "gp"
+  },
+  {
+   "id": 21,
+   "decor": "cuisine",
+   "persos": [
+    "kiwi"
+   ],
+   "cadre": "Medium close-up, he raises his eyebrows, surprised and curious.",
+   "parle": "kiwi",
+   "jeu": "Surprised, he raises his eyebrows and asks",
+   "replique": "Et on fait quoi, là-bas ?",
+   "recadrage": "pm"
+  },
+  {
+   "id": 22,
+   "decor": "cuisine",
+   "persos": [
+    "cerise"
+   ],
+   "cadre": "Close-up, she wipes away her tears, her face becomes determined and strong.",
+   "parle": "cerise",
+   "jeu": "She wipes away her tears, her face hardens with determination, and she says",
+   "replique": "On récupère la bague. Et l'argent de Mamie.",
+   "recadrage": "gp"
+  },
+  {
+   "id": 23,
+   "decor": "fete",
+   "persos": [
+    "citron_costume"
+   ],
+   "cadre": "Medium shot, he stands on the small stage under the white rose arch and holds a microphone, smiling proudly at the crowd.",
+   "parle": "citron",
+   "jeu": "Proud, smiling at the crowd, he speaks into the microphone",
+   "replique": "Pêche… Devant tout le quartier… Veux-tu…",
+   "musique": "fete",
+   "recadrage": "pm"
+  },
+  {
+   "id": 24,
+   "decor": "fete_portes",
+   "persos": [
+    "cerise_robe"
+   ],
+   "cadre": "Wide shot, she stands in the open doorway, backlit, confident and glamorous, full body, blurred guests in the foreground turning their heads toward her.",
+   "parle": null,
+   "jeu": "She stands still in the doorway, then walks forward slowly and confidently, her dress moving, guests turning around",
+   "duree": 2.8
+  },
+  {
+   "id": 25,
+   "decor": "fete",
+   "persos": [
+    "peche_soiree"
+   ],
+   "cadre": "Medium close-up, she stands on the stage, furious, pointing toward the doors.",
+   "parle": "peche",
+   "jeu": "Furious, she points toward the doors and shouts",
+   "replique": "Qu'est-ce qu'elle fait là, elle ?!",
+   "recadrage": "pm"
+  },
+  {
+   "id": 26,
+   "decor": "fete",
+   "persos": [
+    "citron_costume"
+   ],
+   "cadre": "Medium close-up, he stands on the stage, nervous, sweating, gesturing to someone off-screen.",
+   "parle": "citron",
+   "jeu": "Nervous and sweating, he waves to the security guards and shouts",
+   "replique": "Sécurité ! Sortez-la d'ici !",
+   "recadrage": "pm"
+  },
+  {
+   "id": 27,
+   "decor": "fete_portes",
+   "persos": [
+    "prune"
+   ],
+   "cadre": "Medium shot, she stands near the open doors raising her wooden spoon threateningly, fierce mischievous look.",
+   "parle": "prune",
+   "jeu": "She raises her wooden spoon threateningly and says",
+   "replique": "Touchez-la, et je vous transforme en compote.",
+   "recadrage": "pm"
+  },
+  {
+   "id": 28,
+   "decor": "fete",
+   "persos": [
+    "cerise_robe"
+   ],
+   "cadre": "Medium close-up, she stands on the stage under the chandeliers holding a microphone, calm, confident little smile.",
+   "parle": "cerise",
+   "jeu": "Calm and confident, she lifts the microphone and says with a little smile",
+   "replique": "Avant le oui… J'ai une petite vidéo à vous montrer.",
+   "recadrage": "pm"
+  },
+  {
+   "id": 29,
+   "decor": "fete",
+   "persos": [
+    "citron_costume"
+   ],
+   "cadre": "Close-up of his face on the stage, his smile dropping, panicked, a drop of sweat.",
+   "parle": null,
+   "jeu": "His smile slowly drops into panic, he swallows hard",
+   "duree": 1.8,
+   "recadrage": "gp"
+  }
+ ]
+}
