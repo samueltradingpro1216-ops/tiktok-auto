@@ -1,46 +1,47 @@
-# Orbeo Studio : la marque des vidéos IA
+# Orbeo Studio : le studio et ses deux séries
 
-Orbeo Studio est le nom commun de toutes les vidéos créées avec l'IA (compte orbeo.studio@gmail.com).
-Deux lignes de contenu, rangées chacune à sa place :
+Orbeo Studio est le studio qui fabrique, avec l'IA, deux séries qui ne se mélangent jamais (compte
+orbeo.studio@gmail.com). **Mise à jour du 8 octobre 2026 :** les deux lignes ont été repensées après deux études ;
+rien de nouveau n'est produit tant que leur plan n'est pas validé.
 
-| Ligne | Contenu | Où | Public |
-|---|---|---|---|
-| **Lulu la Luciole** | comptines animées originales (`chaine_lulu/`) | chaîne YouTube actuelle (`UCShPnzacZLkyH4nHZmDZkSg`), vidéos + Shorts des refrains | enfants 1-5 ans (« conçue pour les enfants ») |
-| **Shorts IA** | vidéos courtes verticales (9:16, moins de 60 s) | Instagram Reels, TikTok, chaîne YouTube « Orbeo Studio » (à créer) | grand public |
+| Ligne | Ce que c'est | Où | Public | Statut |
+|---|---|---|---|---|
+| **Série jeunesse** (titre de travail « Lucinou, la petite veilleuse du jardin ») | série courte d'avant le coucher (5 à 7 min) avec une héroïne luciole muette, une chanson par épisode, un rituel « on éteint l'écran » ; remplace la chaîne de comptines « Lulu la Luciole » | YouTube (« conçue pour les enfants »), puis audio | 3-5 ans et leurs parents | **priorité n°1** : conception en cours (`serie_jeunesse/`), test sur carte graphique semaine du 13 octobre |
+| **Série ado-adulte** (proposition : « Les Crache-Pluie », les gargouilles d'une église de Paris) | comédie à épisodes de 61 à 90 s, troupe fixe, faux documentaire, 3 épisodes par semaine | TikTok (compte personnel), Instagram Reels, YouTube Shorts (nouvelle chaîne) | 18-34 ans | **en conception seulement** ; lancement au plus tôt le 23 novembre, après 5 critères (`reports/Ligne vidéo IA TikTok Orbeo.md`) |
 
-## Pourquoi deux chaînes YouTube plutôt qu'une chaîne avec deux playlists
-- Une vidéo « conçue pour les enfants » perd les commentaires, les notifications et la publicité ciblée ; la
-  chaîne enfants doit le rester entièrement pour que YouTube la recommande aux bons spectateurs (parents, tout-petits).
-- Des Shorts grand public sur la même chaîne mélangeraient deux publics qui ne regardent pas la même chose : les
-  abonnés de l'un ne regardent pas l'autre, ce qui fait baisser les recommandations des deux.
-- Les deux chaînes peuvent appartenir au même compte Google (YouTube → Paramètres → Ajouter ou gérer vos chaînes
-  → Créer une chaîne).
-- Metricool : la chaîne Lulu est connectée à la marque `7251650`. Pour publier aussi les Shorts, il faudra
-  connecter Instagram, TikTok et la chaîne Orbeo Studio ; vérifier si le plan Metricool permet une 2e marque
-  (une marque = une seule chaîne YouTube).
+Les épisodes de « Lulu la Luciole » déjà programmés (jusqu'au 16 octobre) sortent comme tests, puis passeront en
+« non répertorié » quand la nouvelle série sera en ligne.
+
+Documents de référence :
+- `reports/Franchise jeunesse IA Orbeo.md` : le modèle de la série jeunesse ;
+- `reports/Ligne vidéo IA TikTok Orbeo.md` : le modèle de la série ado-adulte et la priorité entre les deux ;
+- `orbeo_studio/strategie.md` : la première étude de différenciation (6 octobre).
+
+## Pourquoi deux chaînes et des comptes séparés
+- Une vidéo « conçue pour les enfants » perd les commentaires, les notifications et la publicité ciblée. La chaîne
+  enfants doit le rester entièrement pour que YouTube la recommande aux bons spectateurs.
+- Un public de tout-petits et un public ado-adulte ne regardent pas la même chose : les mélanger fait baisser les
+  recommandations des deux.
+- Les comptes de la série ado-adulte ne parlent jamais de la série jeunesse, et inversement. Seule la mention « Une
+  série Orbeo Studio » les relie.
+- Les deux chaînes YouTube peuvent appartenir au même compte Google (YouTube, puis Paramètres, puis Ajouter ou
+  gérer vos chaînes, puis Créer une chaîne).
+- Metricool : la chaîne jeunesse est connectée à la marque `7251650`. La série ado-adulte demandera une 2e marque
+  (une marque = une seule chaîne YouTube) : vérifier que l'abonnement le permet.
 
 ## Identifiants à réserver
-`@orbeostudio` sur YouTube, Instagram et TikTok (libre sur YouTube d'après vidIQ le 6 octobre 2026, à confirmer).
-Repli : `@orbeo.studio` (Instagram, TikTok) ou `@orbeostudiofr`.
+- Série jeunesse : le nom choisi (voir `serie_jeunesse/noms.md`), par exemple `@lucinou.tv`. Domaines lucinou.com
+  et lucinou.fr libres le 8 octobre.
+- Série ado-adulte : par exemple `@lescrachepluie` (à vérifier). Domaines crachepluie.com et lescrachepluie.com
+  libres le 8 octobre.
+- Studio : `@orbeostudio` pour les coulisses, si besoin.
 
 ## Biographies
-Instagram (150 caractères max) :
-```
-✨ Petites histoires animées créées avec l'IA
-🌙 Les comptines de Lulu la Luciole
-🎬 Une nouvelle vidéo chaque semaine
-```
-TikTok (80 caractères max) :
-```
-Petites histoires animées créées avec l'IA ✨ Comptines de Lulu la Luciole 🌙
-```
-Chaîne YouTube Orbeo Studio :
-```
-Orbeo Studio crée de petites histoires animées avec l'intelligence artificielle : des scènes douces, drôles ou
-magiques, en format court, une nouvelle chaque semaine.
-
-Pour les tout-petits, retrouve nos comptines sur la chaîne Lulu la Luciole !
-```
+À réécrire une fois les noms choisis. Règles :
+- une bio par série ;
+- jamais de mélange des deux publics ;
+- toujours « Une série Orbeo Studio » ;
+- une mention « créé avec l'IA » là où le réseau le demande.
 
 ## Règles de publication
 - Déclarer le contenu IA là où le réseau le demande : TikTok (`isAigc`), Instagram (`isAiGenerated`), YouTube

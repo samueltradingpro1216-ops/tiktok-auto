@@ -1,5 +1,16 @@
 # Lulu la Luciole : chaîne YouTube de comptines (état du projet)
 
+> **8 octobre 2026 : format arrêté.** Deux études (`reports/Franchise jeunesse IA Orbeo.md`) concluent qu'une chaîne
+> de comptines IA « Lulu la Luciole » n'est pas viable :
+> - YouTube ne paie plus « les mêmes personnages, même situation, même fin » ;
+> - le nom n'est pas protégeable (LULU, Lulu Castagnette, Lulu Vroumette) ;
+> - « un écran pour s'endormir » va contre les recommandations françaises.
+>
+> On garde l'idée de la petite lumière, reconstruite en série d'avant le coucher : `orbeo_studio/serie_jeunesse/`
+> (bible, noms, dessins, pilotes, test GPU). Les épisodes déjà programmés (ép. 01 le 10 octobre, ép. 03 le
+> 14 octobre, Shorts jusqu'au 16) sortent comme tests. Aucun nouvel épisode n'est fabriqué dans ce format. Le
+> pipeline ci-dessous reste la base technique (chanson, juge visuel, montage).
+
 ## Identité
 - Chaîne : **Lulu la Luciole** (à confirmer), identifiant visé `@LuluLaLuciole`
 - Mascotte : Lulu, petite luciole (nœud rose, antennes à pompons, ventre lumineux) → `identite/lulu_reference.png`
