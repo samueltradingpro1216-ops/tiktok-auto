@@ -25,7 +25,11 @@ def fetch(url, out):
     m = re.search(r'<script id="__UNIVERSAL_DATA_FOR_REHYDRATION__" type="application/json">(.*?)</script>', h, re.S)
     if not m:
         raise RuntimeError("page sans donnees (video privee, supprimee ou blocage)")
-    item = json.loads(m.group(1))["__DEFAULT_SCOPE__"]["webapp.video-detail"]["itemInfo"]["itemStruct"]
+    detail = json.loads(m.group(1))["__DEFAULT_SCOPE__"].get("webapp.video-detail", {})
+    if "itemInfo" not in detail:
+        # ex. 10204 « paid_collection_age » : episode d'une serie payante (TikTok Series), inaccessible sans compte
+        raise RuntimeError(f"video inaccessible : {detail.get('statusCode')} {detail.get('statusMsg')} ({url[:80]})")
+    item = detail["itemInfo"]["itemStruct"]
     vid = item["id"]
     author = item.get("author", {}).get("uniqueId", "inconnu")
     base = os.path.join(out, f"{author}_{vid}")
