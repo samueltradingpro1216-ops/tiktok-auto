@@ -49,7 +49,8 @@ Les mêmes plans de l'épisode 1 (Cerise, Citron), une réplique française de 3
 - `agnes-video-2.5-flash` :
   - gratuit pour un temps limité ;
   - 720×1280, de 4 à 12 s ;
-  - parole française : à vérifier (test en cours).
+  - parole française : pas encore vérifiable. Mon test du 8 octobre a échoué après 3 essais en 284 s, file
+    saturée [T], comme lors de mes essais précédents sur ce modèle.
 - Plusieurs clés du même compte partagent la même réserve : en créer plusieurs ne sert à rien, et ce n'est pas permis.
 
 **Modal** (modal.com/pricing) :
@@ -82,7 +83,8 @@ Les mêmes plans de l'épisode 1 (Cerise, Citron), une réplique française de 3
 
 1. **Tout de suite, gratuit :**
    - LTX-2.3 d'abord (compte Hugging Face gratuit, 3 ou 4 clips par jour), Agnes ensuite.
-   - Migrer Agnes de v2.0 vers 2.5-flash si le test montre qu'il parle français.
+   - Retester Agnes 2.5-flash plus tard. Il était saturé le 8 octobre, et il remplacera v2.0 quand celui-ci
+     s'arrêtera, s'il parle français.
 2. **Le meilleur rapport, 9 $/mois : Hugging Face PRO.**
    - 40 min de GPU par jour, soit un épisode en environ 15 à 20 minutes au lieu d'1 h 30 [E].
    - L'accès à LongCat-Avatar.
