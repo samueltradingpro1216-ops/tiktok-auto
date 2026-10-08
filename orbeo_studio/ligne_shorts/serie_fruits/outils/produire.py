@@ -8,8 +8,11 @@ Etapes :
            verifiee par le juge visuel (bon personnage, une seule copie, pas de texte, pas de deformation)
   cadrage  la camera se rapproche (gros plan « gp » ou plan rapproche « pm ») en repartant de l'image cle : les
            images cles gardent le cadre large du decor, or les emotions et les levres se lisent en gros plan
-  clips    un clip Agnes v2.0 par plan : le personnage dit sa replique en francais, les levres bougent ;
-           controle par whisper (replique reconnue) et par le juge visuel ; jusqu'a 3 essais, le meilleur gagne
+  clips    un clip par plan : le personnage dit sa replique en francais, les levres bougent. Moteurs essayes dans
+           l'ordre : LTX-2.3 puis LTX-2 TURBO sur les GPU gratuits de Hugging Face (ZeroGPU, 20-40 s par clip,
+           jeton dans HF_TOKEN ou ~/.hf_token), puis Agnes v2.0 (2-4 min) quand le quota du jour est epuise.
+           Controle par whisper (replique reconnue), juge visuel et detection des faux sous-titres ; le meilleur
+           essai gagne. Variables : MOTEURS (ex. « ltx23,turbo »), SANS_AGNES=1
   voix     chaque replique est convertie vers une voix de reference par personnage (OpenVoice) : voix constante
   montage  voir montage.py
 
@@ -83,6 +86,10 @@ def parse_json(text):
 
 def duration(path):
     return float(run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path]))
+
+
+class QuotaEpuise(Exception):
+    pass
 
 
 def pronoun(perso):
@@ -399,53 +406,122 @@ class Episode:
         res["score"] = round(res["sim"] - 0.25 * bad - (0.3 if band else 0), 3)
         return res
 
-    async def make_clip(self, api, p):
+    # moteurs video : LTX-2 sur les GPU gratuits de Hugging Face (ZeroGPU, ~20-40 s par clip, voix native)
+    # d'abord, Agnes ensuite (2-3 min par clip, files saturees) quand le quota Hugging Face du jour est epuise
+    SPACES = {"ltx23": "Lightricks/LTX-2-3", "turbo": "alexnasa/ltx-2-TURBO"}
+
+    def ltx_prompt(self, p):
+        perso = p["persos"][0]
+        pr = pronoun(perso)
+        desc = self.ep["persos"][perso]
+        if p.get("parle"):
+            return (f"Static camera, the framing does not change. {desc}. {p['jeu']} in French, with "
+                    f"{self.ep['voix'][p['parle']]}: \"{p['replique']}\" {'Her' if pr == 'she' else 'His'} lips move "
+                    "in sync with the words. Only this character speaks. No music, no subtitles, no text. "
+                    f"{self.ep['style']}.")
+        return (f"{desc}. {p['jeu']}. No one speaks. {self.ep['decors'][p['decor']].get('son', '')} sound, no music. "
+                f"No subtitles, no text. {self.ep['style']}.")
+
+    def space_clip(self, engine, p, img, secs, out):
+        """Un clip par un Space Hugging Face (appel bloquant). Leve QuotaEpuise quand le quota du jour est fini."""
+        from gradio_client import Client, handle_file
+        tok = os.environ.get("HF_TOKEN") or open(os.path.expanduser("~/.hf_token")).read().strip()
+        if engine not in self._clients:
+            self._clients[engine] = Client(self.SPACES[engine], token=tok, verbose=False)
+        c = self._clients[engine]
+        seed = random.randint(1, 10 ** 6)
+        try:
+            if engine == "ltx23":
+                r = c.predict(handle_file(img), self.ltx_prompt(p), float(secs), False, seed, False, 1024, 576,
+                              api_name="/generate_video")
+                v = r[0]
+            else:
+                f = handle_file(img)
+                r = c.predict(f, f, self.ltx_prompt(p), None, "Image-to-Video", False, seed, False, 1024, 576,
+                              "Static", None, api_name="/generate_video")
+                v = r
+            v = v.get("video") if isinstance(v, dict) else v
+            if not v:
+                raise RuntimeError("le Space n'a rendu aucune video")
+            shutil.copy(v, out)
+        except Exception as e:
+            if "quota" in str(e).lower():
+                raise QuotaEpuise(str(e)[:200])
+            raise
+
+    async def make_clip(self, api, p, engine="agnes", max_tries=MAX_CLIP_TRIES):
         key = str(p["id"])
         st = self.state.setdefault("clips", {}).setdefault(key, {"tries": []})
         path = os.path.join(self.dir, "clips", f"p{p['id']:02d}.mp4")
         if st.get("done") and os.path.exists(path) and p["id"] not in self.redo:
             return
-        if p["id"] in self.redo:
-            st.update(done=False)
+        if p["id"] in self.redo and not st.get("redo_started"):
+            st.update(done=False, redo_started=True)
         img = os.path.join(self.dir, "images", f"p{p['id']:02d}_cadre.png")
         if not os.path.exists(img):
             img = os.path.join(self.dir, "images", f"p{p['id']:02d}.png")
         n_words = len(normalize(p.get("replique") or "").split())
         secs = min(5, max(3, int(n_words / 3.0 + 0.6 + 0.99))) if p.get("parle") else 4
-        while len(st["tries"]) < MAX_CLIP_TRIES * (2 if p["id"] in self.redo else 1):
+
+        def good(t):
+            return t.get("file") and t["sim"] >= 0.8 and t["bad_frames"] == 0 and not t.get("faux_texte")
+
+        mine = lambda: [t for t in st["tries"] if t.get("engine", "agnes") == engine]  # noqa: E731
+        while len(mine()) < max_tries and not any(good(t) for t in st["tries"]):
             k = len(st["tries"]) + 1
             out = os.path.join(self.dir, "clips", f"p{p['id']:02d}_t{k}.mp4")
             t0 = time.time()
             try:
-                v = await asyncio.wait_for(api.generate_single_video(
-                    self.clip_prompt(p), reference_image_paths=[img], duration=secs, width=VID_W, height=VID_H,
-                    seed=random.randint(1, 10 ** 6), negative_prompt=NEG_VIDEO), timeout=1800)
-                await v.save(out)
+                if engine == "agnes":
+                    v = await asyncio.wait_for(api.generate_single_video(
+                        self.clip_prompt(p), reference_image_paths=[img], duration=secs, width=VID_W, height=VID_H,
+                        seed=random.randint(1, 10 ** 6), negative_prompt=NEG_VIDEO), timeout=1800)
+                    await v.save(out)
+                else:
+                    await asyncio.to_thread(self.space_clip, engine, p, img, secs, out)
+            except QuotaEpuise:
+                raise
             except Exception as e:
-                log(f"clip plan {p['id']} essai {k} ECHEC {repr(e)[:200]}")
-                st["tries"].append({"file": None, "error": repr(e)[:200]})
+                log(f"clip plan {p['id']} essai {k} ({engine}) ECHEC {repr(e)[:200]}")
+                st["tries"].append({"file": None, "engine": engine, "error": repr(e)[:200]})
                 self.save()
-                await asyncio.sleep(30)
+                await asyncio.sleep(30 if engine == "agnes" else 5)
                 continue
             res = await asyncio.to_thread(self.check_clip, p, out)
-            res["file"] = os.path.basename(out)
-            res["gen_s"] = round(time.time() - t0)
+            res.update(file=os.path.basename(out), engine=engine, gen_s=round(time.time() - t0))
             st["tries"].append(res)
             self.save()
-            log(f"clip plan {p['id']} essai {k} : sim={res['sim']} images ratees={res['bad_frames']} "
-                f"« {res.get('text', '')} » {res['problems'][:2]}")
-            if res["sim"] >= 0.8 and res["bad_frames"] == 0 and not res.get("faux_texte"):
-                break
-        good = [t for t in st["tries"] if t.get("file")]
-        if not good:
-            log(f"clip plan {p['id']} : aucun clip")
+            log(f"clip plan {p['id']} essai {k} ({engine}, {res['gen_s']} s) : sim={res['sim']} images "
+                f"ratees={res['bad_frames']} « {res.get('text', '')} » {res['problems'][:2]}")
+        done_tries = [t for t in st["tries"] if t.get("file")]
+        if not done_tries:
             return
-        best = max(good, key=lambda t: t["score"])
+        if not any(good(t) for t in done_tries) and engine != "agnes":
+            return  # pas encore de bon clip : Agnes aura sa chance ensuite
+        best = max(done_tries, key=lambda t: t["score"])
         shutil.copy(os.path.join(self.dir, "clips", best["file"]), path)
         st.update(done=True, best=best["file"])
         self.save()
 
     async def step_clips(self):
+        self._clients = {}
+        todo = [p for p in self.ep["plans"] if p.get("persos")]
+        # 1. les Spaces Hugging Face, un clip a la fois (le quota ZeroGPU est par compte)
+        for engine in [m for m in os.environ.get("MOTEURS", "ltx23,turbo").split(",") if m in self.SPACES]:
+            try:
+                for p in todo:
+                    try:
+                        await self.make_clip(None, p, engine=engine, max_tries=2)
+                    except QuotaEpuise:
+                        raise
+                    except Exception as e:
+                        log(f"clip plan {p['id']} ({engine}) ECHEC {repr(e)[:300]}")
+            except QuotaEpuise as e:
+                log(f"quota Hugging Face epuise ({engine}) : {e}")
+                break
+        # 2. Agnes pour ce qui reste
+        if os.environ.get("SANS_AGNES"):
+            return
         api = AgnesVideoAPI(KEY, model="agnes-video-v2.0", max_retries=3, retry_base_delay=30.0)
         sem = asyncio.Semaphore(int(os.environ.get("CLIPS_PARALLELE", "3")))
 
@@ -456,7 +532,7 @@ class Episode:
                 except Exception as e:
                     log(f"clip plan {p['id']} ECHEC {repr(e)[:300]}")
 
-        await asyncio.gather(*[guarded(p) for p in self.ep["plans"] if p.get("persos")])
+        await asyncio.gather(*[guarded(p) for p in todo])
 
     # ── voix constantes ──
     def step_voix(self):
