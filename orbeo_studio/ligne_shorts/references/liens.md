@@ -1,6 +1,6 @@
 # Vidéos de référence analysées (8 octobre 2026)
 
-Liens seulement : les vidéos appartiennent à leurs auteurs. Pour les réanalyser :  puis .
+Liens seulement : les vidéos appartiennent à leurs auteurs. Pour les réanalyser : `outils/tiktok_fetch.py` puis `outils/analyse_reference.py`.
 
 | Compte | Vues | Likes | Durée | Son | Légende | Lien |
 |---|---|---|---|---|---|---|
