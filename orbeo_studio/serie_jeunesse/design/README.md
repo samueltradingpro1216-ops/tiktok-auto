@@ -51,6 +51,20 @@ Le juge visuel vérifie en plus, pour chaque personnage, les attributs qui ne so
 - des piquants sur la luciole ;
 - des ailes sur un autre personnage que Bzou.
 
+## 4. En mouvement (`mouvement/`, Agnes vidéo v2.0, plans de 10 s depuis les scènes)
+
+| Essai | Résultat |
+|---|---|
+| Consigne avec le mot « firefly » (luciole) : `avec_le_mot_luciole.jpg` | **Dérive forte.** Dans le jardin, des ailes transparentes poussent dans son dos ; dans la chambre, elle devient une luciole réaliste verte et perd tout son dessin. La caméra se promène malgré « caméra fixe ». |
+| **Même consigne, sans le mot « luciole »**, en la décrivant par son dessin (« le petit personnage en laine en forme de lanterne, cape bleu nuit étoilée, deux antennes à perles, sans ailes ») : `sans_le_mot_luciole.jpg` | **2 plans sur 2 fidèles.** Elle clignote deux fois comme demandé, se retourne (on voit sa cape étoilée de dos), et n'a jamais d'ailes. Nino reste identique. La caméra avance encore un peu. |
+| Agnes 2.5-flash (référence) | pas d'essai possible : file d'attente pleine pendant 15 min (HTTP 503) |
+
+- La texture de laine **ne « bout » pas** : elle reste stable d'une image à l'autre.
+- **Nouvelle règle de production : ne jamais écrire « luciole », « firefly » ni « insecte » dans une consigne
+  d'image ou de vidéo.** Le modèle remplace alors notre héroïne par une vraie luciole. On la décrit seulement par
+  son dessin.
+- Le mot « luciole » reste dans les titres, les dialogues et le marketing.
+
 ## Fichiers
 
 - `identite_laine/` et `identite_douce3d/` : fiches de face de chaque personnage, qui servent d'images

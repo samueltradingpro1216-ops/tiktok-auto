@@ -327,6 +327,12 @@ vidéos presque identiques le même jour.
   les antennes de la luciole (essai du 8 octobre). On fait donc : décor + personnage 1, puis cette image +
   personnage 2 (« garde l'image telle quelle, ajoute… »). C'est 2 images propres sur 2 à l'essai
   (`design/README.md`).
+- **Ne jamais écrire « luciole », « firefly » ni « insecte » dans une consigne d'image ou de vidéo.** Avec ce
+  mot, le modèle vidéo lui fait pousser des ailes transparentes, ou la remplace par une vraie luciole verte. Sans
+  ce mot, 2 plans sur 2 sont restés fidèles (essai du 8 octobre, `design/README.md`). On la décrit seulement par
+  son dessin : « le petit personnage en laine en forme de lanterne, au ventre jaune lumineux, avec une cape bleu
+  nuit étoilée et deux antennes courtes à perles lumineuses, sans ailes ». Même règle pour les autres personnages
+  si un mot réveille une image toute faite chez le modèle.
 - **Le juge visuel automatique vérifie sur chaque image :**
   - le nombre de garçons, de lucioles et de chaque invité ;
   - aucune fusion :
