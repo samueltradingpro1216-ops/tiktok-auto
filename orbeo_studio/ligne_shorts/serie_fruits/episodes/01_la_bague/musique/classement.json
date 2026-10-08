@@ -1,0 +1,118 @@
+{
+ "tension": [
+  {
+   "prise": "prise_3.wav",
+   "style": 0.639,
+   "voix": 0.256,
+   "bruit": -0.004,
+   "silence": 0.111,
+   "sature": 0.0,
+   "score": 0.639
+  },
+  {
+   "prise": "prise_1.wav",
+   "style": 0.566,
+   "voix": 0.122,
+   "bruit": -0.056,
+   "silence": -0.008,
+   "sature": 0.0013,
+   "score": 0.559
+  },
+  {
+   "prise": "prise_2.wav",
+   "style": 0.48,
+   "voix": 0.175,
+   "bruit": 0.022,
+   "silence": -0.012,
+   "sature": 0.0007,
+   "score": 0.477
+  }
+ ],
+ "triste": [
+  {
+   "prise": "prise_1.wav",
+   "style": 0.548,
+   "voix": 0.218,
+   "bruit": -0.056,
+   "silence": -0.036,
+   "sature": 0.0,
+   "score": 0.548
+  },
+  {
+   "prise": "prise_2.wav",
+   "style": 0.534,
+   "voix": 0.215,
+   "bruit": -0.059,
+   "silence": -0.01,
+   "sature": 0.0,
+   "score": 0.534
+  },
+  {
+   "prise": "prise_3.wav",
+   "style": 0.457,
+   "voix": 0.217,
+   "bruit": -0.073,
+   "silence": -0.048,
+   "sature": 0.0001,
+   "score": 0.456
+  }
+ ],
+ "revanche": [
+  {
+   "prise": "prise_3.wav",
+   "style": 0.526,
+   "voix": 0.049,
+   "bruit": 0.015,
+   "silence": 0.025,
+   "sature": 0.0013,
+   "score": 0.519
+  },
+  {
+   "prise": "prise_2.wav",
+   "style": 0.502,
+   "voix": 0.093,
+   "bruit": -0.066,
+   "silence": -0.006,
+   "sature": 0.0056,
+   "score": 0.474
+  },
+  {
+   "prise": "prise_1.wav",
+   "style": 0.441,
+   "voix": 0.115,
+   "bruit": 0.001,
+   "silence": -0.064,
+   "sature": 0.0004,
+   "score": 0.439
+  }
+ ],
+ "fete": [
+  {
+   "prise": "prise_3.wav",
+   "style": 0.616,
+   "voix": 0.288,
+   "bruit": -0.162,
+   "silence": -0.093,
+   "sature": 0.0,
+   "score": 0.616
+  },
+  {
+   "prise": "prise_1.wav",
+   "style": 0.581,
+   "voix": 0.192,
+   "bruit": -0.187,
+   "silence": -0.064,
+   "sature": 0.0,
+   "score": 0.581
+  },
+  {
+   "prise": "prise_2.wav",
+   "style": 0.543,
+   "voix": 0.297,
+   "bruit": -0.179,
+   "silence": -0.094,
+   "sature": 0.0003,
+   "score": 0.542
+  }
+ ]
+}

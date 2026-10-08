@@ -35,7 +35,13 @@ sys.path.insert(0, os.path.expanduser("~/agnes-video-generator"))
 os.environ.setdefault("AGNES_API_KEY", open(os.path.expanduser("~/.agnes_key")).read().strip())
 from core.api.agnes_chat import AgnesChatAPI  # noqa: E402
 from core.api.agnes_image import AgnesImageAPI  # noqa: E402
+import core.api.agnes_video as agnes_video  # noqa: E402
 from core.api.agnes_video import AgnesVideoAPI  # noqa: E402
+
+# clips de 3 et 4 s (73 et 97 images a 24 i/s) : sur 5 s, Agnes etire la replique avec des pauses ; plus court, elle
+# la dit d'une traite, au debit des references (environ 3 mots par seconde)
+agnes_video.DURATION_PRESETS.setdefault(3, (73, 24))
+agnes_video.DURATION_PRESETS.setdefault(4, (97, 24))
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 IDENTITE = os.path.join(HERE, "..", "identite")
@@ -134,6 +140,19 @@ class Episode:
             p.append("deformation")
         if v.get("matches_expected_shot") is False:
             p.append("cadrage different")
+        # le recadrage laisse parfois un 2e visage geant du personnage dans le fond (plans 2, 13, 23, 27 de
+        # l'ep. 1) : la question generale ne le voit pas, une question a part sur le fond le trouve
+        try:
+            w = parse_json(self.chat.chat_multimodal(
+                "You are a strict quality checker. Answer only JSON.",
+                "Look only at the background of this frame from an animated film, behind the main character. Is "
+                "there a second copy of the same character's face or head anywhere (a giant face floating in the "
+                "background, a poster, a painting, a reflection, a ghostly double)? Return JSON: "
+                '{"second_face_of_the_character_in_background": bool}', [frame], max_tokens=100))
+            if w.get("second_face_of_the_character_in_background"):
+                p.append("visage en double dans le fond")
+        except Exception as e:
+            log(f"juge indisponible ({e})")
         return p
 
     # ── tenues ──
@@ -265,7 +284,8 @@ class Episode:
         perso = p["persos"][0]
         prompt = (f"{self.ep['style']}. Same scene, same character, same clothes, same lighting and same style as the "
                   f"image, but the camera is much closer: {frame}. The character: {self.ep['persos'][perso]}. "
-                  f"{p['cadre']} Exactly one character. No text.")
+                  f"{p['cadre']} Exactly one character, with only one head and one face in the whole picture: no "
+                  "poster, no painting, no reflection and no giant face in the background. No text.")
         crowd = bool(self.ep["decors"][p["decor"]].get("foule"))
         best = None
         while st["tries"] < 3:
@@ -281,7 +301,12 @@ class Episode:
             self.save()
             if not problems:
                 break
-        shutil.copy(best[1], path)
+        if best[0] == 0 or not any("double" in x or "copies" in x for x in st.get("problems", [])):
+            shutil.copy(best[1], path)
+        else:  # aucun recadrage propre : on garde le plan large d'origine
+            if os.path.exists(path):
+                os.remove(path)
+            log(f"cadrage plan {p['id']} : plan large garde")
         st["done"] = True
         self.save()
 
@@ -319,7 +344,8 @@ class Episode:
         cam = "Locked-off static camera, the framing does not change, no zoom. "
         if p.get("parle"):
             voix = self.ep["voix"][p["parle"]]
-            say = (f"{p['jeu']}, in French, with {voix}, spoken aloud only, never written on screen: "
+            say = (f"{p['jeu']}, in French, with {voix}, spoken aloud quickly and fluently, in one breath, without "
+                   "pauses, spoken aloud only, never written on screen: "
                    f"{p['replique']} {pr.capitalize()} {'speaks' if pr else ''} with clear lip movements in sync "
                    f"with every word. Only {'her' if pr == 'she' else 'him'} speaks. Only the voice, quiet "
                    "background, no music. ")
@@ -353,18 +379,24 @@ class Episode:
                 bad += 1
                 problems.append(f"{os.path.basename(fr)}: {', '.join(pr)}")
         res = {"problems": problems, "bad_frames": bad, "duration": dur}
+        from montage import detect_band  # faux sous-titres incrustes par Agnes (texte blanc borde de noir)
+        band = detect_band(path, 0, dur)
+        if band:
+            res["faux_texte"] = [round(x, 3) for x in band]
+            problems.append("faux sous-titres incrustes")
         if p.get("parle"):
             wav = os.path.join(ctrl, "voix.wav")
             run(["ffmpeg", "-loglevel", "error", "-y", "-i", path, "-vn", "-ac", "1", "-ar", "16000", wav])
             tr = self.transcribe([wav])[0]
             words = tr["words"]
             text = " ".join(w["word"] for w in words)
-            res.update(text=text, sim=round(similarity(text, p["replique"]), 2), words=words)
+            sim = max(similarity(text, p["replique"]), similarity(text, p.get("sous_titre", p["replique"])))
+            res.update(text=text, sim=round(sim, 2), words=words)
             if words:
                 res.update(speech=[words[0]["start"], words[-1]["end"]])
         else:
             res["sim"] = 1.0
-        res["score"] = round(res["sim"] - 0.25 * bad, 3)
+        res["score"] = round(res["sim"] - 0.25 * bad - (0.3 if band else 0), 3)
         return res
 
     async def make_clip(self, api, p):
@@ -379,7 +411,7 @@ class Episode:
         if not os.path.exists(img):
             img = os.path.join(self.dir, "images", f"p{p['id']:02d}.png")
         n_words = len(normalize(p.get("replique") or "").split())
-        secs = 10 if n_words > 12 else 5
+        secs = min(5, max(3, int(n_words / 3.0 + 0.6 + 0.99))) if p.get("parle") else 4
         while len(st["tries"]) < MAX_CLIP_TRIES * (2 if p["id"] in self.redo else 1):
             k = len(st["tries"]) + 1
             out = os.path.join(self.dir, "clips", f"p{p['id']:02d}_t{k}.mp4")
@@ -402,7 +434,7 @@ class Episode:
             self.save()
             log(f"clip plan {p['id']} essai {k} : sim={res['sim']} images ratees={res['bad_frames']} "
                 f"« {res.get('text', '')} » {res['problems'][:2]}")
-            if res["sim"] >= 0.8 and res["bad_frames"] == 0:
+            if res["sim"] >= 0.8 and res["bad_frames"] == 0 and not res.get("faux_texte"):
                 break
         good = [t for t in st["tries"] if t.get("file")]
         if not good:
@@ -445,13 +477,31 @@ class Episode:
             by_char.setdefault(p["parle"], []).append((p["id"], src))
         report = self.state.setdefault("voix", {})
         for char, items in by_char.items():
+            # voix d'homme ou de vieille dame trop aigue : on baisse la hauteur (le rythme ne change pas, les levres
+            # restent synchronisees). Cible sur la voix calme (25e centile), jamais au-dela de 5 demi-tons.
+            cible = self.ep.get("voix_hauteur", {}).get(char)
+            if cible:
+                f0s = [float(run([VOIX_PYTHON, voix, "hauteur", s]).strip() or 0) for _, s in items]
+                f0s = sorted(f for f in f0s if f > 0)
+                if f0s:
+                    calm = f0s[len(f0s) // 4]
+                    shift = max(-5, min(0, round(12 * __import__("math").log2(cible / calm))))
+                    report.setdefault(char, {})["decalage_demi_tons"] = shift
+                    if shift:
+                        shifted = []
+                        for pid, src in items:
+                            dst = src.replace("_orig.wav", "_bas.wav")
+                            run([VOIX_PYTHON, voix, "decaler", src, dst, str(shift)])
+                            shifted.append((pid, dst))
+                        items = shifted
+                        log(f"voix {char} : hauteur calme {calm:.0f} Hz, baissee de {-shift} demi-tons")
             paths = [s for _, s in items]
             sims = json.loads(run([VOIX_PYTHON, voix, "ressemblance", "--json", *paths])) if len(paths) > 1 else [[1]]
             ref_id = self.ep.get("voix_ref", {}).get(char)
             if ref_id is None:
                 mean = [sum(r) / len(r) for r in sims]
                 ref_id = items[mean.index(max(mean))][0]
-            ref = os.path.join(self.dir, "voix", f"p{ref_id:02d}_orig.wav")
+            ref = dict(items)[ref_id]
             for pid, src in items:
                 dst = os.path.join(self.dir, "voix", f"p{pid:02d}.wav")
                 if os.path.exists(dst) and pid not in self.redo and report.get(char, {}).get("ref") == ref_id:
@@ -467,7 +517,7 @@ class Episode:
                 vals = [m[i][j] for i in range(len(m)) for j in range(len(m)) if i != j]
                 return round(sum(vals) / len(vals), 3) if vals else 1.0
 
-            report[char] = {"ref": ref_id, "avant": avg(sims), "apres": avg(after), "plans": [i for i, _ in items]}
+            report.setdefault(char, {}).update(ref=ref_id, avant=avg(sims), apres=avg(after), plans=[i for i, _ in items])
             log(f"voix {char} : reference plan {ref_id}, ressemblance {report[char]['avant']} -> {report[char]['apres']}")
         self.save()
 

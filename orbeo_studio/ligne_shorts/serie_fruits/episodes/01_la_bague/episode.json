@@ -474,5 +474,16 @@
    "duree": 1.8,
    "recadrage": "gp"
   }
- ]
+ ],
+ "voix_hauteur": {
+  "citron": 125,
+  "kiwi": 135,
+  "prune": 200
+ },
+ "musique_prise": {
+  "tension": 3,
+  "triste": 1,
+  "revanche": 3,
+  "fete": 3
+ }
 }

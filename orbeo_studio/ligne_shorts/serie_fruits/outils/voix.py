@@ -5,6 +5,8 @@ en gardant exactement le rythme (donc les levres generees par Agnes restent sync
 Usage :
   python voix.py convertir source.wav reference1.wav[,reference2.wav] sortie.wav [--tau 0.3]
   python voix.py ressemblance [--json] a.wav b.wav [c.wav ...]   # empreinte vocale (Resemblyzer), 1 = meme voix
+  python voix.py hauteur a.wav                    # hauteur mediane de la voix (Hz)
+  python voix.py decaler source.wav sortie.wav -3  # baisse (ou monte) la voix de N demi-tons, meme duree
 Variables : OPENVOICE_SRC (code source OpenVoice), OPENVOICE_CKPT (dossier converter/).
 """
 import os
@@ -48,8 +50,28 @@ def ressemblance(paths):
     return m
 
 
+def hauteur(path):
+    import librosa
+    y, sr = librosa.load(path, sr=16000)
+    f0, voiced, _ = librosa.pyin(y, fmin=60, fmax=600, sr=sr, frame_length=1024)
+    f0 = f0[voiced & ~np.isnan(f0)]
+    return float(np.median(f0)) if len(f0) else 0.0
+
+
+def decaler(source, out, demi_tons):
+    import subprocess
+    ratio = 2 ** (float(demi_tons) / 12)
+    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", source, "-af",
+                    f"rubberband=pitch={ratio:.5f}:formant=preserved:pitchq=quality", out], check=True)
+    return out
+
+
 if __name__ == "__main__":
-    if sys.argv[1] == "convertir":
+    if sys.argv[1] == "hauteur":
+        print(f"{hauteur(sys.argv[2]):.1f}")
+    elif sys.argv[1] == "decaler":
+        print(decaler(sys.argv[2], sys.argv[3], sys.argv[4]))
+    elif sys.argv[1] == "convertir":
         tau = float(sys.argv[sys.argv.index("--tau") + 1]) if "--tau" in sys.argv else 0.3
         print(convertir(sys.argv[2], sys.argv[3].split(","), sys.argv[4], tau))
     elif sys.argv[1] == "ressemblance":

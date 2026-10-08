@@ -2,7 +2,9 @@
 """Monte un episode de la serie fruits a partir de produire.py : video verticale 1080x1920.
 
 - chaque plan est coupe autour de sa replique (mots reperes par whisper), en coupe franche ;
-- le bas de l'image est retire (Agnes y incruste de faux sous-titres illisibles), l'image est agrandie en 1080x1920 ;
+- Agnes incruste de faux sous-titres illisibles vers 75 a 86 % de la hauteur : ils sont reperes image par image,
+  la zone est floutee en fondu et un degrade sombre couvre le bas ; nos sous-titres sont plus haut (couper le bas
+  obligeait a zoomer x2, l'image devenait floue) ;
 - voix constantes (voix/pXX.wav), bruitages et ambiances fabriques ici, musique par ambiance qui suit l'histoire,
   baissee automatiquement sous les voix ;
 - sous-titres mot a mot, accroche en haut pendant 3,5 s, badge d'episode, notification, appel video, chiffres,
@@ -155,14 +157,14 @@ def png_notif(de, texte, path):
 
 def png_appel(nom, pip_src, path):
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    grad = Image.new("RGBA", (W, 420), (0, 0, 0, 0))
+    grad = Image.new("RGBA", (W, 520), (0, 0, 0, 0))
     gd = ImageDraw.Draw(grad)
-    for y in range(420):
-        gd.line((0, y, W, y), fill=(0, 0, 0, int(140 * (1 - y / 420))))
+    for y in range(520):
+        gd.line((0, y, W, y), fill=(0, 0, 0, int(140 * (1 - y / 520))))
     img.alpha_composite(grad, (0, 0))
-    draw_text(img, (50, 250), nom, ImageFont.truetype(BLACK, 52), (255, 255, 255), 2, (0, 0, 0))
-    ImageDraw.Draw(img).ellipse((52, 330, 72, 350), fill=(52, 199, 89))
-    ImageDraw.Draw(img).text((84, 320), "appel vidéo", font=ImageFont.truetype(SEMI, 34), fill="white",
+    draw_text(img, (50, 300), nom, ImageFont.truetype(BLACK, 52), (255, 255, 255), 2, (0, 0, 0))
+    ImageDraw.Draw(img).ellipse((52, 380, 72, 400), fill=(52, 199, 89))
+    ImageDraw.Draw(img).text((84, 370), "appel vidéo", font=ImageFont.truetype(SEMI, 34), fill="white",
                              stroke_width=2, stroke_fill="black")
     if pip_src and os.path.exists(pip_src):
         pip = Image.open(pip_src).convert("RGB")
@@ -175,8 +177,8 @@ def png_appel(nom, pip_src, path):
         frame = Image.new("RGBA", (pw + 8, ph + 8), (255, 255, 255, 230))
         fm = Image.new("L", (pw + 8, ph + 8), 0)
         ImageDraw.Draw(fm).rounded_rectangle((0, 0, pw + 8, ph + 8), 32, fill=255)
-        img.paste(frame, (W - pw - 54, 236), fm)
-        img.paste(pip, (W - pw - 50, 240), mask)
+        img.paste(frame, (W - pw - 54, 296), fm)
+        img.paste(pip, (W - pw - 50, 300), mask)
     img.save(path)
 
 
@@ -241,6 +243,48 @@ def png_fin(texte, sous, path):
     fs = ImageFont.truetype(XBOLD, 54)
     draw_text(img, ((W - measure(sous, fs)) / 2, 1010), sous, fs, (230, 230, 230))
     img.convert("RGB").save(path)
+
+
+# ── faux sous-titres d'Agnes ───────────────────────────────────────────────
+
+def detect_band(clip, a, dur, fps=4, w=352, h=640):
+    """Rectangle (x0, y0, x1, y1, en fractions) des faux sous-titres incrustes, ou None."""
+    raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-ss", f"{a:.3f}", "-t", f"{dur:.3f}", "-i", clip, "-vf",
+                          f"fps={fps},scale={w}:{h}", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"],
+                         capture_output=True, check=True).stdout
+    F = np.frombuffer(raw, np.uint8).reshape(-1, h, w, 3).astype(np.int16)
+    y0 = int(0.6 * h)
+    boxes = []
+    for f in F:
+        reg = f[y0:int(0.97 * h)]
+        white = (reg.min(-1) > 215) & ((reg.max(-1) - reg.min(-1)) < 40)
+        dark = reg.mean(-1) < 70
+        near = np.zeros_like(dark)
+        for dy, dx in ((2, 0), (-2, 0), (0, 2), (0, -2)):  # trait blanc borde de noir : du texte
+            near |= np.roll(np.roll(dark, dy, 0), dx, 1)
+        txt = white & near
+        rows = np.where(txt.sum(1) >= 6)[0]
+        if len(rows) >= 3:
+            cols = np.where(txt[rows].sum(0) > 0)[0]
+            boxes.append(((cols.min()) / w, (rows.min() + y0) / h, (cols.max()) / w, (rows.max() + y0) / h))
+    if len(boxes) < 2:
+        return None
+    b = np.array(boxes)
+    return float(b[:, 0].min()), float(b[:, 1].min()), float(b[:, 2].max()), float(b[:, 3].max())
+
+
+def png_mask(w, h, r, path):
+    m = Image.new("L", (w, h), 0)
+    ImageDraw.Draw(m).rectangle((r, r, w - r, h - r), fill=255)
+    m.filter(ImageFilter.GaussianBlur(r / 2)).save(path)
+
+
+def png_gradient(path, start=0.66, ramp=0.12, alpha=165):
+    g = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(g)
+    for y in range(int(H * start), H):
+        d.line((0, y, W, y), fill=(0, 0, 0, int(alpha * min(1, (y - H * start) / (H * ramp)))))
+    g.save(path)
 
 
 # ── son ────────────────────────────────────────────────────────────────────
@@ -413,7 +457,6 @@ def main():
     state = json.load(open(os.path.join(d, "state.json")))
     work = os.path.join(d, "montage")
     os.makedirs(work, exist_ok=True)
-    keep = ep.get("crop_haut", 0.78)  # part du haut de l'image gardee (les faux sous-titres sont en dessous)
     ident = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "identite")
 
     def img_of(pid):
@@ -451,13 +494,12 @@ def main():
     # 2. images d'incrustation
     png_title(ep["accroche"], os.path.join(work, "titre.png"))
     png_badge(f"{ep['badge']} · {ep['titre'].split(',')[0].upper()}", os.path.join(work, "badge.png"))
-    png_fin(ep["fin"], "La suite demain 🍒 Abonne-toi", os.path.join(work, "fin.png"))
+    png_fin(ep["fin"], "La suite très vite 🍒 Abonne-toi", os.path.join(work, "fin.png"))
 
     # 3. segments video
-    kh = int(1280 * keep) // 2 * 2
-    kw = int(kh * 9 / 16) // 2 * 2
-    vf_clip = (f"crop={kw}:{kh}:(iw-{kw})/2:0,scale={W}:{H}:flags=lanczos,unsharp=5:5:0.55:5:5:0,fps={FPS},"
+    vf_clip = (f"scale={W}:-2:flags=lanczos,crop={W}:{H}:0:(ih-{H})/2,unsharp=5:5:0.45:5:5:0,fps={FPS},"
                "setsar=1,format=yuv420p")
+    png_gradient(os.path.join(work, "degrade.png"))
     files = []
     for k, s in enumerate(segs):
         p = s["p"]
@@ -475,8 +517,25 @@ def main():
                  "-t", f"{s['dur']:.3f}", "-r", str(FPS), "-c:v", "libx264", "-crf", "17", "-preset", "medium", out])
             continue
         inputs = ["-ss", f"{s['a']:.3f}", "-t", f"{s['dur']:.3f}", "-i", s["clip"]]
-        chain = f"[0:v]{vf_clip}[v0]"
-        last, n_in = "v0", 1
+        band = detect_band(s["clip"], s["a"], s["dur"]) if p.get("parle") else None
+        s["band"] = band
+        if band:
+            sw, sh = map(int, run(["ffprobe", "-v", "error", "-select_streams", "v", "-show_entries",
+                                   "stream=width,height", "-of", "csv=p=0", s["clip"]]).strip().split(","))
+            bx0, by0 = max(0, int((band[0] - 0.05) * sw)), max(0, int((band[1] - 0.03) * sh))
+            bx1, by1 = min(sw, int((band[2] + 0.05) * sw)), min(sh, int((band[3] + 0.03) * sh))
+            bw, bh = (bx1 - bx0) // 2 * 2, (by1 - by0) // 2 * 2
+            mask = os.path.join(work, f"masque{k:02d}.png")
+            png_mask(bw, bh, 14, mask)
+            inputs += ["-loop", "1", "-i", mask]
+            chain = (f"[0:v]split[m][c];[c]crop={bw}:{bh}:{bx0}:{by0},gblur=sigma=26,format=rgba[cb];"
+                     f"[1:v]format=gray,scale={bw}:{bh}[mk];[cb][mk]alphamerge[pt];"
+                     f"[m][pt]overlay={bx0}:{by0}:shortest=1,{vf_clip}[v0]")
+            n_in = 2
+        else:
+            chain = f"[0:v]{vf_clip}[v0]"
+            n_in = 1
+        last = "v0"
         for ov in p.get("incrust", []):
             png = os.path.join(work, f"p{p['id']:02d}_{ov['type']}.png")
             enable, ypos = "1", "0"
@@ -621,8 +680,10 @@ def main():
     for name, audio in (("final.mp4", "mix.wav"), ("final_sans_musique.mp4", "mix_sans_musique.wav")):
         run(["ffmpeg", "-loglevel", "error", "-y", "-i", raw, "-i", os.path.join(work, audio),
              "-loop", "1", "-i", os.path.join(work, "titre.png"), "-loop", "1", "-i", os.path.join(work, "badge.png"),
+             "-loop", "1", "-i", os.path.join(work, "degrade.png"),
              "-filter_complex",
-             f"[0:v]subtitles='{ass}':fontsdir='{FONTS}'[s];"
+             f"[0:v][4:v]overlay=0:0:enable='lt(t,{total - fin_dur:.2f})':shortest=1[g];"
+             f"[g]subtitles='{ass}':fontsdir='{FONTS}'[s];"
              f"[2:v]format=rgba,fade=out:st=3.2:d=0.3:alpha=1[ti];"
              f"[s][ti]overlay=0:0:enable='lt(t,3.5)':shortest=1[s2];"
              f"[s2][3:v]overlay=0:0:enable='lt(t,{total - fin_dur:.2f})':shortest=1,format=yuv420p[v];"
