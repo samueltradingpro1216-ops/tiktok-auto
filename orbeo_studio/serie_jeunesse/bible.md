@@ -180,6 +180,7 @@ chinoise noire de 2 cm de haut.
 
 ## 4. Le style visuel
 
+- **Recommandation après essais : la piste A** (voir `design/README.md`), à confirmer par le test vidéo.
 - **Deux pistes testées le 8 octobre** (`design/`) :
   - **A, « laine feutrée »,** façon stop-motion : texture laineuse, faite main ;
   - **B, « 3D douce simplifiée » :** formes rondes, matières mates comme de l'argile, très peu de détails.
@@ -322,9 +323,18 @@ vidéos presque identiques le même jour.
 
 - **Images clés :** l'image du décor d'abord, puis **une seule image d'identité par personnage** (sa fiche de
   face). Ne jamais donner une planche multi-poses en référence : elle fait apparaître le personnage deux fois.
+- **Un seul personnage ajouté par passage.** Avec deux images d'identité dans le même passage, la hérissonne a pris
+  les antennes de la luciole (essai du 8 octobre). On fait donc : décor + personnage 1, puis cette image +
+  personnage 2 (« garde l'image telle quelle, ajoute… »). C'est 2 images propres sur 2 à l'essai
+  (`design/README.md`).
 - **Le juge visuel automatique vérifie sur chaque image :**
   - le nombre de garçons, de lucioles et de chaque invité ;
-  - aucune fusion : seul Bzou a des ailes, Nino n'a ni ailes ni antennes, un objet n'a ni yeux ni antennes ;
+  - aucune fusion :
+    - seul Bzou a des ailes ;
+    - seuls Lucinou et Bzou ont des antennes ;
+    - seule Picotine a des piquants ;
+    - Nino n'a ni ailes, ni antennes, ni piquants ;
+    - un objet n'a ni yeux ni antennes ;
   - la taille de Lucinou par rapport à Nino ;
   - aucun texte ;
   - la bonne pièce (chambre ou jardin).
