@@ -69,6 +69,12 @@ def run(cmd, **kw):
     return subprocess.run(cmd, check=True, capture_output=True, text=True, **kw).stdout
 
 
+def last_line(out):
+    """Derniere ligne non vide d'une sortie (Resemblyzer ecrit un message de chargement avant le resultat)."""
+    lines = [x for x in out.strip().splitlines() if x.strip()]
+    return lines[-1] if lines else ""
+
+
 def normalize(text):
     text = unicodedata.normalize("NFD", text.lower())
     text = "".join(c for c in text if unicodedata.category(c) != "Mn")
@@ -557,7 +563,7 @@ class Episode:
             # restent synchronisees). Cible sur la voix calme (25e centile), jamais au-dela de 5 demi-tons.
             cible = self.ep.get("voix_hauteur", {}).get(char)
             if cible:
-                f0s = [float(run([VOIX_PYTHON, voix, "hauteur", s]).strip() or 0) for _, s in items]
+                f0s = [float(last_line(run([VOIX_PYTHON, voix, "hauteur", s])) or 0) for _, s in items]
                 f0s = sorted(f for f in f0s if f > 0)
                 if f0s:
                     calm = f0s[len(f0s) // 4]
@@ -572,7 +578,7 @@ class Episode:
                         items = shifted
                         log(f"voix {char} : hauteur calme {calm:.0f} Hz, baissee de {-shift} demi-tons")
             paths = [s for _, s in items]
-            sims = json.loads(run([VOIX_PYTHON, voix, "ressemblance", "--json", *paths])) if len(paths) > 1 else [[1]]
+            sims = json.loads(last_line(run([VOIX_PYTHON, voix, "ressemblance", "--json", *paths]))) if len(paths) > 1 else [[1]]
             ref_id = self.ep.get("voix_ref", {}).get(char)
             if ref_id is None:
                 mean = [sum(r) / len(r) for r in sims]
@@ -587,7 +593,7 @@ class Episode:
                 else:
                     run([VOIX_PYTHON, voix, "convertir", src, ref, dst, "--tau", "0.3"])
             conv = [os.path.join(self.dir, "voix", f"p{pid:02d}.wav") for pid, _ in items]
-            after = json.loads(run([VOIX_PYTHON, voix, "ressemblance", "--json", *conv])) if len(conv) > 1 else [[1]]
+            after = json.loads(last_line(run([VOIX_PYTHON, voix, "ressemblance", "--json", *conv]))) if len(conv) > 1 else [[1]]
 
             def avg(m):
                 vals = [m[i][j] for i in range(len(m)) for j in range(len(m)) if i != j]
