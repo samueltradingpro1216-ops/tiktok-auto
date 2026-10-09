@@ -103,3 +103,55 @@ Les mêmes plans de l'épisode 1 (Cerise, Citron), une réplique française de 3
   - Token Plan Agnes, environ 4 $/mois ;
   - compte Modal, avec les secrets `MODAL_TOKEN_ID` et `MODAL_TOKEN_SECRET`.
 - **À vérifier :** les conditions d'usage commercial d'Agnes. La page des conditions ne s'affiche qu'avec JavaScript ; elle n'a pas pu être lue.
+
+## 6. D'où viennent les voix et la musique des séries de fruits (9 octobre 2026)
+
+**La musique.**
+- Le son de fond des vidéos de référence est le vrai son TikTok :
+  - « TREND DAS FRUTAS » (Dj Rhamon Dm) ;
+  - ou la mélodie isolée du « BATIDA FUNK MEDLEY » (son « som original – Allex23 », d'après Shazam).
+- Analyse : 129 BPM, autour de si bémol, une phrase qui revient toutes les 7,4 s.
+- On l'ajoute dans l'application TikTok, sur la version sans musique (son ajouté entre 20 et 30 %).
+- Le morceau n'est jamais incrusté dans nos fichiers : il est protégé, et un fichier qui le contiendrait risquerait
+  d'être rendu muet ou revendiqué.
+
+**Les voix sont des voix de synthèse partagées par tous ces comptes.** Mesure faite ici [T] :
+- 504 répliques de 20 comptes ;
+- voix isolées par Demucs, empreintes vocales Resemblyzer, regroupement des voix proches.
+
+Résultat :
+- 24 voix reviennent chez plusieurs comptes sans lien entre eux, dont 8 chez 3 comptes ou plus ;
+- une même voix (environ 200 Hz) revient chez 7 comptes : fruithistoire12, histoir2fruits, laboutiquedeziko,
+  patricktv07, skweshh1, une.histoire.ia2, viedesfruits ;
+- la ressemblance à l'intérieur d'un groupe est de 0,82 à 0,85, contre 0,55 à 0,67 entre voix sans rapport.
+
+**La source la plus probable** (recherche du 9 octobre) :
+- **Les voix natives du modèle vidéo**, pas un outil de voix ajouté au montage.
+- **Les bios renvoient vers un outil.** Celles de @kiwistoires, @premierchapiitre et @zinzinstoriesfr renvoient vers
+  fruitdrama.io, devenu **TrendStory.io** [V].
+- **TrendStory génère les voix dans la vidéo** [V], d'après ses propres pages :
+  - aucun prestataire de synthèse vocale dans sa politique de confidentialité ;
+  - « voix et sons inclus » sur sa page guide ;
+  - « ta première vidéo gratuite utilise Grok ».
+- **Grok Imagine** (xAI), d'après la documentation officielle [V] :
+  - piste audio avec parole synchronisée sur les lèvres par défaut (versions 1.5 et 1.5-lite) ;
+  - 9:16 ; de 1 à 15 s ; image de départ possible ;
+  - voix prédéfinies par `reference_audios` sur la version 1.5 ;
+  - API `POST https://api.x.ai/v1/videos/generations` ;
+  - 0,05 $/s pour `grok-imagine-video`.
+- **Niveaux de confiance :**
+  - voix natives d'un modèle vidéo : élevée ;
+  - Grok Imagine précisément : modérée (environ 55-60 %) ;
+  - Veo 3.1, Kling, Seedance : possibles.
+
+**Pour avoir les mêmes voix, légalement :**
+- utiliser le même modèle (Grok Imagine par l'API xAI) ;
+- ne jamais réutiliser l'audio des autres comptes ;
+- ne jamais cloner la voix d'une personne réelle ;
+- un test de quelques clips, comparés aux groupes de voix ci-dessus, confirmera la correspondance avant d'y passer
+  tout l'épisode.
+
+**Voicebox** (github.com/jamiepine/voicebox, MIT) :
+- installé ici sans GPU (serveur sur le port 17493) ;
+- sert à créer nos propres voix (Qwen VoiceDesign, Chatterbox Multilingual) et à les garder constantes ;
+- sa propre charte interdit de cloner une voix sans en avoir le droit.
