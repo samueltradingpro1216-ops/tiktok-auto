@@ -21,6 +21,7 @@ Les mêmes plans de l'épisode 1 (Cerise, Citron), une réplique française de 3
 | **LTX-2.3** | Space officiel `Lightricks/LTX-2-3` (GPU gratuits Hugging Face) | **17 s** | réplique reconnue, avec un mot parasite ; Cerise fidèle ; aucun faux texte ; 576×1024 |
 | **LTX-2 TURBO**, voix native | Space `alexnasa/ltx-2-TURBO` | 42 s | réplique exacte ; voix de Citron vraiment grave (125 Hz) ; 1152×2048 ; mais la veste de Citron a disparu (le juge le refuse) |
 | **LTX-2 TURBO**, **notre fichier voix** | même Space, paramètre `audio_path` | 37 s | lèvres synchronisées sur notre audio, émotion juste, 1152×2048 |
+| LTX-2 TURBO, notre voix clonée (plan 23, 9 oct.) | même Space, `outils/animer_voix.py` | 46 s de calcul | partant de l'image large, il a changé le décor ; partant d'une image du clip d'origine, même Citron et même arche de roses, lèvres justes. Faux sous-titres incrustés les deux fois (masqués au montage). Quota épuisé : le Space renvoie une erreur muette (`CancelledError`) pendant environ 1 h |
 
 **Ce qu'il faut retenir :**
 - LTX fait le même travail qu'Agnes, 5 à 10 fois plus vite et sans faux texte.
