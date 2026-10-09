@@ -312,7 +312,8 @@
    "parle": "kiwi",
    "jeu": "Shocked, he looks up from his phone and says",
    "replique": "Cerise… Regarde ce qu'il vient de poster.",
-   "recadrage": "pm"
+   "recadrage": "pm",
+   "replique_tts": "Serise ! Regarde ce qu'il vient de poster."
   },
   {
    "id": 17,
@@ -404,7 +405,7 @@
    "cadre": "Medium shot, he stands on the small stage under the white rose arch and holds a microphone, smiling proudly at the crowd.",
    "parle": "citron",
    "jeu": "Proud, smiling at the crowd, he speaks into the microphone",
-   "replique": "Pêche… Devant tout le quartier… Veux-tu…",
+   "replique": "Devant tout le quartier… Veux-tu…",
    "musique": "fete",
    "recadrage": "pm"
   },

@@ -79,6 +79,10 @@ def main():
         new_words = clones[key]["words"]
         tokens = p["replique"].split()
         pts = anchors(tokens, best["words"], new_words)
+        if len(pts) < 2:  # repliques tres courtes : on cale au moins le debut et la fin de la parole
+            sw, nw = best["words"], new_words
+            if nw[-1]["end"] > nw[0]["start"] and sw[-1]["end"] > sw[0]["start"]:
+                pts = [(nw[0]["start"], sw[0]["start"]), (nw[-1]["end"], sw[-1]["end"])]
         if len(pts) < 2:
             print(f"plan {p['id']} : pas assez de reperes, saute")
             continue

@@ -41,6 +41,7 @@ def main():
     ap.add_argument("ep")
     ap.add_argument("--essais", type=int, default=2)
     ap.add_argument("--plans", default="")
+    ap.add_argument("--graine", type=int, default=0, help="change les graines pour avoir d'autres essais")
     a = ap.parse_args()
     d = os.path.abspath(a.ep)
     ep = json.load(open(os.path.join(d, "episode.json"), encoding="utf-8"))
@@ -73,7 +74,9 @@ def main():
         for k in range(a.essais):
             tmp = os.path.join(d, "voix", f"p{p['id']:02d}_clone_e{k + 1}.wav")
             try:
-                open(tmp, "wb").write(generate(profiles[char], p["replique"], seed=1000 + 37 * k + p["id"]))
+                # « replique_tts » : orthographe pour la prononciation (ex. « Serise »), sous-titres inchanges
+                open(tmp, "wb").write(generate(profiles[char], p.get("replique_tts", p["replique"]),
+                                               seed=1000 + 37 * k + p["id"] + 7919 * a.graine))
             except Exception as e:
                 print(f"plan {p['id']} essai {k + 1} ECHEC {e}", flush=True)
                 continue
@@ -94,6 +97,9 @@ def main():
         if not cands:
             continue
         best = max(cands, key=lambda c: c["score"])
+        if key in report and os.path.exists(out) and report[key].get("score", -1) >= best["score"]:
+            print(f"plan {p['id']} : la prise precedente reste meilleure ({report[key]['score']})", flush=True)
+            continue
         shutil.copy(best["file"], out)
         report[key] = {k: v for k, v in best.items() if k != "file"}
         report[key]["essais"] = [{k: v for k, v in c.items() if k not in ("words", "file")} for c in cands]
