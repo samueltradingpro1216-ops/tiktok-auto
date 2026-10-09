@@ -24,3 +24,5 @@ orbeo_studio/ligne_shorts/serie_fruits/outils/error_logs/
 orbeo_studio/ligne_shorts/serie_fruits/outils/.cache/
 orbeo_studio/ligne_shorts/serie_fruits/identite/candidats/
 orbeo_studio/ligne_shorts/serie_fruits/**/*_norm.jpg
+# voix de reference pour le clonage : jamais dans le depot
+orbeo_studio/ligne_shorts/serie_fruits/voix/
