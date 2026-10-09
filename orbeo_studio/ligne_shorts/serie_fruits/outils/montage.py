@@ -487,6 +487,14 @@ def main():
             continue
         best = next(x for x in st["tries"] if x.get("file") == st["best"])
         cdur = best["duration"]
+        clip_path, voice_src = os.path.join(d, "clips", f"p{pid:02d}.mp4"), None
+        # clip recale sur la voix clonee (caler.py) : il remplace le clip d'origine, image et voix
+        cale_info = os.path.join(d, "controle", f"p{pid:02d}_cale.json")
+        if p.get("parle") and reglages.get("voix_clonees") and os.path.exists(cale_info):
+            info = json.load(open(cale_info))
+            best = {**best, "words": info["words"], "speech": info["speech"], "duration": info["duration"]}
+            cdur = info["duration"]
+            clip_path = voice_src = os.path.join(d, "clips", f"p{pid:02d}_cale.mp4")
         if p.get("parle") and best.get("speech"):
             s0, s1 = best["speech"]
             a = max(0.0, s0 - (0.02 if not segs else 0.10))
@@ -495,8 +503,7 @@ def main():
             a = 0.4
             b = min(cdur - 0.05, a + p.get("duree", 2.5))
         segs.append({"p": p, "kind": "clip", "a": a, "dur": round((b - a) / V, 3), "src_dur": round(b - a, 3),
-                     "start": t, "best": best,
-                     "clip": os.path.join(d, "clips", f"p{pid:02d}.mp4")})
+                     "start": t, "best": best, "clip": clip_path, "voice": voice_src})
         t += segs[-1]["dur"]
     fin_dur = 2.0
     total = t + fin_dur
@@ -603,7 +610,7 @@ def main():
     for s in segs:
         p = s["p"]
         if s["kind"] == "clip" and p.get("parle"):
-            src = os.path.join(d, "voix", f"p{p['id']:02d}.wav")
+            src = s.get("voice") or os.path.join(d, "voix", f"p{p['id']:02d}.wav")
             src = src if os.path.exists(src) else s["clip"]
             x = load(src, s["a"], s["src_dur"], VOIX_AF)
             x = fade(x * (0.1 / max(rms(x), 1e-4)), 0.01, 0.04)

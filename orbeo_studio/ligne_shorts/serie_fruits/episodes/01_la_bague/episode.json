@@ -493,8 +493,9 @@
   "funk": 3
  },
  "montage": {
-  "vitesse": 1.2,
-  "voix_chaudes": true,
-  "musique_unique": "funk"
+  "vitesse": 1.0,
+  "voix_chaudes": false,
+  "musique_unique": "funk",
+  "voix_clonees": true
  }
 }
