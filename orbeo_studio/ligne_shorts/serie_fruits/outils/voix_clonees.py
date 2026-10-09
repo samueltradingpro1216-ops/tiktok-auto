@@ -22,9 +22,9 @@ def norm(t):
     return " ".join(re.sub(r"[^a-z0-9 ]+", " ", t).split())
 
 
-def generate(profile_id, text, seed):
+def generate(profile_id, text, seed, engine="chatterbox"):
     r = requests.post(f"{VB}/generate", json={"profile_id": profile_id, "text": text, "language": "fr",
-                                              "engine": "chatterbox", "seed": seed}, timeout=60).json()
+                                              "engine": engine, "seed": seed}, timeout=60).json()
     gid = r["id"]
     for _ in range(400):
         h = requests.get(f"{VB}/history/{gid}", timeout=30).json()
@@ -47,7 +47,10 @@ def main():
     ep = json.load(open(os.path.join(d, "episode.json"), encoding="utf-8"))
     os.makedirs(os.path.join(d, "voix"), exist_ok=True)
     os.makedirs(os.path.join(d, "controle"), exist_ok=True)
-    profiles = {p["name"]: p["id"] for p in requests.get(f"{VB}/profiles", timeout=30).json()}
+    listed = requests.get(f"{VB}/profiles", timeout=30).json()
+    profiles = {p["name"]: p["id"] for p in listed}
+    # chaque profil garde son moteur : chatterbox pour les voix clonees, Qwen VoiceDesign pour une voix decrite
+    engines = {p["name"]: p.get("default_engine") or "chatterbox" for p in listed}
 
     from faster_whisper import WhisperModel
     from resemblyzer import VoiceEncoder, preprocess_wav
@@ -76,7 +79,7 @@ def main():
             try:
                 # « replique_tts » : orthographe pour la prononciation (ex. « Serise »), sous-titres inchanges
                 open(tmp, "wb").write(generate(profiles[char], p.get("replique_tts", p["replique"]),
-                                               seed=1000 + 37 * k + p["id"] + 7919 * a.graine))
+                                               seed=1000 + 37 * k + p["id"] + 7919 * a.graine, engine=engines[char]))
             except Exception as e:
                 print(f"plan {p['id']} essai {k + 1} ECHEC {e}", flush=True)
                 continue

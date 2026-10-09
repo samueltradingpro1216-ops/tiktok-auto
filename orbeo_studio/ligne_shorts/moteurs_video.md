@@ -41,7 +41,9 @@ Les mêmes plans de l'épisode 1 (Cerise, Citron), une réplique française de 3
 - En PRO, cela fait au moins 30 clips par jour, et peut-être beaucoup plus si seul le temps réellement utilisé est décompté (environ 15 s par clip). À mesurer.
 
 **Agnes** (wiki.agnes-ai.com) :
-- **`agnes-video-v2.0` est officiellement retiré depuis le 25 septembre 2026.** Il marche encore, mais peut s'arrêter à tout moment.
+- **`agnes-video-v2.0` est arrêté** : retiré officiellement le 25 septembre 2026, il a disparu de la liste des
+  modèles le 9 octobre 2026 (réponse « model_not_found ») [T]. Il ne reste que `agnes-video-2.5-flash` et
+  `agnes-video-2.5` ; `produire.py` utilise maintenant 2.5-flash (variable `AGNES_MODELE`).
 - Une clé gratuite n'exécute réellement **qu'une vidéo par minute**. C'est pour cela qu'en lancer 3 en parallèle ne sert à rien.
 - **Token Plan :**
   - 5 vidéos par minute et 500 s de vidéo par jour, sur `agnes-video-2.5-flash` [V] ;
@@ -50,7 +52,8 @@ Les mêmes plans de l'épisode 1 (Cerise, Citron), une réplique française de 3
   - gratuit pour un temps limité ;
   - 720×1280, de 4 à 12 s ;
   - parole française : pas encore vérifiable. Mon test du 8 octobre a échoué après 3 essais en 284 s, file
-    saturée [T], comme lors de mes essais précédents sur ce modèle.
+    saturée [T], comme lors de mes essais précédents sur ce modèle. Le 9 octobre, file encore pleine pendant
+    plus de 30 min d'affilée (« video_queue_full », de 15 h 05 à 15 h 36) [T].
 - Plusieurs clés du même compte partagent la même réserve : en créer plusieurs ne sert à rien, et ce n'est pas permis.
 
 **Modal** (modal.com/pricing) :

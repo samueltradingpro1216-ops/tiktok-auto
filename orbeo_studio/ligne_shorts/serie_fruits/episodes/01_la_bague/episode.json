@@ -404,8 +404,8 @@
    ],
    "cadre": "Medium shot, he stands on the small stage under the white rose arch and holds a microphone, smiling proudly at the crowd.",
    "parle": "citron",
-   "jeu": "Proud, smiling at the crowd, he speaks into the microphone",
-   "replique": "Devant tout le quartier… Veux-tu…",
+   "jeu": "Proud, smiling at the crowd, he speaks into the microphone and asks his fiancée to marry him",
+   "replique": "Devant tout le quartier… Pêche, veux-tu m'épouser ?",
    "musique": "fete",
    "recadrage": "pm"
   },
@@ -497,6 +497,14 @@
   "vitesse": 1.0,
   "voix_chaudes": false,
   "musique_unique": "funk",
-  "voix_clonees": true
+  "voix_clonees": true,
+  "tempo_voix": {
+   "*": 0.85,
+   "prune": 1.25
+  },
+  "pauses": true,
+  "effets_voix": {
+   "prune": "vibrato=f=5.5:d=0.05"
+  }
  }
 }

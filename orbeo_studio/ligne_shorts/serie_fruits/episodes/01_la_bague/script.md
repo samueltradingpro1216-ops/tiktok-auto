@@ -29,7 +29,7 @@
 | 20 | La cuisine de Mamie Prune | Mamie Prune | « Samedi… On ira à cette fête. » | revanche |
 | 21 | La cuisine de Mamie Prune | Kiwi | « Et on fait quoi, là-bas ? » |  |
 | 22 | La cuisine de Mamie Prune | Cerise | « On récupère la bague. Et l'argent de Mamie. » |  |
-| 23 | La salle de fête | Citron | « Pêche… Devant tout le quartier… Veux-tu… » | fete |
+| 23 | La salle de fête | Citron | « Devant tout le quartier… Pêche, veux-tu m'épouser ? » | fete |
 | 24 | La salle de fête, côté portes | — | *She stands still in the doorway, then walks forward slowly and confidently, her dress moving, guests turning around* |  |
 | 25 | La salle de fête | Pêche | « Qu'est-ce qu'elle fait là, elle ?! » |  |
 | 26 | La salle de fête | Citron | « Sécurité ! Sortez-la d'ici ! » |  |

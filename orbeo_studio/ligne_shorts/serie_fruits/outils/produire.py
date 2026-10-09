@@ -528,7 +528,9 @@ class Episode:
         # 2. Agnes pour ce qui reste
         if os.environ.get("SANS_AGNES"):
             return
-        api = AgnesVideoAPI(KEY, model="agnes-video-v2.0", max_retries=3, retry_base_delay=30.0)
+        # agnes-video-v2.0 a disparu de l'API le 9 octobre 2026 : 2.5-flash par defaut (4 s minimum, 720p)
+        api = AgnesVideoAPI(KEY, model=os.environ.get("AGNES_MODELE", "agnes-video-2.5-flash"), max_retries=3,
+                            retry_base_delay=30.0)
         sem = asyncio.Semaphore(int(os.environ.get("CLIPS_PARALLELE", "3")))
 
         async def guarded(p):

@@ -6,13 +6,20 @@ ou la nouvelle voix le dit. Les levres restent ainsi synchronisees, au debit de 
 Usage : ~/agnes-video-generator/.venv/bin/python caler.py ../episodes/01_la_bague [--plans 1,4]
 Entrees : clips/pXX.mp4, state.json (mots du clip), voix/pXX_clone.wav, controle/voix_clonees.json (mots de la voix)
 Sorties : clips/pXX_cale.mp4 (image recalee + voix clonee), controle/pXX_cale.json (mots et duree)
+
+Rythme (episode.json, « montage ») : « tempo_voix » ralentit la voix sans changer sa hauteur (0.85 = 15 % plus lent ;
+un nombre, ou par personnage {"*": 0.85, "prune": 1.0}), « pauses » ajoute un temps de respiration apres la
+ponctuation (« … », « . », « ? », « , »), et « effets_voix » ajoute un filtre ffmpeg par personnage (ex. un leger
+tremblement pour la grand-mere).
 """
 import argparse, difflib, json, os, re, subprocess, unicodedata
 
 import numpy as np
 
 FPS = 24
-LEAD, TAIL = 0.10, 0.30  # secondes gardees avant le premier mot et apres le dernier
+SR = 24000
+LEAD, TAIL = 0.12, 0.45  # secondes gardees avant le premier mot et apres le dernier
+PAUSES = {"…": 0.32, "?": 0.24, "!": 0.24, ".": 0.24, ":": 0.16, ";": 0.16, ",": 0.12}  # silence ajoute (s)
 
 
 def norm(t):
@@ -50,6 +57,36 @@ def anchors(tokens, src_words, new_words):
     return clean
 
 
+def respirer(wav, out, tokens, words, tempo, pauses, effet=""):
+    """Ralentit la voix (hauteur gardee) et ajoute un silence apres chaque mot suivi d'une ponctuation.
+    Rend les mots avec leurs nouveaux temps."""
+    raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", wav, "-af",
+                          f"rubberband=tempo={tempo}:pitchq=quality" + (f",{effet}" if effet else ""),
+                          "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"], capture_output=True, check=True).stdout
+    audio = np.frombuffer(raw, np.float32)
+    words = [{**w, "start": w["start"] / tempo, "end": w["end"] / tempo} for w in words]
+    cuts = []  # (instant de coupe, duree du silence)
+    if pauses:
+        for (tok, t), nxt in zip(zip(tokens, script_times(tokens, words)), tokens[1:]):
+            mark = next((m for m in PAUSES if tok.endswith(m) or nxt == m), None)
+            if not t or not mark:
+                continue
+            after = [w["start"] for w in words if w["start"] >= t[1] - 0.01]
+            if after:
+                cuts.append(((t[1] + after[0]) / 2, PAUSES[mark]))
+    pieces, pos = [], 0
+    for cut, dur in sorted(cuts):
+        k = int(cut * SR)
+        pieces += [audio[pos:k], np.zeros(int(dur * SR), np.float32)]
+        pos = k
+    pieces.append(audio[pos:])
+    shift = lambda t: t + sum(dur for cut, dur in cuts if t >= cut)  # noqa: E731
+    words = [{**w, "start": shift(w["start"]), "end": shift(w["end"])} for w in words]
+    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-f", "f32le", "-ar", str(SR), "-ac", "1", "-i", "-", out],
+                   input=np.concatenate(pieces).tobytes(), check=True)
+    return [{**w, "start": round(w["start"], 3), "end": round(w["end"], 3)} for w in words]
+
+
 def frames(path, w, h):
     raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", path, "-vf", f"fps={FPS}", "-f", "rawvideo",
                           "-pix_fmt", "rgb24", "-"], capture_output=True, check=True).stdout
@@ -65,6 +102,11 @@ def main():
     ep = json.load(open(os.path.join(d, "episode.json"), encoding="utf-8"))
     st = json.load(open(os.path.join(d, "state.json")))
     clones = json.load(open(os.path.join(d, "controle", "voix_clonees.json")))
+    reglages = ep.get("montage", {})
+    tempos, pauses = reglages.get("tempo_voix", 1.0), bool(reglages.get("pauses"))
+    if not isinstance(tempos, dict):
+        tempos = {"*": tempos}
+    effets = reglages.get("effets_voix", {})
     only = {int(x) for x in a.plans.split(",") if x}
     for p in ep["plans"]:
         key = str(p["id"])
@@ -76,8 +118,13 @@ def main():
         wav = os.path.join(d, "voix", f"p{p['id']:02d}_clone.wav")
         if not best or not best.get("words") or not os.path.exists(clip) or not os.path.exists(wav):
             continue
-        new_words = clones[key]["words"]
         tokens = p["replique"].split()
+        new_words = clones[key]["words"]
+        tempo = float(tempos.get(p["parle"], tempos.get("*", 1.0)))
+        if tempo != 1.0 or pauses or effets.get(p["parle"]):
+            wav_lent = os.path.join(d, "voix", f"p{p['id']:02d}_clone_rythme.wav")
+            new_words = respirer(wav, wav_lent, tokens, new_words, tempo, pauses, effets.get(p["parle"], ""))
+            wav = wav_lent
         pts = anchors(tokens, best["words"], new_words)
         if len(pts) < 2:  # repliques tres courtes : on cale au moins le debut et la fin de la parole
             sw, nw = best["words"], new_words

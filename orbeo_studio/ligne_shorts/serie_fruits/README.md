@@ -54,11 +54,17 @@ notaire en lunettes).
 - **Image clé de chaque plan :** le décor d'abord, puis **un seul personnage ajouté par passe**, avec sa fiche
   d'identité comme référence. À deux personnages dans une même passe, ils se mélangent.
 - **Les personnages sont décrits par leur apparence** dans les consignes, jamais par leur nom seul.
-- **Un plan = une réplique = un personnage qui parle**, en gros plan ou plan moyen, caméra fixe. Agnes v2.0 dit la
-  réplique en français et fait bouger les lèvres du seul personnage qui parle.
-- **Une voix constante :** chaque réplique est convertie vers la voix de référence du personnage (`outils/voix.py`,
-  OpenVoice). Le rythme est gardé, donc le mouvement des lèvres reste juste. La ressemblance entre clips est mesurée
-  (Resemblyzer, au moins 0,85 visé).
+- **Un plan = une réplique = un personnage qui parle**, en gros plan ou plan moyen, caméra fixe. Le moteur vidéo
+  (LTX-2.3 sur Hugging Face, sinon Agnes 2.5-flash ; Agnes v2.0 a disparu de l'API le 9 octobre 2026) dit la réplique
+  en français et fait bouger les lèvres du seul personnage qui parle.
+- **Une voix constante par personnage, dans Voicebox** (`outils/voix_clonees.py`, un profil par personnage) :
+  - Cerise, Citron, Pêche et Kiwi : voix clonées par Chatterbox à partir de leur voix de référence ;
+  - Mamie Prune : voix de vieille dame décrite en texte (Qwen VoiceDesign) ; un clone Chatterbox lui faisait perdre
+    son âge ;
+  - plusieurs prises par réplique ; on garde la mieux comprise (whisper) et la plus proche de la référence (Resemblyzer).
+- **Le rythme :** les voix sont ralenties de 15 % sans changer leur hauteur, avec un temps de respiration après
+  chaque ponctuation (`tempo_voix` et `pauses` dans `episode.json`). Ensuite, `outils/caler.py` déforme le temps de
+  l'image pour que chaque mot tombe sur les lèvres.
 - **Contrôle :** chaque clip est retranscrit (whisper) et comparé au script ; les images sont vérifiées (bon
   personnage, une seule copie, pas de texte parasite). Un clip raté est refait.
 - **Au montage :**
