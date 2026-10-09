@@ -87,6 +87,38 @@ def respirer(wav, out, tokens, words, tempo, pauses, effet=""):
     return [{**w, "start": round(w["start"], 3), "end": round(w["end"], 3)} for w in words]
 
 
+def bornes(wav, debut, fin, seuil_db=-30, trou=0.05, max_fin=0.3):
+    """Debut et fin reels de la voix autour des temps whisper : whisper place souvent le premier mot trop tard, et
+    couper l'attaque d'un mot le rend incomprehensible (« Cerise » entendu « Riz »). On prolonge tant que la voix
+    reste au-dessus du seuil sans trou de plus de 50 ms (une respiration isolee ou un bruit apres la phrase ne
+    comptent pas) ; la fin n'est jamais prolongee de plus de 0,3 s."""
+    raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", wav, "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"],
+                         capture_output=True, check=True).stdout
+    x = np.frombuffer(raw, np.float32)
+    hop = SR // 100
+    rms = np.sqrt(np.mean(x[:len(x) // hop * hop].reshape(-1, hop) ** 2, axis=1))
+    on = rms > rms.max() * 10 ** (seuil_db / 20)
+    gap = int(trou * 100)
+
+    def walk(k, step, limit):  # avance de k vers limit (incluse) tant que la voix continue
+        last, miss = k, 0
+        while k != limit:
+            k += step
+            if on[k]:
+                last, miss = k, 0
+            else:
+                miss += 1
+                if miss > gap:
+                    break
+        return last
+
+    k0 = min(max(int(debut * 100), 0), len(on) - 1)
+    k1 = min(max(int(fin * 100), 0), len(on) - 1)
+    d = walk(k0, -1, 0) / 100
+    f = (walk(k1, 1, min(len(on) - 1, k1 + int(max_fin * 100))) + 1) / 100
+    return min(debut, d), max(fin, f)
+
+
 def frames(path, w, h):
     raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", path, "-vf", f"fps={FPS}", "-f", "rawvideo",
                           "-pix_fmt", "rgb24", "-"], capture_output=True, check=True).stdout
@@ -125,6 +157,8 @@ def main():
             wav_lent = os.path.join(d, "voix", f"p{p['id']:02d}_clone_rythme.wav")
             new_words = respirer(wav, wav_lent, tokens, new_words, tempo, pauses, effets.get(p["parle"], ""))
             wav = wav_lent
+        new_words = [dict(w) for w in new_words]
+        new_words[0]["start"], new_words[-1]["end"] = bornes(wav, new_words[0]["start"], new_words[-1]["end"])
         pts = anchors(tokens, best["words"], new_words)
         if len(pts) < 2:  # repliques tres courtes : on cale au moins le debut et la fin de la parole
             sw, nw = best["words"], new_words

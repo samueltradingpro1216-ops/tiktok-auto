@@ -11,7 +11,7 @@ Quand le quota du jour est epuise, le script attend le delai annonce par le Spac
 """
 import argparse, json, os, re, shutil, subprocess, sys, time
 
-from caler import FPS, LEAD, TAIL, respirer
+from caler import FPS, LEAD, TAIL, bornes, respirer
 
 SPACE = "alexnasa/ltx-2-TURBO"
 W, H = 576, 1024
@@ -70,6 +70,8 @@ def main():
         lent = os.path.join(d, "voix", f"p{pid:02d}_clone_rythme.wav")
         words = respirer(wav, lent, p["replique"].split(), clones[key]["words"], tempo, bool(reglages.get("pauses")),
                          effets.get(p["parle"], ""))
+        # debut et fin reels de la voix (whisper place souvent le premier mot trop tard)
+        words[0]["start"], words[-1]["end"] = bornes(lent, words[0]["start"], words[-1]["end"])
         t0 = max(0.0, words[0]["start"] - LEAD)
         n_out = int(round((words[-1]["end"] + TAIL - t0) * FPS))
         dur = n_out / FPS
