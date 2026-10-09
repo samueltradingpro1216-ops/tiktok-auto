@@ -477,8 +477,8 @@ def main():
     for p in ep["plans"]:
         pid = p["id"]
         if p.get("type") == "post":
-            segs.append({"p": p, "kind": "post", "a": 0, "dur": p.get("duree", 2.6), "src_dur": p.get("duree", 2.6),
-                         "start": t})
+            dpost = round(p.get("duree", 2.6) * FPS) / FPS  # durees en nombre entier d'images : aucun decalage cumule
+            segs.append({"p": p, "kind": "post", "a": 0, "dur": dpost, "src_dur": dpost, "start": t})
             t += segs[-1]["dur"]
             continue
         st = state.get("clips", {}).get(str(pid), {})
@@ -493,8 +493,11 @@ def main():
         if p.get("parle") and reglages.get("voix_clonees") and os.path.exists(cale_info):
             info = json.load(open(cale_info))
             best = {**best, "words": info["words"], "speech": info["speech"], "duration": info["duration"]}
-            cdur = info["duration"]
             clip_path = voice_src = os.path.join(d, "clips", f"p{pid:02d}_cale.mp4")
+            # duree reelle de l'image (un clip plus court que prevu decalerait tout le montage)
+            cdur = min(info["duration"], float(run(["ffprobe", "-v", "error", "-select_streams", "v",
+                                                     "-show_entries", "stream=duration", "-of", "csv=p=0",
+                                                     clip_path]).strip() or info["duration"]))
         if p.get("parle") and best.get("speech"):
             s0, s1 = best["speech"]
             a = max(0.0, s0 - (0.02 if not segs else 0.10))
@@ -502,7 +505,8 @@ def main():
         else:
             a = 0.4
             b = min(cdur - 0.05, a + p.get("duree", 2.5))
-        segs.append({"p": p, "kind": "clip", "a": a, "dur": round((b - a) / V, 3), "src_dur": round(b - a, 3),
+        n_img = max(1, round((b - a) / V * FPS))
+        segs.append({"p": p, "kind": "clip", "a": a, "dur": n_img / FPS, "src_dur": round(n_img * V / FPS, 4),
                      "start": t, "best": best, "clip": clip_path, "voice": voice_src})
         t += segs[-1]["dur"]
     fin_dur = 2.0
@@ -515,8 +519,9 @@ def main():
     png_fin(ep["fin"], "La suite très vite 🍒 Abonne-toi", os.path.join(work, "fin.png"))
 
     # 3. segments video
+    # tpad : si le clip finit quelques millisecondes trop tot, la derniere image est prolongee (nombre d'images exact)
     vf_clip = (f"setpts=(PTS-STARTPTS)/{V},scale={W}:-2:flags=lanczos,crop={W}:{H}:0:(ih-{H})/2,unsharp=5:5:0.45:5:5:0,fps={FPS},"
-               "setsar=1,format=yuv420p")
+               "tpad=stop_mode=clone:stop_duration=0.5,setsar=1,format=yuv420p")
     png_gradient(os.path.join(work, "degrade.png"))
     files = []
     for k, s in enumerate(segs):

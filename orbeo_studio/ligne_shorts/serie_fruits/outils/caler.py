@@ -110,14 +110,16 @@ def main():
         enc = subprocess.Popen(["ffmpeg", "-loglevel", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24",
                                 "-s", f"{w}x{h}", "-r", str(FPS), "-i", "-", "-ss", f"{t0:.3f}", "-t",
                                 f"{t1 - t0:.3f}", "-i", wav, "-map", "0:v", "-map", "1:a", "-c:v", "libx264",
-                                "-crf", "16", "-preset", "medium", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k",
-                                "-shortest", out], stdin=subprocess.PIPE)
+                                "-crf", "16", "-preset", "medium", "-pix_fmt", "yuv420p", "-af", "apad", "-c:a", "aac",
+                                "-b:a", "192k", "-t", f"{n_out / FPS:.3f}", out], stdin=subprocess.PIPE)
+        # duree exacte : la voix peut finir avant la marge de fin, on complete par du silence (sinon le clip est
+        # plus court que prevu et le montage se decale)
         enc.stdin.write(np.stack(out_frames).tobytes())
         enc.stdin.close()
         enc.wait()
         words = [{"word": x["word"], "start": round(x["start"] - t0, 2), "end": round(x["end"] - t0, 2)}
                  for x in new_words]
-        info = {"words": words, "speech": [words[0]["start"], words[-1]["end"]], "duration": round(t1 - t0, 3),
+        info = {"words": words, "speech": [words[0]["start"], words[-1]["end"]], "duration": round(n_out / FPS, 3),
                 "reperes": len(pts), "vitesse_moyenne": round((ts[-1] - ts[0]) / max(tn[-1] - tn[0], 0.1), 2),
                 "source_s": round(src_dur, 2)}
         json.dump(info, open(os.path.join(d, "controle", f"p{p['id']:02d}_cale.json"), "w"), ensure_ascii=False)
