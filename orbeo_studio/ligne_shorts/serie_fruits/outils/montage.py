@@ -289,9 +289,9 @@ def png_gradient(path, start=0.66, ramp=0.12, alpha=165):
 
 # ── son ────────────────────────────────────────────────────────────────────
 
-def load(path, a=0.0, d=None):
+def load(path, a=0.0, d=None, af=None):
     cmd = ["ffmpeg", "-loglevel", "error", "-ss", f"{a:.3f}"] + (["-t", f"{d:.3f}"] if d else []) + \
-          ["-i", path, "-vn", "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"]
+          ["-i", path, "-vn"] + (["-af", af] if af else []) + ["-ac", "1", "-ar", str(SR), "-f", "f32le", "-"]
     return np.frombuffer(subprocess.run(cmd, capture_output=True, check=True).stdout, dtype=np.float32).copy()
 
 
@@ -458,6 +458,15 @@ def main():
     work = os.path.join(d, "montage")
     os.makedirs(work, exist_ok=True)
     ident = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "identite")
+    reglages = ep.get("montage", {})
+    # vitesse : chaque plan (image et son ensemble, donc les levres restent synchronisees) est accelere ; les
+    # references parlent 4 a 7 mots par seconde de parole, nos clips 2,3 a 2,8
+    V = float(reglages.get("vitesse", 1.0))
+    # voix plus chaudes et plus pleines (les notres etaient aigues et brillantes : 1750 Hz contre 1200 Hz de
+    # centre spectral dans les references), compression facon doublage
+    VOIX_AF = (f"atempo={V},highpass=f=70,lowshelf=f=180:g=3,equalizer=f=3000:t=q:w=1.2:g=-2,"
+               "highshelf=f=6500:g=-5,acompressor=threshold=-24dB:ratio=3:attack=5:release=90:makeup=2"
+               if reglages.get("voix_chaudes") else f"atempo={V}")
 
     def img_of(pid):
         p = os.path.join(d, "images", f"p{pid:02d}_cadre.png")
@@ -468,7 +477,8 @@ def main():
     for p in ep["plans"]:
         pid = p["id"]
         if p.get("type") == "post":
-            segs.append({"p": p, "kind": "post", "a": 0, "dur": p.get("duree", 2.6), "start": t})
+            segs.append({"p": p, "kind": "post", "a": 0, "dur": p.get("duree", 2.6), "src_dur": p.get("duree", 2.6),
+                         "start": t})
             t += segs[-1]["dur"]
             continue
         st = state.get("clips", {}).get(str(pid), {})
@@ -484,7 +494,8 @@ def main():
         else:
             a = 0.4
             b = min(cdur - 0.05, a + p.get("duree", 2.5))
-        segs.append({"p": p, "kind": "clip", "a": a, "dur": round(b - a, 3), "start": t, "best": best,
+        segs.append({"p": p, "kind": "clip", "a": a, "dur": round((b - a) / V, 3), "src_dur": round(b - a, 3),
+                     "start": t, "best": best,
                      "clip": os.path.join(d, "clips", f"p{pid:02d}.mp4")})
         t += segs[-1]["dur"]
     fin_dur = 2.0
@@ -497,7 +508,7 @@ def main():
     png_fin(ep["fin"], "La suite très vite 🍒 Abonne-toi", os.path.join(work, "fin.png"))
 
     # 3. segments video
-    vf_clip = (f"scale={W}:-2:flags=lanczos,crop={W}:{H}:0:(ih-{H})/2,unsharp=5:5:0.45:5:5:0,fps={FPS},"
+    vf_clip = (f"setpts=(PTS-STARTPTS)/{V},scale={W}:-2:flags=lanczos,crop={W}:{H}:0:(ih-{H})/2,unsharp=5:5:0.45:5:5:0,fps={FPS},"
                "setsar=1,format=yuv420p")
     png_gradient(os.path.join(work, "degrade.png"))
     files = []
@@ -516,8 +527,8 @@ def main():
                  f"d=1:s={W}x{H}:fps={FPS}[b];[b][1]overlay=enable='gte(t,0.9)',format=yuv420p",
                  "-t", f"{s['dur']:.3f}", "-r", str(FPS), "-c:v", "libx264", "-crf", "17", "-preset", "medium", out])
             continue
-        inputs = ["-ss", f"{s['a']:.3f}", "-t", f"{s['dur']:.3f}", "-i", s["clip"]]
-        band = detect_band(s["clip"], s["a"], s["dur"]) if p.get("parle") else None
+        inputs = ["-ss", f"{s['a']:.3f}", "-t", f"{s['src_dur']:.3f}", "-i", s["clip"]]
+        band = detect_band(s["clip"], s["a"], s["src_dur"]) if p.get("parle") else None
         s["band"] = band
         if band:
             sw, sh = map(int, run(["ffprobe", "-v", "error", "-select_streams", "v", "-show_entries",
@@ -548,7 +559,7 @@ def main():
                 png_chiffre(ov["texte"], png)
                 words = s["best"].get("words", [])
                 tw = next((w["start"] for w in words if norm(ov["mot"]) in norm(w["word"])), None)
-                tw = (tw - s["a"]) if tw is not None else 0.3
+                tw = (tw - s["a"]) / V if tw is not None else 0.3
                 enable = f"gte(t,{max(tw - 0.15, 0):.2f})"
                 s["chiffre_t"] = s["start"] + max(tw - 0.15, 0)
             inputs += ["-loop", "1", "-i", png]
@@ -581,7 +592,7 @@ def main():
         shown = p.get("sous_titre", p["replique"]).split()
         times = align_times(shown, [(w, a, b) for w, (a, b) in zip(spoken, times)]) if shown != spoken else times
         for w, (a, b) in zip(shown, times):
-            ta, tb = s["start"] + a - s["a"], s["start"] + b - s["a"]
+            ta, tb = s["start"] + (a - s["a"]) / V, s["start"] + (b - s["a"]) / V
             if tb > s["start"] and ta < s["start"] + s["dur"]:
                 words.append((w, max(ta, s["start"]), min(tb, s["start"] + s["dur"])))
     write_ass(words, os.path.join(work, "sous_titres.ass"))
@@ -594,11 +605,11 @@ def main():
         if s["kind"] == "clip" and p.get("parle"):
             src = os.path.join(d, "voix", f"p{p['id']:02d}.wav")
             src = src if os.path.exists(src) else s["clip"]
-            x = load(src, s["a"], s["dur"])
+            x = load(src, s["a"], s["src_dur"], VOIX_AF)
             x = fade(x * (0.1 / max(rms(x), 1e-4)), 0.01, 0.04)
             place(voice, x, s["start"])
         elif s["kind"] == "clip":  # plan sans parole : le son du clip (pas, foule...) en fond
-            x = load(s["clip"], s["a"], s["dur"])
+            x = load(s["clip"], s["a"], s["src_dur"], f"atempo={V}")
             place(fx, fade(x * (0.04 / max(rms(x), 1e-4)), 0.05, 0.1), s["start"])
     # ambiances par lieu
     amb = {"rue": ("pluie", 0.05), "cuisine": ("pluie", 0.012), "appart": ("salle", 0.01),
@@ -631,10 +642,11 @@ def main():
     for kind, at, g in hits:
         place(fx, sfx(kind), max(at, 0), g)
     # musique : chaque ambiance demarre a son plan et dure jusqu'a la suivante (fondus courts sur les coupes)
-    cues = [(s["start"], s["p"]["musique"]) for s in segs if s["p"].get("musique")]
-    stops = {}  # coupures franches : la musique de fete s'arrete net quand les portes s'ouvrent
+    unique = reglages.get("musique_unique")  # un seul fond continu, comme le funk des videos de reference
+    cues = [(0.0, unique)] if unique else [(s["start"], s["p"]["musique"]) for s in segs if s["p"].get("musique")]
+    stops = {}  # coupures franches : la musique s'arrete net quand les portes s'ouvrent, puis repart
     if 24 in by_id:
-        stops[by_id[24]["start"]] = "revanche"
+        stops[by_id[24]["start"]] = unique or "revanche"
     for at, name in stops.items():
         cues.append((at + 0.6, name))
     cues.sort()

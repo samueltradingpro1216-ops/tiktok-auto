@@ -85,6 +85,11 @@
   "fete": {
    "style": "glamorous upbeat Brazilian funk party beat, catchy, club, festive, 128 bpm, instrumental",
    "duree": 25
+  },
+  "funk": {
+   "style": "brazilian funk, funk melody, catchy high pitched whistle-like synth lead melody, playful and dramatic, tamborzao drum groove, deep 808 bass, 129 bpm, repeating 4-bar hook, tiktok trend instrumental, no vocals",
+   "duree": 100,
+   "tonalite": "Bb minor"
   }
  },
  "plans": [
@@ -485,5 +490,10 @@
   "triste": 1,
   "revanche": 3,
   "fete": 3
+ },
+ "montage": {
+  "vitesse": 1.2,
+  "voix_chaudes": true,
+  "musique_unique": "funk"
  }
 }
