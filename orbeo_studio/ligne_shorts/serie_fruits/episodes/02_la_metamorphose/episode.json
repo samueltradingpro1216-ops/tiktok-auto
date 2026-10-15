@@ -1,0 +1,1409 @@
+{
+ "titre": "La métamorphose, partie 1",
+ "accroche": "IL L'A RENIÉE DEVANT SES POTES 💔",
+ "badge": "LA MÉTAMORPHOSE · PARTIE 1",
+ "fin": "PARTIE 2",
+ "legende": "Cerise, « juste la serveuse » ? 🍒 Partie 1 #fruitstory #histoiredefruit #tiktokfrance🇨🇵 #brainrot #france",
+ "style": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame",
+ "style_video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame",
+ "tenues": {
+  "cerise_maison": {
+   "de": "cerise",
+   "consigne": "the same woman, same face, same full red lips and glamorous makeup, same deep cherry-red skin, same voluptuous hourglass figure, same long wavy dark-red hair with the cherries and leaf, now wearing an oversized soft cream hoodie with a small red cherry embroidered on the chest, the sleeves pulled over her hands, loose red-and-white cherry-print pajama trousers and fluffy white socks."
+  },
+  "cerise_sport": {
+   "de": "cerise",
+   "consigne": "the same woman, same face, same full red lips and glamorous makeup, same deep cherry-red skin, same voluptuous hourglass figure, same long wavy dark-red hair with the cherries and leaf, now wearing a fitted white zip-up track jacket with thin cherry-red stripes on the sleeves, zipped up to the chest over a cherry-red tank top, high-waisted black leggings, white sneakers and a white sweatband on one wrist."
+  },
+  "cerise_glow": {
+   "de": "cerise",
+   "consigne": "the same woman, same face, same full red lips and glamorous makeup, same deep cherry-red skin, same voluptuous hourglass figure, same long voluminous dark-red hair with the cherries and leaf, now in freshly styled glossy Hollywood waves, with oversized gold-rimmed sunglasses pushed up in her hair, wearing a tailored ivory-white blazer mini dress with gold buttons and a deep but closed V neckline, a thin gold belt at the waist, nude high heels, a small gold cherry pendant on a fine chain and a small structured cherry-red handbag on her arm; confident model pose, one hand on her hip."
+  },
+  "citron_salle": {
+   "de": "citron",
+   "consigne": "the same man, same face, same bright lemon-yellow skin, same slicked-back golden hair, same huge muscular bodybuilder build, same thick gold chain, now wearing an open black sleeveless gym hoodie on his bare muscular chest and abs, black joggers and black-and-white sneakers."
+  },
+  "kiwi_chic": {
+   "de": "kiwi",
+   "consigne": "the same man, same face, same olive-green fuzzy skin, same short curly dark-brown hair, same bright green eyes, same huge muscular build, now wearing an open white linen shirt with rolled-up sleeves on his bare muscular chest and abs, dark-green tailored trousers, white sneakers and a thin silver chain, with his green delivery jacket slung over one shoulder."
+  }
+ },
+ "persos": {
+  "cerise": "a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing a tight white deep V-neck crop top, a tiny mustard-yellow waitress apron and tight ripped blue jeans, with an adult 25-year-old face",
+  "cerise_maison": "a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing an oversized cream hoodie with a small embroidered red cherry and cherry-print pajama trousers, with an adult 25-year-old face",
+  "cerise_sport": "a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing a white zip-up track jacket with thin cherry-red stripes over a cherry-red tank top and black leggings, with an adult 25-year-old face",
+  "cerise_glow": "a glamorous voluptuous young woman with deep cherry-red skin, long voluminous dark-red hair in freshly styled glossy Hollywood waves with two small cherries and a leaf clipped in it, oversized gold-rimmed sunglasses pushed up in her hair, full glossy red lips, glamorous makeup, wearing a tailored ivory-white blazer mini dress with gold buttons and a small gold cherry pendant, with an adult 25-year-old face",
+  "citron": "a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black leather jacket on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble",
+  "citron_salle": "a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black sleeveless gym hoodie on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble",
+  "coco": "a hugely muscular handsome young man with warm tan-brown skin covered in a fine fibrous fuzz like a coconut husk, a short spiky tuft of dry coconut fibers on top of his head, thick eyebrows and a cocky grin, wearing a tight white sleeveless gym tank top and a white towel around his neck, with an adult 28-year-old face",
+  "myrtille": "a tall muscular handsome young man with deep indigo-blue matte skin with a soft dusty bloom like a blueberry, a styled navy-blue quiff and a teasing smirk, wearing a light-grey sleeveless gym hoodie with the hood down and big white headphones around his neck, with an adult 26-year-old face",
+  "prune": "a small old grandmother with deep purple wrinkled skin, white hair, small round glasses, a knitted hat, a knitted beige shawl and a floral dress, with a round deeply wrinkled face, kind mischievous eyes and a small warm smile, clearly a very old woman",
+  "kiwi": "a hugely muscular handsome young man with olive-green fuzzy skin, short curly dark-brown hair, bright green eyes, wearing an open green delivery jacket on his bare muscular chest with six-pack abs, with an adult 27-year-old face and a warm smile",
+  "kiwi_chic": "a hugely muscular handsome young man with olive-green fuzzy skin, short curly dark-brown hair, bright green eyes, wearing an open white linen shirt on his bare muscular chest with six-pack abs, a thin silver chain and his green delivery jacket slung over one shoulder, with an adult 27-year-old face and a warm smile",
+  "peche": "a glamorous voluptuous young woman with peach-pink skin and rosy cheeks, long glossy wavy brown hair with a green leaf clipped in it, very full glossy pink lips, bold glamorous makeup, big gold hoop earrings, wearing a tight hot-pink satin mini dress with a plunging neckline, with an adult 26-year-old face"
+ },
+ "voix": {
+  "cerise": "a soft, sweet young woman's voice, slightly husky",
+  "citron": "a deep, smooth, confident young man's voice, arrogant",
+  "peche": "a high-pitched, drawling, mocking young woman's voice",
+  "kiwi": "a warm, friendly young man's voice with a slight Parisian street accent",
+  "prune": "a crackly old woman's voice, warm and mischievous",
+  "coco": "a loud, hoarse, laughing young man's voice",
+  "myrtille": "a nasal, teasing, slightly high-pitched young man's voice"
+ },
+ "decors": {
+  "salle": {
+   "consigne": "A spacious neighbourhood gym in a converted Paris industrial loft at golden hour: exposed red brick walls, tall arched black steel-framed windows with warm orange sunset light pouring in, a black rubber floor, a padded black weight bench in the middle, a rack of plain unmarked chrome dumbbells, a red leather punching bag hanging from a chain, green plants, lemon-yellow towels folded on a shelf. No mirrors, no posters, no screens, no writing and no numbers anywhere.",
+   "son": "salle de sport : cliquetis de fonte, brouhaha lointain",
+   "court": "In a sunlit loft gym at golden hour, red brick and arched windows blurred behind",
+   "audio": "gym ambiance, distant clanking weights"
+  },
+  "salle_rack": {
+   "consigne": "The same industrial loft gym at golden hour seen from the other side: a red brick wall lined with black squat racks and plain unmarked black weight plates stacked on pegs, a wooden plyo box, lemon-yellow towels hanging on the racks, warm sunset light coming from the left, a soft golden haze in the air. No mirrors, no posters, no screens, no writing and no numbers anywhere.",
+   "son": "salle de sport : cliquetis de fonte, brouhaha lointain",
+   "court": "By black squat racks on a red brick wall, warm golden light from the left",
+   "audio": "gym ambiance, distant clanking weights"
+  },
+  "salle_entree": {
+   "consigne": "The entrance of a Paris industrial loft gym at golden hour seen from inside: tall black steel double doors wide open onto a sunny street, warm golden backlight pouring in, red brick walls, plain unmarked dumbbell racks along the sides. A few gym-goers seen from behind and blurred at the edges of the frame are fruit people with colorful fruit-colored skin (apple green, tangerine orange, raspberry pink). The doorway itself is empty. No mirrors, no posters, no writing and no numbers anywhere.",
+   "son": "entrée de la salle : brouhaha, rue lointaine",
+   "foule": true,
+   "court": "Inside the open steel doors of a loft gym, golden backlight, blurred gym-goers at the edges",
+   "audio": "gym hall murmurs, distant street"
+  },
+  "appart": {
+   "consigne": "A small cozy modern Paris apartment living room at night: a grey sofa with cushions, a coffee table, a warm floor lamp, string lights, plants, a big window with Paris rooftops and city lights at night. Warm lamp light and cool blue night light from the window. In the foreground, on the wooden coffee table, stands a big plain unlabeled red glass jar shaped like a cherry, with a green stem-shaped lid, packed with coins and folded paper money.",
+   "son": "ambiance appartement nuit",
+   "court": "In a cozy Paris living room at night, warm lamp light, blue city window",
+   "audio": "quiet apartment at night"
+  },
+  "cuisine": {
+   "consigne": "A small warm old-fashioned grandmother's kitchen at night: wooden cupboards, floral wallpaper, copper pans hanging, a pot on an old stove, a round table with a checkered tablecloth and a teapot, a warm yellow ceiling lamp, a window with rain outside.",
+   "son": "cuisine, pluie lointaine",
+   "court": "In a warm old-fashioned grandmother's kitchen at night, floral wallpaper, copper pans, rainy window",
+   "audio": "kitchen room tone, soft rain"
+  },
+  "palier": {
+   "consigne": "The landing of an old Paris Haussmann apartment building at night, seen from inside an open apartment doorway: a worn wooden staircase with a curved wrought-iron banister, a black and white tiled floor, a warm brass wall lamp, cream walls with moldings, a doormat. Warm amber light and soft blue shadows. The landing is empty, no writing anywhere.",
+   "son": "cage d'escalier la nuit, minuterie",
+   "court": "On an old Paris stairwell landing at night, wrought-iron banister, warm brass lamp",
+   "audio": "echoing stairwell at night"
+  },
+  "porte": {
+   "consigne": "An open wooden apartment front door at night seen from the landing: inside, a small warm entrance hall with floral wallpaper, a coat rack with a knitted beige shawl hanging on it, a small shelf with a plant and a warm lamp. The doorway itself is empty. No mirrors, no paintings, no writing anywhere.",
+   "son": "appartement calme, horloge",
+   "court": "In an open wooden front door at night, a warm hall with floral wallpaper behind",
+   "audio": "quiet hallway, ticking clock"
+  },
+  "quais": {
+   "consigne": "The stone quays of the Seine in Paris at sunrise: wet cobblestones, plane trees, a stone bridge and Haussmann buildings in a soft golden mist, warm pink and orange light, empty benches, calm water. Empty, no signs, no writing anywhere.",
+   "son": "quais au petit matin, oiseaux, clapotis",
+   "court": "On the stone quays of the Seine at sunrise, wet cobblestones, golden mist",
+   "audio": "riverside at dawn, birds, lapping water"
+  }
+ },
+ "musique": {
+  "tension": {
+   "style": "dark tense trap beat, deep 808 bass, ticking hi-hats, suspense strings, minor key, 90 bpm, dramatic tv drama underscore, instrumental",
+   "duree": 30
+  },
+  "triste": {
+   "style": "sad emotional piano ballad, soft strings, rain mood, slow, minor key, cinematic, instrumental",
+   "duree": 30
+  },
+  "revanche": {
+   "style": "epic rising revenge build-up, pulsing low synth, taiko drums, rising strings, tension building to a climax, cinematic trailer, instrumental",
+   "duree": 20
+  }
+ },
+ "plans": [
+  {
+   "id": 1,
+   "decor": "salle_entree",
+   "persos": [
+    "cerise"
+   ],
+   "cadre": "Eye-level full-body shot, camera at chest height, she stands alone, a ballpoint pen tucked behind her ear, a small order notepad in her apron pocket, shoulders slightly hunched, holding out a small glossy red cherry-shaped lunch box with a short green stem handle in both hands toward someone off-screen to the right, a big hopeful smile; three blurred muscular figures seen from behind stay out of focus at the left and right edges, at mid-height, their faces never visible.",
+   "parle": null,
+   "jeu": "She holds out a small glossy red cherry-shaped lunch box with a short green stem handle in both hands toward the right, smiling with hope; then her smile falters and her shoulders drop",
+   "musique": "tension",
+   "duree": 2.4,
+   "camera": "locked-off",
+   "fin_de_plan": "She still holds the cherry lunch box out toward the right, her smile faltering.",
+   "voix_off": {
+    "perso": "coco",
+    "replique": "Oh, Citron ! Ta cantinière est là !",
+    "debut": 0.0
+   },
+   "sfx": [
+    {
+     "son": "rires",
+     "a": 0.3,
+     "gain": 0.5
+    }
+   ],
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Eye-level full-body shot, camera at chest height, vertical 9:16 composition. Inside the open steel doors of a loft gym, golden backlight, blurred gym-goers at the edges, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing a tight white deep V-neck crop top, a tiny mustard-yellow waitress apron and tight ripped blue jeans, with an adult 25-year-old face stands alone, a ballpoint pen tucked behind her ear, a small order notepad in her apron pocket, shoulders slightly hunched, holding out a small glossy red cherry-shaped lunch box with a short green stem handle in both hands toward someone off-screen to the right, a big hopeful smile. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus; in the blurred foreground, three muscular figures seen from behind at the left and right edges, at mid-height, stay out of focus, their faces never visible. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Eye-level full-body shot, camera at chest height, on a locked-off static camera; the framing never changes. Inside the open steel doors of a loft gym, golden backlight, blurred gym-goers at the edges, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing a tight white deep V-neck crop top, a tiny mustard-yellow waitress apron and tight ripped blue jeans, with an adult 25-year-old face stands alone, a ballpoint pen tucked behind her ear, a small order notepad in her apron pocket, shoulders slightly hunched. She holds out a small glossy red cherry-shaped lunch box with a short green stem handle toward the right; her hopeful smile falters. Blurred figures seen from behind laugh at the edges. She does not speak and her lips stay closed. No one speaks. Audio: gym hall murmurs, distant street, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, sharp faces in the crowd, mirror, poster, banner, screen, numbers on weights, faces on the foreground figures, foreground figures turning around, sharp foreground figures",
+    "references": [
+     "decors/salle_entree_amorce_p1.png",
+     "identite/cerise.png"
+    ],
+    "essais_max": 4,
+    "retouche_decor": "Same image, same gym entrance, same lighting, same colors and same framing. Only add, in the blurred foreground, two hugely muscular young men at the left edge of the frame and one at the right edge, at mid-height, seen from behind and out of focus, facing the open doors: one with bright lemon-yellow skin and slicked-back golden hair, one with warm tan-brown fibrous skin and a short spiky tuft of coconut fibers on his head, one with deep indigo-blue matte skin and a navy-blue quiff. Their faces are not visible; they lean toward each other, shoulders shaking with laughter. The doorway and the center of the frame stay empty, and nothing is in the bottom fifth of the image. No text, no letters.",
+    "decor_retouche": "decors/salle_entree_amorce_p1.png",
+    "repli_sans_amorce": {
+     "quand": "si aucun des 4 essais ne passe le controle F.2 (silhouettes nettes, visage visible, visage double)",
+     "cadre": "Eye-level full-body shot, camera at chest height, she stands alone, a ballpoint pen tucked behind her ear, a small order notepad in her apron pocket, shoulders slightly hunched, holding out a small glossy red cherry-shaped lunch box with a short green stem handle in both hands toward someone off-screen to the right, a big hopeful smile.",
+     "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Eye-level full-body shot, camera at chest height, vertical 9:16 composition. Inside the open steel doors of a loft gym, golden backlight, blurred gym-goers at the edges, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing a tight white deep V-neck crop top, a tiny mustard-yellow waitress apron and tight ripped blue jeans, with an adult 25-year-old face stands alone, a ballpoint pen tucked behind her ear, a small order notepad in her apron pocket, shoulders slightly hunched, holding out a small glossy red cherry-shaped lunch box with a short green stem handle in both hands toward someone off-screen to the right, a big hopeful smile. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus, only a few small blurred gym-goers far away at the edges. No text, no letters, no logos, no subtitles.",
+     "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Eye-level full-body shot, camera at chest height, on a locked-off static camera; the framing never changes. Inside the open steel doors of a loft gym, golden backlight, blurred gym-goers at the edges, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing a tight white deep V-neck crop top, a tiny mustard-yellow waitress apron and tight ripped blue jeans, with an adult 25-year-old face stands alone, a ballpoint pen tucked behind her ear, a small order notepad in her apron pocket, shoulders slightly hunched. She holds out a small glossy red cherry-shaped lunch box with a short green stem handle in both hands toward the right, smiling with hope; then her smile falters. She does not speak and her lips stay closed. No one speaks. Audio: gym hall murmurs, distant street, no music.",
+     "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, sharp faces in the crowd, mirror, poster, banner, screen, numbers on weights",
+     "references": [
+      "decors/salle_entree.png",
+      "identite/cerise.png"
+     ]
+    }
+   }
+  },
+  {
+   "id": 2,
+   "decor": "salle_rack",
+   "persos": [
+    "citron_salle"
+   ],
+   "cadre": "Medium close-up from the waist up, he stands alone, hugging a plain matte black protein shaker against his chest, chin raised, looking off-screen to the left with a scornful smirk.",
+   "parle": "citron",
+   "jeu": "He hugs a plain matte black protein shaker against his chest and smirks toward the left, and says mockingly",
+   "replique": "Ma copine ? Nan… Juste la serveuse du café.",
+   "recadrage": "pm",
+   "duree": 3.0,
+   "segments": [
+    "Ma copine ?",
+    "He laughs and shakes his head",
+    "Nan… Juste la serveuse du café."
+   ],
+   "camera": "locked-off",
+   "fin_de_plan": "He keeps his chin raised with a scornful smirk, looking off-screen to the left.",
+   "zoom": {
+    "mode": "progressif",
+    "de": 1.0,
+    "a": 1.15
+   },
+   "sfx": [
+    {
+     "son": "rires",
+     "a": 1.5,
+     "gain": 0.35
+    }
+   ],
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up, vertical 9:16 composition. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black sleeveless gym hoodie on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone, hugging a plain matte black protein shaker against his chest, chin raised, looking off-screen to the left with a scornful smirk. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black sleeveless gym hoodie on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone. He hugs a plain matte black protein shaker against his chest and smirks toward the left. He speaks in French, in a deep, smooth, confident young man's voice, arrogant, mocking and showing off, \"Ma copine ?\" He laughs and shakes his head, \"Nan… Juste la serveuse du café.\" Only he speaks, his lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: gym ambiance, distant clanking weights, a short scornful laugh, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, mirror, poster, banner, screen, numbers on weights",
+    "video_sur_notre_voix": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black sleeveless gym hoodie on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone. He hugs a plain matte black protein shaker against his chest and smirks toward the left. He speaks in French, mocking and showing off; his lips move in sync with the provided voice, and in the pause he laughs and shakes his head. Only he speaks. The camera holds the frame. Audio: gym ambiance, distant clanking weights, a short scornful laugh, no music.",
+    "references": [
+     "decors/salle_rack.png",
+     "identite/citron_salle.png"
+    ]
+   }
+  },
+  {
+   "id": 3,
+   "decor": "salle_rack",
+   "persos": [
+    "myrtille"
+   ],
+   "cadre": "Medium close-up from the waist up, he stands alone, leaning back against a black squat rack, laughing, one hand on his white headphones, looking off-screen to the left.",
+   "parle": "myrtille",
+   "jeu": "He leans on a squat rack, laughing, and shouts with laughter",
+   "replique": "Hé, serveuse ! Les cuisines, c'est en face !",
+   "recadrage": "pm",
+   "duree": 2.7,
+   "segments": [
+    "Hé, serveuse !",
+    "He bursts out laughing and points to the left",
+    "Les cuisines, c'est en face !"
+   ],
+   "camera": "locked-off",
+   "fin_de_plan": "He is still laughing, his index finger pointing off-screen to the left.",
+   "sfx": [
+    {
+     "son": "rires",
+     "a": 0.0,
+     "gain": 0.45
+    }
+   ],
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up, vertical 9:16 composition. By black squat racks on a red brick wall, warm golden light from the left, a tall muscular handsome young man with deep indigo-blue matte skin with a soft dusty bloom like a blueberry, a styled navy-blue quiff and a teasing smirk, wearing a light-grey sleeveless gym hoodie with the hood down and big white headphones around his neck, with an adult 26-year-old face stands alone, leaning back against a black squat rack, laughing, one hand on his white headphones, looking off-screen to the left. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. By black squat racks on a red brick wall, warm golden light from the left, a tall muscular handsome young man with deep indigo-blue matte skin with a soft dusty bloom like a blueberry, a styled navy-blue quiff and a teasing smirk, wearing a light-grey sleeveless gym hoodie with the hood down and big white headphones around his neck, with an adult 26-year-old face stands alone. He leans on a squat rack, laughing. He speaks in French, in a nasal, teasing, slightly high-pitched young man's voice, loud and gleeful, \"Hé, serveuse !\" He bursts out laughing and points to the left, \"Les cuisines, c'est en face !\" Only he speaks, his lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: gym ambiance, distant clanking weights, his loud laughter, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, mirror, poster, banner, screen, numbers on weights",
+    "video_sur_notre_voix": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. By black squat racks on a red brick wall, warm golden light from the left, a tall muscular handsome young man with deep indigo-blue matte skin with a soft dusty bloom like a blueberry, a styled navy-blue quiff and a teasing smirk, wearing a light-grey sleeveless gym hoodie with the hood down and big white headphones around his neck, with an adult 26-year-old face stands alone. He leans on a squat rack, laughing. He speaks in French, loud and gleeful; his lips move in sync with the provided voice, and in the pause he bursts out laughing and points to the left. Only he speaks. The camera holds the frame. Audio: gym ambiance, distant clanking weights, his loud laughter, no music.",
+    "references": [
+     "decors/salle_rack.png",
+     "identite/myrtille.png"
+    ]
+   }
+  },
+  {
+   "id": 4,
+   "decor": "salle",
+   "persos": [
+    "cerise"
+   ],
+   "cadre": "Close-up of the face and shoulders, she stands alone, a ballpoint pen tucked behind her ear, a small order notepad in her apron pocket, shoulders slightly hunched, hugging a small glossy red cherry-shaped lunch box with a short green stem handle against her chest, her smile breaking, eyes glistening, looking off-screen to the right.",
+   "parle": null,
+   "jeu": "Her hopeful smile breaks; she slowly hugs a small glossy red cherry-shaped lunch box with a short green stem handle against her chest, eyes glistening with held-back tears",
+   "recadrage": "gp",
+   "duree": 1.5,
+   "camera": "locked-off",
+   "fin_de_plan": "She holds the cherry lunch box tight against her chest, tears held back.",
+   "sfx": [
+    {
+     "son": "rires",
+     "a": 0.0,
+     "gain": 0.3,
+     "fondu_sortie": 1.0
+    }
+   ],
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders, vertical 9:16 composition. In a sunlit loft gym at golden hour, red brick and arched windows blurred behind, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing a tight white deep V-neck crop top, a tiny mustard-yellow waitress apron and tight ripped blue jeans, with an adult 25-year-old face stands alone, a ballpoint pen tucked behind her ear, a small order notepad in her apron pocket, shoulders slightly hunched, hugging a small glossy red cherry-shaped lunch box with a short green stem handle against her chest, her smile breaking, eyes glistening, looking off-screen to the right. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders on a locked-off static camera; the framing never changes. In a sunlit loft gym at golden hour, red brick and arched windows blurred behind, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing a tight white deep V-neck crop top, a tiny mustard-yellow waitress apron and tight ripped blue jeans, with an adult 25-year-old face stands alone, a ballpoint pen tucked behind her ear, shoulders slightly hunched. Her hopeful smile breaks; she slowly hugs a small glossy red cherry-shaped lunch box with a short green stem handle against her chest, eyes glistening with held-back tears. She does not speak and her lips stay closed. No one speaks. Audio: gym ambiance, distant clanking weights, the murmurs fading, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, mirror, poster, banner, screen, numbers on weights",
+    "references": [
+     "decors/salle.png",
+     "identite/cerise.png"
+    ]
+   }
+  },
+  {
+   "id": 5,
+   "decor": "salle_rack",
+   "persos": [
+    "citron_salle"
+   ],
+   "cadre": "Close-up of the face and shoulders, he stands alone, leaning slightly toward the left of the frame and glancing over his shoulder, a forced sweet smile.",
+   "parle": "citron",
+   "jeu": "He leans toward the left and glances quickly over his shoulder, and murmurs with a forced sweet smile",
+   "replique": "Mon cœur… Enlève ce tablier. Tu m'affiches.",
+   "recadrage": "gp",
+   "duree": 2.7,
+   "segments": [
+    "Mon cœur…",
+    "He forces a sweet smile",
+    "Enlève ce tablier.",
+    "He glances back again",
+    "Tu m'affiches."
+   ],
+   "camera": "locked-off",
+   "fin_de_plan": "He keeps a forced sweet smile, eyes glancing over his shoulder.",
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders, vertical 9:16 composition. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black sleeveless gym hoodie on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone, leaning slightly toward the left of the frame and glancing over his shoulder, a forced sweet smile. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders on a locked-off static camera; the framing never changes. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black sleeveless gym hoodie on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone. He leans toward the left and glances quickly over his shoulder. He speaks in French, in a deep, smooth, confident young man's voice, arrogant, low and falsely sweet, \"Mon cœur…\" He forces a sweet smile, \"Enlève ce tablier.\" He glances back again, \"Tu m'affiches.\" Only he speaks, his lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: gym ambiance, distant clanking weights, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, mirror, poster, banner, screen, numbers on weights",
+    "video_sur_notre_voix": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders on a locked-off static camera; the framing never changes. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black sleeveless gym hoodie on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone. He leans toward the left and glances quickly over his shoulder. He speaks in French, low and falsely sweet; his lips move in sync with the provided voice, and in the pauses he forces a sweet smile, then glances back again. Only he speaks. The camera holds the frame. Audio: gym ambiance, distant clanking weights, no music.",
+    "references": [
+     "decors/salle_rack.png",
+     "identite/citron_salle.png"
+    ]
+   }
+  },
+  {
+   "id": 6,
+   "decor": "salle",
+   "persos": [
+    "cerise"
+   ],
+   "cadre": "Close-up of the face and shoulders, she stands alone, a ballpoint pen tucked behind her ear, a small order notepad in her apron pocket, shoulders slightly hunched, tears welling up in her eyes, looking off-screen to the right.",
+   "parle": "cerise",
+   "jeu": "With tears in her eyes, she straightens up, and says, first trembling, then firm",
+   "replique": "Juste la serveuse ? La serveuse te quitte, Citron.",
+   "recadrage": "gp",
+   "duree": 2.8,
+   "segments": [
+    "Juste la serveuse ?",
+    "Her jaw tightens and she straightens up",
+    "La serveuse te quitte, Citron."
+   ],
+   "camera": "locked-off",
+   "fin_de_plan": "She stands straight, jaw set, one tear held back.",
+   "zoom": {
+    "mode": "coup",
+    "de": 1.0,
+    "a": 1.2,
+    "mot": "quitte"
+   },
+   "coupe_musique": {
+    "mot": "quitte",
+    "apres": 0.3
+   },
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders, vertical 9:16 composition. In a sunlit loft gym at golden hour, red brick and arched windows blurred behind, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing a tight white deep V-neck crop top, a tiny mustard-yellow waitress apron and tight ripped blue jeans, with an adult 25-year-old face stands alone, a ballpoint pen tucked behind her ear, a small order notepad in her apron pocket, shoulders slightly hunched, tears welling up in her eyes, looking off-screen to the right. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders on a locked-off static camera; the framing never changes. In a sunlit loft gym at golden hour, red brick and arched windows blurred behind, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing a tight white deep V-neck crop top, a tiny mustard-yellow waitress apron and tight ripped blue jeans, with an adult 25-year-old face stands alone, a ballpoint pen tucked behind her ear, shoulders slightly hunched, tears welling up. She speaks in French, in a soft, sweet young woman's voice, slightly husky, trembling, then firm, \"Juste la serveuse ?\" Her jaw tightens and she straightens up, \"La serveuse te quitte, Citron.\" Only she speaks, her lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: gym ambiance, distant clanking weights, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, mirror, poster, banner, screen, numbers on weights",
+    "video_sur_notre_voix": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders on a locked-off static camera; the framing never changes. In a sunlit loft gym at golden hour, red brick and arched windows blurred behind, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing a tight white deep V-neck crop top, a tiny mustard-yellow waitress apron and tight ripped blue jeans, with an adult 25-year-old face stands alone, a ballpoint pen tucked behind her ear, shoulders slightly hunched, tears welling up. She speaks in French, trembling, then firm; her lips move in sync with the provided voice, and in the pause her jaw tightens and she straightens up. Only she speaks. The camera holds the frame. Audio: gym ambiance, distant clanking weights, no music.",
+    "references": [
+     "decors/salle.png",
+     "identite/cerise.png"
+    ]
+   }
+  },
+  {
+   "id": 7,
+   "decor": "salle_rack",
+   "persos": [
+    "citron_salle"
+   ],
+   "cadre": "Medium close-up from the waist up, he stands alone, a frozen smile, one open hand raised at chest height, eyes darting sideways.",
+   "parle": "citron",
+   "jeu": "With a frozen smile, he raises one open hand at chest height, and hisses through his teeth",
+   "replique": "Moins fort… Tout le monde regarde.",
+   "musique": "tension",
+   "recadrage": "pm",
+   "duree": 2.4,
+   "segments": [
+    "Moins fort…",
+    "He glances around, embarrassed",
+    "Tout le monde regarde."
+   ],
+   "camera": "locked-off",
+   "fin_de_plan": "Frozen smile, his eyes darting to the side.",
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up, vertical 9:16 composition. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black sleeveless gym hoodie on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone, a frozen smile, one open hand raised at chest height, eyes darting sideways. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black sleeveless gym hoodie on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone. With a frozen smile, he raises one open hand at chest height. He speaks in French, in a deep, smooth, confident young man's voice, arrogant, through clenched teeth, \"Moins fort…\" He glances around, embarrassed, \"Tout le monde regarde.\" Only he speaks, his lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: gym ambiance, distant clanking weights, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, mirror, poster, banner, screen, numbers on weights",
+    "video_sur_notre_voix": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black sleeveless gym hoodie on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone. With a frozen smile, he raises one open hand at chest height. He speaks in French, through clenched teeth; his lips move in sync with the provided voice, and in the pause he glances around, embarrassed. Only he speaks. The camera holds the frame. Audio: gym ambiance, distant clanking weights, no music.",
+    "references": [
+     "decors/salle_rack.png",
+     "identite/citron_salle.png"
+    ]
+   }
+  },
+  {
+   "id": 8,
+   "decor": "salle",
+   "persos": [
+    "cerise"
+   ],
+   "cadre": "Close-up of the face and shoulders, she stands alone, a ballpoint pen tucked behind her ear, a small order notepad in her apron pocket, shoulders slightly hunched, chin up, a tear on her cheek, staring off-screen to the right with determination.",
+   "parle": "cerise",
+   "jeu": "She lifts her chin and wipes away a tear, and says calmly",
+   "replique": "Cent jours. Je reviens ici… et t'auras honte.",
+   "sous_titre": "100 jours. Je reviens ici… et t'auras honte.",
+   "incrust": [
+    {
+     "type": "chiffre",
+     "texte": "100 JOURS",
+     "mot": "jour"
+    }
+   ],
+   "recadrage": "gp",
+   "duree": 2.8,
+   "segments": [
+    "Cent jours.",
+    "She narrows her eyes",
+    "Je reviens ici… et t'auras honte."
+   ],
+   "camera": "locked-off",
+   "fin_de_plan": "She holds her determined gaze to the right.",
+   "zoom": {
+    "mode": "progressif",
+    "de": 1.0,
+    "a": 1.15
+   },
+   "sfx": [
+    {
+     "son": "boom",
+     "mot": "honte",
+     "gain": 0.7
+    }
+   ],
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders, vertical 9:16 composition. In a sunlit loft gym at golden hour, red brick and arched windows blurred behind, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing a tight white deep V-neck crop top, a tiny mustard-yellow waitress apron and tight ripped blue jeans, with an adult 25-year-old face stands alone, a ballpoint pen tucked behind her ear, a small order notepad in her apron pocket, shoulders slightly hunched, chin up, a tear on her cheek, staring off-screen to the right with determination. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders on a locked-off static camera; the framing never changes. In a sunlit loft gym at golden hour, red brick and arched windows blurred behind, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing a tight white deep V-neck crop top, a tiny mustard-yellow waitress apron and tight ripped blue jeans, with an adult 25-year-old face stands alone, a ballpoint pen tucked behind her ear, shoulders slightly hunched. She wipes a tear, lifts her chin. She speaks in French, in a soft, sweet young woman's voice, slightly husky, calm, determined, \"Cent jours.\" She narrows her eyes, \"Je reviens ici… et t'auras honte.\" Only she speaks, her lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: gym ambiance, distant clanking weights, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, mirror, poster, banner, screen, numbers on weights",
+    "video_sur_notre_voix": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders on a locked-off static camera; the framing never changes. In a sunlit loft gym at golden hour, red brick and arched windows blurred behind, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing a tight white deep V-neck crop top, a tiny mustard-yellow waitress apron and tight ripped blue jeans, with an adult 25-year-old face stands alone, a ballpoint pen tucked behind her ear, shoulders slightly hunched. She wipes a tear, lifts her chin. She speaks in French, calm, determined; her lips move in sync with the provided voice, and in the pause she narrows her eyes. Only she speaks. The camera holds the frame. Audio: gym ambiance, distant clanking weights, no music.",
+    "references": [
+     "decors/salle.png",
+     "identite/cerise.png"
+    ]
+   }
+  },
+  {
+   "id": 9,
+   "decor": "appart",
+   "persos": [
+    "citron"
+   ],
+   "cadre": "Medium shot, he sits alone on a grey sofa, holding a smartphone with its screen turned away from the camera, smirking; in the sharp foreground on the coffee table stands a big plain unlabeled red glass jar shaped like a cherry, with a green stem-shaped lid, packed with coins and folded paper money.",
+   "parle": "citron",
+   "jeu": "He sneers at his phone, its screen turned away from the camera, then looks up into the lens, and says to the camera",
+   "replique": "Sans moi, Cerise ? Tu tiendras pas une semaine !",
+   "duree": 3.0,
+   "segments": [
+    "Sans moi, Cerise ?",
+    "He laughs",
+    "Tu tiendras pas une semaine !"
+   ],
+   "camera": "locked-off",
+   "fin_de_plan": "He grins smugly into the lens, the cherry jar sharp in front of him.",
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium shot, vertical 9:16 composition. In a cozy Paris living room at night, warm lamp light, blue city window, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black leather jacket on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble sits alone on a grey sofa, holding a smartphone with its screen turned away from the camera, smirking; in the sharp foreground on the coffee table stands a big plain unlabeled red glass jar shaped like a cherry, with a green stem-shaped lid, packed with coins and folded paper money. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium shot on a locked-off static camera; the framing never changes. In a cozy Paris living room at night, warm lamp light, blue city window, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black leather jacket on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble sits alone on a grey sofa. The cherry jar stays sharp on the table. He sneers at his phone, then looks into the lens. He speaks in French, in a deep, smooth, confident young man's voice, arrogant, contemptuous, \"Sans moi, Cerise ?\" He laughs, \"Tu tiendras pas une semaine !\" Only he speaks, his lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: quiet apartment at night, a mocking laugh, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, readable phone screen, label on the jar",
+    "video_sur_notre_voix": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium shot on a locked-off static camera; the framing never changes. In a cozy Paris living room at night, warm lamp light, blue city window, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black leather jacket on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble sits alone on a grey sofa. The cherry jar stays sharp on the table. He sneers at his phone, then looks into the lens. He speaks in French, contemptuous; his lips move in sync with the provided voice, and in the pause he laughs. Only he speaks. The camera holds the frame. Audio: quiet apartment at night, a mocking laugh, no music.",
+    "references": [
+     "decors/appart.png",
+     "identite/citron.png"
+    ]
+   }
+  },
+  {
+   "id": 10,
+   "decor": "appart",
+   "persos": [
+    "citron"
+   ],
+   "cadre": "Medium close-up from the waist up, he sits on the grey sofa, two fingers resting on the lid of a big plain unlabeled red glass jar shaped like a cherry, with a green stem-shaped lid, packed with coins and folded paper money on the coffee table, a wicked smile, looking into the lens.",
+   "parle": "citron",
+   "jeu": "He leans toward the camera, two fingers on the lid of the cherry-shaped jar, and says in a low menacing voice",
+   "replique": "Et pour commencer… je t'affiche partout.",
+   "recadrage": "pm",
+   "duree": 2.4,
+   "segments": [
+    "Et pour commencer…",
+    "He taps the jar twice",
+    "je t'affiche partout."
+   ],
+   "camera": "locked-off",
+   "fin_de_plan": "Two fingers on the jar, he smiles wickedly at the camera.",
+   "zoom": {
+    "mode": "coup",
+    "de": 1.0,
+    "a": 1.2,
+    "mot": "partout"
+   },
+   "coupe_musique": {
+    "fin_de_plan": true
+   },
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up, vertical 9:16 composition. In a cozy Paris living room at night, warm lamp light, blue city window, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black leather jacket on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble sits on the grey sofa, two fingers resting on the lid of a big plain unlabeled red glass jar shaped like a cherry, with a green stem-shaped lid, packed with coins and folded paper money on the coffee table, a wicked smile, looking into the lens. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. In a cozy Paris living room at night, warm lamp light, blue city window, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black leather jacket on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble sits on the grey sofa. He leans toward the camera, two fingers on the lid of the cherry-shaped jar. He speaks in French, in a deep, smooth, confident young man's voice, arrogant, low, slow and menacing, \"Et pour commencer…\" He taps the jar twice, \"je t'affiche partout.\" Only he speaks, his lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: quiet apartment at night, two soft taps on glass, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, readable phone screen, label on the jar",
+    "video_sur_notre_voix": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. In a cozy Paris living room at night, warm lamp light, blue city window, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black leather jacket on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble sits on the grey sofa. He leans toward the camera, two fingers on the lid of the cherry-shaped jar. He speaks in French, low, slow and menacing; his lips move in sync with the provided voice, and in the pause he taps the jar twice. Only he speaks. The camera holds the frame. Audio: quiet apartment at night, two soft taps on glass, no music.",
+    "references": [
+     "decors/appart.png",
+     "identite/citron.png"
+    ]
+   }
+  },
+  {
+   "id": 11,
+   "decor": "cuisine",
+   "persos": [
+    "cerise_maison"
+   ],
+   "cadre": "Medium close-up from the waist up, she sits alone at the kitchen table, holding a smartphone with its screen turned away from the camera, eyes red, looking off-screen to the right.",
+   "parle": "cerise",
+   "jeu": "She holds her phone, screen turned away, eyes red, and says in a broken voice",
+   "replique": "Mamie… Quarante-huit mille vues. Et s'il avait raison ?",
+   "sous_titre": "Mamie… 48 000 vues. Et s'il avait raison ?",
+   "musique": "triste",
+   "incrust": [
+    {
+     "type": "notif",
+     "de": "peche.officielle 🍑 a publié",
+     "texte": "Quand la serveuse se trompe de salle 😂🍒",
+     "jusqu_au_mot": "vue"
+    },
+    {
+     "type": "chiffre",
+     "texte": "48 000 VUES",
+     "mot": "vue"
+    }
+   ],
+   "recadrage": "pm",
+   "duree": 2.8,
+   "segments": [
+    "Mamie… Quarante-huit mille vues.",
+    "She looks up to the right",
+    "Et s'il avait raison ?"
+   ],
+   "camera": "locked-off",
+   "fin_de_plan": "Eyes red, she looks up to the right, lost.",
+   "sfx": [
+    {
+     "son": "ding",
+     "a": 0.05,
+     "gain": 0.35
+    }
+   ],
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up, vertical 9:16 composition. In a warm old-fashioned grandmother's kitchen at night, floral wallpaper, copper pans, rainy window, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing an oversized cream hoodie with a small embroidered red cherry and cherry-print pajama trousers, with an adult 25-year-old face sits alone at the kitchen table, holding a smartphone with its screen turned away from the camera, eyes red, looking off-screen to the right. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. In a warm old-fashioned grandmother's kitchen at night, floral wallpaper, copper pans, rainy window, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing an oversized cream hoodie with a small embroidered red cherry and cherry-print pajama trousers, with an adult 25-year-old face sits alone at the kitchen table. She holds her phone, screen turned away, eyes red. She speaks in French, in a soft, sweet young woman's voice, slightly husky, broken, close to tears, \"Mamie… Quarante-huit mille vues.\" She looks up to the right, \"Et s'il avait raison ?\" Only she speaks, her lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: kitchen room tone, soft rain, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, readable phone screen",
+    "video_sur_notre_voix": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. In a warm old-fashioned grandmother's kitchen at night, floral wallpaper, copper pans, rainy window, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing an oversized cream hoodie with a small embroidered red cherry and cherry-print pajama trousers, with an adult 25-year-old face sits alone at the kitchen table. She holds her phone, screen turned away, eyes red. She speaks in French, broken, close to tears; her lips move in sync with the provided voice, and in the pause she looks up to the right. Only she speaks. The camera holds the frame. Audio: kitchen room tone, soft rain, no music.",
+    "references": [
+     "decors/cuisine.png",
+     "identite/cerise_maison.png"
+    ]
+   }
+  },
+  {
+   "id": 12,
+   "decor": "cuisine",
+   "persos": [
+    "prune"
+   ],
+   "cadre": "Medium close-up from the waist up, she sits alone at the kitchen table, slowly stirring her tea, looking at the camera over her small round glasses with a mischievous look.",
+   "parle": "prune",
+   "jeu": "She slowly stirs her tea, then looks at the camera over her glasses, and says with a mischievous smile",
+   "replique": "Une cerise, ça mûrit au soleil… Pas à l'ombre d'un citron.",
+   "recadrage": "pm",
+   "duree": 5.0,
+   "segments": [
+    "Une cerise, ça mûrit au soleil…",
+    "She raises one eyebrow",
+    "Pas à l'ombre d'un citron."
+   ],
+   "camera": "locked-off",
+   "fin_de_plan": "She keeps a sly smile at the camera, one eyebrow raised.",
+   "sfx": [
+    {
+     "son": "toc",
+     "mot": "citron",
+     "apres": 0.15,
+     "gain": 0.6
+    }
+   ],
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up, vertical 9:16 composition. In a warm old-fashioned grandmother's kitchen at night, floral wallpaper, copper pans, rainy window, a small old grandmother with deep purple wrinkled skin, white hair, small round glasses, a knitted hat, a knitted beige shawl and a floral dress, with a round deeply wrinkled face, kind mischievous eyes and a small warm smile, clearly a very old woman sits alone at the kitchen table, slowly stirring her tea, looking at the camera over her small round glasses with a mischievous look. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. In a warm old-fashioned grandmother's kitchen at night, floral wallpaper, copper pans, rainy window, a small old grandmother with deep purple wrinkled skin, white hair, small round glasses, a knitted hat, a knitted beige shawl and a floral dress, with a round deeply wrinkled face, kind mischievous eyes and a small warm smile, clearly a very old woman sits alone at the kitchen table. She slowly stirs her tea, then looks at the camera over her glasses. She speaks in French, in a crackly old woman's voice, warm and mischievous, slow and knowing, \"Une cerise, ça mûrit au soleil…\" She raises one eyebrow, \"Pas à l'ombre d'un citron.\" Only she speaks, her lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: kitchen room tone, soft rain, a teacup clink, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face",
+    "video_sur_notre_voix": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. In a warm old-fashioned grandmother's kitchen at night, floral wallpaper, copper pans, rainy window, a small old grandmother with deep purple wrinkled skin, white hair, small round glasses, a knitted hat, a knitted beige shawl and a floral dress, with a round deeply wrinkled face, kind mischievous eyes and a small warm smile, clearly a very old woman sits alone at the kitchen table. She slowly stirs her tea, then looks at the camera over her glasses. She speaks in French, slow and knowing; her lips move in sync with the provided voice, and in the pause she raises one eyebrow. Only she speaks. The camera holds the frame. Audio: kitchen room tone, soft rain, a teacup clink, no music.",
+    "references": [
+     "decors/cuisine.png",
+     "identite/prune.png"
+    ]
+   }
+  },
+  {
+   "id": 13,
+   "decor": "porte",
+   "persos": [
+    "cerise_maison"
+   ],
+   "cadre": "Medium close-up from the waist up, she stands alone in the doorway, one hand on the edge of the half-open door, surprised, looking off-screen to the right.",
+   "parle": "cerise",
+   "jeu": "She pulls the door half open, surprised, looking to the right, and says coldly",
+   "replique": "Perdu, Citron ? La salle, c'est pas ici.",
+   "recadrage": "pm",
+   "duree": 2.5,
+   "segments": [
+    "Perdu, Citron ?",
+    "She crosses her arms",
+    "La salle, c'est pas ici."
+   ],
+   "camera": "locked-off",
+   "fin_de_plan": "Arms crossed in the doorway, she gives a cold look to the right.",
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up, vertical 9:16 composition. In an open wooden front door at night, a warm hall with floral wallpaper behind, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing an oversized cream hoodie with a small embroidered red cherry and cherry-print pajama trousers, with an adult 25-year-old face stands alone in the doorway, one hand on the edge of the half-open door, surprised, looking off-screen to the right. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. In an open wooden front door at night, a warm hall with floral wallpaper behind, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing an oversized cream hoodie with a small embroidered red cherry and cherry-print pajama trousers, with an adult 25-year-old face stands alone in the doorway. She pulls the door half open, surprised, looking to the right. She speaks in French, in a soft, sweet young woman's voice, slightly husky, cold and ironic, \"Perdu, Citron ?\" She crosses her arms, \"La salle, c'est pas ici.\" Only she speaks, her lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: quiet hallway, ticking clock, the creak of the door, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, door number, nameplate",
+    "video_sur_notre_voix": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. In an open wooden front door at night, a warm hall with floral wallpaper behind, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing an oversized cream hoodie with a small embroidered red cherry and cherry-print pajama trousers, with an adult 25-year-old face stands alone in the doorway. She pulls the door half open, surprised, looking to the right. She speaks in French, cold and ironic; her lips move in sync with the provided voice, and in the pause she crosses her arms. Only she speaks. The camera holds the frame. Audio: quiet hallway, ticking clock, the creak of the door, no music.",
+    "references": [
+     "decors/porte.png",
+     "identite/cerise_maison.png"
+    ]
+   }
+  },
+  {
+   "id": 14,
+   "decor": "palier",
+   "persos": [
+    "citron"
+   ],
+   "cadre": "Medium close-up from the waist up, he stands alone, holding a big bouquet of yellow roses wrapped in plain brown kraft paper against his chest with both arms, a charming smile, looking off-screen to the left.",
+   "parle": "citron",
+   "jeu": "He holds a big bouquet of yellow roses wrapped in plain brown kraft paper against his chest and smiles charmingly to the left, and says softly",
+   "replique": "Pardon, mon cœur… T'as besoin de moi.",
+   "recadrage": "pm",
+   "duree": 2.7,
+   "segments": [
+    "Pardon, mon cœur…",
+    "He tilts his head, tender",
+    "T'as besoin de moi."
+   ],
+   "camera": "locked-off",
+   "fin_de_plan": "He holds the yellow roses to his chest with a charming smile.",
+   "sfx": [
+    {
+     "son": "minuterie",
+     "a": 0.0,
+     "gain": 0.3
+    }
+   ],
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up, vertical 9:16 composition. On an old Paris stairwell landing at night, wrought-iron banister, warm brass lamp, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black leather jacket on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone, holding a big bouquet of yellow roses wrapped in plain brown kraft paper against his chest with both arms, a charming smile, looking off-screen to the left. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. On an old Paris stairwell landing at night, wrought-iron banister, warm brass lamp, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black leather jacket on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone. He holds a big bouquet of yellow roses wrapped in plain brown kraft paper against his chest and smiles charmingly to the left. He speaks in French, in a deep, smooth, confident young man's voice, arrogant, soft and charming, \"Pardon, mon cœur…\" He tilts his head, tender, \"T'as besoin de moi.\" Only he speaks, his lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: echoing stairwell at night, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face",
+    "video_sur_notre_voix": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. On an old Paris stairwell landing at night, wrought-iron banister, warm brass lamp, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black leather jacket on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone. He holds a big bouquet of yellow roses wrapped in plain brown kraft paper against his chest and smiles charmingly to the left. He speaks in French, soft and charming; his lips move in sync with the provided voice, and in the pause he tilts his head, tender. Only he speaks. The camera holds the frame. Audio: echoing stairwell at night, no music.",
+    "references": [
+     "decors/palier.png",
+     "identite/citron.png"
+    ]
+   }
+  },
+  {
+   "id": 15,
+   "decor": "porte",
+   "persos": [
+    "cerise_maison"
+   ],
+   "cadre": "Close-up of the face and shoulders, she stands alone in the doorway, chin raised, calm and firm, one hand on the edge of the door, looking off-screen to the right.",
+   "parle": "cerise",
+   "jeu": "She lifts her chin, perfectly calm, one hand on the door, and says calmly",
+   "replique": "Mon tablier, c'est pas ma honte. Ma honte, c'est toi.",
+   "recadrage": "gp",
+   "duree": 3.4,
+   "segments": [
+    "Mon tablier, c'est pas ma honte.",
+    "She holds his gaze",
+    "Ma honte, c'est toi."
+   ],
+   "camera": "locked-off",
+   "fin_de_plan": "Chin up, her eyes hard, one hand on the door.",
+   "zoom": {
+    "mode": "progressif",
+    "de": 1.0,
+    "a": 1.15
+   },
+   "coupe_musique": {
+    "mot": "toi",
+    "apres": 0.0
+   },
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders, vertical 9:16 composition. In an open wooden front door at night, a warm hall with floral wallpaper behind, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing an oversized cream hoodie with a small embroidered red cherry and cherry-print pajama trousers, with an adult 25-year-old face stands alone in the doorway, chin raised, calm and firm, one hand on the edge of the door, looking off-screen to the right. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders on a locked-off static camera; the framing never changes. In an open wooden front door at night, a warm hall with floral wallpaper behind, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing an oversized cream hoodie with a small embroidered red cherry and cherry-print pajama trousers, with an adult 25-year-old face stands alone in the doorway. She lifts her chin, perfectly calm, one hand on the door. She speaks in French, in a soft, sweet young woman's voice, slightly husky, calm, firm and dignified, \"Mon tablier, c'est pas ma honte.\" She holds his gaze, \"Ma honte, c'est toi.\" Only she speaks, her lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: quiet hallway, ticking clock, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, door number, nameplate",
+    "video_sur_notre_voix": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders on a locked-off static camera; the framing never changes. In an open wooden front door at night, a warm hall with floral wallpaper behind, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing an oversized cream hoodie with a small embroidered red cherry and cherry-print pajama trousers, with an adult 25-year-old face stands alone in the doorway. She lifts her chin, perfectly calm, one hand on the door. She speaks in French, calm, firm and dignified; her lips move in sync with the provided voice, and in the pause she holds his gaze. Only she speaks. The camera holds the frame. Audio: quiet hallway, ticking clock, no music.",
+    "references": [
+     "decors/porte.png",
+     "identite/cerise_maison.png"
+    ]
+   }
+  },
+  {
+   "id": 16,
+   "decor": "palier",
+   "persos": [
+    "citron"
+   ],
+   "cadre": "Medium close-up from the waist up, he stands alone facing the camera, holding a big bouquet of yellow roses wrapped in plain brown kraft paper against his chest, flinching, eyes blinking, mouth half open in offended disbelief.",
+   "parle": null,
+   "jeu": "He holds the yellow roses to his chest; suddenly he flinches back and blinks hard, mouth falling open, as if a door just slammed in his face",
+   "recadrage": "pm",
+   "duree": 1.5,
+   "camera": "locked-off",
+   "fin_de_plan": "He stands frozen, mouth half open, the bouquet against his chest.",
+   "sfx": [
+    {
+     "son": "porte_claque",
+     "a": 0.0,
+     "gain": 0.9
+    }
+   ],
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up, vertical 9:16 composition. On an old Paris stairwell landing at night, wrought-iron banister, warm brass lamp, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black leather jacket on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone facing the camera, holding a big bouquet of yellow roses wrapped in plain brown kraft paper against his chest, flinching, eyes blinking, mouth half open in offended disbelief. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. On an old Paris stairwell landing at night, wrought-iron banister, warm brass lamp, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black leather jacket on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone facing the camera. He holds the yellow roses to his chest; suddenly he flinches back and blinks hard, mouth falling open, as if a door just slammed in his face. He does not speak and his lips stay closed. No one speaks. Audio: echoing stairwell at night, a heavy door slamming shut, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face",
+    "references": [
+     "decors/palier.png",
+     "identite/citron.png"
+    ]
+   }
+  },
+  {
+   "id": 17,
+   "decor": "palier",
+   "persos": [
+    "citron"
+   ],
+   "cadre": "Medium close-up from the waist up, he stands alone, a big bouquet of yellow roses wrapped in plain brown kraft paper hanging upside down from one hand, glaring just left of the camera.",
+   "parle": "citron",
+   "jeu": "The big bouquet of yellow roses wrapped in plain brown kraft paper hangs from one hand; he glares just left of the camera, and says, outraged, then cold",
+   "replique": "La porte au nez… À moi ?! Elle reviendra.",
+   "musique": "tension",
+   "recadrage": "pm",
+   "duree": 3.0,
+   "segments": [
+    "La porte au nez…",
+    "He points at the door",
+    "À moi ?!",
+    "He turns to the camera",
+    "Elle reviendra."
+   ],
+   "camera": "locked-off",
+   "fin_de_plan": "He looks straight into the lens with a cold, smug smile.",
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up, vertical 9:16 composition. On an old Paris stairwell landing at night, wrought-iron banister, warm brass lamp, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black leather jacket on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone, a big bouquet of yellow roses wrapped in plain brown kraft paper hanging upside down from one hand, glaring just left of the camera. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. On an old Paris stairwell landing at night, wrought-iron banister, warm brass lamp, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black leather jacket on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone. The big bouquet of yellow roses wrapped in plain brown kraft paper hangs from one hand; he glares just left of the camera. He speaks in French, in a deep, smooth, confident young man's voice, arrogant, outraged, then coldly smug, \"La porte au nez…\" He points at the door, \"À moi ?!\" He turns to the camera, \"Elle reviendra.\" Only he speaks, his lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: echoing stairwell at night, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face",
+    "video_sur_notre_voix": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. On an old Paris stairwell landing at night, wrought-iron banister, warm brass lamp, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black leather jacket on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone. The big bouquet of yellow roses wrapped in plain brown kraft paper hangs from one hand; he glares just left of the camera. He speaks in French, outraged, then coldly smug; his lips move in sync with the provided voice, and in the pauses he points at the door, then turns to the camera. Only he speaks. The camera holds the frame. Audio: echoing stairwell at night, no music.",
+    "references": [
+     "decors/palier.png",
+     "identite/citron.png"
+    ]
+   }
+  },
+  {
+   "id": 18,
+   "decor": "palier",
+   "persos": [
+    "citron"
+   ],
+   "cadre": "Close-up of the face and shoulders, he stands alone, leaning in close to the camera, looking straight into the lens, conspiratorial.",
+   "parle": "citron",
+   "jeu": "He leans close to the camera and looks into the lens, like a confession, and whispers, then shouts",
+   "replique": "Sans ses pourboires… je paie comment ma salle, moi ?!",
+   "recadrage": "gp",
+   "duree": 3.4,
+   "segments": [
+    "Sans ses pourboires…",
+    "His smile drops",
+    "je paie comment ma salle, moi ?!"
+   ],
+   "camera": "locked-off",
+   "fin_de_plan": "Very close, he shouts, eyes wide.",
+   "zoom": {
+    "mode": "coup",
+    "de": 1.0,
+    "a": 1.25,
+    "mot": "salle"
+   },
+   "coupe_musique": {
+    "fin_de_plan": true
+   },
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders, vertical 9:16 composition. On an old Paris stairwell landing at night, wrought-iron banister, warm brass lamp, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black leather jacket on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone, leaning in close to the camera, looking straight into the lens, conspiratorial. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders on a locked-off static camera; the framing never changes. On an old Paris stairwell landing at night, wrought-iron banister, warm brass lamp, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black leather jacket on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone. He leans close to the camera and looks into the lens, like a confession. He speaks in French, in a deep, smooth, confident young man's voice, arrogant, whispering, then shouting, \"Sans ses pourboires…\" His smile drops, \"je paie comment ma salle, moi ?!\" Only he speaks, his lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: echoing stairwell at night, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face",
+    "video_sur_notre_voix": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders on a locked-off static camera; the framing never changes. On an old Paris stairwell landing at night, wrought-iron banister, warm brass lamp, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black leather jacket on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone. He leans close to the camera and looks into the lens, like a confession. He speaks in French, whispering, then shouting; his lips move in sync with the provided voice, and in the pause his smile drops. Only he speaks. The camera holds the frame. Audio: echoing stairwell at night, no music.",
+    "references": [
+     "decors/palier.png",
+     "identite/citron.png"
+    ]
+   }
+  },
+  {
+   "id": 19,
+   "decor": "quais",
+   "persos": [
+    "kiwi"
+   ],
+   "cadre": "Medium close-up from the waist up, he stands alone, clapping his hands, a big grin, looking off-screen to the left.",
+   "parle": "kiwi",
+   "jeu": "He claps once and grins to the left, and calls out cheerfully",
+   "replique": "Jour un, Cerise ! On court !",
+   "musique": "revanche",
+   "recadrage": "pm",
+   "duree": 1.7,
+   "segments": [
+    "Jour un, Cerise !",
+    "He points down the quay",
+    "On court !"
+   ],
+   "camera": "locked-off",
+   "fin_de_plan": "He grins, thumb pointing down the quay.",
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up, vertical 9:16 composition. On the stone quays of the Seine at sunrise, wet cobblestones, golden mist, a hugely muscular handsome young man with olive-green fuzzy skin, short curly dark-brown hair, bright green eyes, wearing an open green delivery jacket on his bare muscular chest with six-pack abs, with an adult 27-year-old face and a warm smile stands alone, clapping his hands, a big grin, looking off-screen to the left. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. On the stone quays of the Seine at sunrise, wet cobblestones, golden mist, a hugely muscular handsome young man with olive-green fuzzy skin, short curly dark-brown hair, bright green eyes, wearing an open green delivery jacket on his bare muscular chest with six-pack abs, with an adult 27-year-old face and a warm smile stands alone. He claps once and grins to the left. He speaks in French, in a warm, friendly young man's voice with a slight Parisian street accent, energetic and warm, \"Jour un, Cerise !\" He points down the quay, \"On court !\" Only he speaks, his lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: riverside at dawn, birds, lapping water, one hand clap, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, street sign, boat name",
+    "video_sur_notre_voix": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. On the stone quays of the Seine at sunrise, wet cobblestones, golden mist, a hugely muscular handsome young man with olive-green fuzzy skin, short curly dark-brown hair, bright green eyes, wearing an open green delivery jacket on his bare muscular chest with six-pack abs, with an adult 27-year-old face and a warm smile stands alone. He claps once and grins to the left. He speaks in French, energetic and warm; his lips move in sync with the provided voice, and in the pause he points down the quay. Only he speaks. The camera holds the frame. Audio: riverside at dawn, birds, lapping water, one hand clap, no music.",
+    "references": [
+     "decors/quais.png",
+     "identite/kiwi.png"
+    ]
+   }
+  },
+  {
+   "id": 20,
+   "decor": "quais",
+   "persos": [
+    "cerise_sport"
+   ],
+   "cadre": "Medium-wide shot, she runs alone along the quay, toward the camera, focused.",
+   "parle": null,
+   "jeu": "She runs straight toward the camera at a steady pace, focused",
+   "duree": 1.5,
+   "camera": "locked-off",
+   "fin_de_plan": "She runs close to the camera, eyes straight ahead.",
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium-wide shot, vertical 9:16 composition. On the stone quays of the Seine at sunrise, wet cobblestones, golden mist, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing a white zip-up track jacket with thin cherry-red stripes over a cherry-red tank top and black leggings, with an adult 25-year-old face runs alone along the quay, toward the camera, focused. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium-wide shot on a locked-off static camera; the framing never changes. On the stone quays of the Seine at sunrise, wet cobblestones, golden mist, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing a white zip-up track jacket with thin cherry-red stripes over a cherry-red tank top and black leggings, with an adult 25-year-old face runs alone along the quay. She runs straight toward the camera at a steady pace, focused. She does not speak and her lips stay closed. No one speaks. Audio: riverside at dawn, birds, lapping water, running footsteps and steady breathing, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, slow motion, camera shake, street sign",
+    "references": [
+     "decors/quais.png",
+     "identite/cerise_sport.png"
+    ]
+   }
+  },
+  {
+   "id": 21,
+   "decor": "quais",
+   "persos": [
+    "cerise_sport"
+   ],
+   "cadre": "Medium close-up from the waist up, she stands alone on the quay, fists raised in a boxing guard toward the right of the frame, focused, out of breath.",
+   "parle": null,
+   "jeu": "She throws a fast combination of punches toward the right of the frame, at off-screen focus mitts; her fists never touch anything in the frame. Then she lowers her guard, out of breath, and smiles with pride",
+   "recadrage": "pm",
+   "duree": 1.5,
+   "camera": "locked-off",
+   "fin_de_plan": "Out of breath, her guard lowered, she smiles with pride.",
+   "voix_off": {
+    "perso": "kiwi",
+    "replique": "Plus fort, Cerise !",
+    "debut": 0.2
+   },
+   "sfx": [
+    {
+     "son": "impact",
+     "a": 0.15,
+     "gain": 0.8,
+     "cale_sur": "avant-dernier coup visible de la fenetre"
+    },
+    {
+     "son": "impact",
+     "a": 0.45,
+     "gain": 0.8,
+     "cale_sur": "dernier coup visible de la fenetre"
+    }
+   ],
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up, vertical 9:16 composition. On the stone quays of the Seine at sunrise, wet cobblestones, golden mist, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing a white zip-up track jacket with thin cherry-red stripes over a cherry-red tank top and black leggings, with an adult 25-year-old face stands alone on the quay, fists raised in a boxing guard toward the right of the frame, focused, out of breath. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. On the stone quays of the Seine at sunrise, wet cobblestones, golden mist, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing a white zip-up track jacket with thin cherry-red stripes over a cherry-red tank top and black leggings, with an adult 25-year-old face stands alone on the quay. She throws a fast combination of punches toward the right of the frame, at off-screen focus mitts; her fists never touch anything in the frame. Then she lowers her guard, out of breath, and smiles with pride. She does not speak and her lips stay closed. No one speaks. Audio: riverside at dawn, birds, lapping water, sharp breaths with each punch, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, visible focus mitts, punching bag, hands entering the frame, street sign",
+    "references": [
+     "decors/quais.png",
+     "identite/cerise_sport.png"
+    ]
+   },
+   "fenetre_clip": {
+    "debut_s": 2.0,
+    "duree_s": 1.5,
+    "contenu": "les deux derniers coups (0,0 a 0,6 s de la fenetre), puis la garde baissee et le sourire (0,6 a 1,5 s)",
+    "regle": "debut_s est indicatif : on le relit sur le clip retenu (4 s) pour que la fenetre commence 0,1 s avant l'avant-dernier coup ; montage.py prend aujourd'hui 0,4 s pour tout plan muet (a adapter)"
+   }
+  },
+  {
+   "id": 22,
+   "decor": "salle_entree",
+   "persos": [
+    "cerise_glow"
+   ],
+   "cadre": "Eye-level full-body shot, camera at chest height, she appears alone in the open doorway, a small structured cherry-red handbag on her arm, backlit, chin up, a calm confident look.",
+   "parle": null,
+   "jeu": "She walks in and straight toward the camera with slow, confident steps, chin up, her hair moving; at the edges the blurred gym-goers turn their heads toward her",
+   "incrust": [
+    {
+     "type": "chiffre",
+     "texte": "100 JOURS PLUS TARD",
+     "mot": "",
+     "repli_carton": true,
+     "y_px": [
+      380,
+      520
+     ]
+    }
+   ],
+   "duree": 2.6,
+   "camera": "locked-off",
+   "fin_de_plan": "She stops close to the camera, looking confidently to the right.",
+   "ralenti": 1.4,
+   "sfx": [
+    {
+     "son": "whoosh",
+     "a": 0.0,
+     "gain": 0.5
+    },
+    {
+     "son": "murmures",
+     "a": 0.3,
+     "gain": 0.4,
+     "fondu_entree": 1.0,
+     "texte": "murmures de la foule qui montent (les temoins se retournent)"
+    }
+   ],
+   "carton": {
+    "texte": "100 JOURS PLUS TARD",
+    "duree": 1.2,
+    "flash": true,
+    "son": "whoosh",
+    "position": "tiers_haut",
+    "y_px": [
+     380,
+     520
+    ]
+   },
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Eye-level full-body shot, camera at chest height, vertical 9:16 composition. Inside the open steel doors of a loft gym, golden backlight, blurred gym-goers at the edges, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous dark-red hair in freshly styled glossy Hollywood waves with two small cherries and a leaf clipped in it, oversized gold-rimmed sunglasses pushed up in her hair, full glossy red lips, glamorous makeup, wearing a tailored ivory-white blazer mini dress with gold buttons and a small gold cherry pendant, with an adult 25-year-old face appears alone in the open doorway, a small structured cherry-red handbag on her arm, backlit, chin up, a calm confident look. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus, only a few small blurred gym-goers far away at the edges. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Eye-level full-body shot, camera at chest height, on a locked-off static camera; the framing never changes. Inside the open steel doors of a loft gym, golden backlight, blurred gym-goers at the edges, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous dark-red hair in freshly styled glossy Hollywood waves with two small cherries and a leaf clipped in it, oversized gold-rimmed sunglasses pushed up in her hair, full glossy red lips, glamorous makeup, wearing a tailored ivory-white blazer mini dress with gold buttons and a small gold cherry pendant, with an adult 25-year-old face appears alone in the open doorway. She walks in and straight toward the camera with slow, confident steps, chin up, her hair moving; at the edges the blurred gym-goers turn their heads toward her. She does not speak and her lips stay closed. No one speaks. Audio: gym hall murmurs, distant street, confident heel steps, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, sharp faces in the crowd, mirror, poster, banner, screen, numbers on weights",
+    "references": [
+     "decors/salle_entree.png",
+     "identite/cerise_glow.png"
+    ],
+    "variante_amorce": {
+     "essais_max": 4,
+     "repli": "prompts principaux du plan, sans amorce",
+     "retouche_decor": "Same image, same gym entrance, same lighting, same colors and same framing. Only add, in the blurred foreground, two hugely muscular young men at the left edge of the frame and one at the right edge, at mid-height, seen from behind and out of focus, facing the open doors: one with bright lemon-yellow skin and slicked-back golden hair, one with warm tan-brown fibrous skin and a short spiky tuft of coconut fibers on his head, one with deep indigo-blue matte skin and a navy-blue quiff. Their faces are not visible; their heads are turned toward the open doorway, frozen. The doorway and the center of the frame stay empty, and nothing is in the bottom fifth of the image. No text, no letters.",
+     "decor_retouche": "decors/salle_entree_amorce_p22.png",
+     "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Eye-level full-body shot, camera at chest height, vertical 9:16 composition. Inside the open steel doors of a loft gym, golden backlight, blurred gym-goers at the edges, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous dark-red hair in freshly styled glossy Hollywood waves with two small cherries and a leaf clipped in it, oversized gold-rimmed sunglasses pushed up in her hair, full glossy red lips, glamorous makeup, wearing a tailored ivory-white blazer mini dress with gold buttons and a small gold cherry pendant, with an adult 25-year-old face appears alone in the open doorway, a small structured cherry-red handbag on her arm, backlit, chin up, a calm confident look. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus; in the blurred foreground, three muscular figures seen from behind at the left and right edges, at mid-height, stay out of focus, their heads turned toward her, their faces never visible. No text, no letters, no logos, no subtitles.",
+     "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Eye-level full-body shot, camera at chest height, on a locked-off static camera; the framing never changes. Inside the open steel doors of a loft gym, golden backlight, blurred gym-goers at the edges, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous dark-red hair in freshly styled glossy Hollywood waves with two small cherries and a leaf clipped in it, oversized gold-rimmed sunglasses pushed up in her hair, full glossy red lips, glamorous makeup, wearing a tailored ivory-white blazer mini dress with gold buttons and a small gold cherry pendant, with an adult 25-year-old face appears alone in the open doorway. She walks straight toward the camera with slow, confident steps, chin up, hair moving; the blurred gym-goers turn their heads toward her. Three blurred figures seen from behind stay frozen at the edges. She does not speak and her lips stay closed. No one speaks. Audio: gym hall murmurs, distant street, heel steps, no music.",
+     "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, sharp faces in the crowd, mirror, poster, banner, screen, numbers on weights, faces on the foreground figures, foreground figures turning around, sharp foreground figures",
+     "references": [
+      "decors/salle_entree_amorce_p22.png",
+      "identite/cerise_glow.png"
+     ],
+     "quand": "a tester en premier des que le P1 cible (avec amorce) est valide : rime visuelle"
+    }
+   }
+  },
+  {
+   "id": 23,
+   "decor": "salle_rack",
+   "persos": [
+    "citron_salle"
+   ],
+   "cadre": "Close-up of the face and shoulders, he stands alone, his cocky smile collapsing, mouth falling open, looking off-screen to the left.",
+   "parle": null,
+   "jeu": "He stares to the left; his cocky smile slowly collapses, his mouth falls open and he swallows hard",
+   "recadrage": "gp",
+   "duree": 1.5,
+   "camera": "locked-off",
+   "fin_de_plan": "He stands open-mouthed, stunned.",
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders, vertical 9:16 composition. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black sleeveless gym hoodie on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone, his cocky smile collapsing, mouth falling open, looking off-screen to the left. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders on a locked-off static camera; the framing never changes. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black sleeveless gym hoodie on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone. He stares to the left; his cocky smile slowly collapses, his mouth falls open and he swallows hard. He does not speak and his lips stay closed. No one speaks. Audio: gym ambiance, distant clanking weights, the gym going quiet, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, mirror, poster, banner, screen, numbers on weights",
+    "references": [
+     "decors/salle_rack.png",
+     "identite/citron_salle.png"
+    ]
+   },
+   "voix_off": {
+    "perso": "myrtille",
+    "replique": "Quoi ?!",
+    "debut": 0.3
+   }
+  },
+  {
+   "id": 24,
+   "decor": "salle_rack",
+   "persos": [
+    "coco"
+   ],
+   "cadre": "Medium close-up from the waist up, he stands alone, rubbing the coconut-fiber tuft on his head with one hand, jaw dropped, looking off-screen to the left.",
+   "parle": "coco",
+   "jeu": "Jaw dropped, he rubs the coconut-fiber tuft on his head, looking to the left, and says with a clumsy charming smile",
+   "replique": "Cerise ?! Pas besoin de lui. T'as besoin de moi !",
+   "recadrage": "pm",
+   "duree": 3.4,
+   "segments": [
+    "Cerise ?!",
+    "He grins clumsily",
+    "Pas besoin de lui. T'as besoin de moi !"
+   ],
+   "camera": "locked-off",
+   "fin_de_plan": "He freezes mid-wink with a clumsy smile.",
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up, vertical 9:16 composition. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with warm tan-brown skin covered in a fine fibrous fuzz like a coconut husk, a short spiky tuft of dry coconut fibers on top of his head, thick eyebrows and a cocky grin, wearing a tight white sleeveless gym tank top and a white towel around his neck, with an adult 28-year-old face stands alone, rubbing the coconut-fiber tuft on his head with one hand, jaw dropped, looking off-screen to the left. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with warm tan-brown skin covered in a fine fibrous fuzz like a coconut husk, a short spiky tuft of dry coconut fibers on top of his head, thick eyebrows and a cocky grin, wearing a tight white sleeveless gym tank top and a white towel around his neck, with an adult 28-year-old face stands alone. He rubs his coconut-fiber tuft, looking to the left. He speaks in French, in a loud, hoarse, laughing young man's voice, amazed, then flirting, \"Cerise ?!\" He grins clumsily, \"Pas besoin de lui. T'as besoin de moi !\" Only he speaks, his lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: gym ambiance, distant clanking weights, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, mirror, poster, banner, screen, numbers on weights",
+    "video_sur_notre_voix": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with warm tan-brown skin covered in a fine fibrous fuzz like a coconut husk, a short spiky tuft of dry coconut fibers on top of his head, thick eyebrows and a cocky grin, wearing a tight white sleeveless gym tank top and a white towel around his neck, with an adult 28-year-old face stands alone. He rubs his coconut-fiber tuft, looking to the left. He speaks in French, amazed, then flirting; his lips move in sync with the provided voice, and in the pause he grins clumsily. Only he speaks. The camera holds the frame. Audio: gym ambiance, distant clanking weights, no music.",
+    "references": [
+     "decors/salle_rack.png",
+     "identite/coco.png"
+    ]
+   }
+  },
+  {
+   "id": 25,
+   "decor": "salle",
+   "persos": [
+    "cerise_glow"
+   ],
+   "cadre": "Close-up of the face and shoulders, she stands alone, a half smile, one eyebrow raised, looking off-screen to the right.",
+   "parle": "cerise",
+   "jeu": "She looks to the right with a half smile and one eyebrow raised, and says with a calm smile",
+   "replique": "Désolée, messieurs… La serveuse a fini son service.",
+   "recadrage": "gp",
+   "duree": 2.8,
+   "segments": [
+    "Désolée, messieurs…",
+    "She tucks a strand behind her ear",
+    "La serveuse a fini son service."
+   ],
+   "camera": "locked-off",
+   "fin_de_plan": "She keeps a calm half smile.",
+   "zoom": {
+    "mode": "progressif",
+    "de": 1.0,
+    "a": 1.15
+   },
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders, vertical 9:16 composition. In a sunlit loft gym at golden hour, red brick and arched windows blurred behind, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous dark-red hair in freshly styled glossy Hollywood waves with two small cherries and a leaf clipped in it, oversized gold-rimmed sunglasses pushed up in her hair, full glossy red lips, glamorous makeup, wearing a tailored ivory-white blazer mini dress with gold buttons and a small gold cherry pendant, with an adult 25-year-old face stands alone, a half smile, one eyebrow raised, looking off-screen to the right. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders on a locked-off static camera; the framing never changes. In a sunlit loft gym at golden hour, red brick and arched windows blurred behind, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous dark-red hair in freshly styled glossy Hollywood waves with two small cherries and a leaf clipped in it, oversized gold-rimmed sunglasses pushed up in her hair, full glossy red lips, glamorous makeup, wearing a tailored ivory-white blazer mini dress with gold buttons and a small gold cherry pendant, with an adult 25-year-old face stands alone. She speaks in French, in a soft, sweet young woman's voice, slightly husky, calm, amused and confident, \"Désolée, messieurs…\" She tucks a strand behind her ear, \"La serveuse a fini son service.\" Only she speaks, her lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: gym ambiance, distant clanking weights, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, mirror, poster, banner, screen, numbers on weights",
+    "video_sur_notre_voix": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders on a locked-off static camera; the framing never changes. In a sunlit loft gym at golden hour, red brick and arched windows blurred behind, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous dark-red hair in freshly styled glossy Hollywood waves with two small cherries and a leaf clipped in it, oversized gold-rimmed sunglasses pushed up in her hair, full glossy red lips, glamorous makeup, wearing a tailored ivory-white blazer mini dress with gold buttons and a small gold cherry pendant, with an adult 25-year-old face stands alone. She looks to the right with a half smile and one eyebrow raised. She speaks in French, calm, amused and confident; her lips move in sync with the provided voice, and in the pause she tucks a strand behind her ear. Only she speaks. The camera holds the frame. Audio: gym ambiance, distant clanking weights, no music.",
+    "references": [
+     "decors/salle.png",
+     "identite/cerise_glow.png"
+    ]
+   }
+  },
+  {
+   "id": 26,
+   "decor": "salle_entree",
+   "persos": [
+    "kiwi_chic"
+   ],
+   "cadre": "Medium close-up from the waist up, he leans alone in the open doorway, softly backlit, one open hand held out toward the left of the frame, a soft smile.",
+   "parle": "kiwi",
+   "jeu": "He smiles softly to the left, and says gently",
+   "replique": "Viens, Cerise. Ce soir, c'est toi qu'on sert.",
+   "recadrage": "pm",
+   "duree": 2.6,
+   "segments": [
+    "Viens, Cerise.",
+    "He holds out his hand",
+    "Ce soir, c'est toi qu'on sert."
+   ],
+   "camera": "locked-off",
+   "fin_de_plan": "He holds out his hand with a soft smile, backlit.",
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up, vertical 9:16 composition. Inside the open steel doors of a loft gym, golden backlight, blurred gym-goers at the edges, a hugely muscular handsome young man with olive-green fuzzy skin, short curly dark-brown hair, bright green eyes, wearing an open white linen shirt on his bare muscular chest with six-pack abs, a thin silver chain and his green delivery jacket slung over one shoulder, with an adult 27-year-old face and a warm smile leans alone in the open doorway, softly backlit, one open hand held out toward the left of the frame, a soft smile. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus, only a few small blurred gym-goers far away at the edges. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. Inside the open steel doors of a loft gym, golden backlight, blurred gym-goers at the edges, a hugely muscular handsome young man with olive-green fuzzy skin, short curly dark-brown hair, bright green eyes, wearing an open white linen shirt on his bare muscular chest with six-pack abs, a thin silver chain and his green delivery jacket slung over one shoulder, with an adult 27-year-old face and a warm smile leans alone in the open doorway. He smiles softly to the left. He speaks in French, in a warm, friendly young man's voice with a slight Parisian street accent, warm and gentle, \"Viens, Cerise.\" He holds out his hand, \"Ce soir, c'est toi qu'on sert.\" Only he speaks, his lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: gym hall murmurs, distant street, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, sharp faces in the crowd, mirror, poster, banner, screen, numbers on weights",
+    "video_sur_notre_voix": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. Inside the open steel doors of a loft gym, golden backlight, blurred gym-goers at the edges, a hugely muscular handsome young man with olive-green fuzzy skin, short curly dark-brown hair, bright green eyes, wearing an open white linen shirt on his bare muscular chest with six-pack abs, a thin silver chain and his green delivery jacket slung over one shoulder, with an adult 27-year-old face and a warm smile leans alone in the open doorway. He smiles softly to the left. He speaks in French, warm and gentle; his lips move in sync with the provided voice, and in the pause he holds out his hand. Only he speaks. The camera holds the frame. Audio: gym hall murmurs, distant street, no music.",
+    "references": [
+     "decors/salle_entree.png",
+     "identite/kiwi_chic.png"
+    ]
+   }
+  },
+  {
+   "id": 27,
+   "decor": "salle_rack",
+   "persos": [
+    "citron_salle"
+   ],
+   "cadre": "Medium close-up from the waist up, he stands alone, leaning hard forward as if straining against an unseen restraint, neck tense, pointing toward the left of the frame.",
+   "parle": "citron",
+   "jeu": "He lunges forward against an unseen restraint, his neck muscles tense, and shouts",
+   "replique": "Le livreur ?! Lâchez-moi !",
+   "musique": "tension",
+   "recadrage": "pm",
+   "duree": 1.5,
+   "segments": [
+    "Le livreur ?!",
+    "He points furiously to the left",
+    "Lâchez-moi !"
+   ],
+   "camera": "locked-off",
+   "fin_de_plan": "He strains forward, finger pointing left.",
+   "sfx": [
+    {
+     "son": "lutte",
+     "a": 0.0,
+     "gain": 0.6
+    }
+   ],
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up, vertical 9:16 composition. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black sleeveless gym hoodie on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone, leaning hard forward as if straining against an unseen restraint, neck tense, pointing toward the left of the frame. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black sleeveless gym hoodie on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone. He lunges forward against an unseen restraint, his neck muscles tense. He speaks in French, in a deep, smooth, confident young man's voice, arrogant, shouting with jealous rage, \"Le livreur ?!\" He points furiously to the left, \"Lâchez-moi !\" Only he speaks, his lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: gym ambiance, distant clanking weights, sneakers scuffling on rubber, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, hands on his shoulders, arms holding him, mirror, poster, banner, screen, numbers on weights",
+    "video_sur_notre_voix": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black sleeveless gym hoodie on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone. He lunges forward against an unseen restraint, his neck muscles tense. He speaks in French, shouting with jealous rage; his lips move in sync with the provided voice, and in the pause he points furiously to the left. Only he speaks. The camera holds the frame. Audio: gym ambiance, distant clanking weights, sneakers scuffling on rubber, no music.",
+    "references": [
+     "decors/salle_rack.png",
+     "identite/citron_salle.png"
+    ]
+   }
+  },
+  {
+   "id": 28,
+   "decor": "salle_rack",
+   "persos": [
+    "citron_salle"
+   ],
+   "cadre": "Close-up of the face and shoulders, he stands alone, eyes wide, teeth clenched, pointing his index finger straight at the camera.",
+   "parle": "citron",
+   "jeu": "He glares into the lens, eyes wide, pointing his finger at the camera, and threatens",
+   "replique": "Cent jours pour monter… Un seul pour te faire tomber !",
+   "sous_titre": "100 jours pour monter… Un seul pour te faire tomber !",
+   "recadrage": "gp",
+   "duree": 3.7,
+   "segments": [
+    "Cent jours pour monter…",
+    "He jabs his finger at the lens",
+    "Un seul pour te faire tomber !"
+   ],
+   "camera": "locked-off",
+   "fin_de_plan": "Extreme close-up, his finger pointing at the lens.",
+   "zoom": {
+    "mode": "coup",
+    "de": 1.0,
+    "a": 1.25,
+    "mot": "seul"
+   },
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders, vertical 9:16 composition. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black sleeveless gym hoodie on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone, eyes wide, teeth clenched, pointing his index finger straight at the camera. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders on a locked-off static camera; the framing never changes. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black sleeveless gym hoodie on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone. He glares into the lens, eyes wide, and points his finger at the camera. He speaks in French, in a deep, smooth, confident young man's voice, arrogant, low and threatening, then shouting, \"Cent jours pour monter…\" He jabs his finger at the lens, \"Un seul pour te faire tomber !\" Only he speaks, his lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: gym ambiance, distant clanking weights, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, hands on his shoulders, arms holding him, mirror, poster, banner, screen, numbers on weights",
+    "video_sur_notre_voix": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders on a locked-off static camera; the framing never changes. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black sleeveless gym hoodie on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone. He glares into the lens, eyes wide, and points his finger at the camera. He speaks in French, low and threatening, then shouting; his lips move in sync with the provided voice, and in the pause he jabs his finger at the lens. Only he speaks. The camera holds the frame. Audio: gym ambiance, distant clanking weights, no music.",
+    "references": [
+     "decors/salle_rack.png",
+     "identite/citron_salle.png"
+    ]
+   }
+  },
+  {
+   "id": 29,
+   "decor": "salle_rack",
+   "persos": [
+    "myrtille"
+   ],
+   "cadre": "Medium close-up from the waist up, he stands alone, stepping back as he lets go of someone off-screen to the right, both open hands raised at shoulder height, one eyebrow raised, looking off-screen to the right.",
+   "parle": "myrtille",
+   "jeu": "He lets go of someone off-screen to the right and steps back, open hands raised, looking to the right, and says with a teasing smirk",
+   "replique": "Frérot… Lâche l'affaire. Il te reste que le zeste.",
+   "recadrage": "pm",
+   "duree": 3.4,
+   "segments": [
+    "Frérot…",
+    "He shrugs and shakes his head",
+    "Lâche l'affaire. Il te reste que le zeste."
+   ],
+   "camera": "locked-off",
+   "fin_de_plan": "He shrugs, one eyebrow raised, looking to the right.",
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up, vertical 9:16 composition. By black squat racks on a red brick wall, warm golden light from the left, a tall muscular handsome young man with deep indigo-blue matte skin with a soft dusty bloom like a blueberry, a styled navy-blue quiff and a teasing smirk, wearing a light-grey sleeveless gym hoodie with the hood down and big white headphones around his neck, with an adult 26-year-old face stands alone, stepping back as he lets go of someone off-screen to the right, both open hands raised at shoulder height, one eyebrow raised, looking off-screen to the right. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. By black squat racks on a red brick wall, warm golden light from the left, a tall muscular handsome young man with deep indigo-blue matte skin with a soft dusty bloom like a blueberry, a styled navy-blue quiff and a teasing smirk, wearing a light-grey sleeveless gym hoodie with the hood down and big white headphones around his neck, with an adult 26-year-old face stands alone. He lets go of someone off-screen to the right and steps back, open hands raised, looking to the right. He speaks in French, in a nasal, teasing, slightly high-pitched young man's voice, mocking, \"Frérot…\" He shrugs and shakes his head, \"Lâche l'affaire. Il te reste que le zeste.\" Only he speaks, his lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: gym ambiance, distant clanking weights, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, mirror, poster, banner, screen, numbers on weights",
+    "video_sur_notre_voix": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. By black squat racks on a red brick wall, warm golden light from the left, a tall muscular handsome young man with deep indigo-blue matte skin with a soft dusty bloom like a blueberry, a styled navy-blue quiff and a teasing smirk, wearing a light-grey sleeveless gym hoodie with the hood down and big white headphones around his neck, with an adult 26-year-old face stands alone. He lets go of someone off-screen to the right and steps back, open hands raised, looking to the right. He speaks in French, mocking; his lips move in sync with the provided voice, and in the pause he shrugs and shakes his head. Only he speaks. The camera holds the frame. Audio: gym ambiance, distant clanking weights, no music.",
+    "references": [
+     "decors/salle_rack.png",
+     "identite/myrtille.png"
+    ]
+   }
+  },
+  {
+   "id": 30,
+   "decor": "salle_rack",
+   "persos": [
+    "citron_salle"
+   ],
+   "cadre": "Extreme close-up of the face, he stands alone, looking straight into the lens, mouth wide open in a furious scream, eyes wide.",
+   "parle": "citron",
+   "jeu": "He throws his head toward the camera, furious, looking straight into the lens, and screams",
+   "replique": "Jamais !",
+   "recadrage": "gp",
+   "duree": 1.2,
+   "segments": [
+    "Jamais !"
+   ],
+   "camera": "locked-off",
+   "fin_de_plan": "Mouth wide open on the last syllable, then a hard cut.",
+   "zoom": {
+    "mode": "fixe",
+    "de": 1.25,
+    "a": 1.25
+   },
+   "sfx": [
+    {
+     "son": "boom",
+     "fin": true,
+     "gain": 0.9
+    }
+   ],
+   "coupe_musique": {
+    "fin_de_plan": true
+   },
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Extreme close-up of the face, vertical 9:16 composition. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black sleeveless gym hoodie on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone, looking straight into the lens, mouth wide open in a furious scream, eyes wide. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Extreme close-up of the face on a locked-off static camera; the framing never changes. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black sleeveless gym hoodie on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone. He throws his head toward the camera, furious, looking straight into the lens. He speaks in French, in a deep, smooth, confident young man's voice, arrogant, screaming with rage, \"Jamais !\" Only he speaks, his lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: gym ambiance, distant clanking weights, his scream echoing, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, mirror, poster, banner, screen, numbers on weights",
+    "video_sur_notre_voix": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Extreme close-up of the face on a locked-off static camera; the framing never changes. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black sleeveless gym hoodie on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone. He throws his head toward the camera, furious, looking straight into the lens. He speaks in French, screaming with rage; his lips move in sync with the provided voice. Only he speaks. The camera holds the frame. Audio: gym ambiance, distant clanking weights, his scream echoing, no music.",
+    "references": [
+     "decors/salle_rack.png",
+     "identite/citron_salle.png"
+    ]
+   }
+  }
+ ],
+ "voix_hauteur": {
+  "citron": 125,
+  "kiwi": 135,
+  "prune": 200,
+  "coco": 115
+ },
+ "musique_prise": {
+  "tension": 3,
+  "triste": 1,
+  "revanche": 3
+ },
+ "montage": {
+  "vitesse": 1.0,
+  "voix_chaudes": false,
+  "voix_clonees": true,
+  "tempo_voix": {
+   "*": 0.9,
+   "prune": 1.25
+  },
+  "pauses": true,
+  "effets_voix": {
+   "prune": "vibrato=f=5.5:d=0.05"
+  },
+  "fin_duree": 1.2
+ },
+ "minutage": {
+  "regle": "Plan parle : duree = parole mesuree (du premier au dernier mot de la voix clonee, apres le tempo et les pauses de caler.py) + 0,4 s. Les voix se generent AVANT les clips ; les durees ci-dessous sont des estimations a remplacer par la mesure.",
+  "cible_s": [
+   75,
+   80
+  ],
+  "marge_s": 0.4,
+  "debits_reference_mots_par_s": {
+   "cerise": 3.28,
+   "citron": 3.02,
+   "coco": 3.02,
+   "myrtille": 3.02,
+   "kiwi": 3.71,
+   "prune": 2.0
+  },
+  "debits_prudents_mots_par_s": {
+   "cerise": 3.1,
+   "citron": 2.82,
+   "coco": 2.82,
+   "myrtille": 2.82,
+   "kiwi": 3.25,
+   "prune": 1.94
+  },
+  "estimation_s": 78.9,
+  "estimation_prudente_s": 83.6,
+  "estimation_prudente_apres_coupes_s": 79.0,
+  "coupes_de_secours": [
+   {
+    "plan": 20,
+    "duree": 1.2,
+    "gain_s": 0.3,
+    "texte": "course raccourcie"
+   },
+   {
+    "plan": 2,
+    "replique": "Ma copine ? Juste la serveuse du café.",
+    "gain_mots": 1
+   },
+   {
+    "plan": 25,
+    "replique": "Désolée… La serveuse a fini son service.",
+    "gain_mots": 1
+   },
+   {
+    "plan": 9,
+    "replique": "Sans moi ? Tu tiendras pas une semaine !",
+    "gain_mots": 1
+   },
+   {
+    "plan": 24,
+    "replique": "Cerise ?! Oublie-le. T'as besoin de moi !",
+    "gain_mots": 3
+   },
+   {
+    "plan": 10,
+    "replique": "Pour commencer… je t'affiche partout.",
+    "gain_mots": 1
+   },
+   {
+    "plan": 26,
+    "replique": "Viens. Ce soir, c'est toi qu'on sert.",
+    "gain_mots": 1
+   },
+   {
+    "plan": 13,
+    "replique": "Citron ? La salle, c'est pas ici.",
+    "gain_mots": 1
+   },
+   {
+    "plan": 3,
+    "replique": "Serveuse ! Les cuisines, c'est en face !",
+    "gain_mots": 1
+   },
+   {
+    "plan": 19,
+    "replique": "Jour un ! On court !",
+    "gain_mots": 1
+   },
+   {
+    "plan": 11,
+    "replique": "Quarante-huit mille vues… Et s'il avait raison ?",
+    "gain_mots": 1
+   },
+   {
+    "plan": 22,
+    "duree": 2.4,
+    "gain_s": 0.2,
+    "texte": "défilé ramené à 2,4 s (dont 1,2 s sous le carton, dans le tiers haut) ; en dernier, pour garder 1,4 s de marche sans texte"
+   }
+  ]
+ },
+ "fiches": {
+  "coco": "Stylized semi-realistic 3D CGI character, glamorous high-budget animated movie look, cinematic studio lighting, highly detailed skin and hair, striking attractive face. a hugely muscular, very handsome adult man, 28 years old, with a mature adult face; his skin is warm tan-brown everywhere, covered with a fine short fibrous fuzz like a coconut husk; bodybuilder physique: massive shoulders, huge arms, big chest; a short spiky tuft of dry coconut fibers on top of his head, thick eyebrows, a cocky grin; wearing a tight white sleeveless gym tank top, black joggers, white sneakers and a white towel around his neck; confident standing pose. Full body, front view, standing, centered, plain light grey studio background, character reference, exactly one single character, no text, no logo.",
+  "myrtille": "Stylized semi-realistic 3D CGI character, glamorous high-budget animated movie look, cinematic studio lighting, highly detailed skin and hair, striking attractive face. a tall muscular, very handsome adult man, 26 years old, with a mature adult face; his skin is deep indigo-blue everywhere with a soft dusty matte bloom like a blueberry; athletic muscular physique: broad shoulders, big arms, flat abs; a styled navy-blue quiff, a teasing smirk with one raised eyebrow; wearing a light-grey sleeveless gym hoodie with the hood down, black joggers, white sneakers and big white headphones around his neck; confident standing pose. Full body, front view, standing, centered, plain light grey studio background, character reference, exactly one single character, no text, no logo."
+ },
+ "accessoires": {
+  "gamelle": "a small glossy red cherry-shaped lunch box with a short green stem handle",
+  "shaker": "a plain matte black protein shaker",
+  "pot": "a big plain unlabeled red glass jar shaped like a cherry, with a green stem-shaped lid, packed with coins and folded paper money",
+  "bouquet": "a big bouquet of yellow roses wrapped in plain brown kraft paper",
+  "serveuse": "a ballpoint pen tucked behind her ear, a small order notepad in her apron pocket, shoulders slightly hunched",
+  "sac": "a small structured cherry-red handbag"
+ },
+ "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face",
+ "repli_voix_off": {
+  "principe": "Tant que montage.py ne sait pas poser une voix hors champ : le plan 1 devient muet (duree 1.5) et le plan ci-dessous s'insere juste apres lui (duree estimee 2.4, a remplacer par sa voix mesuree + 0.4). Duree totale estimee 80,1 s (au-dessus de la cible : appliquer une coupe de secours, voir minutage), premiere replique a 1,5 s. Les plans 21 et 23 restent muets.",
+  "plan_1_duree": 1.5,
+  "inserer_apres": 1,
+  "plan": {
+   "id": 31,
+   "decor": "salle_rack",
+   "persos": [
+    "coco"
+   ],
+   "cadre": "Medium close-up from the waist up, he stands alone, laughing, one hand cupped by his mouth as if calling across the gym, looking off-screen to the left.",
+   "parle": "coco",
+   "jeu": "He cups one hand by his mouth and laughs, looking to the left, and calls out with laughter",
+   "replique": "Oh, Citron ! Ta cantinière est là !",
+   "recadrage": "pm",
+   "duree": 2.4,
+   "segments": [
+    "Oh, Citron !",
+    "He laughs",
+    "Ta cantinière est là !"
+   ],
+   "camera": "locked-off",
+   "fin_de_plan": "He laughs, one hand still cupped by his mouth.",
+   "prompts": {
+    "image": "Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up, vertical 9:16 composition. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with warm tan-brown skin covered in a fine fibrous fuzz like a coconut husk, a short spiky tuft of dry coconut fibers on top of his head, thick eyebrows and a cocky grin, wearing a tight white sleeveless gym tank top and a white towel around his neck, with an adult 28-year-old face stands alone, laughing, one hand cupped by his mouth as if calling across the gym, looking off-screen to the left. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.",
+    "video": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with warm tan-brown skin covered in a fine fibrous fuzz like a coconut husk, a short spiky tuft of dry coconut fibers on top of his head, thick eyebrows and a cocky grin, wearing a tight white sleeveless gym tank top and a white towel around his neck, with an adult 28-year-old face stands alone. He cups one hand by his mouth and laughs, looking to the left. He speaks in French, in a loud, hoarse, laughing young man's voice, shouting across the gym, \"Oh, Citron !\" He laughs, \"Ta cantinière est là !\" Only he speaks, his lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: gym ambiance, distant clanking weights, no music.",
+    "negatif": "subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, mirror, poster, banner, screen, numbers on weights",
+    "video_sur_notre_voix": "Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. By black squat racks on a red brick wall, warm golden light from the left, a hugely muscular handsome young man with warm tan-brown skin covered in a fine fibrous fuzz like a coconut husk, a short spiky tuft of dry coconut fibers on top of his head, thick eyebrows and a cocky grin, wearing a tight white sleeveless gym tank top and a white towel around his neck, with an adult 28-year-old face stands alone. He cups one hand by his mouth and laughs, looking to the left. He speaks in French, shouting across the gym; his lips move in sync with the provided voice, and in the pause he laughs. Only he speaks. The camera holds the frame. Audio: gym ambiance, distant clanking weights, no music.",
+    "references": [
+     "decors/salle_rack.png",
+     "identite/coco.png"
+    ]
+   }
+  }
+ }
+}
