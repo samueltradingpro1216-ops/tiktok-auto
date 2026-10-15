@@ -1,6 +1,6 @@
 # Épisode 2 : « La métamorphose », partie 1
 
-*Script v3 du scénariste, 15 octobre 2026, corrigé après la deuxième relecture du chef.*
+*Script v4 du scénariste, 15 octobre 2026, corrigé après la troisième relecture du chef.*
 
 C'est une **nouvelle histoire avec la même bande** : elle ne suit pas « La bague ». L'épisode se comprend seul et
 ouvre un arc de 3 à 5 parties. Cerise a 25 ans, comme sur sa fiche.
@@ -14,6 +14,20 @@ ouvre un arc de 3 à 5 parties. Cerise a 25 ans, comme sur sa fiche.
   repart avec Kiwi.
 - Citron, retenu par ses potes, promet de la faire tomber en un seul jour.
 
+**Ce qui change en v4** (troisième relecture du chef, 13 corrections).
+- **Le départ de dos revient : nouveau P27** (1,0 s, muet). Après l'invitation de Kiwi, Cerise sort seule, de dos,
+  vers l'embrasure dorée, sans visage et sans se retourner. Les anciens P27 à P30 deviennent les **P28 à P31**.
+- **Cinq répliques changent.** P8 : « Cent jours. Ici même. Tu baisseras les yeux. » ; P11 : « Mamie… Quarante-huit
+  mille vues. Et si j'étais que ça ? » ; P13 : « Citron ? Ta salle a fermé ? » ; P17 : « Cerise reviendra. » ; la
+  voix hors champ de Kiwi au P21 : « Frappe, Cerise ! ». Le délai reste **cent jours** partout.
+- **Mamie (P12) est animée sur sa voix** en LTX-2 TURBO, et compte 5,9 s.
+- **Pour rester sous 80 s,** la course du P20 passe à 1,2 s : c'est l'ancienne coupe de secours n° 1, appliquée.
+- **Les coupes de secours gardent le prénom** (P9, P19, P26, P11) ; celle du P13 est retirée.
+- **Images :** au P16, le bouquet garde son papier kraft et Citron regarde juste à gauche de l'objectif ; au P22,
+  le petit sac rouge cerise est aussi dans la vidéo et elle marche lentement vers la caméra ; au P11, la vidéo est
+  publiée par `peche.ruedesfruits 🍑`.
+- **Durée estimée : 79,9 s** pour 31 plans (80,2 s sans arrondi).
+
 **Ce qui change en v3** (deuxième relecture du chef).
 - **Coco est redessiné.** Peau brun clair chaud couverte d'une bourre fibreuse de coco et touffe de fibres sèches sur
   le crâne, au lieu du crâne rasé et des « grandes dents blanches » : c'était un trope caricatural, et le public
@@ -24,13 +38,13 @@ ouvre un arc de 3 à 5 parties. Cerise a 25 ans, comme sur sa fiche.
   commandes dans la poche du tablier et les épaules un peu voûtées. Au retour (P22, P25), elle porte de grandes
   lunettes de soleil dorées relevées dans les cheveux, des ondulations glamour et, au P22, un petit sac rouge cerise.
 - **Trois répliques changent.** P9 : « Sans moi, Cerise ? » ; P10 : « je t'affiche partout », qui cause la vidéo du
-  P11 ; P29 : le zeste, au lieu du « pressé » de Mamie à l'ép. 1.
+  P11 ; P30 : le zeste, au lieu du « pressé » de Mamie à l'ép. 1.
 - **Le trou de la métamorphose est rempli** par un « Quoi ?! » hors champ de Myrtille (P23) et par les murmures de
   la foule (P22).
 - **Les retouches d'image :** le carton « 100 JOURS PLUS TARD » passe dans le tiers haut ; Mamie est assise et
-  remue son thé (P12) ; le bouquet du P17 garde ses roses jaunes ; Myrtille regarde Citron au P29 ; plus de buée à
+  remue son thé (P12) ; le bouquet du P17 garde ses roses jaunes ; Myrtille regarde Citron au P30 ; plus de buée à
   l'aube (P19, P20).
-- **Durée estimée : 78,6 s** (le P10 raccourcit de 1,0 s, le P29 s'allonge de 0,4 s).
+- **Durée estimée : 78,6 s** (le P10 raccourcit de 1,0 s, le P30 s'allonge de 0,4 s).
 
 **Ce qui change en v2.**
 - **Le minutage suit nos voix réelles.** Le texte passe de 221 à 182 mots, et chaque plan parlé prendra la durée de
@@ -38,7 +52,7 @@ ouvre un arc de 3 à 5 parties. Cerise a 25 ans, comme sur sa fiche.
 - **Le tempo des voix est de 0,90 au plus** (Mamie 1,25) : le rythme vient des coupes, pas de voix accélérées.
 - **Le délai est de cent jours**, et les échos de fond relevés par le chef sont retirés (P9, P14, P21).
 - **Le P21 se passe sur les quais** : Cerise ne s'entraîne pas dans la salle de Citron.
-- **Le P28 a sa propre image clé** et sa menace vise clairement Cerise.
+- **Le P29 a sa propre image clé** et sa menace vise clairement Cerise.
 - **Le badge est « LA MÉTAMORPHOSE · PARTIE 1 ».**
 - **Les plans en pied (P1, P22) sont à hauteur de poitrine**, et une variante avec la bande en amorce est à tester.
 
@@ -54,7 +68,7 @@ ouvre un arc de 3 à 5 parties. Cerise a 25 ans, comme sur sa fiche.
 | Légende TikTok | Cerise, « juste la serveuse » ? 🍒 Partie 1 |
 | Hashtags | #fruitstory #histoiredefruit #tiktokfrance🇨🇵 #brainrot #france |
 | Carte de fin | **PARTIE 2**, sur fond noir |
-| Durée | **78,6 s estimés** : 30 plans, plus une carte de fin de 1,2 s. La durée réelle se fixe sur les voix mesurées (§ 6.1). |
+| Durée | **79,9 s estimés** : 31 plans, plus une carte de fin de 1,2 s. La durée réelle se fixe sur les voix mesurées (§ 6.1). |
 
 **La publication.**
 - Le soir, entre 20 h et 22 h, avec l'étiquette « contenu généré par IA » activée.
@@ -78,21 +92,21 @@ mesure des voix.
 | 7–10 | **Hypocrisie.** En tête-à-tête, le copain redevient doux, mais il veut la cacher. | 9,6–12,3 (P5) : Citron, mielleux, lui demande d'enlever son tablier. | Il cache ce qui lui fait honte : le tablier. |
 | 11–13 | **Rupture**, avec le rappel d'une preuve vue dans l'épisode précédent. | 12,3–15,1 (P6) : Cerise retourne son mot contre lui et le quitte. | Pas de preuve antérieure : la preuve est ce qu'elle vient d'entendre. L'épisode tient donc seul. |
 | 13–14 | **Le méchant minimise.** | 15,1–17,5 (P7) : Citron, gêné, lui demande de parler moins fort. | Il minimise par la honte (« tout le monde regarde »), pas par la blague. |
-| 14,5–15,6 | **Défi daté**, qui sert de minuteur à l'épisode. | 17,5–20,3 (P8) : cent jours, retour **ici même**, et c'est lui qui aura honte. Le chiffre est incrusté. | Le délai est compté en jours, avec un chiffre rond et iconique, différent de celui de la référence ; le lieu du retour est fixé, et la honte change de camp. |
-| 15,6–17 | Respiration musicale : elle s'en va. | Supprimée : on coupe directement sur l'aparté. | Ce plan coûterait 1,5 s de silence pour rien. Le départ de dos est gardé pour la fin. |
+| 14,5–15,6 | **Défi daté**, qui sert de minuteur à l'épisode. | 17,5–20,3 (P8) : cent jours, retour **ici même**, et c'est lui qui baissera les yeux. Le chiffre est incrusté. | Le délai est compté en jours, avec un chiffre rond et iconique, différent de celui de la référence ; le lieu du retour est fixé, et la honte change de camp. |
+| 15,6–17 | Respiration musicale : elle s'en va. | Supprimée : on coupe directement sur l'aparté. | Ce plan coûterait 1,5 s de silence pour rien. |
 | 17–24 | **Premier aparté du méchant**, seul avec son téléphone. Il refuse qu'elle change et jure de la faire échouer. Un indice est caché dans le décor. | 20,3–25,7 (P9, P10) : Citron, seul dans son salon, face caméra, parie qu'elle ne tiendra pas une semaine sans lui et promet, pour commencer, de l'afficher partout. **L'indice :** un pot à pourboires en forme de cerise, plein de billets, sur sa table basse. | L'indice est un objet sans texte. Le secret est différent : c'est l'argent, pas l'apparence. |
-| 24–30 | **Creux.** L'héroïne pleure seule et doute, puis on frappe. | 25,7–33,5 (P11, P12) : chez Mamie Prune, la vidéo moqueuse publiée par Pêche affiche 48 000 vues : la menace du P10 est déjà mise à exécution. Cerise doute. Mamie place la réplique à citer, puis on frappe. | **Ajouts :** Mamie Prune (la réplique culte) et Pêche, par une simple incrustation, avec un chiffre. Le lien entre Citron et Pêche reste implicite : c'est une piste de la partie 2. |
-| 30–38 | **Fausse rédemption.** Le copain revient avec des fleurs, s'excuse et fait un compliment manipulateur. | 33,5–38,7 (P13, P14) : Citron arrive avec des roses jaunes, s'excuse et lui dit qu'elle a besoin de lui. | Le compliment devient une emprise (« t'as besoin de moi »). Cette phrase reviendra en miroir. |
-| 37,5–41 | **Refus-étendard**, puis la porte claque. | 38,7–43,6 (P15, P16) : « Mon tablier, c'est pas ma honte… », puis la porte claque sur la réaction de Citron. | Notre phrase-étendard porte sur la dignité du métier. |
-| 41–49 | **Le méchant se démasque**, seul devant la porte : possessivité. | 43,6–50,0 (P17, P18) : Citron, vexé qu'on lui claque la porte au nez, est sûr qu'elle reviendra, puis avoue son vrai mobile : il paie sa salle avec ses pourboires. | Son mobile est l'argent et l'ego. Le public le sait, Cerise non : c'est l'ironie dramatique. |
-| 49,6–54 | **Montage de transformation muet**, lancé par une phrase de l'héroïne. | 50,0–54,7 (P19 à P21) : lancé par **Kiwi, son coach**, sur les quais : course à l'aube, puis enchaînement de coups dans ses pattes d'ours, hors champ ; sa voix hors champ (« Plus fort, Cerise ! ») coupe le passage muet. | Kiwi est là **avant** la métamorphose, l'effort porte sur la force et la confiance, et il se fait loin de la salle de Citron : la révélation reste intacte. |
-| 54 | **Carton de temps**, dessiné dans l'image. | 54,7 (P22) : « 100 JOURS PLUS TARD », incrusté au montage dans le tiers haut, avec un flash blanc. | Aucun texte généré. Le carton reste au-dessus de sa tête : il ne masque pas la révélation. |
-| 54,6–57 | **Révélation de la métamorphose** : les garçons restent bouche bée. | 54,7–58,8 (P22, P23) : défilé au ralenti, **dans le même cadre que le plan 1**, avec des témoins qui se retournent et des murmures qui montent. Citron se décompose sous le « Quoi ?! » hors champ de Myrtille, qui rend le battement de stupeur. | Le cadre est le même avant et après : c'est une rime visuelle. La silhouette ne change pas ; seuls le style et l'assurance changent, avec des signes lisibles en miniature : lunettes de soleil dorées dans les cheveux, ondulations glamour, petit sac rouge cerise. La caméra reste à hauteur de poitrine. |
-| 57–61,5 | **Les potes la draguent**, et l'un reprend mot pour mot le compliment du méchant : effet ironique. | 58,8–62,2 (P24) : Coco la drague en reprenant **mot pour mot la fin de la phrase de Citron à la porte**. | Un seul dragueur, pour le rythme. |
-| 61,8–66 | **Repartie.** L'héroïne les envoie balader. | 62,2–65,0 (P25) : « La serveuse a fini son service. » | Notre phrase reprend le motif du métier. |
-| 66–68 | **Silence de triomphe** : elle part de dos. | 65,0–67,6 (P26) : Kiwi, en tenue chic, l'attend et lui dit « Ce soir, c'est toi qu'on sert. » | **Ajout :** le « nouveau garçon » est l'ami fidèle, présent pendant l'effort. Le service s'inverse. |
-| 68–72 | **Cliffhanger.** Le méchant, retenu par ses potes, hurle et menace. | 67,6–72,8 (P27, P28) : « Le livreur ?! », retenu hors champ, il jure de la faire tomber en un seul jour. | La menace est sociale, pas physique, et elle vise clairement Cerise. |
-| 72–75 | **Un pote lui dit qu'il a perdu**, il répond d'un seul mot, coupe sèche. | 72,8–78,6 (P29, P30, fin) : Myrtille lui dit de lâcher l'affaire avec le jeu de mots du zeste, Citron répond « Jamais ! », puis PARTIE 2. | Le constat du pote passe par un calembour fruité. |
+| 24–30 | **Creux.** L'héroïne pleure seule et doute, puis on frappe. | 25,7–34,7 (P11, P12) : chez Mamie Prune, la vidéo moqueuse publiée par Pêche affiche 48 000 vues : la menace du P10 est déjà mise à exécution. Cerise doute. Mamie place la réplique à citer, puis on frappe. | **Ajouts :** Mamie Prune (la réplique culte) et Pêche, par une simple incrustation, avec un chiffre. Le lien entre Citron et Pêche reste implicite : c'est une piste de la partie 2. |
+| 30–38 | **Fausse rédemption.** Le copain revient avec des fleurs, s'excuse et fait un compliment manipulateur. | 34,7–39,3 (P13, P14) : Citron arrive avec des roses jaunes, s'excuse et lui dit qu'elle a besoin de lui. | Le compliment devient une emprise (« t'as besoin de moi »). Cette phrase reviendra en miroir. |
+| 37,5–41 | **Refus-étendard**, puis la porte claque. | 39,3–44,2 (P15, P16) : « Mon tablier, c'est pas ma honte… », puis la porte claque sur la réaction de Citron. | Notre phrase-étendard porte sur la dignité du métier. |
+| 41–49 | **Le méchant se démasque**, seul devant la porte : possessivité. | 44,2–50,6 (P17, P18) : Citron, vexé qu'on lui claque la porte au nez, est sûr qu'elle reviendra (« Cerise reviendra. »), puis avoue son vrai mobile : il paie sa salle avec ses pourboires. | Son mobile est l'argent et l'ego. Le public le sait, Cerise non : c'est l'ironie dramatique. |
+| 49,6–54 | **Montage de transformation muet**, lancé par une phrase de l'héroïne. | 50,6–55,0 (P19 à P21) : lancé par **Kiwi, son coach**, sur les quais : course à l'aube, puis enchaînement de coups dans ses pattes d'ours, hors champ ; sa voix hors champ (« Frappe, Cerise ! ») coupe le passage muet. | Kiwi est là **avant** la métamorphose, l'effort porte sur la force et la confiance, et il se fait loin de la salle de Citron : la révélation reste intacte. |
+| 54 | **Carton de temps**, dessiné dans l'image. | 55,0 (P22) : « 100 JOURS PLUS TARD », incrusté au montage dans le tiers haut, avec un flash blanc. | Aucun texte généré. Le carton reste au-dessus de sa tête : il ne masque pas la révélation. |
+| 54,6–57 | **Révélation de la métamorphose** : les garçons restent bouche bée. | 55,0–59,1 (P22, P23) : défilé au ralenti, **dans le même cadre que le plan 1**, avec des témoins qui se retournent et des murmures qui montent. Citron se décompose sous le « Quoi ?! » hors champ de Myrtille, qui rend le battement de stupeur. | Le cadre est le même avant et après : c'est une rime visuelle. La silhouette ne change pas ; seuls le style et l'assurance changent, avec des signes lisibles en miniature : lunettes de soleil dorées dans les cheveux, ondulations glamour, petit sac rouge cerise. La caméra reste à hauteur de poitrine. |
+| 57–61,5 | **Les potes la draguent**, et l'un reprend mot pour mot le compliment du méchant : effet ironique. | 59,1–62,5 (P24) : Coco la drague en reprenant **mot pour mot la fin de la phrase de Citron à la porte**. | Un seul dragueur, pour le rythme. |
+| 61,8–66 | **Repartie.** L'héroïne les envoie balader. | 62,5–65,3 (P25) : « La serveuse a fini son service. » | Notre phrase reprend le motif du métier. |
+| 66–68 | **Silence de triomphe** : elle part de dos. | 65,3–68,9 (P26, P27) : Kiwi, en tenue chic, l'attend et lui dit « Ce soir, c'est toi qu'on sert. » Puis Cerise sort seule, de dos, vers l'embrasure dorée, sans se retourner (P27, muet, 1,0 s). | **Ajout :** le « nouveau garçon » est l'ami fidèle, présent pendant l'effort. Le service s'inverse. Le départ de dos est gardé, en silence et sans visage. |
+| 68–72 | **Cliffhanger.** Le méchant, retenu par ses potes, hurle et menace. | 68,9–74,1 (P28, P29) : « Le livreur ?! », retenu hors champ, il jure de la faire tomber en un seul jour. | La menace est sociale, pas physique, et elle vise clairement Cerise. |
+| 72–75 | **Un pote lui dit qu'il a perdu**, il répond d'un seul mot, coupe sèche. | 74,1–79,9 (P30, P31, fin) : Myrtille lui dit de lâcher l'affaire avec le jeu de mots du zeste, Citron répond « Jamais ! », puis PARTIE 2. | Le constat du pote passe par un calembour fruité. |
 
 **Les mécaniques gardées telles quelles :**
 - l'injustice lisible sans le son dès la première image ;
@@ -110,10 +124,10 @@ mesure des voix.
 
 | Personnage | Rôle dans cet épisode | Tenues (fiches) | Voix | Plans parlés |
 |---|---|---|---|---|
-| **Cerise** (25 ans, serveuse) | L'héroïne reniée, qui revient transformée | `cerise` (tablier moutarde), `cerise_maison`, `cerise_sport`, `cerise_glow` | Son clone ; elle tremble au début et se raffermit à partir de P6 | 6 (P6, P8, P11, P13, P15, P25), plus 5 plans muets à l'image (P1, P4, P20, P21, P22) |
-| **Citron** | Le copain frimeur qui a honte d'elle : deux apartés, puis le serment final | `citron_salle` à la salle, `citron` (veste de cuir) la nuit | Son clone, grave et arrogant ; il hurle à la fin | 11, plus 2 réactions muettes |
+| **Cerise** (25 ans, serveuse) | L'héroïne reniée, qui revient transformée | `cerise` (tablier moutarde), `cerise_maison`, `cerise_sport`, `cerise_glow` | Son clone ; elle tremble au début et se raffermit à partir de P6 | 6 (P6, P8, P11, P13, P15, P25), plus 6 plans muets à l'image (P1, P4, P20, P21, P22, P27) |
+| **Citron** | Le copain frimeur qui a honte d'elle : deux apartés, puis le serment final | `citron_salle` à la salle, `citron` (veste de cuir) la nuit | Son clone, grave et arrogant ; il crie dans les derniers plans | 11, plus 2 réactions muettes |
 | **Coco** (nouveau, noix de coco) | Le pote rigolard : il lance la moquerie, puis drague Cerise et se fait recaler | `coco` (peau brun clair à bourre de coco, touffe de fibres sur le crâne, serviette blanche au cou) | À créer : rauque, rieur | 2 (P1 en voix hors champ, P24) |
-| **Myrtille** (nouveau, bleu indigo) | Le pote moqueur, qui devient à la fin la voix de la raison et lâche Citron | `myrtille` (casque blanc au cou) | À créer : nasal, taquin | 3 (P3, P29, et P23 en voix hors champ) |
+| **Myrtille** (nouveau, bleu indigo) | Le pote moqueur, qui devient à la fin la voix de la raison et lâche Citron | `myrtille` (casque blanc au cou) | À créer : nasal, taquin | 3 (P3, P30, et P23 en voix hors champ) |
 | **Mamie Prune** | Le creux et la réplique à citer | `prune` | Voix de vieille dame décrite | 1 (P12) |
 | **Kiwi** | L'ami d'enfance et livreur : coach pendant les cent jours, puis le garçon qui l'attend | `kiwi`, puis `kiwi_chic` | Son clone | 3 (P19, P26, et P21 en voix hors champ) |
 | **Pêche** | Hors champ : c'est elle qui publie la vidéo moqueuse (incrustation au P11) | — | — | 0 |
@@ -132,7 +146,7 @@ mesure des voix.
   - Le pot en forme de cerise chez lui (P9, P10) et son aveu sur le palier (P18) le disent au public.
   - Cerise ne le sait pas encore : c'est le moteur de la partie 2.
 - **Les enjeux chiffrés :**
-  - **cent jours**, dits au P8 (et repris par Citron au P28), incrustés au P8 et au P22 ;
+  - **cent jours**, dits au P8 (et repris par Citron au P29), incrustés au P8 et au P22 ;
   - **48 000 vues**, dites et incrustées au P11.
 - **La promesse tenue :** Cerise revient au même endroit, au même cadre, et la honte a changé de camp.
 - **La punition du moqueur, à l'écran :**
@@ -155,11 +169,11 @@ mesure des voix.
   (Kiwi) et au P23 (Myrtille).
 - **Les regards :**
   - Cerise regarde hors champ **vers la droite** ;
-  - Citron, Coco, Myrtille et Kiwi regardent **vers la gauche**. Seule exception : au P29, Myrtille regarde **vers la
+  - Citron, Coco, Myrtille et Kiwi regardent **vers la gauche**. Seule exception : au P30, Myrtille regarde **vers la
     droite**, vers Citron qu'il vient de lâcher ;
-  - les deux apartés de Citron, Mamie, la menace du P28 et le « Jamais ! » du P30 regardent la caméra.
+  - les deux apartés de Citron, Mamie, la menace du P29 et le « Jamais ! » du P31 regardent la caméra.
 - **Caméra fixe à la génération.** Les zooms et le ralenti se font au montage, avec un facteur de 1,25 au plus. Les
-  plans en pied (P1, P22) sont à hauteur de poitrine, jamais en contre-plongée.
+  plans en pied (P1, P22, P27) sont à hauteur de poitrine, jamais en contre-plongée.
 - **Durées :** ce sont des durées à l'écran, **estimées** au débit de nos voix (§ 6.1). Les voix se font avant les
   clips ; chaque plan parlé prend alors la durée de sa voix mesurée + 0,4 s. On génère 4 s au minimum (Agnes) et
   on coupe autour de la réplique.
@@ -168,8 +182,8 @@ mesure des voix.
 - **L'« avant » et l'« après » se lisent en miniature.** Aux P1, P4, P6 et P8 : un stylo-bille derrière l'oreille, un
   petit carnet de commandes dans la poche du tablier, les épaules un peu voûtées (partie variable des prompts ; les
   blocs de l'ép. 1 restent intacts). Aux P22 et P25 : de grandes lunettes de soleil dorées relevées dans les
-  cheveux, des ondulations glamour fraîchement coiffées (bloc `cerise_glow`) et, au P22, un petit sac structuré rouge
-  cerise. Pas de créoles dorées : c'est la signature de Pêche.
+  cheveux, des ondulations glamour fraîchement coiffées (bloc `cerise_glow`) et, aux P22 et P27, un petit sac structuré
+  rouge cerise. Au P27, on la voit de dos. Pas de créoles dorées : c'est la signature de Pêche.
 - **Aucun texte dans l'image :** notifications, chiffres et carton sont ajoutés au montage. Sous-titres discrets (1 à
   3 mots, tiers bas) ; faire une version avec et une version sans.
 
@@ -184,7 +198,7 @@ mesure des voix.
 | 5 | 9,6–12,3 | `salle_rack` | Citron (`citron_salle`) | Gros plan ; il se penche vers la gauche, vers elle, et jette un coup d'œil par-dessus son épaule | Sourire mielleux forcé, il baisse la voix. | « Mon cœur… Enlève ce tablier. Tu m'affiches. » | hypocrisie mielleuse | — | `tension`, plus bas |
 | 6 | 12,3–15,1 | `salle` | Cerise (`cerise`) | Gros plan ; regard vers la droite ; coup de zoom 1,0 → 1,2 sur « te quitte » | Les larmes montent, puis sa mâchoire se serre et elle se redresse. | « Juste la serveuse ? La serveuse te quitte, Citron. » | blessure, puis fermeté | — | musique coupée 0,3 s après « quitte » |
 | 7 | 15,1–17,5 | `salle_rack` | Citron (`citron_salle`) | Plan rapproché ; regard vers la gauche | Sourire figé, il regarde autour de lui, gêné, et parle entre ses dents. | « Moins fort… Tout le monde regarde. » | gêne, honte | — | `tension` |
-| 8 | 17,5–20,3 | `salle` | Cerise (`cerise`) | Gros plan ; regard vers la droite ; zoom lent 1,0 → 1,15 | Elle plante son regard dans le sien, puis, en fin de plan, tourne la tête vers la sortie. | « Cent jours. Je reviens ici… et t'auras honte. » | détermination | Chiffre **« 100 JOURS »** sur « Cent jours » | coup sourd sur « honte » |
+| 8 | 17,5–20,3 | `salle` | Cerise (`cerise`) | Gros plan ; regard vers la droite ; zoom lent 1,0 → 1,15 | Elle plante son regard dans le sien, puis, en fin de plan, jette un regard vers la sortie. | « Cent jours. Ici même. Tu baisseras les yeux. » | détermination | Chiffre **« 100 JOURS »** sur « Cent jours » | coup sourd sur « yeux » |
 
 ### Scène B : premier aparté, le salon de Citron la nuit (20,3–25,7 s)
 
@@ -197,78 +211,82 @@ mesure des voix.
 parie qu'elle ne tiendra pas sans lui, ce que le P18 retournera (« Sans ses pourboires… ») : c'est lui qui ne tient
 pas sans elle.
 
-**La menace est tenue tout de suite.** « Je t'affiche partout » retourne le « Tu m'affiches » du P5 : il avait honte
-d'être vu avec elle, il va la montrer à tout le monde. La vidéo du P11 (48 000 vues) en découle, et Citron et Pêche
+**La menace est tenue tout de suite.** « Je t'affiche partout » retourne le « Tu m'affiches » du P5 : il cachait leur couple, il
+va la montrer à tout le monde. La vidéo du P11 (48 000 vues) en découle, et Citron et Pêche
 sont donc liés sans que personne le dise : c'est une piste de la partie 2.
 
 **L'indice caché.** Le pot à pourboires est l'indice planté pour les spectateurs attentifs. Il est peint dans le
 décor du salon (retouche de `appart.png`), pour être le même au P9 et au P10. Le pot ne porte ni étiquette ni
 texte.
 
-### Scène C : le creux, la cuisine de Mamie Prune (25,7–33,5 s)
+### Scène C : le creux, la cuisine de Mamie Prune (25,7–34,7 s)
 
 | N° | Temps | Lieu | Visible (tenue) | Cadrage | Action, jeu | Réplique exacte | Émotion | Incrustation | Musique, son |
 |---|---|---|---|---|---|---|---|---|---|
-| 11 | 25,7–28,5 | `cuisine` (réutilisée de l'ép. 1) | Cerise (`cerise_maison`) | Plan rapproché, assise à la table ; regard vers la droite, vers Mamie | Téléphone en main (écran de dos), les yeux rouges, la voix brisée. | « Mamie… Quarante-huit mille vues. Et s'il avait raison ? » | honte, doute | Notification **« peche.officielle 🍑 a publié : Quand la serveuse se trompe de salle 😂🍒 »**, puis chiffre **« 48 000 VUES »** | `triste` ; ding |
-| 12 | 28,5–33,5 | `cuisine` | Mamie Prune (`prune`) | Plan rapproché taille, assise à la table de la cuisine ; regard caméra par-dessus ses lunettes | Elle remue lentement son thé, calme et malicieuse. En fin de plan, on frappe : elle tourne la tête vers la porte, un sourcil levé. | « Une cerise, ça mûrit au soleil… Pas à l'ombre d'un citron. » | sagesse piquante | — | `triste` ; deux coups frappés à la porte juste après « citron », vers 33,3 s |
+| 11 | 25,7–28,8 | `cuisine` (réutilisée de l'ép. 1) | Cerise (`cerise_maison`) | Plan rapproché, assise à la table ; regard vers la droite, vers Mamie | Téléphone en main (écran de dos), les yeux rouges, la voix brisée. | « Mamie… Quarante-huit mille vues. Et si j'étais que ça ? » | honte, doute | Notification **« peche.ruedesfruits 🍑 a publié : Quand la serveuse se trompe de salle 😂🍒 »**, puis chiffre **« 48 000 VUES »** | `triste` ; ding |
+| 12 | 28,8–34,7 | `cuisine` | Mamie Prune (`prune`) | Plan rapproché taille, assise à la table de la cuisine ; regard caméra par-dessus ses lunettes ; **animé sur sa voix (LTX-2 TURBO)** | Elle remue lentement son thé, calme et malicieuse. En fin de plan, on frappe : son regard file vers la porte, un sourcil levé. | « Une cerise, ça mûrit au soleil… Pas à l'ombre d'un citron. » | sagesse piquante | — | `triste` ; deux coups frappés à la porte juste après « citron », vers 34,4 s |
 
 **La réplique à citer de l'épisode** est celle de Mamie au P12. Elle annonce l'image de la revanche : le soleil, c'est
-l'heure dorée du défilé. **Sa durée est de 5,0 s** (décision du chef) : 11 mots en 4,6 s de parole, avec une pause de
-0,25 s sur « soleil… ». Si sa voix mesurée est plus longue, on garde la mesure + 0,4 s et on anime le plan sur sa
-voix (LTX-2 TURBO), car un clip de 5 s ne suffit plus.
+l'heure dorée du défilé. **Le plan est animé sur sa voix en LTX-2 TURBO et compte 5,9 s** (décision du chef, v4) :
+11 mots, environ 5,5 s de parole avec une pause de 0,25 s sur « soleil… », plus 0,4 s. Un clip de 5 s ne suffit pas.
+Sa voix se fait et se mesure d'abord ; la durée finale est la voix mesurée + 0,4 s.
 
-### Scène D : la porte et les roses jaunes (33,5–43,6 s)
+### Scène D : la porte et les roses jaunes (34,7–44,2 s)
 
 | N° | Temps | Lieu | Visible (tenue) | Cadrage | Action, jeu | Réplique exacte | Émotion | Incrustation | Musique, son |
 |---|---|---|---|---|---|---|---|---|---|
-| 13 | 33,5–36,0 | `porte` | Cerise (`cerise_maison`) | Plan rapproché, dans l'embrasure de la porte ; regard vers la droite, vers le palier | Elle entrouvre la porte, surprise, puis croise les bras, froide. | « Perdu, Citron ? La salle, c'est pas ici. » | méfiance ironique | — | `triste`, bas |
-| 14 | 36,0–38,7 | `palier` | Citron (`citron`) | Plan rapproché taille ; regard vers la gauche | Il serre contre sa poitrine un gros bouquet de roses jaunes. Voix grave et douce, sourire charmeur. | « Pardon, mon cœur… T'as besoin de moi. » | manipulation charmeuse | — | `triste` ; minuterie de l'escalier |
-| 15 | 38,7–42,1 | `porte` | Cerise (`cerise_maison`) | Gros plan ; regard vers la droite ; zoom 1,0 → 1,15 | Elle relève le menton, calme et ferme, puis recule pour fermer la porte. | « Mon tablier, c'est pas ma honte. Ma honte, c'est toi. » | dignité | — | musique coupée sur « c'est toi » |
-| 16 | 42,1–43,6 | `palier` | Citron (`citron`) | Plan rapproché, face à la porte, donc face à la caméra | **Muet (réaction n° 2).** La porte lui claque au nez, hors champ : il sursaute et cligne des yeux, le bouquet contre lui. | — | stupeur vexée | — | porte qui claque |
+| 13 | 34,7–36,6 | `porte` | Cerise (`cerise_maison`) | Plan rapproché, dans l'embrasure de la porte ; regard vers la droite, vers le palier | Elle entrouvre la porte, surprise, puis croise les bras, froide. | « Citron ? Ta salle a fermé ? » | méfiance ironique | — | `triste`, bas |
+| 14 | 36,6–39,3 | `palier` | Citron (`citron`) | Plan rapproché taille ; regard vers la gauche | Il serre contre sa poitrine un gros bouquet de roses jaunes. Voix grave et douce, sourire charmeur. | « Pardon, mon cœur… T'as besoin de moi. » | manipulation charmeuse | — | `triste` ; minuterie de l'escalier |
+| 15 | 39,3–42,7 | `porte` | Cerise (`cerise_maison`) | Gros plan ; regard vers la droite ; zoom 1,0 → 1,15 | Elle relève le menton, calme et ferme, puis recule pour fermer la porte. | « Mon tablier, c'est pas ma honte. Ma honte, c'est toi. » | dignité | — | musique coupée sur « c'est toi » |
+| 16 | 42,7–44,2 | `palier` | Citron (`citron`) | Plan rapproché, face à la porte, juste à gauche de l'objectif | **Muet (réaction n° 2).** La porte lui claque au nez, hors champ : il sursaute et cligne des yeux, le gros bouquet de roses jaunes dans son papier kraft serré contre la poitrine. | — | stupeur vexée | — | porte qui claque |
 
 **La phrase-étendard de l'épisode** est celle de Cerise au P15.
 
-### Scène E : deuxième aparté, le palier (43,6–50,0 s)
+### Scène E : deuxième aparté, le palier (44,2–50,6 s)
 
 | N° | Temps | Lieu | Visible (tenue) | Cadrage | Action, jeu | Réplique exacte | Émotion | Incrustation | Musique, son |
 |---|---|---|---|---|---|---|---|---|---|
-| 17 | 43,6–46,6 | `palier` | Citron (`citron`) | Plan rapproché taille ; il fixe la porte, puis se tourne vers la caméra (aparté) | Le gros bouquet de roses jaunes, dans son papier kraft, pend au bout de son bras ; il pointe la porte de l'index, avec une rage contenue. | « La porte au nez… À moi ?! Elle reviendra. » | orgueil blessé | — | `tension`, basse et grave |
-| 18 | 46,6–50,0 | `palier` | Citron (`citron`) | Gros plan face caméra ; coup de zoom 1,0 → 1,25 sur « ma salle » | Il s'approche de l'objectif : il commence à voix basse et finit en criant. | « Sans ses pourboires… je paie comment ma salle, moi ?! » | aveu, rage mesquine | — | coupure sèche de la musique |
+| 17 | 44,2–47,2 | `palier` | Citron (`citron`) | Plan rapproché taille ; il fixe la porte, puis se tourne vers la caméra (aparté) | Le gros bouquet de roses jaunes, dans son papier kraft, pend au bout de son bras ; il pointe la porte de l'index, avec une rage contenue. | « La porte au nez… À moi ?! Cerise reviendra. » | orgueil blessé | — | `tension`, basse et grave |
+| 18 | 47,2–50,6 | `palier` | Citron (`citron`) | Gros plan face caméra ; coup de zoom 1,0 → 1,25 sur « ma salle » | Il s'approche de l'objectif : il commence à voix basse et finit en criant. | « Sans ses pourboires… je paie comment ma salle, moi ?! » | aveu, rage mesquine | — | coupure sèche de la musique |
 
-### Scène F : cent jours (50,0–57,3 s)
+### Scène F : cent jours (50,6–57,6 s)
 
 | N° | Temps | Lieu | Visible (tenue) | Cadrage | Action, jeu | Réplique exacte | Émotion | Incrustation | Musique, son |
 |---|---|---|---|---|---|---|---|---|---|
-| 19 | 50,0–51,7 | `quais`, à l'aube | Kiwi (`kiwi`, veste verte de livreur) | Plan rapproché taille ; regard vers la gauche | Il tape dans ses mains, grand sourire, et montre le quai du pouce. | « Jour un, Cerise ! On court ! » | énergie, tendresse | — | `revanche` démarre |
-| 20 | 51,7–53,2 | `quais` | Cerise (`cerise_sport`) | Plan moyen ; elle court vers la caméra | **Muet.** Course à l'aube, le regard droit devant. | — | effort, détermination | — | `revanche` |
-| 21 | 53,2–54,7 | `quais`, à l'aube | Cerise (`cerise_sport`) | Plan rapproché taille, visage et buste ; regard et coups vers la droite. Ni main, ni patte d'ours, ni sac dans le cadre | **Muet à l'image.** Elle enchaîne une série de coups rapides vers la droite, dans les pattes d'ours que Kiwi tient hors champ (aucun contact visible), puis baisse la garde et sourit, essoufflée et fière. Au montage, on garde 1,5 s du clip de 4 s : les deux derniers coups, puis la garde baissée et le sourire. | *(voix hors champ de Kiwi)* « Plus fort, Cerise ! » | force, fierté | — | `revanche` ; deux impacts secs au montage, calés sur les deux coups visibles de la fenêtre gardée |
-| 22 | 54,7–57,3 | `salle_entree` (foule floue) | Cerise (`cerise_glow`, lunettes de soleil dorées relevées dans les cheveux, petit sac rouge cerise au bras) | Plan en pied, caméra à hauteur de poitrine, contre-jour doré, **même cadre que le P1** ; ralenti × 1,4 au montage. *Variante à tester en premier, puisque le P1 cible a la sienne : la bande en amorce, têtes tournées vers elle.* | **Muet.** Elle franchit les portes et marche vers la caméra, assurée, les cheveux qui ondulent ; les sportifs flous aux bords se retournent. | — | assurance rayonnante | Carton **« 100 JOURS PLUS TARD »** dans le tiers haut (y ≈ 380 à 520 px, sous le badge), sur les 1,2 premières secondes, avec flash blanc et whoosh | sommet de `revanche` ; murmures de la foule qui montent |
+| 19 | 50,6–52,3 | `quais`, à l'aube | Kiwi (`kiwi`, veste verte de livreur) | Plan rapproché taille ; regard vers la gauche | Il tape dans ses mains, grand sourire, et montre le quai du pouce. | « Jour un, Cerise ! On court ! » | énergie, tendresse | — | `revanche` démarre |
+| 20 | 52,3–53,5 | `quais` | Cerise (`cerise_sport`) | Plan moyen ; elle court vers la caméra | **Muet.** Course à l'aube, le regard droit devant. | — | effort, détermination | — | `revanche` |
+| 21 | 53,5–55,0 | `quais`, à l'aube | Cerise (`cerise_sport`) | Plan rapproché taille, visage et buste ; regard et coups vers la droite. Ni main, ni patte d'ours, ni sac dans le cadre | **Muet à l'image.** Elle enchaîne une série de coups rapides vers la droite, dans les pattes d'ours que Kiwi tient hors champ (aucun contact visible), puis baisse la garde et sourit, essoufflée et fière. Au montage, on garde 1,5 s du clip de 4 s : les deux derniers coups, puis la garde baissée et le sourire. | *(voix hors champ de Kiwi)* « Frappe, Cerise ! » | force, fierté | — | `revanche` ; deux impacts secs au montage, calés sur les deux coups visibles de la fenêtre gardée |
+| 22 | 55,0–57,6 | `salle_entree` (foule floue) | Cerise (`cerise_glow`, lunettes de soleil dorées relevées dans les cheveux, petit sac rouge cerise au bras) | Plan en pied, caméra à hauteur de poitrine, contre-jour doré, **même cadre que le P1** ; ralenti × 1,4 au montage. *Variante à tester en premier, puisque le P1 cible a la sienne : la bande en amorce, têtes tournées vers elle.* | **Muet.** Elle franchit les portes et marche lentement vers la caméra, assurée, son petit sac au bras, les cheveux qui ondulent ; les sportifs flous aux bords se retournent. | — | assurance rayonnante | Carton **« 100 JOURS PLUS TARD »** dans le tiers haut (y ≈ 380 à 520 px, sous le badge), sur les 1,2 premières secondes, avec flash blanc et whoosh. Le repli en incrustation `chiffre` ne se publie pas | sommet de `revanche` ; murmures de la foule qui montent |
 
 **Pourquoi les quais au P21.** Cerise ne peut pas s'entraîner cent jours dans la salle de Citron : la bande la
-verrait, ce qui tuerait la révélation et la promesse « Je reviens ici ». Elle s'entraîne dehors, avec Kiwi. La voix
+verrait, ce qui tuerait la révélation et la promesse « Ici même ». Elle s'entraîne dehors, avec Kiwi. La voix
 hors champ de Kiwi est **obligatoire dès que `voix_off` est codé** : elle coupe le silence du montage d'effort.
 
-### Scène G : le retour (57,3–67,6 s)
+### Scène G : le retour (57,6–68,9 s)
 
 | N° | Temps | Lieu | Visible (tenue) | Cadrage | Action, jeu | Réplique exacte | Émotion | Incrustation | Musique, son |
 |---|---|---|---|---|---|---|---|---|---|
-| 23 | 57,3–58,8 | `salle_rack` | Citron (`citron_salle`) | Gros plan ; regard vers la gauche | **Muet à l'image (réaction n° 3).** Son sourire de frimeur se décompose ; il ouvre la bouche, puis déglutit. | *(voix hors champ de Myrtille, à 0,3 s)* « Quoi ?! » | sidération | — | `revanche` |
-| 24 | 58,8–62,2 | `salle_rack` | Coco (`coco`) | Plan rapproché ; regard vers la gauche | La serviette blanche au cou, il passe la main sur sa touffe de fibres de coco et s'avance d'un pas avec un sourire charmeur raté. | « Cerise ?! Pas besoin de lui. T'as besoin de moi ! » | drague lourde | — | `revanche`, plus bas |
-| 25 | 62,2–65,0 | `salle` | Cerise (`cerise_glow`) | Gros plan ; regard vers la droite ; zoom 1,0 → 1,15 | Sourire en coin, un sourcil levé, elle remet une mèche derrière son oreille. | « Désolée, messieurs… La serveuse a fini son service. » | triomphe tranquille | — | la musique respire |
-| 26 | 65,0–67,6 | `salle_entree` | Kiwi (`kiwi_chic`) | Plan rapproché taille, dans l'embrasure, en contre-jour ; regard vers la gauche, vers elle | Il lui tend la main, hors champ, avec un sourire doux. | « Viens, Cerise. Ce soir, c'est toi qu'on sert. » | tendresse | — | dernière note chaude de `revanche` |
+| 23 | 57,6–59,1 | `salle_rack` | Citron (`citron_salle`) | Gros plan ; regard vers la gauche | **Muet à l'image (réaction n° 3).** Son sourire de frimeur se décompose ; il ouvre la bouche, puis déglutit. | *(voix hors champ de Myrtille, à 0,3 s)* « Quoi ?! » | sidération | — | `revanche` |
+| 24 | 59,1–62,5 | `salle_rack` | Coco (`coco`) | Plan rapproché ; regard vers la gauche | La serviette blanche au cou, il passe la main sur sa touffe de fibres de coco et s'avance d'un pas avec un sourire charmeur raté. | « Cerise ?! Pas besoin de lui. T'as besoin de moi ! » | drague lourde | — | `revanche`, plus bas |
+| 25 | 62,5–65,3 | `salle` | Cerise (`cerise_glow`) | Gros plan ; regard vers la droite ; zoom 1,0 → 1,15 | Sourire en coin, un sourcil levé, elle remet une mèche derrière son oreille. | « Désolée, messieurs… La serveuse a fini son service. » | triomphe tranquille | — | la musique respire |
+| 26 | 65,3–67,9 | `salle_entree` | Kiwi (`kiwi_chic`) | Plan rapproché taille, dans l'embrasure, en contre-jour ; regard vers la gauche, vers elle | Il lui tend la main, hors champ, avec un sourire doux. | « Viens, Cerise. Ce soir, c'est toi qu'on sert. » | tendresse | — | dernière note chaude de `revanche` |
+| 27 | 67,9–68,9 | `salle_entree` (foule floue) | Cerise (`cerise_glow`, petit sac rouge cerise au bras) | Plan en pied, caméra à hauteur de poitrine, dans l'axe du P1 et du P22 ; **de dos, sans visage** ; elle s'éloigne vers les portes ouvertes, en contre-jour doré | **Muet (le départ).** Seule et de dos, elle sort d'un pas lent vers l'embrasure dorée, sans se retourner. Kiwi est déjà dehors, hors champ. On garde environ 1,0 s du clip. | — | liberté, triomphe tranquille | — | `revanche` s'éteint sur ses pas |
+
+**Le départ de dos (P27)** est le silence de triomphe de la trame : après l'invitation de Kiwi, elle s'en va par
+les portes qu'elle a franchies au P22, sans un mot ni un regard en arrière. Puis la tension revient d'un coup.
 
 **La réplique-miroir** est celle de Coco au P24 : il reprend mot pour mot la fin de la phrase de Citron au P14
 (« T'as besoin de moi »). Coco n'était pas sur le palier, mais le public, lui, a tout entendu.
 
-### Scène H : le cliffhanger (67,6–78,6 s)
+### Scène H : le cliffhanger (68,9–79,9 s)
 
 | N° | Temps | Lieu | Visible (tenue) | Cadrage | Action, jeu | Réplique exacte | Émotion | Incrustation | Musique, son |
 |---|---|---|---|---|---|---|---|---|---|
-| 27 | 67,6–69,1 | `salle_rack` | Citron (`citron_salle`) | Plan rapproché taille, penché en avant, comme retenu par des bras hors champ ; regard vers la gauche | Il force vers l'avant, les veines du cou saillantes, et pointe la sortie. | « Le livreur ?! Lâchez-moi ! » | rage, jalousie | — | `tension` ; bruit de lutte hors champ |
-| 28 | 69,1–72,8 | `salle_rack` | Citron (`citron_salle`) | Gros plan, **regard caméra**, il pointe l'objectif de l'index ; **image clé propre**, distincte de celle du P27 ; coup de zoom 1,0 → 1,25 sur « Un seul » | Les yeux exorbités, les dents serrées ; il pointe l'objectif sur « te faire tomber ». | « Cent jours pour monter… Un seul pour te faire tomber ! » | menace | — | `tension` |
-| 29 | 72,8–76,2 | `salle_rack` | Myrtille (`myrtille`) | Plan rapproché ; regard vers la droite, vers Citron (seule exception de la bande) | Il lâche Citron, hors champ à droite, recule les mains levées, hausse les épaules et secoue la tête, moqueur, un sourcil levé. | « Frérot… Lâche l'affaire. Il te reste que le zeste. » | dérision | — | `tension`, basse |
-| 30 | 76,2–77,4 | `salle_rack` | Citron (`citron_salle`) | Très gros plan, **regard caméra** ; zoom 1,25 | Il hurle ; coupe sèche sur le dernier mot. | « Jamais ! » | rage | — | coup sourd, puis noir |
-| fin | 77,4–78,6 | — | — | Fond noir | — | — | — | **PARTIE 2** | coup sourd |
+| 28 | 68,9–70,4 | `salle_rack` | Citron (`citron_salle`) | Plan rapproché taille, penché en avant, comme retenu par des bras hors champ ; regard vers la gauche | Il force vers l'avant, les veines du cou saillantes, et pointe la sortie. | « Le livreur ?! Lâchez-moi ! » | rage, jalousie | — | `tension` ; bruit de lutte hors champ |
+| 29 | 70,4–74,1 | `salle_rack` | Citron (`citron_salle`) | Gros plan, **regard caméra**, il pointe l'objectif de l'index ; **image clé propre**, distincte de celle du P28 ; coup de zoom 1,0 → 1,25 sur « Un seul » | Les yeux exorbités, les dents serrées ; il pointe l'objectif sur « te faire tomber ». | « Cent jours pour monter… Un seul pour te faire tomber ! » | menace | — | `tension` |
+| 30 | 74,1–77,5 | `salle_rack` | Myrtille (`myrtille`) | Plan rapproché ; regard vers la droite, vers Citron (seule exception de la bande) | Il lâche Citron, hors champ à droite, recule les mains levées, hausse les épaules et secoue la tête, moqueur, un sourcil levé. | « Frérot… Lâche l'affaire. Il te reste que le zeste. » | dérision | — | `tension`, basse |
+| 31 | 77,5–78,7 | `salle_rack` | Citron (`citron_salle`) | Très gros plan, **regard caméra** ; zoom 1,25 | Il hurle ; coupe sèche sur le dernier mot. | « Jamais ! » | rage | — | coup sourd, puis noir |
+| fin | 78,7–79,9 | — | — | Fond noir | — | — | — | **PARTIE 2** | coup sourd |
 
 ---
 
@@ -278,7 +296,7 @@ hors champ de Kiwi est **obligatoire dès que `voix_off` est codé** : elle coup
 
 La revanche est servie, puis le conflit se rouvre aussitôt. Ça tient en trois temps :
 
-- **Citron jure de faire tomber Cerise en un seul jour** (P28). Cette menace sociale inverse son défi à elle :
+- **Citron jure de faire tomber Cerise en un seul jour** (P29). Cette menace sociale inverse son défi à elle :
   cent jours pour monter, un seul pour la faire tomber.
 - **Le public sait ce que Cerise ignore.** Citron vit de ses pourboires : on a vu le pot au P9 et au P10, et entendu
   son aveu au P18. Pour l'instant, c'est seulement une avance du public.
@@ -315,17 +333,17 @@ réplique à Mamie Prune.
 
 | Contrainte | Valeur | Respectée |
 |---|---|---|
-| Durée (75 à 80 s) | 78,6 s estimés, carte de fin comprise (78,9 s sans arrondi), au débit de référence ; 83,6 s au débit prudent, ramenés à 79,0 s par les coupes de secours | oui, à confirmer sur les voix mesurées |
-| Nombre de plans (22 à 35) | 30 : 23 plans parlés à l'image, 3 plans à voix hors champ (P1, P21, P23) et 4 muets (P4, P16, P20, P22) | oui |
-| Durée d'un plan (1,2 à 5 s) | de 1,2 s (P30, un seul mot) à 5,0 s (P12, Mamie) | oui |
-| Plans de réaction muets (2 à 4) | 3 : P4, P16, P23 (muet à l'image, sous le « Quoi ?! » hors champ de Myrtille). S'y ajoutent la course (P20) et le défilé (P22), muets, et les coups du P21, muets à l'image. | oui |
-| Mots parlés (185 au plus) | 181, voix hors champ comprises (v2 : 182 ; v1 : 221) | oui |
-| Mots par réplique (9 au plus) | 9 au plus, sauf l'étendard du P15 et la menace du P28 (10 mots) et Mamie au P12 (11 mots en 5,0 s) | oui |
+| Durée (75 à 80 s) | 79,9 s estimés, carte de fin comprise (80,2 s sans arrondi), au débit de référence, avec la course du P20 déjà ramenée à 1,2 s (ancienne coupe n° 1) ; 84,0 s au débit prudent, ramenés à 78,4 s par les coupes de secours | oui, de justesse : à confirmer sur les voix mesurées |
+| Nombre de plans (22 à 35) | 31 : 23 plans parlés à l'image, 3 plans à voix hors champ (P1, P21, P23) et 5 muets (P4, P16, P20, P22, P27) | oui |
+| Durée d'un plan (1,2 à 5 s) | de 1,0 s (P27, le départ de dos) à 5,9 s (P12, Mamie, animée sur sa voix) ; le « Jamais ! » du P31 fait 1,2 s | non pour P27 et P12, par décision du chef ; oui pour les 29 autres |
+| Plans de réaction muets (2 à 4) | 3 : P4, P16, P23 (muet à l'image, sous le « Quoi ?! » hors champ de Myrtille). S'y ajoutent la course (P20), le défilé (P22) et le départ de dos (P27), muets, et les coups du P21, muets à l'image. | oui |
+| Mots parlés (185 au plus) | 179, voix hors champ comprises (v3 : 181 ; v2 : 182 ; v1 : 221) | oui |
+| Mots par réplique (9 au plus) | 9 au plus, sauf l'étendard du P15 et la menace du P29 (10 mots) et Mamie au P12 (11 mots en 5,9 s) | oui |
 | Nombre de répliques | 56 phrases courtes en 26 prises de parole (v1 : 60) | oui |
-| Débit | 2,3 mots/s sur l'ensemble ; pendant la parole, celui de nos clones au tempo 0,90 (3,0 à 3,7 mots/s ; Mamie 2,2) | oui |
-| Silences | Hors métamorphose, moins de 2 s entre deux voix, aux réactions muettes P4 et P16, portées par les rires qui s'éteignent et la porte qui claque. Pendant la métamorphose : environ 2,0 s (fin du P19, P20), puis 3,4 s sans réplique entre la voix de Kiwi (P21) et le « Quoi ?! » de Myrtille (P23), dont 2,3 s couvertes par les murmures de la foule qui montent (P22) : le plus long passage sans aucune voix humaine tombe à 0,8 s (v2 : 4,7 s ; v1 : 7,7 s d'un bloc ; référence : 6,1 s). Parole : 58,6 s sur 78,6 s, soit 75 % ; le reste est porté par les rires, les murmures et les bruitages, sans accélérer les voix | oui |
-| Prénoms dits | Citron à 0, 15 et 34 s ; Cerise à 21, 51, 54, 59 et 65 s ; Mamie à 26 s. Deux trous : de 34 à 51 s (la porte et le palier, portés par « mon cœur ») et après 65 s (le cliffhanger) | presque |
-| Chiffres dits et incrustés | 100 jours (dits aux P8 et P28 ; incrustés aux P8 et P22) ; 48 000 vues (P11) | oui |
+| Débit | 2,2 mots/s sur l'ensemble ; pendant la parole, celui de nos clones au tempo 0,90 (3,0 à 3,7 mots/s ; Mamie 2,0) | oui |
+| Silences | Hors métamorphose, moins de 2 s entre deux voix, aux réactions muettes P4 et P16, portées par les rires qui s'éteignent et la porte qui claque. Pendant la métamorphose : environ 1,7 s (fin du P19, P20), puis 3,7 s sans réplique entre la voix de Kiwi (P21) et le « Quoi ?! » de Myrtille (P23), dont 2,3 s couvertes par les murmures de la foule qui montent (P22) : le plus long passage sans aucune voix humaine tombe à 1,1 s (v2 : 4,7 s ; v1 : 7,7 s d'un bloc ; référence : 6,1 s). Le départ de dos (P27, 1,0 s) passe sous la dernière note de `revanche`. Parole : environ 59,0 s sur 79,9 s, soit 74 % ; le reste est porté par les rires, les murmures et les bruitages, sans accélérer les voix | oui |
+| Prénoms dits | Citron à 0, 15 et 35 s ; Cerise à 21, 47, 51, 54, 59 et 66 s ; Mamie à 26 s. « Cerise reviendra. » (P17) coupe l'ancien trou de la porte et du palier : il reste 35–47 s (porté par « mon cœur ») et l'après 66 s (le cliffhanger) | presque |
+| Chiffres dits et incrustés | 100 jours (dits aux P8 et P29 ; incrustés aux P8 et P22) ; 48 000 vues (P11) | oui |
 | Réplique citable | Mamie (P12) ; étendard (P15) ; « la serveuse a fini son service » (P25) | oui |
 | Texte dans l'image | aucun : tout passe par incrustation au montage | oui |
 
@@ -335,44 +353,50 @@ réplique à Mamie Prune.
   `duree` = parole mesurée + 0,4 s, et seulement ensuite les clips. Les temps de ce script sont des estimations.
 - **Le débit de référence** est celui que le chef a mesuré sur nos voix de l'ép. 1 (tempo 0,85 : Cerise 3,1 ;
   Citron 2,85 ; Kiwi 3,5 ; Mamie 2,0 mots/s), porté au tempo 0,90 (× 1,06). Coco et Myrtille, encore à créer, sont
-  comptés comme Citron. Mamie est fixée à 5,0 s. Résultat : 78,6 s (78,9 s sans arrondi).
+  comptés comme Citron. Mamie est fixée à 5,9 s (animée sur sa voix). La course du P20 est ramenée à 1,2 s (ancienne
+  coupe n° 1, appliquée en v4). Résultat : 79,9 s (80,2 s sans arrondi).
 - **Le débit prudent** recompte les mêmes fichiers en mots du script, l'unité de ce budget : Cerise 2,95 ; Citron
-  2,7 ; Kiwi 3,1 mots/s au tempo 0,85, soit 83,6 s au tempo 0,90.
+  2,7 ; Kiwi 3,1 mots/s au tempo 0,85, soit 84,0 s au tempo 0,90.
 - **Si la mesure dépasse 80 s,** on applique les coupes ci-dessous, dans l'ordre, jusqu'à repasser sous 80 s ; on
   refait alors la voix des plans touchés et on remesure. Un mot coupé fait gagner 0,3 à 0,35 s. Les coupes gardent
-  intactes les trois répliques à citer, la réplique-miroir, la menace et le dernier mot.
+  intactes les trois répliques à citer, la réplique-miroir, la menace et le dernier mot, et **chaque prénom dit**
+  (correction du chef, v4).
 
 | Ordre | Plan | Coupe de secours | Gain |
 |---|---|---|---|
-| 1 | P20 | course ramenée à 1,2 s | 0,3 s |
+| 1 | P20 | course ramenée à 1,2 s | **appliquée en v4** (dans le minutage de référence) |
 | 2 | P2 | « Ma copine ? Juste la serveuse du café. » | 1 mot |
 | 3 | P25 | « Désolée… La serveuse a fini son service. » | 1 mot |
-| 4 | P9 | « Sans moi ? Tu tiendras pas une semaine ! » | 1 mot |
+| 4 | P9 | « Sans moi, Cerise ? Pas une semaine ! » | 2 mots |
 | 5 | P24 | « Cerise ?! Oublie-le. T'as besoin de moi ! » | 3 mots |
 | 6 | P10 | « Pour commencer… je t'affiche partout. » | 1 mot |
-| 7 | P26 | « Viens. Ce soir, c'est toi qu'on sert. » | 1 mot |
-| 8 | P13 | « Citron ? La salle, c'est pas ici. » | 1 mot |
+| 7 | P26 | « Viens, Cerise. C'est toi qu'on sert. » | 2 mots |
+| 8 | P13 | **retirée en v4** : la nouvelle réplique, « Citron ? Ta salle a fermé ? », ne fait que 5 mots, et la couper ferait perdre le prénom | — |
 | 9 | P3 | « Serveuse ! Les cuisines, c'est en face ! » | 1 mot |
-| 10 | P19 | « Jour un ! On court ! » | 1 mot |
-| 11 | P11 | « Quarante-huit mille vues… Et s'il avait raison ? » | 1 mot |
+| 10 | P19 | « Jour un, Cerise ! » ; le geste du pouce vers le quai est gardé, après la réplique | 2 mots |
+| 11 | P11 | « Mamie… Et si j'étais que ça ? » ; la notification et le chiffre « 48 000 VUES » se calent sur « Mamie » : le chiffre reste à l'écran | 3 mots |
 | 12 | P22 | défilé ramené à 2,4 s (dont 1,2 s sous le carton, dans le tiers haut) ; en dernier, pour garder 1,4 s de marche sans texte | 0,2 s |
 
-Toutes les coupes appliquées : 12 mots et 0,5 s de moins, et l'estimation prudente passe de 83,6 à 79,0 s. La même
-liste est dans `episode.json` (`minutage.coupes_de_secours`).
+Les numéros d'ordre ne bougent pas : la n° 1 est déjà appliquée et la n° 8 est retirée. Toutes les coupes restantes
+appliquées : 16 mots et 0,2 s de moins, et l'estimation prudente passe de 84,0 à 78,4 s. La même liste, sans les
+n° 1 et 8, est dans `episode.json` (`minutage.coupes_de_secours`).
 
 **Les règles de fond :**
 - **Physique et âges :** personnages adultes et habillés, même silhouette avant et après, aucune moquerie du corps,
   aucun chiffre de poids. Les plans en pied sont à hauteur de poitrine : la caméra ne s'attarde jamais sur le corps.
-- **Violence :** aucune violence physique ni arme. La lutte du P27 est hors champ (des potes qui retiennent), et les
+- **Violence :** aucune violence physique ni arme. La lutte du P28 est hors champ (des potes qui retiennent), et les
   coups du P21 vont dans des pattes d'ours hors champ.
 - **Règle de droit :**
   - aucune réplique de la référence, ni paraphrase proche ;
   - les phrases-signatures interdites ont été vérifiées une à une ;
   - les échos de fond relevés par le chef sont retirés en v2 : l'idée qu'elle ne changera pas (P9 et P14), un délai
     équivalent à celui de la référence (devenu cent jours) et l'encouragement du P21 (devenu « Plus fort,
-    Cerise ! ») ;
+    Cerise ! », puis « Frappe, Cerise ! » en v4) ;
   - en v3, la menace du P10 (« je te pourris la vie », écho de sens relevé par le chef) devient « je t'affiche
-    partout », et le calembour du P29 ne recycle plus la réplique de Mamie à l'ép. 1 ;
+    partout », et le calembour du P30 ne recycle plus la réplique de Mamie à l'ép. 1 ;
+  - en v4, les nouvelles répliques du chef (P8, P11, P13, P17, voix de Kiwi au P21) et ses coupes de secours sont
+    vérifiées contre la transcription de la référence et contre la liste des phrases interdites (notes de l'équipe,
+    hors dépôt) ;
   - les seuls mots en commun sont l'interjection finale « Jamais ! », l'interjection « Quoi ?! » (P23), l'adresse
     banale « mon cœur » et le banal « Lâchez-moi ! ».
 
@@ -386,9 +410,9 @@ durées (§ 6.1). C'est aussi obligatoire pour LTX-2 TURBO, qui anime l'image su
 **Code :**
 - une **voix hors champ** : P1 (Coco), P21 (Kiwi, obligatoire dès qu'elle est codée) et P23 (Myrtille, « Quoi ?! ») ;
 - l'incrustation **« carton »** (P22), dans le tiers haut (y ≈ 380 à 520 px) ;
-- un **zoom et une vitesse par plan** (P2, P6, P8, P10, P15, P18, P22, P25, P28, P30) ;
+- un **zoom et une vitesse par plan** (P2, P6, P8, P10, P15, P18, P22, P25, P29, P31) ;
 - les **bruitages** rires (P1 à P4), on frappe (P12), porte qui claque (P16), impacts (P21), murmures de la foule
-  (P22) et lutte (P27) ;
+  (P22) et lutte (P28) ;
 - une **fenêtre de clip** pour les plans muets : au P21, 1,5 s gardées sur 4 s (`fenetre_clip`), au lieu du départ
   fixe à 0,4 s ;
 - dans `produire.py`, `make_image` et `reframe` composent l'image avec `cadre`, pas avec `prompts.image` : toute
@@ -400,8 +424,8 @@ durées (§ 6.1). C'est aussi obligatoire pour LTX-2 TURBO, qui anime l'image su
 **Repli si la voix hors champ n'est pas prête :**
 - le P1 devient un plan muet de 1,5 s avec les rires ;
 - on insère un P1 bis : Coco seul, dans `salle_rack`, qui dit la réplique (2,4 s estimés) ;
-- la première réplique tombe alors à 1,5 s, et l'épisode passe à 80,1 s estimés : on applique la première coupe de
-  secours ;
+- la première réplique tombe alors à 1,5 s, et l'épisode passe à 81,4 s estimés : on applique les coupes de secours
+  dans l'ordre ;
 - les P21 et P23 restent muets.
 
 **Nouveaux éléments :**
@@ -413,11 +437,11 @@ durées (§ 6.1). C'est aussi obligatoire pour LTX-2 TURBO, qui anime l'image su
 - **Décors à copier depuis l'ép. 1 :** `appart` (retouché avec le pot) et `cuisine`.
 - **Accessoires sans texte :** la gamelle rouge en forme de cerise (P1, P4), le shaker opaque (P2), le pot à
   pourboires en forme de cerise (P9, P10), le bouquet de roses jaunes (P14 à P17), le stylo et le carnet de
-  commandes (P1, P4, P6, P8), les lunettes de soleil dorées (P22, P25) et le petit sac rouge cerise (P22). Au P21,
+  commandes (P1, P4, P6, P8), les lunettes de soleil dorées (P22, P25, P27) et le petit sac rouge cerise (P22, P27). Au P21,
   les pattes d'ours restent hors champ : rien à générer.
 
-**Images clés :** le P27 et le P28 ont chacun la leur. Le P27 regarde et pointe vers la gauche en plan rapproché ;
-le P28 regarde la caméra en gros plan, index vers l'objectif. Ce sont deux générations.
+**Images clés :** le P28 et le P29 ont chacun la leur. Le P28 regarde et pointe vers la gauche en plan rapproché ;
+le P29 regarde la caméra en gros plan, index vers l'objectif. Ce sont deux générations.
 
 **Tranché par le chef (v2) :**
 - le tempo des voix : **0,90 au plus** pour tous, Mamie à 1,25, pauses de 0,15 à 0,25 s. La proposition v1 (0,95)
@@ -427,4 +451,12 @@ le P28 regarde la caméra en gros plan, index vers l'objectif. Ce sont deux gén
 **Tranché par le chef (v3) :**
 - le P1 avec la bande en amorce devient la version cible ; le P1 sans amorce est le repli ;
 - le carton du P22 passe dans le tiers haut, et la coupe de secours du P22 passe en dernier ;
-- les répliques des P9, P10 et P29 sont celles proposées par le chef ; « Oh, Citron ! » remplace « Wesh, Citron ! ».
+- les répliques des P9, P10 et P30 sont celles proposées par le chef ; « Oh, Citron ! » remplace « Wesh, Citron ! ».
+
+**Tranché par le chef (v4) :**
+- le départ de dos est rétabli (P27, 1,0 s), et la course du P20 passe à 1,2 s pour rester sous 80 s ;
+- Mamie est animée sur sa voix (LTX-2 TURBO, 5,9 s) ;
+- les répliques des P8, P11, P13 et P17 et la voix hors champ de Kiwi au P21 sont celles du chef ; le délai reste
+  cent jours ;
+- les coupes de secours gardent le prénom ;
+- au P22, on ne publie pas avec le repli du carton (incrustation `chiffre`) tant que le carton n'est pas codé.

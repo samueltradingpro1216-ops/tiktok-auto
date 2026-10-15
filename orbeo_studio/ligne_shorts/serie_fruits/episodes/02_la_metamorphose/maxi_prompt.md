@@ -1,9 +1,26 @@
 # Épisode 2 · « La métamorphose », partie 1 · Maxi-prompt de production
 
-*Le réalisateur, 15 octobre 2026 · **v3**, après la deuxième relecture du chef (la v2 avait recalé le minutage sur
-nos voix réelles, le tempo à 0,90, le P21 sur les quais, l'image clé propre au P28, « cent jours » et le badge sans
-numéro). Ce document sert aux générateurs d'images, de vidéos et de voix, puis au montage. Il suit plan par plan le
-script v3 (`script.md`) et n'en change aucune réplique.*
+*Le réalisateur, 15 octobre 2026 · **v4**, après la troisième relecture du chef (13 corrections). Ce document sert
+aux générateurs d'images, de vidéos et de voix, puis au montage. Il suit plan par plan le script v4 (`script.md`)
+et n'en change aucune réplique.*
+
+**Ce qui change en v4.**
+- **Un plan de plus, le P27 : Cerise sort de dos** (1,0 s, muet, `salle_entree`, `cerise_glow`), sans visage,
+  vers l'embrasure dorée. Les anciens P27 à P30 deviennent les **P28 à P31**, et le plan de repli passe à l'id 32.
+  Pour rester sous 80 s, la course du P20 passe à 1,2 s (l'ancienne coupe de secours n° 1, appliquée).
+- **Mamie est animée sur sa voix** (P12, LTX-2 TURBO), comptée 5,9 s dans le minutage de référence.
+- **Répliques :** P8 « Cent jours. Ici même. Tu baisseras les yeux. » ; P11 « Mamie… Quarante-huit mille vues. Et si
+  j'étais que ça ? » ; P13 « Citron ? Ta salle a fermé ? » ; P17 « Cerise reviendra. » ; voix hors champ de Kiwi au
+  P21 : « Frappe, Cerise ! ». Le délai reste **cent jours** partout (réplique, chiffre, carton, menace du P29).
+- **Le négatif des versions avec la bande en amorce** (P1 cible, variante du P22) dit « second sharp character » :
+  les silhouettes floues du premier plan sont voulues. Au P1 cible, le `cadre` et l'image disent « is the only
+  character in focus » au lieu de « stands alone ».
+- **P16 :** le bouquet a son bloc figé dans le geste, et Citron fait face « just left of the camera ». **P22 :** le
+  petit sac rouge cerise est aussi dans les prompts vidéo, et la marche est plus simple (« She walks slowly toward
+  the camera »).
+- **P11 :** la publication vient de `peche.ruedesfruits 🍑`. **P22 :** une case bloquante au § F.5 interdit de
+  publier avec le repli du carton.
+- **Coupes de secours :** celles des P9, P19, P26 et P11 gardent le prénom ; celle du P13 est retirée.
 
 **Ce qui change en v3.**
 - **Le bouquet du P17 a son bloc figé** (roses jaunes, papier kraft brun) dans `cadre`, l'image, la vidéo et la
@@ -15,10 +32,10 @@ script v3 (`script.md`) et n'en change aucune réplique.*
   dorées, ondulations glamour et petit sac rouge cerise au retour (P22, P25).
 - **Le trou de la métamorphose est rempli** : « Quoi ?! » hors champ de Myrtille au P23, murmures de foule au P22.
 - **Le carton du P22 monte dans le tiers haut** ; la coupe de secours du P22 passe en dernier.
-- **Répliques :** P9 « Sans moi, Cerise ? », P10 « je t'affiche partout », P29 « Lâche l'affaire. Il te reste que
+- **Répliques :** P9 « Sans moi, Cerise ? », P10 « je t'affiche partout », P30 « Lâche l'affaire. Il te reste que
   le zeste. ».
 - **Cadrages et regards :** Mamie assise, qui remue son thé, en plan rapproché taille (P12) ; Myrtille regarde
-  Citron (P29) ; regard caméra écrit au P30 ; plus de buée à l'aube (P19, P20) ; fenêtre gardée du P21 précisée.
+  Citron (P30) ; regard caméra écrit au P31 ; plus de buée à l'aube (P19, P20) ; fenêtre gardée du P21 précisée.
 - **L'annexe dit que `make_image` et `reframe` composent l'image avec `cadre`**, pas avec `prompts.image`.
 
 **L'épisode en une ligne.** Devant ses potes de salle, Citron renie Cerise : « juste la serveuse ». Elle le quitte,
@@ -27,9 +44,9 @@ Citron vit de ses pourboires.
 
 | Repère | Valeur |
 |---|---|
-| Durée | **78,6 s estimés** : 30 plans de 1,2 à 5,0 s, plus 1,2 s de carte de fin. Estimation au débit de référence ; la durée réelle se fixe sur les voix mesurées (voir « Le minutage », plus bas) |
-| Plans | 26 avec voix : 23 parlés à l'image, plus 3 voix hors champ (P1 Coco, P21 Kiwi, P23 Myrtille, sur la réaction n° 3) ; 4 entièrement muets : 2 réactions (P4, P16), la course (P20) et le défilé (P22) |
-| Répliques | 56 phrases courtes en 26 prises de parole ; **181 mots**, 9 au plus par réplique (10 au P15 et au P28, 11 pour Mamie au P12) ; 2,3 mots/s sur l'ensemble |
+| Durée | **79,9 s estimés** : 31 plans de 1,0 à 5,9 s, plus 1,2 s de carte de fin. Estimation au débit de référence ; la durée réelle se fixe sur les voix mesurées (voir « Le minutage », plus bas) |
+| Plans | 26 avec voix : 23 parlés à l'image, plus 3 voix hors champ (P1 Coco, P21 Kiwi, P23 Myrtille, sur la réaction n° 3) ; 5 entièrement muets : 2 réactions (P4, P16), la course (P20), le défilé (P22) et le départ de dos (P27) |
+| Répliques | 56 phrases courtes en 26 prises de parole ; **179 mots**, 9 au plus par réplique (10 au P15 et au P29, 11 pour Mamie au P12) ; 2,2 mots/s sur l'ensemble |
 | Accroche | **IL L'A RENIÉE DEVANT SES POTES 💔** (en haut, de 0 à 3 s) |
 | Badge | **LA MÉTAMORPHOSE · PARTIE 1** (le numéro d'épisode reste interne) |
 | Légende | Cerise, « juste la serveuse » ? 🍒 Partie 1 #fruitstory #histoiredefruit #tiktokfrance🇨🇵 #brainrot #france |
@@ -39,7 +56,7 @@ Citron vit de ses pourboires.
 **Comment s'en servir.**
 1. **La bible (§ B) et les décors (§ C)** donnent les blocs fixes. Ils se collent tels quels, au mot près : un mot
    ajouté suffit à changer un personnage.
-2. **Le plan par plan (§ D)** donne, pour chacun des 30 plans, la fiche de tournage, puis quatre textes prêts à
+2. **Le plan par plan (§ D)** donne, pour chacun des 31 plans, la fiche de tournage, puis quatre textes prêts à
    coller :
    - le prompt d'image clé ;
    - le prompt vidéo ;
@@ -56,17 +73,18 @@ Citron vit de ses pourboires.
   mesurée + 0,4 s, et seulement ensuite on génère les clips à cette durée.
 - **Les durées de ce document sont des estimations** au débit de référence : celui que le chef a mesuré sur nos
   voix clonées de l'ép. 1 (tempo 0,85 : Cerise 3,1 ; Citron 2,85 ; Kiwi 3,5 ; Mamie 2,0 mots/s), porté au tempo
-  0,90 (Cerise 3,3 ; Citron, Coco et Myrtille 3,0 ; Kiwi 3,7 mots/s), avec Mamie à 5,0 s imposées. Résultat :
-  **78,9 s** (78,6 s en durées arrondies au dixième).
-- **Estimation prudente : 83,6 s.** Recomptés en mots du script (la même unité que le budget de 185 mots) sur les
+  0,90 (Cerise 3,3 ; Citron, Coco et Myrtille 3,0 ; Kiwi 3,7 mots/s), avec Mamie à 5,9 s imposées (animée sur sa voix,
+  LTX-2 TURBO). Résultat : **80,2 s** (79,9 s en durées arrondies au dixième), la course du P20 étant déjà ramenée
+  à 1,2 s. C'est à la limite : la mesure des voix tranche, et au-delà de 80 s mesurés on coupe.
+- **Estimation prudente : 84,0 s.** Recomptés en mots du script (la même unité que le budget de 185 mots) sur les
   mêmes fichiers de l'ép. 1, nos voix parlent un peu moins vite : Cerise 2,95 ; Citron 2,7 ; Kiwi 3,1 mots/s au
   tempo 0,85, soit Cerise 3,1 ; Citron 2,8 ; Kiwi 3,25 au tempo 0,90. Si la mesure dépasse 80 s,
   on applique les **coupes de secours**, déjà écrites et classées (`episode.json` → `minutage`, et script § 6.1) :
-  elles ramènent l'estimation prudente à 79,0 s.
+  elles ramènent l'estimation prudente à 78,4 s.
 
 **Les décisions du réalisateur** (v2 : les n° 2, 3, 9 et 10 sont celles du chef) :
 1. **La voix hors champ du P1 est gardée.** C'est la version cible, avec la moquerie à 0,0 s sur le visage de
-   Cerise. Le repli est écrit et prêt : P1 muet de 1,5 s, plus un plan de Coco (§ D, fin), pour 80,1 s estimés.
+   Cerise. Le repli est écrit et prêt : P1 muet de 1,5 s, plus un plan de Coco (§ D, fin), pour 81,4 s estimés.
 2. **Le tempo des voix est de 0,90 au plus** (décision du chef, qui annule le 0,95 proposé en v1), Mamie
    inchangée à 1,25, pauses de 0,15 à 0,25 s. Le propriétaire a demandé des voix plus lentes à l'ép. 1 v4 : le
    rythme se gagne en coupant du texte, pas en accélérant les voix.
@@ -81,9 +99,10 @@ Citron vit de ses pourboires.
    qui rend lisible le « Le livreur ?! » de Citron.
 8. **Les gestes après la dernière réplique ne sont pas demandés aux moteurs.** Le montage ne garde que 0,3 s après
    le dernier mot. Les coups à la porte et la porte qui claque se racontent donc par le son.
-9. **Le texte a été coupé, pas accéléré** : 221 mots en v1, 182 en v2, 181 en v3 (voix hors champ comprises).
-   Aucune réplique ne dépasse 9 mots, sauf deux de 10 mots, l'étendard (P15) et la menace (P28), et Mamie (P12 : 11 mots en 5,0 s).
-10. **P27 et P28 ont chacun leur image clé.** Le P27 regarde et pointe vers la gauche en plan rapproché ; le P28
+9. **Le texte a été coupé, pas accéléré** : 221 mots en v1, 182 en v2, 181 en v3, 179 en v4 (voix hors champ
+   comprises). Aucune réplique ne dépasse 9 mots, sauf deux de 10 mots, l'étendard (P15) et la menace (P29), et Mamie
+   (P12 : 11 mots en 5,9 s).
+10. **P28 et P29 ont chacun leur image clé.** Le P28 regarde et pointe vers la gauche en plan rapproché ; le P29
     regarde la caméra en gros plan, index vers l'objectif. L'option « une seule génération » est abandonnée.
 11. **La musique de la version complète reprend les prises de l'ép. 1** (`tension` 3, `triste` 1, `revanche` 3) :
     même identité sonore, et aucune génération à refaire.
@@ -96,6 +115,10 @@ Citron vit de ses pourboires.
     prompts vidéo de P4, P6 et P8 ne gardent que le stylo et les épaules, pour rester sous 180 mots.
 15. **v3 : toute correction d'image se fait dans `cadre`.** C'est lui que `make_image` et `reframe` envoient
     (annexe).
+16. **v4 : Mamie est animée sur sa voix** (décision du chef). Ses 11 mots font environ 5,5 s de parole : le P12 se
+    fait en LTX-2 TURBO sur sa voix clonée, et compte 5,9 s.
+17. **v4 : le départ de dos est rétabli** (P27, décision du chef). C'est le silence de triomphe de la trame : 1,0 s,
+    muet, sans visage.
 
 ## A. Intention et ton
 
@@ -123,19 +146,19 @@ citer Mamie.
 | 9,6–12,3 | P5 | Le copain, mielleux, lui demande d'enlever son tablier. | Le dégoût : il a honte d'elle. | L'hypocrisie à voix basse. |
 | 12,3–15,1 | P6 | Elle retourne son mot contre lui et le quitte. | Un premier soulagement, de la fierté. | La musique se coupe net : impact. |
 | 15,1–17,5 | P7 | Il lui demande de parler moins fort : tout le monde regarde. | Le mépris : il n'a pensé qu'à son image. | Sourire figé, regards fuyants. |
-| 17,5–20,3 | P8 | « Cent jours. Je reviens ici… et t'auras honte. » | Une promesse à voir tenue : on a rendez-vous. | **100 JOURS** à l'écran : c'est le minuteur de l'épisode. |
+| 17,5–20,3 | P8 | « Cent jours. Ici même. Tu baisseras les yeux. » | Une promesse à voir tenue : on a rendez-vous. | **100 JOURS** à l'écran : c'est le minuteur de l'épisode. |
 | 20,3–25,7 | P9, P10 | Seul chez lui : « Sans moi, Cerise ? Tu tiendras pas une semaine ! », et pour commencer, il va l'afficher partout. | De l'aversion, et l'avance de l'œil attentif sur ce pot cerise plein de billets. | L'aparté face caméra ; l'indice net, sans un mot. |
-| 25,7–28,5 | P11 | 48 000 vues pour la vidéo moqueuse : la menace est déjà tenue. Elle doute. | De la compassion : l'humiliation est devenue publique. | Notification et chiffre ; piano. |
-| 28,5–33,5 | P12 | Mamie : « Une cerise, ça mûrit au soleil… » | Un sourire et du réconfort. On a envie de la citer en commentaire. | La réplique-culte, puis on frappe. |
-| 33,5–38,7 | P13, P14 | Il revient avec des roses jaunes : « Pardon, mon cœur… T'as besoin de moi. » | La méfiance : on reconnaît l'emprise et on lui crie « ne cède pas ». | Le bouquet, la voix douce. |
-| 38,7–43,6 | P15, P16 | « Mon tablier, c'est pas ma honte. Ma honte, c'est toi. » Porte claquée. | Un frisson de fierté, puis la jubilation de voir la porte lui claquer au nez. | La phrase-étendard, musique coupée, porte qui claque. |
-| 43,6–50,0 | P17, P18 | Seul sur le palier : « La porte au nez… À moi ?! » Il est sûr qu'elle reviendra, puis avoue payer sa salle avec ses pourboires. | Le choc, et l'envie de prévenir Cerise. C'est ce qui fera écrire dans les commentaires. | L'ironie dramatique : le public sait, elle non. |
-| 50,0–54,7 | P19 à P21 | Kiwi la coache à l'aube, sur les quais : course, enchaînement de coups ; « Plus fort, Cerise ! » | L'élan et la tendresse : elle se construit, et elle n'est pas seule. | `revanche` démarre ; plans courts ; la voix de Kiwi coupe le passage muet. |
-| 54,7–57,3 | P22 | « 100 JOURS PLUS TARD » : elle entre au ralenti, dans le même cadre qu'au début. | Un frisson : « la revoilà ». | Rime visuelle avec le P1, flash, ralenti, témoins qui se retournent dans des murmures ; le carton passe au-dessus d'elle, dans le tiers haut. |
-| 57,3–62,2 | P23, P24 | Citron se décompose sous un « Quoi ?! » hors champ ; Coco la drague avec la phrase de Citron. | Satisfaction, puis un rire : l'ironie de la phrase recyclée. | La réplique-miroir. |
-| 62,2–67,6 | P25, P26 | « La serveuse a fini son service. » Kiwi l'attend : « Ce soir, c'est toi qu'on sert. » | Le triomphe tranquille, puis l'émotion : « enfin lui ». | Le motif du service, retourné deux fois. |
-| 67,6–76,2 | P27 à P29 | Retenu par ses potes, Citron menace : « Un seul pour te faire tomber ! » Myrtille le lâche avec le zeste. | De l'inquiétude, puis un rire moqueur. | La menace en un seul jour ; le calembour. |
-| 76,2–78,6 | P30, fin | « Jamais ! », coupe sèche, PARTIE 2. | Une frustration voulue : il faut la suite. | La coupe au noir, le coup sourd. |
+| 25,7–28,8 | P11 | 48 000 vues pour la vidéo moqueuse : la menace est déjà tenue. Elle doute : « Et si j'étais que ça ? » | De la compassion : l'humiliation est devenue publique. | Notification et chiffre ; piano. |
+| 28,8–34,7 | P12 | Mamie : « Une cerise, ça mûrit au soleil… » | Un sourire et du réconfort. On a envie de la citer en commentaire. | La réplique-culte, puis on frappe. |
+| 34,7–39,3 | P13, P14 | « Ta salle a fermé ? » Il revient avec des roses jaunes : « Pardon, mon cœur… T'as besoin de moi. » | La méfiance : on reconnaît l'emprise et on lui crie « ne cède pas ». | Le bouquet, la voix douce. |
+| 39,3–44,2 | P15, P16 | « Mon tablier, c'est pas ma honte. Ma honte, c'est toi. » Porte claquée. | Un frisson de fierté, puis la jubilation de voir la porte lui claquer au nez. | La phrase-étendard, musique coupée, porte qui claque. |
+| 44,2–50,6 | P17, P18 | Seul sur le palier : « La porte au nez… À moi ?! Cerise reviendra. » Il en est sûr, puis avoue payer sa salle avec ses pourboires. | Le choc, et l'envie de prévenir Cerise. C'est ce qui fera écrire dans les commentaires. | L'ironie dramatique : le public sait, elle non. |
+| 50,6–55,0 | P19 à P21 | Kiwi la coache à l'aube, sur les quais : course, enchaînement de coups ; « Frappe, Cerise ! » | L'élan et la tendresse : elle se construit, et elle n'est pas seule. | `revanche` démarre ; plans courts ; la voix de Kiwi coupe le passage muet. |
+| 55,0–57,6 | P22 | « 100 JOURS PLUS TARD » : elle entre au ralenti, dans le même cadre qu'au début. | Un frisson : « la revoilà ». | Rime visuelle avec le P1, flash, ralenti, témoins qui se retournent dans des murmures ; le carton passe au-dessus d'elle, dans le tiers haut. |
+| 57,6–62,5 | P23, P24 | Citron se décompose sous un « Quoi ?! » hors champ ; Coco la drague avec la phrase de Citron. | Satisfaction, puis un rire : l'ironie de la phrase recyclée. | La réplique-miroir. |
+| 62,5–68,9 | P25 à P27 | « La serveuse a fini son service. » Kiwi l'attend : « Ce soir, c'est toi qu'on sert. » Elle sort de dos, sans se retourner. | Le triomphe tranquille, puis l'émotion : « enfin lui ». | Le motif du service, retourné deux fois ; le départ de dos, en silence. |
+| 68,9–77,5 | P28 à P30 | Retenu par ses potes, Citron menace : « Un seul pour te faire tomber ! » Myrtille le lâche avec le zeste. | De l'inquiétude, puis un rire moqueur. | La menace en un seul jour ; le calembour. |
+| 77,5–79,9 | P31, fin | « Jamais ! », coupe sèche, PARTIE 2. | Une frustration voulue : il faut la suite. | La coupe au noir, le coup sourd. |
 
 **La courbe d'ensemble :** malaise, indignation, compassion, fierté, aversion, élan, jubilation, inquiétude. Chaque
 creux est suivi d'une remontée dans les 6 secondes. Ces temps sont estimés : après la mesure des voix, ils bougent
@@ -149,7 +172,7 @@ d'une ou deux secondes, mais l'ordre et la courbe restent.
 **Ce que l'épisode ne doit jamais faire ressentir :**
 - que le corps de Cerise posait problème ;
 - qu'elle « mérite » Kiwi parce qu'elle est devenue belle. Kiwi est là dès le jour 1 ;
-- que la violence est une réponse. La lutte du P27 reste hors champ, et personne ne frappe personne ;
+- que la violence est une réponse. La lutte du P28 reste hors champ, et personne ne frappe personne ;
 - que la caméra regarde les corps plutôt que les visages.
 
 ## B. Bible visuelle
@@ -195,7 +218,7 @@ She does not speak and her lips stay closed. No one speaks.
 He does not speak and his lips stay closed. No one speaks.
 ```
 
-**CHAMP NÉGATIF DE BASE** : la liste du rapport, recopiée telle quelle, puis les quatre interdits de la série (règle physique). Chaque plan y ajoute ses interdits propres (§ D). Dans les décors à foule, « extra people » est retiré et remplacé par « sharp faces in the crowd ».
+**CHAMP NÉGATIF DE BASE** : la liste du rapport, recopiée telle quelle, puis les quatre interdits de la série (règle physique). Chaque plan y ajoute ses interdits propres (§ D). Dans les décors à foule, « extra people » est retiré et remplacé par « sharp faces in the crowd ». Avec la bande en amorce (P1 cible, variante du P22), « second character » devient « second sharp character » : les trois silhouettes floues du premier plan sont voulues, seul un second personnage net est interdit.
 
 ```text
 subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face
@@ -226,10 +249,10 @@ subtitles, captions, on-screen text, letters, words, watermark, logo, second cha
 
 | Personnage | Fruit, couleur | Rôle dans l'épisode | Tenues (fiches) | Accessoire signature | Voix | Plans à l'image |
 |---|---|---|---|---|---|---|
-| Cerise | cerise, rouge profond | l'héroïne reniée, qui revient | `cerise`, `cerise_maison`, `cerise_sport`, `cerise_glow` | les deux cerises et la feuille dans les cheveux | clone `cerise` | P1, P4, P6, P8, P11, P13, P15, P20 à P22, P25 |
-| Citron | citron, jaune vif | le copain qui a honte d'elle, deux apartés | `citron_salle`, `citron` | la grosse chaîne en or | clone `citron` | P2, P5, P7, P9, P10, P14, P16 à P18, P23, P27, P28, P30 |
+| Cerise | cerise, rouge profond | l'héroïne reniée, qui revient | `cerise`, `cerise_maison`, `cerise_sport`, `cerise_glow` | les deux cerises et la feuille dans les cheveux | clone `cerise` | P1, P4, P6, P8, P11, P13, P15, P20 à P22, P25, P27 |
+| Citron | citron, jaune vif | le copain qui a honte d'elle, deux apartés | `citron_salle`, `citron` | la grosse chaîne en or | clone `citron` | P2, P5, P7, P9, P10, P14, P16 à P18, P23, P28, P29, P31 |
 | Coco | noix de coco, brun clair fibreux | le pote rigolard, puis dragueur recalé | `coco` | la serviette blanche au cou | **à créer** : `coco` | P24 (voix hors champ au P1) |
-| Myrtille | myrtille, bleu indigo | le pote moqueur, qui lâche Citron à la fin | `myrtille` | le grand casque blanc au cou | **à créer** : `myrtille` | P3, P29 (voix hors champ au P23) |
+| Myrtille | myrtille, bleu indigo | le pote moqueur, qui lâche Citron à la fin | `myrtille` | le grand casque blanc au cou | **à créer** : `myrtille` | P3, P30 (voix hors champ au P23) |
 | Mamie Prune | prune, violet | le creux et la réplique à citer | `prune` | les petites lunettes rondes et le châle beige | voix décrite `prune` | P12 |
 | Kiwi | kiwi, vert olive | le coach, puis celui qui l'attend | `kiwi`, `kiwi_chic` | la veste verte de livreur | clone `kiwi` | P19, P26 (voix hors champ au P21) |
 | Pêche | pêche, rose pêche | hors champ : sa publication s'affiche | (`peche`) | les créoles en or et la feuille | clone `peche` | aucun |
@@ -256,11 +279,12 @@ c'est le texte exact que `produire.py --only tenues` envoie, avec la fiche de ba
     pattes d'ours de Kiwi (hors champ) : P20 et P21. C'est l'effort ;
   - `cerise_glow`, robe-blazer ivoire à boutons dorés et pendentif cerise, de grandes lunettes de soleil dorées
     relevées dans les cheveux, des ondulations glamour fraîchement coiffées et, sur la fiche et au P22, un petit sac
-    structuré rouge cerise, pour le défilé et la réplique : P22 et P25. C'est **l'« après »**.
+    structuré rouge cerise, pour le défilé, la réplique et le départ de dos : P22, P25 et P27. C'est **l'« après »**.
 - **Accessoire signature :** les deux petites cerises et la feuille dans les cheveux, dans toutes les tenues. Le
   pendentif cerise en or et les lunettes de soleil dorées s'y ajoutent dans `cerise_glow`. Jamais de créoles dorées :
   c'est la signature de Pêche.
-- **Regard :** toujours hors champ vers la **droite**, sauf au P20, où elle court vers la caméra.
+- **Regard :** toujours hors champ vers la **droite**, sauf au P20, où elle court vers la caméra, et au P27, où on
+  la voit de dos.
 - **Cheveux :** toujours lâchés. Une queue de cheval changerait son identité.
 
 **Bloc d'apparence `cerise`** (53 mots, à coller tel quel) :
@@ -317,11 +341,11 @@ the same woman, same face, same full red lips and glamorous makeup, same deep ch
 
 - **Caractère :** frimeur, lâche devant ses potes, mielleux en tête-à-tête, mesquin en secret.
 - **Les deux tenues :**
-  - `citron_salle`, sweat de salle noir sans manches, ouvert : P2, P5, P7, P23 et P27 à P30 ;
+  - `citron_salle`, sweat de salle noir sans manches, ouvert : P2, P5, P7, P23 et P28 à P31 ;
   - `citron`, veste de cuir noire ouverte, de l'ép. 1 : le salon et le palier, P9, P10 et P14 à P18.
 - **Accessoire signature :** la grosse chaîne en or, dans les deux tenues.
 - **Regard :** hors champ vers la **gauche**. Il regarde la caméra dans ses apartés (P9, P10, P17 et P18), puis au
-  P28 et au P30.
+  P29 et au P31.
 - **Sa silhouette** est celle de la fiche, de bout en bout : sa punition est sociale, pas physique.
 
 **Bloc d'apparence `citron`** (42 mots, à coller tel quel) :
@@ -336,7 +360,7 @@ a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back
 a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black sleeveless gym hoodie on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble
 ```
 
-**Bloc voix (jeu)** : `a deep, smooth, confident young man's voice, arrogant`. Clone Voicebox `citron`, hauteur ramenée vers 125 Hz (`voix_hauteur`). Grave, posé, arrogant ; mielleux au P5 et au P14 ; il crie dans les derniers plans (P27 à P30).
+**Bloc voix (jeu)** : `a deep, smooth, confident young man's voice, arrogant`. Clone Voicebox `citron`, hauteur ramenée vers 125 Hz (`voix_hauteur`). Grave, posé, arrogant ; mielleux au P5 et au P14 ; il crie dans les derniers plans (P28 à P31).
 
 **Prompt de la fiche d'identité** (portrait en pied, fond neutre) :
 
@@ -384,10 +408,10 @@ Stylized semi-realistic 3D CGI character, glamorous high-budget animated movie l
 #### Myrtille · nouveau, la myrtille, 26 ans
 
 - **Rôle :** le pote moqueur. Il en rajoute au début (P3). Son « Quoi ?! » hors champ tombe sur la réaction de
-  Citron au retour de Cerise (P23). À la fin (P29), il lâche Citron avec le calembour du zeste.
+  Citron au retour de Cerise (P23). À la fin (P30), il lâche Citron avec le calembour du zeste.
 - **Il ne se dit jamais à voix haute.**
 - **Accessoire signature :** le grand casque audio blanc autour du cou.
-- **Regard :** hors champ vers la **gauche**, sauf au P29 : il regarde vers la **droite**, vers Citron qu'il vient
+- **Regard :** hors champ vers la **gauche**, sauf au P30 : il regarde vers la **droite**, vers Citron qu'il vient
   de lâcher.
 - **Son bleu indigo mat**, avec une pruine poudrée comme celle d'une myrtille, se lit même en silhouette, à côté du
   jaune de Citron et du brun de Coco.
@@ -471,7 +495,7 @@ the same man, same face, same olive-green fuzzy skin, same short curly dark-brow
 #### Pêche · hors champ dans cet épisode
 
 - **Rôle :** c'est elle qui a publié la vidéo moqueuse. On ne la voit pas : sa publication s'affiche en
-  notification au P11 (`peche.officielle 🍑`, 48 000 vues).
+  notification au P11 (`peche.ruedesfruits 🍑`, 48 000 vues).
 - **Son bloc est gardé** pour la bible et pour la partie 2.
 
 **Bloc d'apparence `peche`** (51 mots, à coller tel quel) :
@@ -495,11 +519,11 @@ c'est au montage qu'on passe de l'un à l'autre, jamais dans un plan.
 
 | | « Avant » : `identite/cerise.png` | « Après » : `identite/cerise_glow.png` |
 |---|---|---|
-| Plans | P1, P4, P6, P8 | P22, P25 |
+| Plans | P1, P4, P6, P8 | P22, P25, P27 (de dos) |
 | Visage | le même : yeux noisette en amande, lèvres pleines rouges, visage adulte de 25 ans | **identique** |
 | Peau | rouge cerise profond partout | **identique** ; si le générateur l'a effacée, faire la retouche « peau seulement » ci-dessous |
 | Cheveux | longs, ondulés, rouge sombre, lâchés | **mêmes longueur et couleur**, en ondulations glamour (Hollywood waves) brillantes, fraîchement coiffées |
-| Accessoire | deux petites cerises et une feuille dans les cheveux ; un stylo-bille derrière l'oreille et un petit carnet de commandes dans la poche du tablier (partie variable des P1, P4, P6, P8) | cerises et feuille **identiques**, plus un petit pendentif cerise en or, de grandes lunettes de soleil à monture dorée relevées dans les cheveux (bloc) et un petit sac structuré rouge cerise (fiche, et `cadre` du P22). Pas de créoles : c'est la signature de Pêche |
+| Accessoire | deux petites cerises et une feuille dans les cheveux ; un stylo-bille derrière l'oreille et un petit carnet de commandes dans la poche du tablier (partie variable des P1, P4, P6, P8) | cerises et feuille **identiques**, plus un petit pendentif cerise en or, de grandes lunettes de soleil à monture dorée relevées dans les cheveux (bloc) et un petit sac structuré rouge cerise (fiche, `cadre` et prompts vidéo du P22, et P27). Pas de créoles : c'est la signature de Pêche |
 | Silhouette | celle de la fiche | **identique** |
 | Tenue | crop top blanc, petit tablier moutarde, jean déchiré, baskets | robe-blazer ivoire à boutons dorés, ceinture fine dorée, escarpins nude |
 | Posture, regard | épaules légèrement voûtées qui retombent, sourire inquiet | menton levé, épaules ouvertes, regard assuré |
@@ -540,7 +564,7 @@ Same image, same character, same face, same clothes, same pose and same framing.
 | Pot à pourboires (l'indice) | P9, P10 | gros bocal en verre rouge en forme de cerise, couvercle vert en queue, plein de pièces et de billets pliés, sans étiquette | `a big plain unlabeled red glass jar shaped like a cherry, with a green stem-shaped lid, packed with coins and folded paper money` |
 | Bouquet de roses jaunes | P14 à P17 | gros bouquet de roses jaunes dans un papier kraft brun uni (le jaune = la jalousie, et la couleur de Citron) ; cité en entier à chaque plan, même quand il pend au bout du bras (P17) | `a big bouquet of yellow roses wrapped in plain brown kraft paper` |
 | Stylo et carnet (l'« avant ») | P1, P4, P6, P8 | stylo-bille derrière l'oreille, petit carnet de commandes dans la poche du tablier, épaules un peu voûtées ; en gros plan, les prompts vidéo n'en gardent que le stylo et les épaules (le carnet est hors cadre) | `a ballpoint pen tucked behind her ear, a small order notepad in her apron pocket, shoulders slightly hunched` (`accessoires.serveuse`) |
-| Sac (l'« après ») | P22 | petit sac structuré rouge cerise, au bras ; il est aussi sur la fiche `cerise_glow` | `a small structured cherry-red handbag` (`accessoires.sac`) |
+| Sac (l'« après ») | P22, P27 | petit sac structuré rouge cerise, au bras ; il est aussi sur la fiche `cerise_glow` | `a small structured cherry-red handbag` (`accessoires.sac`) |
 
 **Le sac de frappe n'est plus un accessoire.** Il reste dans le décor `salle`, en arrière-plan, mais personne ne
 le frappe : Cerise ne peut pas s'entraîner dans la salle de Citron sans que la bande la voie. Le P21 se tourne
@@ -556,8 +580,8 @@ les coupes se répondent.
 | Lieu | Côté (décor) | Personnages | Regard |
 |---|---|---|---|
 | Salle de sport | `salle` (fenêtres, briques) | Cerise | hors champ vers la **droite** |
-| Salle de sport | `salle_rack` (racks, briques) | Citron, Coco, Myrtille | hors champ vers la **gauche** ; caméra pour Citron aux P28 et P30 ; **exception : Myrtille au P29 regarde vers la droite**, vers Citron qu'il vient de lâcher |
-| Entrée de la salle | `salle_entree` (portes, foule floue) | Cerise (P1, P22), Kiwi (P26) | Cerise vers la droite ; Kiwi vers la gauche |
+| Salle de sport | `salle_rack` (racks, briques) | Citron, Coco, Myrtille | hors champ vers la **gauche** ; caméra pour Citron aux P29 et P31 ; **exception : Myrtille au P30 regarde vers la droite**, vers Citron qu'il vient de lâcher |
+| Entrée de la salle | `salle_entree` (portes, foule floue) | Cerise (P1, P22, P27), Kiwi (P26) | Cerise vers la droite, de dos au P27 ; Kiwi vers la gauche |
 | Salon de Citron | `appart` | Citron | **caméra** (aparté) |
 | Cuisine de Mamie | `cuisine` | Cerise (P11), Mamie (P12) | Cerise vers la droite (vers Mamie) ; Mamie vers la caméra |
 | Porte de Mamie | `porte` (vue du palier) | Cerise | vers la droite (vers le palier) |
@@ -571,7 +595,7 @@ les coupes se répondent.
 - les potes qui retiennent Citron sont hors champ, avec un bruit de lutte ;
 - les pattes d'ours que Kiwi tend à Cerise sont hors champ, avec un bruit d'impact (P21) ;
 - la main de Kiwi est tendue vers la gauche ;
-- Myrtille lâche Citron hors champ, à droite (P29).
+- Myrtille lâche Citron hors champ, à droite (P30).
 
 ## C. Décors
 
@@ -596,8 +620,8 @@ Huit décors : six nouveaux et deux repris de l'ép. 1.
 | Décor | Lieu | Moment | Plans | Fabrication |
 |---|---|---|---|---|
 | `salle` | salle de sport, côté Cerise | heure dorée | P4, P6, P8, P25 | nouveau |
-| `salle_rack` | salle de sport, côté de la bande | heure dorée | P2, P3, P5, P7, P23, P24, P27 à P30 | nouveau |
-| `salle_entree` | entrée de la salle, avec foule floue | heure dorée, contre-jour | P1, P22, P26 | nouveau, `foule: true` ; retouche « amorce » : version cible au P1, variante au P22 |
+| `salle_rack` | salle de sport, côté de la bande | heure dorée | P2, P3, P5, P7, P23, P24, P28 à P31 | nouveau |
+| `salle_entree` | entrée de la salle, avec foule floue | heure dorée, contre-jour | P1, P22, P26, P27 | nouveau, `foule: true` ; retouche « amorce » : version cible au P1, variante au P22 |
 | `appart` | salon de Citron, avec le pot à pourboires | nuit | P9, P10 | **retouche** de `appart.png` (ép. 1) |
 | `cuisine` | cuisine de Mamie Prune | nuit, pluie | P11, P12 | **copie** de `cuisine.png` (ép. 1) |
 | `porte` | porte de Mamie, vue du palier | nuit | P13, P15 | nouveau |
@@ -649,7 +673,7 @@ Derrière les gros plans de Cerise, le fond reste simple : briques et fenêtres 
 | Lumière | Le soleil couchant arrive de la gauche, dans une brume dorée légère. |
 | Couleurs | noir, rouge brique, or, jaune citron. |
 | Ambiance sonore | cliquetis de fonte, brouhaha lointain. |
-| Plans | P2, P3, P5, P7, P23, P24, P27 à P30, plus le P1 bis en repli. |
+| Plans | P2, P3, P5, P7, P23, P24, P28 à P31, plus le P1 bis en repli. |
 
 
 **Repère court pour les prompts vidéo** (2 ou 3 repères, `decors.salle_rack.court`) :
@@ -672,13 +696,13 @@ C'est le décor le plus utilisé (11 plans) : valider le meilleur candidat avec 
 
 | Élément | Contenu |
 |---|---|
-| Lieu | L'entrée de la salle vue de l'intérieur : les grandes portes métalliques noires sont ouvertes sur une rue ensoleillée. C'est le seuil de l'humiliation (P1) et du retour (P22). |
+| Lieu | L'entrée de la salle vue de l'intérieur : les grandes portes métalliques noires sont ouvertes sur une rue ensoleillée. C'est le seuil de l'humiliation (P1), du retour (P22) et du départ (P27). |
 | Moment | Heure dorée, en contre-jour. |
 | Objets repères | 1. double porte en acier noir grande ouverte ; 2. rue ensoleillée derrière ; 3. murs de briques rouges ; 4. racks d'haltères sur les côtés ; 5. figurants flous de dos, aux bords du cadre. |
 | Lumière | Un contre-jour doré puissant, avec un halo autour des silhouettes. |
 | Couleurs | or, noir, rouge brique, touches vert pomme, mandarine et framboise (les figurants). |
 | Ambiance sonore | brouhaha de la salle, rue lointaine ; au P22, le brouhaha laisse place aux murmures de la foule qui se retourne. |
-| Plans | P1, P22 (même cadre), P26. |
+| Plans | P1, P22 (même cadre), P26, P27 (même axe, de dos). |
 
 
 **Repère court pour les prompts vidéo** (2 ou 3 repères, `decors.salle_entree.court`) :
@@ -921,7 +945,7 @@ version cible.
 **Cadre de la version cible** (`cadre`, le texte que `make_image` envoie avec le style et le bloc `cerise`) :
 
 ```text
-Eye-level full-body shot, camera at chest height, she stands alone, a ballpoint pen tucked behind her ear, a small order notepad in her apron pocket, shoulders slightly hunched, holding out a small glossy red cherry-shaped lunch box with a short green stem handle in both hands toward someone off-screen to the right, a big hopeful smile; three blurred muscular figures seen from behind stay out of focus at the left and right edges, at mid-height, their faces never visible.
+Eye-level full-body shot, camera at chest height, she is the only character in focus, a ballpoint pen tucked behind her ear, a small order notepad in her apron pocket, shoulders slightly hunched, holding out a small glossy red cherry-shaped lunch box with a short green stem handle in both hands toward someone off-screen to the right, a big hopeful smile; three blurred muscular figures seen from behind stay out of focus at the left and right edges, at mid-height, their faces never visible.
 ```
 
 **1. Retouche du décor** (référence : `decors/salle_entree.png` ; sortie : `decors/salle_entree_amorce_p1.png`) :
@@ -933,7 +957,7 @@ Same image, same gym entrance, same lighting, same colors and same framing. Only
 **2. Image clé** (références : image 1 = `decors/salle_entree_amorce_p1.png`, image 2 = `identite/cerise.png`) :
 
 ```text
-Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Eye-level full-body shot, camera at chest height, vertical 9:16 composition. Inside the open steel doors of a loft gym, golden backlight, blurred gym-goers at the edges, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing a tight white deep V-neck crop top, a tiny mustard-yellow waitress apron and tight ripped blue jeans, with an adult 25-year-old face stands alone, a ballpoint pen tucked behind her ear, a small order notepad in her apron pocket, shoulders slightly hunched, holding out a small glossy red cherry-shaped lunch box with a short green stem handle in both hands toward someone off-screen to the right, a big hopeful smile. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus; in the blurred foreground, three muscular figures seen from behind at the left and right edges, at mid-height, stay out of focus, their faces never visible. No text, no letters, no logos, no subtitles.
+Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Eye-level full-body shot, camera at chest height, vertical 9:16 composition. Inside the open steel doors of a loft gym, golden backlight, blurred gym-goers at the edges, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing a tight white deep V-neck crop top, a tiny mustard-yellow waitress apron and tight ripped blue jeans, with an adult 25-year-old face is the only character in focus, a ballpoint pen tucked behind her ear, a small order notepad in her apron pocket, shoulders slightly hunched, holding out a small glossy red cherry-shaped lunch box with a short green stem handle in both hands toward someone off-screen to the right, a big hopeful smile. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus; in the blurred foreground, three muscular figures seen from behind at the left and right edges, at mid-height, stay out of focus, their faces never visible. No text, no letters, no logos, no subtitles.
 ```
 
 **3. Prompt vidéo** (180 mots) :
@@ -947,7 +971,7 @@ Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinema
 **4. Champ négatif** :
 
 ```text
-subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, sharp faces in the crowd, mirror, poster, banner, screen, numbers on weights, faces on the foreground figures, foreground figures turning around, sharp foreground figures
+subtitles, captions, on-screen text, letters, words, watermark, logo, second sharp character, duplicate character, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, sharp faces in the crowd, mirror, poster, banner, screen, numbers on weights, faces on the foreground figures, foreground figures turning around, sharp foreground figures
 ```
 
 **Rime visuelle :** ce cadre est repris à l'identique au P22. L'image clé validée du P1 sert de modèle de composition pour celle du P22 (même décor, même axe, caméra à hauteur de poitrine) ; avec l'amorce validée ici, le P22 teste d'abord sa propre variante d'amorce. Le plan en pied reste à hauteur d'œil : jamais de contre-plongée sur la tenue (règle physique).
@@ -1253,12 +1277,12 @@ subtitles, captions, on-screen text, letters, words, watermark, logo, second cha
 | Cadrage | Gros plan, visage et épaules. Regard hors champ vers la droite. Recadrage : `gp`. |
 | Caméra | fixe pendant toute la génération (locked-off). Au montage : zoom lent 1,0 → 1,15. |
 | Geste avant la réplique | Elle relève le menton, essuie une larme du bout du doigt et plante son regard dans le sien. |
-| Réplique | « Cent jours. Je reviens ici… et t'auras honte. » (8 mots) |
-| Segments et jeu | « Cent jours. » → *[She narrows her eyes]* → « Je reviens ici… et t'auras honte. » |
-| Consigne de voix | Profil Voicebox `cerise`. Calme, basse, détachée ; pas de cri ; « honte » posé lourd. |
+| Réplique | « Cent jours. Ici même. Tu baisseras les yeux. » (8 mots) |
+| Segments et jeu | « Cent jours. » → *[She narrows her eyes]* → « Ici même. Tu baisseras les yeux. » |
+| Consigne de voix | Profil Voicebox `cerise`. Calme, basse, détachée ; pas de cri ; « Ici même. » posé, puis « les yeux » lourd. |
 | Émotion | détermination |
 | Son dans le clip | `gym ambiance, distant clanking weights`, pas de musique. |
-| Bruitages (montage) | Coup sourd (`boom`) sur « honte » ; whoosh automatique à l'apparition du chiffre. |
+| Bruitages (montage) | Coup sourd (`boom`) sur « yeux » ; whoosh automatique à l'apparition du chiffre. |
 | Incrustation de montage | Chiffre **« 100 JOURS »** (jaune, gros, au centre bas) à partir du mot « jours ». |
 | Musique (version complète) | `tension` continue. |
 | Transition vers la suite | Coupe franche, whoosh (changement de lieu, automatique). |
@@ -1274,7 +1298,7 @@ Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look,
 **Prompt vidéo** (180 mots) :
 
 ```text
-Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders on a locked-off static camera; the framing never changes. In a sunlit loft gym at golden hour, red brick and arched windows blurred behind, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing a tight white deep V-neck crop top, a tiny mustard-yellow waitress apron and tight ripped blue jeans, with an adult 25-year-old face stands alone, a ballpoint pen tucked behind her ear, shoulders slightly hunched. She wipes a tear, lifts her chin. She speaks in French, in a soft, sweet young woman's voice, slightly husky, calm, determined, "Cent jours." She narrows her eyes, "Je reviens ici… et t'auras honte." Only she speaks, her lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: gym ambiance, distant clanking weights, no music.
+Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Close-up of the face and shoulders on a locked-off static camera; the framing never changes. In a sunlit loft gym at golden hour, red brick and arched windows blurred behind, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing a tight white deep V-neck crop top, a tiny mustard-yellow waitress apron and tight ripped blue jeans, with an adult 25-year-old face stands alone, a ballpoint pen tucked behind her ear, shoulders slightly hunched. She wipes a tear, lifts her chin. She speaks in French, in a soft, sweet young woman's voice, slightly husky, calm, determined, "Cent jours." She narrows her eyes, "Ici même. Tu baisseras les yeux." Only she speaks, her lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: gym ambiance, distant clanking weights, no music.
 ```
 
 **Variante animée sur notre voix** (LTX-2 TURBO, mode audio ; réplique retirée, 164 mots) :
@@ -1385,14 +1409,14 @@ Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinema
 subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, readable phone screen, label on the jar
 ```
 
-**La menace est tenue tout de suite.** « Je t'affiche partout » retourne le « Tu m'affiches » du P5 : il avait honte
-d'être vu avec elle, il va la montrer à tout le monde. La vidéo du P11 (48 000 vues) en découle : Citron et Pêche
+**La menace est tenue tout de suite.** « Je t'affiche partout » retourne le « Tu m'affiches » du P5 : il cachait leur couple, il
+va la montrer à tout le monde. La vidéo du P11 (48 000 vues) en découle : Citron et Pêche
 sont liés sans que personne le dise, piste de la partie 2. La réplique remplace « je te pourris la vie », qui faisait
 écho au sens d'une réplique de la référence.
 
-### Scène C · Le creux : la cuisine de Mamie Prune (25,7–33,5 s)
+### Scène C · Le creux : la cuisine de Mamie Prune (25,7–34,7 s)
 
-#### Plan 11 · 48 000 vues · 25,7–28,5 s (2,8 s)
+#### Plan 11 · 48 000 vues · 25,7–28,8 s (3,1 s)
 
 | Champ | Consigne |
 |---|---|
@@ -1401,13 +1425,13 @@ sont liés sans que personne le dise, piste de la partie 2. La réplique remplac
 | Cadrage | Plan rapproché taille. Regard hors champ vers la droite (vers Mamie). Recadrage : `pm`. |
 | Caméra | fixe pendant toute la génération (locked-off). Aucun effet au montage. |
 | Geste avant la réplique | Assise à la table, téléphone en main (écran de dos), les yeux rouges, la voix brisée ; elle lève les yeux vers Mamie (droite) pour la question. |
-| Réplique | « Mamie… Quarante-huit mille vues. Et s'il avait raison ? » (8 mots) |
-| Segments et jeu | « Mamie… Quarante-huit mille vues. » → *[She looks up to the right]* → « Et s'il avait raison ? » |
-| Consigne de voix | Profil Voicebox `cerise`. Brisée, petite voix, au bord des larmes ; « vues » qui retombe. |
+| Réplique | « Mamie… Quarante-huit mille vues. Et si j'étais que ça ? » (9 mots) |
+| Segments et jeu | « Mamie… Quarante-huit mille vues. » → *[She looks up to the right]* → « Et si j'étais que ça ? » |
+| Consigne de voix | Profil Voicebox `cerise`. Brisée, petite voix, au bord des larmes ; « vues » qui retombe ; « que ça » presque soufflé. |
 | Émotion | honte, doute |
 | Son dans le clip | `kitchen room tone, soft rain`, pas de musique. |
 | Bruitages (montage) | `ding` à l'arrivée de la notification. |
-| Incrustation de montage | Notification **« peche.officielle 🍑 a publié · Quand la serveuse se trompe de salle 😂🍒 »** dès le début du plan, retirée au mot « vues » ; puis chiffre **« 48 000 VUES »** à partir de « vues ». |
+| Incrustation de montage | Notification **« peche.ruedesfruits 🍑 a publié · Quand la serveuse se trompe de salle 😂🍒 »** dès le début du plan, retirée au mot « vues » ; puis chiffre **« 48 000 VUES »** à partir de « vues ». |
 | Musique (version complète) | `triste` démarre (piano). |
 | Transition vers la suite | Coupe franche sur Mamie. |
 | Dernière image | Cerise, yeux rouges, regard perdu vers la droite. |
@@ -1419,10 +1443,10 @@ sont liés sans que personne le dise, piste de la partie 2. La réplique remplac
 Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up, vertical 9:16 composition. In a warm old-fashioned grandmother's kitchen at night, floral wallpaper, copper pans, rainy window, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing an oversized cream hoodie with a small embroidered red cherry and cherry-print pajama trousers, with an adult 25-year-old face sits alone at the kitchen table, holding a smartphone with its screen turned away from the camera, eyes red, looking off-screen to the right. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.
 ```
 
-**Prompt vidéo** (176 mots) :
+**Prompt vidéo** (177 mots) :
 
 ```text
-Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. In a warm old-fashioned grandmother's kitchen at night, floral wallpaper, copper pans, rainy window, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing an oversized cream hoodie with a small embroidered red cherry and cherry-print pajama trousers, with an adult 25-year-old face sits alone at the kitchen table. She holds her phone, screen turned away, eyes red. She speaks in French, in a soft, sweet young woman's voice, slightly husky, broken, close to tears, "Mamie… Quarante-huit mille vues." She looks up to the right, "Et s'il avait raison ?" Only she speaks, her lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: kitchen room tone, soft rain, no music.
+Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. In a warm old-fashioned grandmother's kitchen at night, floral wallpaper, copper pans, rainy window, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing an oversized cream hoodie with a small embroidered red cherry and cherry-print pajama trousers, with an adult 25-year-old face sits alone at the kitchen table. She holds her phone, screen turned away, eyes red. She speaks in French, in a soft, sweet young woman's voice, slightly husky, broken, close to tears, "Mamie… Quarante-huit mille vues." She looks up to the right, "Et si j'étais que ça ?" Only she speaks, her lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: kitchen room tone, soft rain, no music.
 ```
 
 **Variante animée sur notre voix** (LTX-2 TURBO, mode audio ; réplique retirée, 160 mots) :
@@ -1437,7 +1461,7 @@ Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinema
 subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, readable phone screen
 ```
 
-#### Plan 12 · La réplique de Mamie · 28,5–33,5 s (5,0 s)
+#### Plan 12 · La réplique de Mamie · 28,8–34,7 s (5,9 s)
 
 | Champ | Consigne |
 |---|---|
@@ -1445,13 +1469,14 @@ subtitles, captions, on-screen text, letters, words, watermark, logo, second cha
 | Personnage, tenue | Mamie Prune, `prune` |
 | Cadrage | Plan rapproché taille, assise à la table de la cuisine. **Regard caméra** (Mamie parle au public). Recadrage : `pm`, comme le dit le `cadre` (« Medium close-up from the waist up ») et les prompts. |
 | Caméra | fixe pendant toute la génération (locked-off). Aucun effet au montage. |
+| Moteur vidéo | **LTX-2 TURBO sur notre voix** (mode audio, décision du chef) : l'image clé est animée directement sur la voix clonée de Mamie, avec le prompt « Variante animée sur notre voix » ci-dessous (`prompts.video_sur_notre_voix` ; `animer_voix.py --plans 12`, voir l'annexe). Le prompt vidéo qui dit la réplique ne sert qu'en secours. `episode.json` n'a pas de champ pour le moteur : la consigne est écrite ici, dans le script et dans l'annexe. |
 | Geste avant la réplique | Assise à la table, elle remue lentement son thé, calme et malicieuse, et regarde la caméra par-dessus ses lunettes. On frappe juste après sa réplique. Un seul geste, petit et lent : les lèvres restent faciles à caler, et le plan ne répète plus le P13 de l'ép. 1 (fourneau, thé versé). |
 | Réplique | « Une cerise, ça mûrit au soleil… Pas à l'ombre d'un citron. » (11 mots) |
 | Segments et jeu | « Une cerise, ça mûrit au soleil… » → *[She raises one eyebrow]* → « Pas à l'ombre d'un citron. » |
-| Consigne de voix | Profil Voicebox `prune`. Voix décrite (Qwen VoiceDesign), tempo 1,25 et léger vibrato ; lente, chaude, malicieuse ; pause de 0,25 s sur « soleil… » ; dernier mot avec un sourire. La parole doit tenir en 4,6 s. |
+| Consigne de voix | Profil Voicebox `prune`. Voix décrite (Qwen VoiceDesign), tempo 1,25 et léger vibrato ; lente, chaude, malicieuse ; pause de 0,25 s sur « soleil… » ; dernier mot avec un sourire. La parole tient en 5,5 s environ : le plan est animé sur cette voix (LTX-2 TURBO). |
 | Émotion | sagesse piquante |
 | Son dans le clip | `kitchen room tone, soft rain`, `a teacup clink`, pas de musique. |
-| Bruitages (montage) | **Deux coups frappés à la porte** juste après « citron » (vers 33,3 s) ; ils débordent sur la coupe vers le P13. |
+| Bruitages (montage) | **Deux coups frappés à la porte** juste après « citron » (vers 34,4 s) ; ils débordent sur la coupe vers le P13. |
 | Incrustation de montage | — |
 | Musique (version complète) | `triste` continue. |
 | Transition vers la suite | Coupe franche sur la porte. |
@@ -1484,11 +1509,11 @@ subtitles, captions, on-screen text, letters, words, watermark, logo, second cha
 
 **Réplique à citer de l'épisode.** Elle annonce l'image de la revanche : le soleil, c'est l'heure dorée du défilé (P22). Le script lui fait regarder vers la porte en fin de plan : geste facultatif, car le montage coupe 0,3 s après le dernier mot ; les coups frappés font le lien.
 
-**Durée : 5,0 s** (décision du chef), soit 4,6 s de parole pour 11 mots. La voix de Mamie mesurée à l'ép. 1 parle à 2 mots/s environ : si sa voix mesurée dépasse 4,6 s, `duree` prend la mesure + 0,4 s, et le clip se fait en LTX-2 TURBO sur notre voix (un clip de 5 s ne suffit plus).
+**Durée : 5,9 s, en LTX-2 TURBO sur notre voix** (décision du chef, v4). La voix de Mamie mesurée à l'ép. 1 parle à 2 mots/s environ : ses 11 mots font environ 5,5 s de parole, plus 0,4 s. Un clip de 5 s ne suffit pas, et un moteur qui dit lui-même la réplique la presserait : on anime donc l'image sur sa voix clonée, puis `duree` prend la voix mesurée + 0,4 s.
 
-### Scène D · La porte et les roses jaunes (33,5–43,6 s)
+### Scène D · La porte et les roses jaunes (34,7–44,2 s)
 
-#### Plan 13 · Perdu, Citron ? · 33,5–36,0 s (2,5 s)
+#### Plan 13 · Ta salle a fermé ? · 34,7–36,6 s (1,9 s)
 
 | Champ | Consigne |
 |---|---|
@@ -1497,9 +1522,9 @@ subtitles, captions, on-screen text, letters, words, watermark, logo, second cha
 | Cadrage | Plan rapproché taille. Dans l'embrasure ; regard hors champ vers la droite (vers le palier). Recadrage : `pm`. |
 | Caméra | fixe pendant toute la génération (locked-off). Aucun effet au montage. |
 | Geste avant la réplique | Elle entrouvre la porte, surprise, puis croise les bras, froide. |
-| Réplique | « Perdu, Citron ? La salle, c'est pas ici. » (7 mots) |
-| Segments et jeu | « Perdu, Citron ? » → *[She crosses her arms]* → « La salle, c'est pas ici. » |
-| Consigne de voix | Profil Voicebox `cerise`. Froide, ironique, un peu lasse. |
+| Réplique | « Citron ? Ta salle a fermé ? » (5 mots) |
+| Segments et jeu | « Citron ? » → *[She crosses her arms]* → « Ta salle a fermé ? » |
+| Consigne de voix | Profil Voicebox `cerise`. Froide, ironique, un peu lasse ; « Ta salle a fermé ? » piquant. |
 | Émotion | méfiance ironique |
 | Son dans le clip | `quiet hallway, ticking clock`, `the creak of the door`, pas de musique. |
 | Bruitages (montage) | — |
@@ -1515,10 +1540,10 @@ subtitles, captions, on-screen text, letters, words, watermark, logo, second cha
 Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up, vertical 9:16 composition. In an open wooden front door at night, a warm hall with floral wallpaper behind, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing an oversized cream hoodie with a small embroidered red cherry and cherry-print pajama trousers, with an adult 25-year-old face stands alone in the doorway, one hand on the edge of the half-open door, surprised, looking off-screen to the right. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.
 ```
 
-**Prompt vidéo** (178 mots) :
+**Prompt vidéo** (176 mots) :
 
 ```text
-Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. In an open wooden front door at night, a warm hall with floral wallpaper behind, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing an oversized cream hoodie with a small embroidered red cherry and cherry-print pajama trousers, with an adult 25-year-old face stands alone in the doorway. She pulls the door half open, surprised, looking to the right. She speaks in French, in a soft, sweet young woman's voice, slightly husky, cold and ironic, "Perdu, Citron ?" She crosses her arms, "La salle, c'est pas ici." Only she speaks, her lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: quiet hallway, ticking clock, the creak of the door, no music.
+Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. In an open wooden front door at night, a warm hall with floral wallpaper behind, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous wavy dark-red hair with two small cherries and a leaf clipped in it, full glossy red lips, glamorous makeup, wearing an oversized cream hoodie with a small embroidered red cherry and cherry-print pajama trousers, with an adult 25-year-old face stands alone in the doorway. She pulls the door half open, surprised, looking to the right. She speaks in French, in a soft, sweet young woman's voice, slightly husky, cold and ironic, "Citron ?" She crosses her arms, "Ta salle a fermé ?" Only she speaks, her lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: quiet hallway, ticking clock, the creak of the door, no music.
 ```
 
 **Variante animée sur notre voix** (LTX-2 TURBO, mode audio ; réplique retirée, 163 mots) :
@@ -1533,7 +1558,7 @@ Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinema
 subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, door number, nameplate
 ```
 
-#### Plan 14 · Les roses jaunes · 36,0–38,7 s (2,7 s)
+#### Plan 14 · Les roses jaunes · 36,6–39,3 s (2,7 s)
 
 | Champ | Consigne |
 |---|---|
@@ -1578,7 +1603,7 @@ Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinema
 subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face
 ```
 
-#### Plan 15 · La phrase-étendard · 38,7–42,1 s (3,4 s)
+#### Plan 15 · La phrase-étendard · 39,3–42,7 s (3,4 s)
 
 | Champ | Consigne |
 |---|---|
@@ -1625,13 +1650,13 @@ subtitles, captions, on-screen text, letters, words, watermark, logo, second cha
 
 **Phrase-étendard de l'épisode.** Le script la fait reculer pour fermer la porte : on ne le demande pas au moteur (un battant qui traverse le cadre déforme l'image). La fermeture se raconte par le son et par la réaction du P16.
 
-#### Plan 16 · Réaction n° 2 · 42,1–43,6 s (1,5 s)
+#### Plan 16 · Réaction n° 2 · 42,7–44,2 s (1,5 s)
 
 | Champ | Consigne |
 |---|---|
 | Décor | `palier` (palier de l'immeuble) |
 | Personnage, tenue | Citron, `citron` ; **muet à l'image** |
-| Cadrage | Plan rapproché taille. Face à la porte, donc face à la caméra. Recadrage : `pm`. |
+| Cadrage | Plan rapproché taille. Face à la porte, qui est juste à gauche de l'objectif (le même axe qu'au P17). Recadrage : `pm`. |
 | Caméra | fixe pendant toute la génération (locked-off). Aucun effet au montage. |
 | Geste avant la réplique | **Muet.** La porte lui claque au nez (hors champ) : il sursaute, cligne des yeux, bouche entrouverte, le bouquet contre lui. |
 | Réplique | aucune (plan muet) |
@@ -1647,13 +1672,13 @@ subtitles, captions, on-screen text, letters, words, watermark, logo, second cha
 **Image clé** (références : image 1 = `decors/palier.png`, image 2 = `identite/citron.png`, puis recadrage `pm`) :
 
 ```text
-Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up, vertical 9:16 composition. On an old Paris stairwell landing at night, wrought-iron banister, warm brass lamp, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black leather jacket on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone facing the camera, holding a big bouquet of yellow roses wrapped in plain brown kraft paper against his chest, flinching, eyes blinking, mouth half open in offended disbelief. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.
+Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up, vertical 9:16 composition. On an old Paris stairwell landing at night, wrought-iron banister, warm brass lamp, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black leather jacket on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone facing just left of the camera, holding a big bouquet of yellow roses wrapped in plain brown kraft paper against his chest, flinching, eyes blinking, mouth half open in offended disbelief. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus. No text, no letters, no logos, no subtitles.
 ```
 
-**Prompt vidéo** (149 mots) :
+**Prompt vidéo** (161 mots) :
 
 ```text
-Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. On an old Paris stairwell landing at night, wrought-iron banister, warm brass lamp, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black leather jacket on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone facing the camera. He holds the yellow roses to his chest; suddenly he flinches back and blinks hard, mouth falling open, as if a door just slammed in his face. He does not speak and his lips stay closed. No one speaks. Audio: echoing stairwell at night, a heavy door slamming shut, no music.
+Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. On an old Paris stairwell landing at night, wrought-iron banister, warm brass lamp, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black leather jacket on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone facing just left of the camera. He holds a big bouquet of yellow roses wrapped in plain brown kraft paper against his chest; suddenly he flinches back and blinks hard, mouth falling open, as if a door just slammed in his face. He does not speak and his lips stay closed. No one speaks. Audio: echoing stairwell at night, a heavy door slamming shut, no music.
 ```
 
 **Variante animée sur notre voix** : sans objet (plan muet).
@@ -1664,9 +1689,9 @@ Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinema
 subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face
 ```
 
-### Scène E · Deuxième aparté : le palier (43,6–50,0 s)
+### Scène E · Deuxième aparté : le palier (44,2–50,6 s)
 
-#### Plan 17 · Elle reviendra · 43,6–46,6 s (3,0 s)
+#### Plan 17 · Cerise reviendra · 44,2–47,2 s (3,0 s)
 
 | Champ | Consigne |
 |---|---|
@@ -1675,9 +1700,9 @@ subtitles, captions, on-screen text, letters, words, watermark, logo, second cha
 | Cadrage | Plan rapproché taille. Il fixe la porte (juste à gauche de l'objectif), puis **regarde la caméra (aparté)**. Recadrage : `pm`. |
 | Caméra | fixe pendant toute la génération (locked-off). Aucun effet au montage. |
 | Geste avant la réplique | Le gros bouquet de roses jaunes, dans son papier kraft brun, pend au bout de son bras ; il pointe la porte de l'index, rage contenue, puis se tourne vers nous. |
-| Réplique | « La porte au nez… À moi ?! Elle reviendra. » (8 mots) |
-| Segments et jeu | « La porte au nez… » → *[He points at the door]* → « À moi ?! » → *[He turns to the camera]* → « Elle reviendra. » |
-| Consigne de voix | Profil Voicebox `citron`. Outré puis glacé ; « À moi ?! » plus aigu ; « Elle reviendra. » lent et sûr. |
+| Réplique | « La porte au nez… À moi ?! Cerise reviendra. » (8 mots) |
+| Segments et jeu | « La porte au nez… » → *[He points at the door]* → « À moi ?! » → *[He turns to the camera]* → « Cerise reviendra. » |
+| Consigne de voix | Profil Voicebox `citron`. Outré puis glacé ; « À moi ?! » plus aigu ; « Cerise reviendra. » lent et sûr. |
 | Émotion | orgueil blessé |
 | Son dans le clip | `echoing stairwell at night`, pas de musique. |
 | Bruitages (montage) | — |
@@ -1696,7 +1721,7 @@ Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look,
 **Prompt vidéo** (180 mots) :
 
 ```text
-Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. On an old Paris stairwell landing at night, wrought-iron banister, warm brass lamp, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black leather jacket on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone. The big bouquet of yellow roses wrapped in plain brown kraft paper hangs from one hand; he glares just left of the camera. He speaks in French, in a deep, smooth, confident young man's voice, arrogant, outraged, then coldly smug, "La porte au nez…" He points at the door, "À moi ?!" He turns to the camera, "Elle reviendra." Only he speaks, his lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: echoing stairwell at night, no music.
+Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Medium close-up from the waist up on a locked-off static camera; the framing never changes. On an old Paris stairwell landing at night, wrought-iron banister, warm brass lamp, a hugely muscular handsome young man with bright lemon-yellow skin, slicked-back golden-yellow hair, chiseled jaw, wearing an open black leather jacket on his bare muscular chest with six-pack abs and a thick gold chain, with an adult 28-year-old face and light stubble stands alone. The big bouquet of yellow roses wrapped in plain brown kraft paper hangs from one hand; he glares just left of the camera. He speaks in French, in a deep, smooth, confident young man's voice, arrogant, outraged, then coldly smug, "La porte au nez…" He points at the door, "À moi ?!" He turns to the camera, "Cerise reviendra." Only he speaks, his lips moving in sync with every word, and the camera holds the frame during the pauses. Audio: echoing stairwell at night, no music.
 ```
 
 **Variante animée sur notre voix** (LTX-2 TURBO, mode audio ; réplique retirée, 164 mots) :
@@ -1711,7 +1736,7 @@ Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinema
 subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face
 ```
 
-#### Plan 18 · L'aveu · 46,6–50,0 s (3,4 s)
+#### Plan 18 · L'aveu · 47,2–50,6 s (3,4 s)
 
 | Champ | Consigne |
 |---|---|
@@ -1758,9 +1783,9 @@ subtitles, captions, on-screen text, letters, words, watermark, logo, second cha
 
 **L'ironie dramatique :** le public sait désormais que Citron vit des pourboires de Cerise ; elle, non. C'est le moteur de la partie 2.
 
-### Scène F · Cent jours (50,0–57,3 s)
+### Scène F · Cent jours (50,6–57,6 s)
 
-#### Plan 19 · Jour un · 50,0–51,7 s (1,7 s)
+#### Plan 19 · Jour un · 50,6–52,3 s (1,7 s)
 
 | Champ | Consigne |
 |---|---|
@@ -1805,7 +1830,7 @@ Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinema
 subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, street sign, boat name
 ```
 
-#### Plan 20 · La course · 51,7–53,2 s (1,5 s)
+#### Plan 20 · La course · 52,3–53,5 s (1,2 s)
 
 | Champ | Consigne |
 |---|---|
@@ -1844,7 +1869,7 @@ Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinema
 subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, slow motion, camera shake, street sign
 ```
 
-#### Plan 21 · Les coups · 53,2–54,7 s (1,5 s)
+#### Plan 21 · Les coups · 53,5–55,0 s (1,5 s)
 
 | Champ | Consigne |
 |---|---|
@@ -1854,7 +1879,7 @@ subtitles, captions, on-screen text, letters, words, watermark, logo, second cha
 | Caméra | fixe pendant toute la génération (locked-off). Aucun effet au montage. |
 | Fenêtre gardée (montage) | On génère 4 s et on garde **1,5 s : les deux derniers coups, puis la garde baissée et le sourire** (`fenetre_clip` : début indicatif à 2,0 s du clip, relu sur la prise retenue pour commencer 0,1 s avant l'avant-dernier coup). |
 | Geste avant la réplique | **Muet à l'image.** Elle enchaîne une série de coups rapides vers la droite, dans les pattes d'ours que Kiwi tient hors champ ; aucun contact visible. Puis elle baisse la garde, essoufflée, et sourit, fière. |
-| Réplique | aucune (plan muet). **Voix hors champ :** Kiwi (profil `kiwi`) : « Plus fort, Cerise ! » (3 mots, environ 0,8 s de voix), posée à 0,2 s. **Obligatoire dès que `voix_off` est codé** : elle coupe le silence du montage d'effort. Tant que `voix_off` n'existe pas, le plan reste muet. |
+| Réplique | aucune (plan muet). **Voix hors champ :** Kiwi (profil `kiwi`) : « Frappe, Cerise ! » (2 mots, environ 0,6 s de voix), posée à 0,2 s. **Obligatoire dès que `voix_off` est codé** : elle coupe le silence du montage d'effort. Tant que `voix_off` n'existe pas, le plan reste muet. |
 | Émotion | force, fierté |
 | Son dans le clip | `riverside at dawn, birds, lapping water`, `sharp breaths with each punch`, pas de musique. |
 | Bruitages (montage) | Deux impacts secs (`impact`), calés sur les deux coups visibles de la fenêtre gardée (vers 0,15 et 0,45 s du plan, à relire sur la prise) : le bruit dit le contact que l'image ne montre pas. |
@@ -1884,9 +1909,9 @@ Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinema
 subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, visible focus mitts, punching bag, hands entering the frame, street sign
 ```
 
-**Pourquoi les quais (correction du chef) :** Cerise ne peut pas s'entraîner cent jours dans la salle de Citron : la bande la verrait, ce qui tuerait la révélation et la promesse « Je reviens ici ». Elle s'entraîne donc dehors, avec Kiwi. Les pattes d'ours restent hors champ : aucun contact à générer.
+**Pourquoi les quais (correction du chef) :** Cerise ne peut pas s'entraîner cent jours dans la salle de Citron : la bande la verrait, ce qui tuerait la révélation et la promesse « Ici même ». Elle s'entraîne donc dehors, avec Kiwi. Les pattes d'ours restent hors champ : aucun contact à générer.
 
-#### Plan 22 · Le défilé · 54,7–57,3 s (2,6 s)
+#### Plan 22 · Le défilé · 55,0–57,6 s (2,6 s)
 
 | Champ | Consigne |
 |---|---|
@@ -1894,12 +1919,12 @@ subtitles, captions, on-screen text, letters, words, watermark, logo, second cha
 | Personnage, tenue | Cerise, `cerise_glow` (lunettes de soleil dorées relevées dans les cheveux) et le petit sac rouge cerise au bras ; **muet à l'image** |
 | Cadrage | Plan en pied, caméra à hauteur de poitrine. **Même cadre que le P1** (même décor, même axe, même hauteur, sans contre-plongée) ; contre-jour doré. Recadrage : aucun (on garde le cadre de l'image clé). |
 | Caméra | fixe pendant toute la génération (locked-off). Ralenti × 1,4 au montage. |
-| Geste avant la réplique | **Muet.** Elle franchit les portes et marche vers la caméra, assurée, les cheveux qui ondulent ; les sportifs flous aux bords se retournent. |
+| Geste avant la réplique | **Muet.** Elle franchit les portes et marche lentement vers la caméra, assurée, son petit sac rouge cerise au bras, les cheveux qui ondulent ; les sportifs flous aux bords se retournent. |
 | Réplique | aucune (plan muet) |
 | Émotion | assurance rayonnante |
 | Son dans le clip | `gym hall murmurs, distant street`, `confident heel steps`, pas de musique. |
 | Bruitages (montage) | Whoosh sur le flash ; **murmures de la foule qui montent** dès 0,3 s, en fondu d'entrée sur 1 s, pendant que les témoins se retournent ; les pas restent discrets, la musique porte. |
-| Incrustation de montage | Carton **« 100 JOURS PLUS TARD »** dans le tiers haut (y ≈ 380 à 520 px, sous le badge), pendant les 1,2 premières secondes, avec flash blanc et whoosh (voir § E). Elle est encore loin, dans l'embrasure : le carton passe au-dessus de sa tête et ne masque pas la révélation. |
+| Incrustation de montage | Carton **« 100 JOURS PLUS TARD »** dans le tiers haut (y ≈ 380 à 520 px, sous le badge), pendant les 1,2 premières secondes, avec flash blanc et whoosh (voir § E). Elle est encore loin, dans l'embrasure : le carton passe au-dessus de sa tête et ne masque pas la révélation. **Repli tant que `carton` n'est pas codé :** le même texte en incrustation `chiffre` (`repli_carton`), que `png_chiffre` pose aujourd'hui à y = 1040, sur elle ; **ne pas publier avec ce repli** (case bloquante du § F.5). |
 | Musique (version complète) | Sommet de `revanche`. |
 | Transition vers la suite | Coupe franche sur Citron. |
 | Dernière image | Cerise au premier plan, regard assuré vers la droite. |
@@ -1911,10 +1936,10 @@ subtitles, captions, on-screen text, letters, words, watermark, logo, second cha
 Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Eye-level full-body shot, camera at chest height, vertical 9:16 composition. Inside the open steel doors of a loft gym, golden backlight, blurred gym-goers at the edges, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous dark-red hair in freshly styled glossy Hollywood waves with two small cherries and a leaf clipped in it, oversized gold-rimmed sunglasses pushed up in her hair, full glossy red lips, glamorous makeup, wearing a tailored ivory-white blazer mini dress with gold buttons and a small gold cherry pendant, with an adult 25-year-old face appears alone in the open doorway, a small structured cherry-red handbag on her arm, backlit, chin up, a calm confident look. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus, only a few small blurred gym-goers far away at the edges. No text, no letters, no logos, no subtitles.
 ```
 
-**Prompt vidéo** (176 mots) :
+**Prompt vidéo** (178 mots) :
 
 ```text
-Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Eye-level full-body shot, camera at chest height, on a locked-off static camera; the framing never changes. Inside the open steel doors of a loft gym, golden backlight, blurred gym-goers at the edges, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous dark-red hair in freshly styled glossy Hollywood waves with two small cherries and a leaf clipped in it, oversized gold-rimmed sunglasses pushed up in her hair, full glossy red lips, glamorous makeup, wearing a tailored ivory-white blazer mini dress with gold buttons and a small gold cherry pendant, with an adult 25-year-old face appears alone in the open doorway. She walks in and straight toward the camera with slow, confident steps, chin up, her hair moving; at the edges the blurred gym-goers turn their heads toward her. She does not speak and her lips stay closed. No one speaks. Audio: gym hall murmurs, distant street, confident heel steps, no music.
+Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Eye-level full-body shot, camera at chest height, on a locked-off static camera; the framing never changes. Inside the open steel doors of a loft gym, golden backlight, blurred gym-goers at the edges, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous dark-red hair in freshly styled glossy Hollywood waves with two small cherries and a leaf clipped in it, oversized gold-rimmed sunglasses pushed up in her hair, full glossy red lips, glamorous makeup, wearing a tailored ivory-white blazer mini dress with gold buttons and a small gold cherry pendant, with an adult 25-year-old face appears alone in the open doorway, a small structured cherry-red handbag on her arm. She walks slowly toward the camera, chin up, her hair moving; at the edges the blurred gym-goers turn their heads toward her. She does not speak and her lips stay closed. No one speaks. Audio: gym hall murmurs, distant street, confident heel steps, no music.
 ```
 
 **Variante animée sur notre voix** : sans objet (plan muet).
@@ -1943,21 +1968,21 @@ Same image, same gym entrance, same lighting, same colors and same framing. Only
 Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Eye-level full-body shot, camera at chest height, vertical 9:16 composition. Inside the open steel doors of a loft gym, golden backlight, blurred gym-goers at the edges, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous dark-red hair in freshly styled glossy Hollywood waves with two small cherries and a leaf clipped in it, oversized gold-rimmed sunglasses pushed up in her hair, full glossy red lips, glamorous makeup, wearing a tailored ivory-white blazer mini dress with gold buttons and a small gold cherry pendant, with an adult 25-year-old face appears alone in the open doorway, a small structured cherry-red handbag on her arm, backlit, chin up, a calm confident look. The face is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus; in the blurred foreground, three muscular figures seen from behind at the left and right edges, at mid-height, stay out of focus, their heads turned toward her, their faces never visible. No text, no letters, no logos, no subtitles.
 ```
 
-**3. Prompt vidéo** (180 mots) :
+**3. Prompt vidéo** (179 mots) :
 
 ```text
-Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Eye-level full-body shot, camera at chest height, on a locked-off static camera; the framing never changes. Inside the open steel doors of a loft gym, golden backlight, blurred gym-goers at the edges, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous dark-red hair in freshly styled glossy Hollywood waves with two small cherries and a leaf clipped in it, oversized gold-rimmed sunglasses pushed up in her hair, full glossy red lips, glamorous makeup, wearing a tailored ivory-white blazer mini dress with gold buttons and a small gold cherry pendant, with an adult 25-year-old face appears alone in the open doorway. She walks straight toward the camera with slow, confident steps, chin up, hair moving; the blurred gym-goers turn their heads toward her. Three blurred figures seen from behind stay frozen at the edges. She does not speak and her lips stay closed. No one speaks. Audio: gym hall murmurs, distant street, heel steps, no music.
+Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Eye-level full-body shot, camera at chest height, on a locked-off static camera; the framing never changes. Inside the open steel doors of a loft gym, golden backlight, blurred gym-goers at the edges, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous dark-red hair in freshly styled glossy Hollywood waves with two small cherries and a leaf clipped in it, oversized gold-rimmed sunglasses pushed up in her hair, full glossy red lips, glamorous makeup, wearing a tailored ivory-white blazer mini dress with gold buttons and a small gold cherry pendant, with an adult 25-year-old face appears alone in the open doorway, a small structured cherry-red handbag on her arm. She walks slowly toward the camera, chin up, hair moving; blurred gym-goers turn toward her. Three blurred figures seen from behind stay frozen at the edges. She does not speak and her lips stay closed. No one speaks. Audio: gym hall murmurs, distant street, no music.
 ```
 
 **Champ négatif** :
 
 ```text
-subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, sharp faces in the crowd, mirror, poster, banner, screen, numbers on weights, faces on the foreground figures, foreground figures turning around, sharp foreground figures
+subtitles, captions, on-screen text, letters, words, watermark, logo, second sharp character, duplicate character, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, sharp faces in the crowd, mirror, poster, banner, screen, numbers on weights, faces on the foreground figures, foreground figures turning around, sharp foreground figures
 ```
 
-### Scène G · Le retour (57,3–67,6 s)
+### Scène G · Le retour (57,6–68,9 s)
 
-#### Plan 23 · Réaction n° 3 · 57,3–58,8 s (1,5 s)
+#### Plan 23 · Réaction n° 3 · 57,6–59,1 s (1,5 s)
 
 | Champ | Consigne |
 |---|---|
@@ -1996,7 +2021,7 @@ Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinema
 subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, mirror, poster, banner, screen, numbers on weights
 ```
 
-#### Plan 24 · La réplique-miroir · 58,8–62,2 s (3,4 s)
+#### Plan 24 · La réplique-miroir · 59,1–62,5 s (3,4 s)
 
 | Champ | Consigne |
 |---|---|
@@ -2043,7 +2068,7 @@ subtitles, captions, on-screen text, letters, words, watermark, logo, second cha
 
 **Réplique-miroir :** « T'as besoin de moi » reprend mot pour mot la fin du P14. Coco n'était pas sur le palier, mais le public a tout entendu. La drague reste légère : ni geste, ni sifflet.
 
-#### Plan 25 · Fin de service · 62,2–65,0 s (2,8 s)
+#### Plan 25 · Fin de service · 62,5–65,3 s (2,8 s)
 
 | Champ | Consigne |
 |---|---|
@@ -2090,7 +2115,7 @@ subtitles, captions, on-screen text, letters, words, watermark, logo, second cha
 
 Troisième réplique à citer, sur le motif du métier.
 
-#### Plan 26 · Le livreur · 65,0–67,6 s (2,6 s)
+#### Plan 26 · Le livreur · 65,3–67,9 s (2,6 s)
 
 | Champ | Consigne |
 |---|---|
@@ -2107,7 +2132,7 @@ Troisième réplique à citer, sur le motif du métier.
 | Bruitages (montage) | — |
 | Incrustation de montage | — |
 | Musique (version complète) | Dernière note chaude de `revanche`. |
-| Transition vers la suite | Coupe franche, retour brutal à la tension. |
+| Transition vers la suite | Coupe franche sur son départ, de dos (P27). |
 | Dernière image | Kiwi, main tendue, sourire doux, contre-jour. |
 
 
@@ -2135,9 +2160,50 @@ Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinema
 subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, sharp faces in the crowd, mirror, poster, banner, screen, numbers on weights
 ```
 
-### Scène H · Le cliffhanger (67,6–78,6 s)
+#### Plan 27 · Le départ · 67,9–68,9 s (1,0 s)
 
-#### Plan 27 · Retenu · 67,6–69,1 s (1,5 s)
+| Champ | Consigne |
+|---|---|
+| Décor | `salle_entree` (entrée de la salle, foule floue) |
+| Personnage, tenue | Cerise, `cerise_glow`, **de dos**, le petit sac rouge cerise au bras ; **muet à l'image** |
+| Cadrage | Plan en pied, caméra à hauteur de poitrine. **De dos, sans visage**, dans l'axe du P1 et du P22, sans contre-plongée ; elle s'éloigne vers les portes ouvertes, en contre-jour doré. L'embrasure reste vide devant elle : Kiwi est déjà dehors, hors champ. Recadrage : aucun (on garde le cadre de l'image clé). |
+| Caméra | fixe pendant toute la génération (locked-off). Aucun effet. Le clip fait 4 s : on garde environ 1,0 s, quand elle approche de l'embrasure. |
+| Geste avant la réplique | **Muet.** Seule et de dos, elle sort de la salle d'un pas lent vers l'embrasure dorée, son petit sac au bras ; elle ne se retourne pas. |
+| Réplique | aucune (plan muet) |
+| Émotion | liberté, triomphe tranquille |
+| Son dans le clip | `gym hall murmurs, distant street`, `heel steps fading away`, pas de musique. |
+| Bruitages (montage) | — |
+| Incrustation de montage | — |
+| Musique (version complète) | `revanche` s'éteint sur ses pas. |
+| Transition vers la suite | Coupe franche, retour brutal à la tension. |
+| Dernière image | Sa silhouette, de dos, dans l'embrasure dorée. |
+
+
+**Image clé** (références : image 1 = `decors/salle_entree.png`, image 2 = `identite/cerise_glow.png`) :
+
+```text
+Stylized semi-realistic 3D CGI animated movie still, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Eye-level full-body shot, camera at chest height, vertical 9:16 composition. Inside the open steel doors of a loft gym, golden backlight, blurred gym-goers at the edges, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous dark-red hair in freshly styled glossy Hollywood waves with two small cherries and a leaf clipped in it, oversized gold-rimmed sunglasses pushed up in her hair, full glossy red lips, glamorous makeup, wearing a tailored ivory-white blazer mini dress with gold buttons and a small gold cherry pendant, with an adult 25-year-old face walks alone toward the open doorway, seen from behind, a small structured cherry-red handbag on her arm, her back to the camera, her face not visible, the golden backlight outlining her hair. Her head is in the upper half of the frame and nothing important is in the bottom fifth. Exactly one character in focus, only a few small blurred gym-goers far away at the edges. No text, no letters, no logos, no subtitles.
+```
+
+**Prompt vidéo** (178 mots) :
+
+```text
+Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinematic lighting, rich detailed set, saturated colors, very expressive attractive faces, vertical 9:16 frame. Eye-level full-body shot, camera at chest height, on a locked-off static camera; the framing never changes. Inside the open steel doors of a loft gym, golden backlight, blurred gym-goers at the edges, a glamorous voluptuous young woman with deep cherry-red skin, long voluminous dark-red hair in freshly styled glossy Hollywood waves with two small cherries and a leaf clipped in it, oversized gold-rimmed sunglasses pushed up in her hair, full glossy red lips, glamorous makeup, wearing a tailored ivory-white blazer mini dress with gold buttons and a small gold cherry pendant, with an adult 25-year-old face walks alone toward the open doorway, seen from behind. She walks slowly away from the camera into the golden light, a small structured cherry-red handbag on her arm, her hair moving; she never turns around. She does not speak and her lips stay closed. No one speaks. Audio: gym hall murmurs, distant street, heel steps fading away, no music.
+```
+
+**Variante animée sur notre voix** : sans objet (plan muet).
+
+**Champ négatif** :
+
+```text
+subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, sharp faces in the crowd, visible face, face turned toward the camera, looking back, turning around, mirror, poster, banner, screen, numbers on weights
+```
+
+**Le départ de dos (correction du chef, v4).** C'est le silence de triomphe de la trame : elle s'en va sans se retourner, par les portes qu'elle a franchies au P22. Plan muet d'environ 1,0 s, sans visage ni regard en arrière ; le bloc `cerise_glow` reste entier, pour que les cheveux, la tenue et le sac soient ceux du P22.
+
+### Scène H · Le cliffhanger (68,9–79,9 s)
+
+#### Plan 28 · Retenu · 68,9–70,4 s (1,5 s)
 
 | Champ | Consigne |
 |---|---|
@@ -2154,7 +2220,7 @@ subtitles, captions, on-screen text, letters, words, watermark, logo, second cha
 | Bruitages (montage) | Bruit de lutte hors champ (souffles, semelles qui crissent). |
 | Incrustation de montage | — |
 | Musique (version complète) | `tension` revient d'un coup. |
-| Transition vers la suite | Coupe franche, plus serré (le P28 a sa propre image clé). |
+| Transition vers la suite | Coupe franche, plus serré (le P29 a sa propre image clé). |
 | Dernière image | Citron penché en avant, doigt pointé à gauche. |
 
 
@@ -2182,13 +2248,13 @@ Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinema
 subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, hands on his shoulders, arms holding him, mirror, poster, banner, screen, numbers on weights
 ```
 
-#### Plan 28 · La menace finale · 69,1–72,8 s (3,7 s)
+#### Plan 29 · La menace finale · 70,4–74,1 s (3,7 s)
 
 | Champ | Consigne |
 |---|---|
 | Décor | `salle_rack` (salle de sport, côté de la bande) |
 | Personnage, tenue | Citron, `citron_salle` |
-| Cadrage | Gros plan, visage et épaules. **Regard caméra**, index pointé vers l'objectif. Image clé propre, distincte de celle du P27 (qui regarde et pointe vers la gauche, en plan rapproché). Recadrage : `gp`. |
+| Cadrage | Gros plan, visage et épaules. **Regard caméra**, index pointé vers l'objectif. Image clé propre, distincte de celle du P28 (qui regarde et pointe vers la gauche, en plan rapproché). Recadrage : `gp`. |
 | Caméra | fixe pendant toute la génération (locked-off). Au montage : coup de zoom jusqu'au très gros plan (1,0 → 1,25) sur « Un seul ». |
 | Geste avant la réplique | Les yeux exorbités, les dents serrées, il pointe la caméra de l'index. |
 | Réplique | « Cent jours pour monter… Un seul pour te faire tomber ! » (10 mots) |
@@ -2227,9 +2293,9 @@ Stylized semi-realistic 3D CGI animated film, glamorous high-budget look, cinema
 subtitles, captions, on-screen text, letters, words, watermark, logo, second character, duplicate character, extra people, camera zoom, camera pan, scene cut, transition, music, morphing, face changing, deformed face, distorted, fused fingers, extra fingers, bad anatomy, motion artifacts, low quality, worst quality, nudity, lingerie, swimsuit, childlike face, hands on his shoulders, arms holding him, mirror, poster, banner, screen, numbers on weights
 ```
 
-**Image clé propre (correction du chef) :** le P28 se génère depuis sa propre image clé, en gros plan, regard caméra et index vers l'objectif. Il ne réutilise pas celle du P27, qui regarde et pointe vers la gauche en plan rapproché : les deux cadrages sont incompatibles. **La menace est claire :** « te faire tomber » vise Cerise ; ce n'est pas une plainte de Citron sur lui-même.
+**Image clé propre (correction du chef) :** le P29 se génère depuis sa propre image clé, en gros plan, regard caméra et index vers l'objectif. Il ne réutilise pas celle du P28, qui regarde et pointe vers la gauche en plan rapproché : les deux cadrages sont incompatibles. **La menace est claire :** « te faire tomber » vise Cerise ; ce n'est pas une plainte de Citron sur lui-même.
 
-#### Plan 29 · Le zeste · 72,8–76,2 s (3,4 s)
+#### Plan 30 · Le zeste · 74,1–77,5 s (3,4 s)
 
 | Champ | Consigne |
 |---|---|
@@ -2277,7 +2343,7 @@ subtitles, captions, on-screen text, letters, words, watermark, logo, second cha
 Le calembour du zeste : la bande lâche Citron. Il ne recycle plus la réplique-signature de Mamie à l'ép. 1
 (« Un citron… ça finit toujours pressé »), et n'a aucun écho avec la référence.
 
-#### Plan 30 · Jamais ! · 76,2–77,4 s (1,2 s)
+#### Plan 31 · Jamais ! · 77,5–78,7 s (1,2 s)
 
 | Champ | Consigne |
 |---|---|
@@ -2324,13 +2390,13 @@ subtitles, captions, on-screen text, letters, words, watermark, logo, second cha
 
 Plan d'un seul mot : un moteur qui dit lui-même une réplique trop courte rend souvent du charabia. **Préférer la variante animée sur notre voix** (TURBO), ou recaler la voix clonée sur un clip muet.
 
-### Carte de fin · 77,4–78,6 s (1,2 s)
+### Carte de fin · 78,7–79,9 s (1,2 s)
 
 | Champ | Consigne |
 |---|---|
 | Image | Fond noir. **PARTIE 2** en grand, blanc, avec un halo rouge. Dessous : « La suite très vite 🍒 Abonne-toi ». Fabriquée par le montage (`png_fin`), rien n'est généré. |
-| Son | Le coup sourd de la coupe du P30 résonne. Pas de musique. |
-| Durée | 1,2 s (champ `montage.fin_duree`). Le code actuel met 2,0 s : l'épisode ferait alors 79,4 s. |
+| Son | Le coup sourd de la coupe du P31 résonne. Pas de musique. |
+| Durée | 1,2 s (champ `montage.fin_duree`). Le code actuel met 2,0 s : l'épisode ferait alors 80,7 s. |
 
 ### Plan de repli · P1 bis (si la voix hors champ n'est pas prête)
 
@@ -2338,11 +2404,11 @@ Plan d'un seul mot : un moteur qui dit lui-même une réplique trop courte rend 
 alors :
 - le **P1 devient muet**, avec une durée de 1,5 s ; on garde la même image clé et le même prompt ;
 - on **insère ce plan juste après lui** : Coco seul, dans `salle_rack`, dit la réplique ;
-- la **durée totale passe à 80,1 s estimés**, au-dessus de la cible : on applique alors une coupe de secours (script
+- la **durée totale passe à 81,4 s estimés**, au-dessus de la cible : on applique alors une coupe de secours (script
   § 6.1), et la première réplique tombe à 1,5 s au lieu de 0,0 s ;
 - les **P21 et P23 restent muets** : les voix hors champ de Kiwi et de Myrtille attendent que `voix_off` soit codé.
 
-Dans `episode.json`, ce plan est rangé dans `repli_voix_off.plan` (id 31). Il faut le déplacer dans `plans`, juste
+Dans `episode.json`, ce plan est rangé dans `repli_voix_off.plan` (id 32). Il faut le déplacer dans `plans`, juste
 après le plan 1.
 
 | Champ | Consigne |
@@ -2384,22 +2450,24 @@ subtitles, captions, on-screen text, letters, words, watermark, logo, second cha
 
 ### E.1 Le format et le rythme
 - **Le format :** 1080 × 1920, 24 i/s, coupes franches, sans fondu enchaîné.
-- **Les durées des plans :** de 1,2 s (P30, un mot) à 5,0 s (P12, Mamie), 2,6 s en moyenne. Chaque plan parlé est
+- **Les durées des plans :** de 1,0 s (P27, le départ de dos) à 5,9 s (P12, Mamie, animée sur sa voix), 2,5 s en
+  moyenne. Chaque plan parlé est
   coupé 0,10 s avant le premier mot et 0,28 s après le dernier : c'est la voix qui fait sa durée.
 - **Le minutage se fixe sur les voix,** pas l'inverse : voix clonées, tempo et pauses, mesure, puis `duree` = parole
   + 0,4 s, puis seulement les clips (Annexe, étape 5).
 - **Les changements de lieu :** un whoosh court, que le montage ajoute tout seul.
 - **Le montage d'effort (P19 à P21) :** on coupe sur le mouvement. Puis viennent le flash blanc et le carton.
 - **Le silence :** hors métamorphose, moins de 2 s entre deux voix, aux réactions muettes (P4 avec les rires qui
-  s'éteignent, P16 avec la porte qui claque). Pendant la métamorphose, la voix hors champ de Kiwi au P21 (« Plus
-  fort, Cerise ! ») laisse environ 2,0 s sans voix (fin du P19, P20). Puis, de la fin de sa voix au « Quoi ?! » de
-  Myrtille (P23, à 0,3 s), 3,4 s passent sans réplique, dont 2,3 s couvertes par les murmures de la foule qui
-  montent (P22) : le plus long passage sans aucune voix humaine tombe à 0,8 s. La v2 en avait 4,7 s, la v1 7,7 s
+  s'éteignent, P16 avec la porte qui claque). Pendant la métamorphose, la voix hors champ de Kiwi au P21 (« Frappe,
+  Cerise ! ») laisse environ 1,7 s sans voix (fin du P19, P20). Puis, de la fin de sa voix au « Quoi ?! » de
+  Myrtille (P23, à 0,3 s), 3,7 s passent sans réplique, dont 2,3 s couvertes par les murmures de la foule qui
+  montent (P22) : le plus long passage sans aucune voix humaine tombe à 1,1 s. La v2 en avait 4,7 s, la v1 7,7 s
   d'un bloc ; la référence en a 6,1 s.
-- **La parole** couvre 58,6 s sur 78,6 s (75 %, comme à l'ép. 1). On ne l'augmente pas en accélérant les voix : on
+- **La parole** couvre environ 59,0 s sur 79,9 s (74 %, presque comme à l'ép. 1). On ne l'augmente pas en accélérant les voix : on
   remplit les plans muets (rires, murmures, « Quoi ?! », impacts).
-- **La durée cible :** de 75 à 80 s, carte de fin comprise. Estimation : 78,6 s (78,9 s sans arrondi), 83,6 s au
-  débit prudent. Avec le code actuel, qui fait une carte de fin de 2 s : 79,4 s. Avec le repli du P1 : 80,1 s. Au-delà
+- **La durée cible :** de 75 à 80 s, carte de fin comprise. Estimation : 79,9 s (80,2 s sans arrondi), 84,0 s au
+  débit prudent. Avec le code actuel, qui fait une carte de fin de 2 s : 80,7 s, d'où `fin_duree` à coder. Avec le
+  repli du P1 : 81,4 s. Au-delà
   de 80 s mesurés, on applique les coupes de secours, dans l'ordre (script § 6.1, `episode.json` → `minutage`).
 
 ### E.2 Les sous-titres
@@ -2407,7 +2475,7 @@ subtitles, captions, on-screen text, letters, words, watermark, logo, second cha
   Ils vont par groupes de 3 mots au plus (code `write_ass`).
 - **La position :** le bas des sous-titres est à y = 1340 px, au-dessus des boutons TikTok, dans le tiers bas. Ils
   ne passent jamais sur un visage, puisque les visages sont dans la moitié haute.
-- **Les chiffres s'écrivent en chiffres** (champ `sous_titre`) : P8, P11 et P28, comme « 100 jours » et
+- **Les chiffres s'écrivent en chiffres** (champ `sous_titre`) : P8, P11 et P29, comme « 100 jours » et
   « 48 000 vues ».
 - **Les voix hors champ (P1, P21, P23) sont sous-titrées,** à partir des mots de la voix clonée.
 - **Deux exports :** avec et sans sous-titres. Les cinq meilleures vidéos du corpus n'en avaient pas, alors on
@@ -2430,9 +2498,9 @@ subtitles, captions, on-screen text, letters, words, watermark, logo, second cha
 |---|---|---|---|
 | P1 | Accroche et badge | 0 à 3 s, puis badge permanent | titre et badge |
 | P8 | **100 JOURS**, jaune, gros, au centre bas | à partir du mot « jours » | `chiffre` |
-| P11 | Notification **peche.officielle 🍑 a publié · Quand la serveuse se trompe de salle 😂🍒**, avec un `ding` | du début du plan au mot « vues », où elle est retirée | `notif`, avec `jusqu_au_mot` (à coder) |
+| P11 | Notification **peche.ruedesfruits 🍑 a publié · Quand la serveuse se trompe de salle 😂🍒**, avec un `ding` | du début du plan au mot « vues », où elle est retirée | `notif`, avec `jusqu_au_mot` (à coder) |
 | P11 | **48 000 VUES** | à partir du mot « vues » | `chiffre` |
-| P22 | Carton **100 JOURS PLUS TARD**, blanc, **dans le tiers haut** (y ≈ 380 à 520 px, sous le badge ; champ `y_px`), jamais au centre : il masquerait le début de la révélation | 1,2 premières secondes, avec un flash blanc de 0,15 s et un whoosh | `carton` (à coder) ; repli actuel : `chiffre`, posé aujourd'hui à y = 1040 par `png_chiffre`, à remonter à `y_px` |
+| P22 | Carton **100 JOURS PLUS TARD**, blanc, **dans le tiers haut** (y ≈ 380 à 520 px, sous le badge ; champ `y_px`), jamais au centre : il masquerait le début de la révélation | 1,2 premières secondes, avec un flash blanc de 0,15 s et un whoosh | `carton` (à coder) ; repli actuel : `chiffre`, posé aujourd'hui à y = 1040 par `png_chiffre`, à remonter à `y_px` ; **on ne publie pas avec ce repli** (case bloquante du § F.5) |
 | fin | **PARTIE 2**, avec « La suite très vite 🍒 Abonne-toi » | 1,2 s sur fond noir | carte de fin |
 
 **Attention au P11 :** dans le code actuel, la notification (y = 960 à 1130) et le chiffre (y = 1040 à 1280) se
@@ -2451,8 +2519,8 @@ chevauchent. Il faut le champ `jusqu_au_mot` ou, à défaut, une notification re
 | P21 → P22 | flash blanc | 0,15 s, retour à l'image en 0,1 s |
 | P22 | ralenti | × 1,4 (image seulement ; le son du clip est remplacé) |
 | P25 | zoom lent | 1,0 → 1,15 |
-| P28 | coup de zoom jusqu'au très gros plan | 1,0 → 1,25 sur « seul » |
-| P30 | zoom fixe | 1,25 |
+| P29 | coup de zoom jusqu'au très gros plan | 1,0 → 1,25 sur « seul » |
+| P31 | zoom fixe | 1,25 |
 
 - **Le zoom ne dépasse jamais 1,25.** La source fait 704 × 1280 et elle est déjà agrandie en 1080 × 1920.
 - **Lumière (facultatif) :** la scène A un peu plus froide et désaturée (−10 % de saturation), les scènes F et G
@@ -2472,6 +2540,8 @@ chevauchent. Il faut le champ `jusqu_au_mot` ou, à défaut, une notification re
   « Serise » dans `replique_tts`, comme à l'ép. 1. Les sous-titres ne changent pas.
 - **« Cent jours » :** whisper peut écrire « 100 jours », voire « sans jour ». On compare en normalisant les
   chiffres ; si la voix dit autre chose que « cent », on refait la prise.
+- **Mamie (P12) est animée sur sa voix** (LTX-2 TURBO, décision du chef) : sa voix clonée est faite et mesurée
+  avant le clip, et la durée du plan est sa parole mesurée + 0,4 s (5,9 s estimés).
 - **Les voix hors champ** se posent sur des clips muets, qui ne sont pas recalés : Coco à 0,0 s au P1, Kiwi à 0,2 s
   au P21, Myrtille à 0,3 s au P23.
 
@@ -2481,7 +2551,7 @@ chevauchent. Il faut le champ `jusqu_au_mot` ou, à défaut, une notification re
 |---|---|---|---|
 | P1 à P3 | `rires` de la bande (3 ou 4 voix d'hommes) | sous les répliques | moyen, sous la voix |
 | P4 | les rires s'éteignent | fondu de 1 s | bas |
-| P8 | `boom` | sur « honte » | moyen |
+| P8 | `boom` | sur « yeux » | moyen |
 | P11 | `ding` | arrivée de la notification | moyen |
 | P12 → P13 | `toc` : deux coups à la porte | juste après « citron », jusque sur la coupe | moyen |
 | P14 | `minuterie` : clic de l'escalier | début du plan | bas, facultatif |
@@ -2489,8 +2559,8 @@ chevauchent. Il faut le champ `jusqu_au_mot` ou, à défaut, une notification re
 | P21 | `impact` : coups dans les pattes d'ours (hors champ) | sur les deux coups visibles de la fenêtre gardée (vers 0,15 et 0,45 s) | moyen |
 | P22 | `whoosh` | sur le flash | moyen |
 | P22 | `murmures` de la foule qui montent | dès 0,3 s, fondu d'entrée sur 1 s, jusqu'à la coupe | bas à moyen |
-| P27 | `lutte` : souffles, semelles | sous la réplique | moyen |
-| P30 | `boom` | sur la coupe au noir | fort |
+| P28 | `lutte` : souffles, semelles | sous la réplique | moyen |
+| P31 | `boom` | sur la coupe au noir | fort |
 
 - **Ce qui existe déjà :** `ding`, `whoosh`, `boom`, `battement`, `pluie`, `salle`.
 - **Ce qui est à ajouter :** `rires`, `toc`, `porte_claque`, `impact`, `murmures`, `lutte` et `minuterie`. On les prend
@@ -2506,8 +2576,8 @@ chevauchent. Il faut le champ `jusqu_au_mot` ou, à défaut, une notification re
 | P7 | P10 | `tension`, qui repart | coupée net à la fin du P10 |
 | P11 | P15 | `triste` (piano) | coupée sur « c'est toi » ; silence au P16 |
 | P17 | P18 | `tension`, basse et grave | coupure sèche à la fin du P18 |
-| P19 | P26 | `revanche` | sommet au P22 ; elle respire sous le P25 |
-| P27 | P30 | `tension` | coupée net avec « Jamais ! » |
+| P19 | P27 | `revanche` | sommet au P22 ; elle respire sous le P25 et s'éteint sur le départ (P27) |
+| P28 | P31 | `tension` | coupée net avec « Jamais ! » |
 
 La musique baisse automatiquement sous les voix : le montage la ramène à environ un tiers.
 
@@ -2519,13 +2589,13 @@ ajouté dans l'application**.
   - son d'origine (nos voix et bruitages) à **100 %** ;
   - son ajouté à **15 à 20 %**, jamais plus de 25 %.
   - Les répliques doivent rester parfaitement compréhensibles au téléphone, à volume moyen.
-- **Le calage :** on choisit le passage du son pour que sa montée tombe sur le carton (54,7 s estimés), sinon sur le
-  P19 (50,0 s). On relit ces deux temps sur le montage réel, après la mesure des voix.
+- **Le calage :** on choisit le passage du son pour que sa montée tombe sur le carton (55,0 s estimés), sinon sur le
+  P19 (50,6 s). On relit ces deux temps sur le montage réel, après la mesure des voix.
 - **La vérification :** en aperçu, aucune parole chantée ne doit couvrir les trois répliques à citer (P12, P15,
   P25). Sinon, on prend un autre passage, ou on descend à 12 %.
 
 ### E.9 La fin
-Au P30, « Jamais ! » est hurlé et la coupe tombe sèche au noir sur la fin du mot, avec un `boom`. Puis la carte
+Au P31, « Jamais ! » est hurlé et la coupe tombe sèche au noir sur la fin du mot, avec un `boom`. Puis la carte
 **PARTIE 2** s'affiche 1,2 s. Rien ne vient après : pas de générique, pas de plan bonus.
 
 ### E.10 Les exports et la publication
@@ -2572,20 +2642,20 @@ Chaque case se coche. Un seul « non » bloque la publication du plan concerné,
   - Myrtille : casque blanc ;
   - Mamie : lunettes rondes et châle ;
   - Kiwi : veste verte de livreur.
-- [ ] Le regard va dans le bon sens (§ B.5) : Cerise vers la droite, la bande vers la gauche (sauf Myrtille au P29,
-  vers la droite), les apartés, la menace du P28 et le « Jamais ! » du P30 vers la caméra.
+- [ ] Le regard va dans le bon sens (§ B.5) : Cerise vers la droite, la bande vers la gauche (sauf Myrtille au P30,
+  vers la droite), les apartés, la menace du P29 et le « Jamais ! » du P31 vers la caméra. Au P27, Cerise est de dos, sans visage.
 - [ ] Le visage est dans la moitié haute, et rien d'important n'est dans le cinquième bas.
 - [ ] Aucun texte, logo, chiffre, miroir, tableau ni reflet. Pas de visage en double au recadrage.
 - [ ] Le personnage est habillé et a un visage adulte. Ni pose penchée, ni cadrage sur le corps.
 - [ ] Les accessoires sont présents et sans texte : la gamelle (P1, P4), le shaker (P2), le pot (P9, P10), le
   bouquet de roses jaunes dans son kraft brun (P14 à P17, y compris au P17), le stylo et le carnet (P1, P4, P6, P8 ; le
-  carnet seulement si le cadre le montre), les lunettes de soleil dorées (P22, P25) et le sac rouge cerise (P22). Au P21, ni patte d'ours, ni main, ni sac dans le cadre.
-- [ ] Les plans en pied (P1, P22) sont à hauteur de poitrine, sans contre-plongée.
+  carnet seulement si le cadre le montre), les lunettes de soleil dorées (P22, P25) et le sac rouge cerise (P22, P27). Au P21, ni patte d'ours, ni main, ni sac dans le cadre.
+- [ ] Les plans en pied (P1, P22, P27) sont à hauteur de poitrine, sans contre-plongée.
 
 ### F.3 Chaque clip
 - [ ] Seul le personnage visible bouge les lèvres. Au P1, les lèvres de Cerise restent fermées.
 - [ ] Ni morphing, ni changement de visage ou de tenue, ni personnage qui apparaît.
-- [ ] La caméra reste fixe. Le mouvement vient du personnage seulement (course P20, marche P22).
+- [ ] La caméra reste fixe. Le mouvement vient du personnage seulement (course P20, marche P22, départ P27). Au P27, elle ne se retourne pas.
 - [ ] La réplique est reconnue par whisper (similarité d'au moins 0,8), ou le clip est recalé sur la voix clonée.
 - [ ] Les faux sous-titres d'Agnes sont détectés et floutés, ou bien on prend une autre prise.
 - [ ] Le clip couvre la voix mesurée + 0,4 s (la `duree` de l'étape 5), sans plan figé à la fin.
@@ -2598,25 +2668,28 @@ Chaque case se coche. Un seul « non » bloque la publication du plan concerné,
 - [ ] Au P24, Coco reprend « T'as besoin de moi » avec la même mélodie que Citron au P14.
 
 ### F.5 Le montage
-- [ ] La durée totale mesurée est entre 75 et 80 s, carte de fin comprise (78,6 s estimés ; 79,4 s avec la carte
-  de fin du code actuel ; 80,1 s en repli, qui demande une coupe de secours).
+- [ ] La durée totale mesurée est entre 75 et 80 s, carte de fin comprise (79,9 s estimés ; 80,7 s avec la carte
+  de fin du code actuel, qui demande de coder `fin_duree` ; 81,4 s en repli, qui demande une coupe de secours).
 - [ ] La première voix tombe à 0,0 s (voix hors champ), ou à 1,5 s en repli. La voix de Kiwi tombe au P21, le « Quoi ?! » de Myrtille au P23.
 - [ ] Le badge **LA MÉTAMORPHOSE · PARTIE 1** et l'accroche sont là (0 à 3 s), sans faute ; l'émoji 💔
   s'affiche.
 - [ ] Les incrustations tombent sur le bon mot : « jours » au P8, « vues » au P11. Le carton s'affiche 1,2 s au P22, dans le tiers haut, sans toucher sa tête.
   Rien ne se chevauche au P11.
+- [ ] **Bloquant (P22), repli « 100 JOURS PLUS TARD » en incrustation `chiffre` (`repli_carton`) : ne pas publier
+  avec ce repli tant que le carton n'est pas codé.** `png_chiffre` le pose aujourd'hui à y = 1040, sur Cerise : il
+  masque la révélation. La version publiée a le vrai `carton`, dans le tiers haut.
 - [ ] Les sous-titres correspondent au texte, chiffres en chiffres, et ne passent sur aucun visage.
 - [ ] Les zooms sont aux plans prévus, sans dépasser 1,25, et le ralenti du P22 est à × 1,4.
 - [ ] Les bruitages sont en place : rires, toc, porte qui claque, impacts du P21 calés sur les coups visibles,
   murmures du P22, lutte, booms.
-- [ ] Les coupures de musique tombent juste aux P6, P10, P15, P18 et P30.
+- [ ] Les coupures de musique tombent juste aux P6, P10, P15, P18 et P31.
 - [ ] Le son est à −14 LUFS, et la musique ne couvre aucune réplique.
 - [ ] La fin est coupée sèche au noir, puis vient **PARTIE 2**.
 - [ ] Au P22, on voit le même cadre qu'au P1 : la rime visuelle se voit.
 
 ### F.6 Les règles de fond
 - [ ] Aucune moquerie du corps, aucun chiffre de poids, aucun conseil d'alimentation.
-- [ ] Aucune violence à l'image : la lutte du P27 reste hors champ, aucune arme, personne n'est frappé.
+- [ ] Aucune violence à l'image : la lutte du P28 reste hors champ, aucune arme, personne n'est frappé.
 - [ ] La drague du P24 reste légère : pas de geste vers Cerise, pas de sifflet.
 - [ ] La règle de droit est tenue.
   - Aucune réplique de la vidéo de référence, ni paraphrase proche.
@@ -2647,7 +2720,7 @@ servent aux adaptations ci-dessous.
 | premier niveau | `style_video` | le style des prompts vidéo (« film ») |
 | premier niveau | `fiches` | les prompts des fiches de Coco et Myrtille, à ajouter à `identites.py` |
 | premier niveau | `accessoires`, `negatif` | les blocs figés des accessoires (dont `serveuse` et `sac`, ajoutés en v3) et le champ négatif de base |
-| premier niveau | `repli_voix_off` | le plan de repli (id 31) et sa règle d'insertion |
+| premier niveau | `repli_voix_off` | le plan de repli (id 32) et sa règle d'insertion |
 | premier niveau | `minutage` | la règle « `duree` = parole mesurée + 0,4 s », les débits de référence et prudents, les estimations et les coupes de secours classées |
 | `montage` | `fin_duree` | 1,2 s pour la carte de fin (2,0 s en dur aujourd'hui) |
 | `decors.*` | `court`, `audio` | le repère court et le son des prompts vidéo |
@@ -2666,7 +2739,7 @@ servent aux adaptations ci-dessous.
 travers :
 - un `ding` sur le plan 1 ;
 - un `boom` et un arrêt de la musique sur le plan 24, ce qui couperait la musique en pleine drague de Coco ;
-- un `battement` et la fin de la musique sur le plan 29, ce qui l'arrêterait vers 72,8 s ;
+- un `battement` et la fin de la musique sur le plan 29, ce qui l'arrêterait vers 70,4 s ;
 - la vignette d'appel prise au plan 7 ;
 - l'avatar `citron.png` des publications ;
 - les ambiances par décor ;
@@ -2685,11 +2758,15 @@ travers :
   bloc `persos` du personnage et le `cadre` du plan ; `reframe` assemble sa consigne de recadrage, le bloc `persos`
   et le `cadre`. Les `prompts.image` du § D servent à composer à la main. **Toute correction d'image doit donc être
   faite dans `cadre`**, sinon il faut adapter `produire.py` pour lire `prompts.image`. En v3, chaque correction
-  d'image (P1, P4, P6, P8, P12, P17, P19, P20, P22, P24, P29, P30) est écrite dans `cadre` et dans `prompts.image`.
+  d'image (P1, P4, P6, P8, P12, P17, P19, P20, P22, P24, P30, P31) est écrite dans `cadre` et dans `prompts.image` ; en v4,
+  celles des P1, P16 et P22, et le nouveau P27, aussi.
 - **Au P1, `make_image` doit charger le décor retouché** (`decors/salle_entree_amorce_p1.png`, premier fichier de
   `prompts.references`) au lieu de `decors/<decor>.png`. Sans cette adaptation, composer l'image clé du P1 à la main.
 - **`produire.py`** assemble encore ses propres prompts vidéo, avec la réplique « d'un souffle », sans segments.
   Quand `plans[*].prompts.video` existe, l'utiliser tel quel, et `video_sur_notre_voix` pour TURBO.
+- **Le moteur du P12 :** `episode.json` n'a pas de champ « moteur » par plan, et `produire.py` essaie ses moteurs
+  dans l'ordre (`MOTEURS`). Le P12 se fait donc à part, en LTX-2 TURBO sur la voix de Mamie
+  (`animer_voix.py … --plans 12`), une fois sa voix mesurée ; son texte exact est `prompts.video_sur_notre_voix`.
 - **`identites.py`** : ajouter `coco` et `myrtille` à `CHARS` (textes au § B.2 et dans `fiches`).
 - **`caler.py`** : `PAUSES["…"]` passe de 0,32 à 0,25 s. Ajouter un mode `--voix-seules` : appliquer le tempo, les
   pauses et les effets (`respirer`) à chaque voix sans clip, puis écrire la parole mesurée de chaque plan (premier
@@ -2722,8 +2799,8 @@ travers :
    - additionner : entre 75 et 80 s carte de fin comprise, on continue ; au-delà, on applique les coupes de secours
      dans l'ordre (`minutage.coupes_de_secours`), on refait les voix touchées et on remesure.
 6. **Les clips :** `--only clips`, à la `duree` de l'étape 5. Les moteurs passent dans l'ordre LTX-2.3, TURBO, puis
-   Agnes. LTX-2 TURBO anime directement l'image sur notre fichier de voix : c'est recommandé au P30 (un seul mot) et
-   au P12 si la voix de Mamie dépasse 4,6 s. Puis `caler.py` recale les lèvres des autres clips sur nos voix.
+   Agnes. LTX-2 TURBO anime directement l'image sur notre fichier de voix : c'est recommandé au P31 (un seul mot) et
+   **imposé au P12** (décision du chef : Mamie, 5,9 s, animée sur sa voix). Puis `caler.py` recale les lèvres des autres clips sur nos voix.
 7. **La musique :** copier depuis l'ép. 1 la prise retenue de chaque ambiance (`tension/prise_3.wav`,
    `triste/prise_1.wav`, `revanche/prise_3.wav`, environ 15 Mo).
 8. **Le montage :** `montage.py`, après les adaptations ci-dessus. Puis la liste de contrôle du § F.
